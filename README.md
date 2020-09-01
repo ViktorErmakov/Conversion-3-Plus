@@ -7,4 +7,4 @@
 Это позволяет более удобно редактровать код прямо в пользовательском режиме, с привычной для нас расцветкой кода и подсказками.
 
 Примеры:
-![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/master/pictures/image/image.png)
+![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/master/pictures/image.png)
