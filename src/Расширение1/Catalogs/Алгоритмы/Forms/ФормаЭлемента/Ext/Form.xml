@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаДобавитьЭлементВСоставКонвертации" id="32">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьЭлементВСоставКонвертацииРасширеннаяПодсказка" id="33"/>
+			</Button>
+			<Button name="ФормаКоманда1" id="37">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Команда1</CommandName>
+				<ExtendedTooltip name="ФормаКоманда1РасширеннаяПодсказка" id="38"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen" callType="After">Расш1_ПриОткрытииПосле</Event>
+		<Event name="9cc34712-da5f-4faa-a653-343d2085fbe8" callType="After">Расш1_ПередЗаписьюПосле</Event>
+		<Event name="OnCreateAtServer" callType="After">Расш1_ПриСозданииНаСервереПосле</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаИерархия" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа иерархия</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИерархияРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<InputField name="СписокКонвертаций" id="29">
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конвертации</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокКонвертацийКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СписокКонвертацийРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="Группа" id="23">
+					<ContextMenu name="ГруппаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="25"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИдентификация" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа идентификация</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИдентификацияРасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя алгоритма</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Параметры" id="16">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПараметрыКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПараметрыРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<CheckBoxField name="ЭтоФункция" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Функция</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЭтоФункцияКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ЭтоФункцияРасширеннаяПодсказка" id="28"/>
+				</CheckBoxField>
+				<CheckBoxField name="Экспортный" id="34">
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЭкспортныйКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ЭкспортныйРасширеннаяПодсказка" id="36"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<TextDocumentField name="Алгоритм" id="10">
+			<TitleLocation>None</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АлгоритмКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="АлгоритмРасширеннаяПодсказка" id="12"/>
+		</TextDocumentField>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="Команда1" id="1000000">
+			<Action callType="After">Расш1_Команда1После</Action>
+		</Command>
+	</Commands>
+	<BaseForm version="2.11">
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<ChildItems>
+				<Button name="ФормаДобавитьЭлементВСоставКонвертации" id="32">
+					<Type>CommandBarButton</Type>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаДобавитьЭлементВСоставКонвертацииРасширеннаяПодсказка" id="33"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<UsualGroup name="ГруппаИерархия" id="19">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа иерархия</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Horizontal</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаИерархияРасширеннаяПодсказка" id="20"/>
+				<ChildItems>
+					<InputField name="СписокКонвертаций" id="29">
+						<ReadOnly>true</ReadOnly>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Конвертации</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="СписокКонвертацийКонтекстноеМеню" id="30"/>
+						<ExtendedTooltip name="СписокКонвертацийРасширеннаяПодсказка" id="31"/>
+					</InputField>
+					<InputField name="Группа" id="23">
+						<ContextMenu name="ГруппаКонтекстноеМеню" id="24"/>
+						<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="25"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаИдентификация" id="21">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа идентификация</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Horizontal</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаИдентификацияРасширеннаяПодсказка" id="22"/>
+				<ChildItems>
+					<InputField name="Код" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Имя алгоритма</v8:content>
+							</v8:item>
+						</Title>
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+						<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+					</InputField>
+					<InputField name="Параметры" id="16">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ПараметрыКонтекстноеМеню" id="17"/>
+						<ExtendedTooltip name="ПараметрыРасширеннаяПодсказка" id="18"/>
+					</InputField>
+					<CheckBoxField name="ЭтоФункция" id="26">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Функция</v8:content>
+							</v8:item>
+						</Title>
+						<TitleLocation>Right</TitleLocation>
+						<CheckBoxType>Auto</CheckBoxType>
+						<ContextMenu name="ЭтоФункцияКонтекстноеМеню" id="27"/>
+						<ExtendedTooltip name="ЭтоФункцияРасширеннаяПодсказка" id="28"/>
+					</CheckBoxField>
+					<CheckBoxField name="Экспортный" id="34">
+						<TitleLocation>Right</TitleLocation>
+						<CheckBoxType>Auto</CheckBoxType>
+						<ContextMenu name="ЭкспортныйКонтекстноеМеню" id="35"/>
+						<ExtendedTooltip name="ЭкспортныйРасширеннаяПодсказка" id="36"/>
+					</CheckBoxField>
+				</ChildItems>
+			</UsualGroup>
+			<TextDocumentField name="Алгоритм" id="10">
+				<TitleLocation>None</TitleLocation>
+				<EditMode>EnterOnInput</EditMode>
+				<ContextMenu name="АлгоритмКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="АлгоритмРасширеннаяПодсказка" id="12"/>
+			</TextDocumentField>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="d4284e5e-80d8-4aa1-9989-2e22cee73c77">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Конвертации" category="Object">
+				<xr:TypeId>db95a328-0d70-422e-bc71-35006b6ad7f1</xr:TypeId>
+				<xr:ValueId>e312cf1a-3ed2-41c3-8a54-48e2aa3e9309</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Конвертации" category="Ref">
+				<xr:TypeId>17271552-a8e5-40e3-9380-4cbdabe78c70</xr:TypeId>
+				<xr:ValueId>686757eb-a169-41cc-9ef1-9a7e9b15d024</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Конвертации" category="Selection">
+				<xr:TypeId>2109c04c-c11e-411f-9303-e7129a018cc0</xr:TypeId>
+				<xr:ValueId>c458981f-c5f2-4d17-8993-bdac9dd1f0e1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Конвертации" category="List">
+				<xr:TypeId>e0b0df81-b61b-4239-9548-299da7666f13</xr:TypeId>
+				<xr:ValueId>c4849133-b13e-4fd6-8bbd-ee519c75c1a2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Конвертации" category="Manager">
+				<xr:TypeId>cd30fdc4-8c43-4afc-b4b1-554924514e5b</xr:TypeId>
+				<xr:ValueId>b05de9ed-0b01-4d85-8afc-0e4fc8bc9733</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Конвертации</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>e18d9381-4a28-46d8-a92d-755ca9a89e17</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="41ec869b-6e6d-4586-9b8c-e090cf7d9ba7">
+				<InternalInfo/>
+				<Properties>
+					<Name>АлгоритмПередКонвертацией</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>ab625cb8-9910-471e-bc05-af745239a524</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="6a981946-0d26-441f-8ca9-6894a5106dac">
+				<InternalInfo/>
+				<Properties>
+					<Name>АлгоритмПослеКонвертации</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>cec9f551-422e-49b6-9aaf-78d152e0f2b4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="b8d23f58-a31b-4ddb-ae89-a691c0dc033f">
+				<InternalInfo/>
+				<Properties>
+					<Name>АлгоритмПередОтложеннымЗаполнением</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>7f373551-bb85-4df7-a32c-be8e291d677a</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

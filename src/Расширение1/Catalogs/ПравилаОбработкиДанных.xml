@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="e44dbc68-16bf-4393-bef5-7c919f30714a">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПравилаОбработкиДанных" category="Object">
+				<xr:TypeId>8b52aecf-b68f-455a-8678-3213c5652943</xr:TypeId>
+				<xr:ValueId>bd091e4b-80fb-4236-a150-ed6067901d12</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПравилаОбработкиДанных" category="Ref">
+				<xr:TypeId>7bf2492c-32c3-4e26-bb43-17606d5d4f9d</xr:TypeId>
+				<xr:ValueId>fa2d556c-8038-4334-9541-c4b45b2953b6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПравилаОбработкиДанных" category="Selection">
+				<xr:TypeId>80bed005-4bad-409e-bf61-7d0fc710023e</xr:TypeId>
+				<xr:ValueId>7fb84929-5699-4b81-bfef-b6b4c1fe9f55</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПравилаОбработкиДанных" category="List">
+				<xr:TypeId>7ec8b433-8b93-484b-a52f-a8491520077b</xr:TypeId>
+				<xr:ValueId>b057297c-6771-45d7-84bd-bd59445732fe</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПравилаОбработкиДанных" category="Manager">
+				<xr:TypeId>2d0c7e18-c879-4961-bea0-14eaa9d67e49</xr:TypeId>
+				<xr:ValueId>57db1115-2ca1-434a-a48b-245a71dd82fe</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПравилаОбработкиДанных</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>bb5d921b-2c70-4b47-b20b-1d57baa6d783</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="35565935-4b6a-4cd5-818f-7054b8a9cc9e">
+				<InternalInfo/>
+				<Properties>
+					<Name>АлгоритмВыборкаДанных</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>ff155a25-05a1-4518-a002-f43bda1534e0</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="77c5e922-3911-4c7f-bc6f-106c851b9033">
+				<InternalInfo/>
+				<Properties>
+					<Name>АлгоритмПередОбработкой</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>2fd33b71-1830-4cf5-b921-b207751807fd</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e237837e-b49c-4007-bc31-8e0fed549fbb">
+				<InternalInfo/>
+				<Properties>
+					<Name>АлгоритмПриОбработке</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>3ab13827-35bd-4402-8237-ea148c7c3173</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>
