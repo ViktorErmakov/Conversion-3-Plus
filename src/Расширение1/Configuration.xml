@@ -28,7 +28,7 @@
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
-				<xr:ObjectId>0ab74a8f-f273-4661-9da0-094ba0290e4a</xr:ObjectId>
+				<xr:ObjectId>c0434b34-6dab-4c72-b2a9-cfe3b21d4a2e</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
@@ -63,6 +63,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<CommonTemplate>bsl_console</CommonTemplate>
+			<CommonTemplate>VanessaEditor</CommonTemplate>
 			<CommonModule>Расш1_КоллекцияМетаданных</CommonModule>
 			<CommonModule>Расш1_ПередНачаломРаботыСистемы</CommonModule>
 			<CommonModule>Расш1_КонсольКода</CommonModule>

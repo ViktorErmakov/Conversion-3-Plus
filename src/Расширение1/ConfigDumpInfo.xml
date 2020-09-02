@@ -12,7 +12,7 @@
 			<Metadata name="Catalog.Конвертации.Attribute.АлгоритмПередОтложеннымЗаполнением" id="b8d23f58-a31b-4ddb-ae89-a691c0dc033f"/>
 		</Metadata>
 		<Metadata name="Catalog.Конвертации.Form.ФормаЭлемента" id="5d37fef3-d25a-47ba-b0b6-ae5afd183484" configVersion="49d1a1a9799d9185c3a5a3cb8e99bac86a4740e6"/>
-		<Metadata name="Catalog.Конвертации.Form.ФормаЭлемента.Form" id="5d37fef3-d25a-47ba-b0b6-ae5afd183484.0" configVersion="6c9201b2687d6297cffe23f4f5aac7a36abeb4d4"/>
+		<Metadata name="Catalog.Конвертации.Form.ФормаЭлемента.Form" id="5d37fef3-d25a-47ba-b0b6-ae5afd183484.0" configVersion="93e38e2961ef6180dd483b90028494d9a0e0329b"/>
 		<Metadata name="Catalog.ПравилаКонвертацииОбъектов" id="48b18325-0eaa-4c5e-94ef-171dc6b58e8e" configVersion="af7fb914eff3d4ab3aaa9557c559c6f86a52bc4e">
 			<Metadata name="Catalog.ПравилаКонвертацииОбъектов.Attribute.АлгоритмПриОтправкеДанных" id="2471ebcb-aae1-4b22-b45e-8f56abb7bef6"/>
 			<Metadata name="Catalog.ПравилаКонвертацииОбъектов.Attribute.АлгоритмПриПолученииДанных" id="954c2978-9d1a-4600-b94c-44b771173611"/>
@@ -38,9 +38,11 @@
 		<Metadata name="CommonModule.Расш1_МодульФормы.Module" id="a8b6c3e6-393c-44e6-a592-59f7a41b9901.0" configVersion="684ad9afc351cc87ba15ec141377110abbda06f3"/>
 		<Metadata name="CommonModule.Расш1_ПередНачаломРаботыСистемы" id="34723076-e100-4d28-b5ee-aa01dc4bb0c9" configVersion="0e7acb2350e182d124a170e5f0a1999c10248574"/>
 		<Metadata name="CommonModule.Расш1_ПередНачаломРаботыСистемы.Module" id="34723076-e100-4d28-b5ee-aa01dc4bb0c9.0" configVersion="9a9e38e9be569eeaa2f64cde128127e7913f6f03"/>
+		<Metadata name="CommonTemplate.VanessaEditor" id="19fd7017-ce3a-405c-abdd-4083b2cf72bb" configVersion="bee3df944c96a55d8ab3bc571f69154ad2430ebc"/>
+		<Metadata name="CommonTemplate.VanessaEditor.Template" id="19fd7017-ce3a-405c-abdd-4083b2cf72bb.0" configVersion="a3b039d3d7a42e5bb87a551fe69586cd99751f03"/>
 		<Metadata name="CommonTemplate.bsl_console" id="67717df6-0c6e-44f0-b9aa-5577a2ac5e66" configVersion="60d4163c78005b5d79c14aef192ab7da78d11039"/>
 		<Metadata name="CommonTemplate.bsl_console.Template" id="67717df6-0c6e-44f0-b9aa-5577a2ac5e66.0" configVersion="7dc4efa603729b3547c5cd80abfa1505cae5982b"/>
-		<Metadata name="Configuration.Расширение1" id="3cba61a5-b662-40e9-ab53-fc0968a9512f" configVersion="ee5074fe2062f0a86e3a83113ce7051da4e4ccfb"/>
+		<Metadata name="Configuration.Расширение1" id="3cba61a5-b662-40e9-ab53-fc0968a9512f" configVersion="5388b134370318d776cc443bfd597f8a6a9f983b"/>
 		<Metadata name="Configuration.Расширение1.HomePageWorkArea" id="1c3a9f11-649f-4334-b4be-db24bc0eb274.8" configVersion="921ab7aa93a943891538c47890ea3718cd7ac037"/>
 		<Metadata name="Configuration.Расширение1.ManagedApplicationModule" id="1c3a9f11-649f-4334-b4be-db24bc0eb274.6" configVersion="a2f8c4a3e74d0ccd467dd907c23e39aa4432b501"/>
 		<Metadata name="Configuration.Расширение1.SessionModule" id="1c3a9f11-649f-4334-b4be-db24bc0eb274.7" configVersion="798506478e8f2ddf41ee912aacabf7cf11e70ff5"/>
