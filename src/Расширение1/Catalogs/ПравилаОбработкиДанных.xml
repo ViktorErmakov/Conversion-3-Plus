@@ -46,22 +46,6 @@
 					</Type>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="77c5e922-3911-4c7f-bc6f-106c851b9033">
-				<InternalInfo/>
-				<Properties>
-					<Name>АлгоритмПередОбработкой</Name>
-					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<ExtendedConfigurationObject>2fd33b71-1830-4cf5-b921-b207751807fd</ExtendedConfigurationObject>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-				</Properties>
-			</Attribute>
 			<Attribute uuid="e237837e-b49c-4007-bc31-8e0fed549fbb">
 				<InternalInfo/>
 				<Properties>
@@ -78,6 +62,7 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Form>ФормаЭлемента</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
