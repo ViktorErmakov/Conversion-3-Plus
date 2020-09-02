@@ -12,7 +12,7 @@
 			<Metadata name="Catalog.Конвертации.Attribute.АлгоритмПередОтложеннымЗаполнением" id="b8d23f58-a31b-4ddb-ae89-a691c0dc033f"/>
 		</Metadata>
 		<Metadata name="Catalog.Конвертации.Form.ФормаЭлемента" id="5d37fef3-d25a-47ba-b0b6-ae5afd183484" configVersion="49d1a1a9799d9185c3a5a3cb8e99bac86a4740e6"/>
-		<Metadata name="Catalog.Конвертации.Form.ФормаЭлемента.Form" id="5d37fef3-d25a-47ba-b0b6-ae5afd183484.0" configVersion="56b912bff27431b131c77460251855d0318859fd"/>
+		<Metadata name="Catalog.Конвертации.Form.ФормаЭлемента.Form" id="5d37fef3-d25a-47ba-b0b6-ae5afd183484.0" configVersion="6c9201b2687d6297cffe23f4f5aac7a36abeb4d4"/>
 		<Metadata name="Catalog.ПравилаКонвертацииОбъектов" id="48b18325-0eaa-4c5e-94ef-171dc6b58e8e" configVersion="af7fb914eff3d4ab3aaa9557c559c6f86a52bc4e">
 			<Metadata name="Catalog.ПравилаКонвертацииОбъектов.Attribute.АлгоритмПриОтправкеДанных" id="2471ebcb-aae1-4b22-b45e-8f56abb7bef6"/>
 			<Metadata name="Catalog.ПравилаКонвертацииОбъектов.Attribute.АлгоритмПриПолученииДанных" id="954c2978-9d1a-4600-b94c-44b771173611"/>
@@ -49,7 +49,7 @@
 		<Metadata name="DataProcessor.ЗагрузкаПравилСинхронизацииИзФайлов.Form.Форма.Form" id="9a63bd7d-626c-4531-a598-6a171700f2c2.0" configVersion="94e01d0f4dc5c70ea9a544c8f3a3e168b31f4574"/>
 		<Metadata name="DataProcessor.НастройкаПравилОбмена" id="d9215abe-306b-4423-af33-b1a43c23a351" configVersion="a777fbdfc6ec936ecc65b475720e31df734b6902"/>
 		<Metadata name="DataProcessor.НастройкаПравилОбмена.Form.ОсновнаяФорма" id="82a354c6-16eb-4024-b4d3-4fe0c7c9a211" configVersion="77b55a7ba79d39def1b39779ec6c79e6d394db08"/>
-		<Metadata name="DataProcessor.НастройкаПравилОбмена.Form.ОсновнаяФорма.Form" id="82a354c6-16eb-4024-b4d3-4fe0c7c9a211.0" configVersion="54062ced0be68782851ea513b939ece3203d3e96"/>
+		<Metadata name="DataProcessor.НастройкаПравилОбмена.Form.ОсновнаяФорма.Form" id="82a354c6-16eb-4024-b4d3-4fe0c7c9a211.0" configVersion="d519ec5a09a72e69721fbd0afff1d318b57a5c8c"/>
 		<Metadata name="Enum.ВариантыИдентификацииОбъектов" id="9c15de04-3fa7-4e30-bd7c-d05b9442bfd5" configVersion="9f29483162526b4ad0bf0d3531f8eb8a30cfbbb2">
 			<Metadata name="Enum.ВариантыИдентификацииОбъектов.EnumValue.ПоПолямПоиска" id="87d744db-f783-4207-9770-4b710e31cc6d"/>
 			<Metadata name="Enum.ВариантыИдентификацииОбъектов.EnumValue.ПоУникальномуИдентификатору" id="b80604d0-566f-4b5e-bc13-0fd7127e5c87"/>
