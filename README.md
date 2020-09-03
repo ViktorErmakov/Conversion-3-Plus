@@ -6,6 +6,6 @@
 
 Это позволяет более удобно редактровать код прямо в пользовательском режиме, с привычной для нас расцветкой кода и подсказками.
 
-Примеры:
-![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/master/screenshots/image.png)
+Примеры в папке screenshots/
+//![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/master/screenshots/image.png)
 
