@@ -9,5 +9,5 @@
 Примеры в папке screenshots
 
 
-![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/master/screenshots/image.png) 
-![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/screenshots/image.png)
+![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/image.png) 
+![Image alt](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/image.png)
