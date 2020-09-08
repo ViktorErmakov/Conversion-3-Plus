@@ -28,15 +28,15 @@
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
-				<xr:ObjectId>c0434b34-6dab-4c72-b2a9-cfe3b21d4a2e</xr:ObjectId>
+				<xr:ObjectId>7eb27f39-c37c-485b-918c-d08f5ef87f24</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>Расширение1</Name>
+			<Name>Conversion_3_Plus</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Расширение1</v8:content>
+					<v8:content>Conversion 3 plus</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -68,8 +68,6 @@
 			<CommonModule>Расш1_ПередНачаломРаботыСистемы</CommonModule>
 			<CommonModule>Расш1_КонсольКода</CommonModule>
 			<CommonModule>Расш1_ЖурналРегистрации</CommonModule>
-			<CommonModule>Расш1_МодульФормы</CommonModule>
-			<CommonForm>Расш1_Консоль1С</CommonForm>
 			<Catalog>Алгоритмы</Catalog>
 			<Catalog>Конвертации</Catalog>
 			<Catalog>ПравилаОбработкиДанных</Catalog>

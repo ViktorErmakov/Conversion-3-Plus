@@ -9,7 +9,7 @@
 			</Button>
 			<Button name="ФормаКоманда1" id="37">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.Команда1</CommandName>
+				<CommandName>Form.Command.СветлаяТема</CommandName>
 				<ExtendedTooltip name="ФормаКоманда1РасширеннаяПодсказка" id="38"/>
 			</Button>
 		</ChildItems>
@@ -103,11 +103,76 @@
 			<ContextMenu name="АлгоритмКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="АлгоритмРасширеннаяПодсказка" id="12"/>
 		</TextDocumentField>
+		<HTMLDocumentField name="HTMLДокумент" id="39">
+			<DataPath>HTMLДокумент</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="HTMLДокументКонтекстноеМеню" id="40">
+				<ChildItems>
+					<Button name="HTMLДокументКонтекстноеМенюСветлаяТема" id="42">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СветлаяТема</CommandName>
+						<ExtendedTooltip name="HTMLДокументКонтекстноеМенюСветлаяТемаРасширеннаяПодсказка" id="43"/>
+					</Button>
+					<Button name="HTMLДокументКонтекстноеМенюТемнаяТема" id="44">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ТемнаяТема</CommandName>
+						<ExtendedTooltip name="HTMLДокументКонтекстноеМенюТемнаяТемаРасширеннаяПодсказка" id="45"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<ExtendedTooltip name="HTMLДокументРасширеннаяПодсказка" id="41"/>
+			<Events>
+				<Event name="DocumentComplete" callType="After">Расш1_HTMLДокументДокументСформированПосле</Event>
+			</Events>
+		</HTMLDocumentField>
 	</ChildItems>
-	<Attributes/>
+	<Attributes>
+		<Attribute name="HTMLДокумент" id="1000000">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>HTMLДокумент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
 	<Commands>
-		<Command name="Команда1" id="1000000">
-			<Action callType="After">Расш1_Команда1После</Action>
+		<Command name="СветлаяТема" id="1000000">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Светлая тема</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Светлая тема</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action callType="After">Расш1_СветлаяТемаПосле</Action>
+		</Command>
+		<Command name="ТемнаяТема" id="1000001">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Темная тема</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Темная тема</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action callType="After">Расш1_ТемнаяТемаПосле</Action>
 		</Command>
 	</Commands>
 	<BaseForm version="2.11">
