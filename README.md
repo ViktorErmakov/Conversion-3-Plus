@@ -9,4 +9,4 @@
 ![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/image.png) 
 
 Изменение темы консоли:
-![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/Изменение темы.png)
+![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/Theme.png)
