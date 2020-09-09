@@ -1,5 +1,7 @@
 # Conversion 3 Plus
 
+Публикация на инфостарте: https://infostart.ru/public/1289837/
+
 Расширение для типовой конфигурации Конфигурации "Конвертация данных 3.0".
 
 На формы алгоритмов в пользовательском режиме, внедрена консоль кода (Источник: https://infostart.ru/public/1266087/)
@@ -9,4 +11,4 @@
 ![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/image.png) 
 
 Изменение темы консоли:
-![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/Theme.png)
+![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/Theme.gif)
