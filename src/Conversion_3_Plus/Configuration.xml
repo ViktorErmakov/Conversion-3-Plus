@@ -28,7 +28,7 @@
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
-				<xr:ObjectId>7eb27f39-c37c-485b-918c-d08f5ef87f24</xr:ObjectId>
+				<xr:ObjectId>75a0a85b-b7fb-45a9-b6f1-b8849b846858</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
@@ -62,6 +62,9 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<CommonPicture>Расш1_ВыборТемы</CommonPicture>
+			<CommonPicture>Расш1_СветлаяТема</CommonPicture>
+			<CommonPicture>Расш1_ТемнаяТема</CommonPicture>
 			<CommonTemplate>bsl_console</CommonTemplate>
 			<CommonTemplate>VanessaEditor</CommonTemplate>
 			<CommonModule>Расш1_КоллекцияМетаданных</CommonModule>

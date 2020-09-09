@@ -317,7 +317,61 @@
 						<HTMLDocumentField name="ПриОбработкеHTML" id="120">
 							<DataPath>ПриОбработкеHTML</DataPath>
 							<TitleLocation>None</TitleLocation>
-							<ContextMenu name="ПриОбработкеHTMLКонтекстноеМеню" id="121"/>
+							<ContextMenu name="ПриОбработкеHTMLКонтекстноеМеню" id="121">
+								<ChildItems>
+									<Popup name="ПриОбработкеHTMLКонтекстноеМенюГруппа1" id="126">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Темы</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>При обработке HTMLКонтекстное меню группа1</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Picture>
+											<xr:Ref>CommonPicture.Расш1_ВыборТемы</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ПриОбработкеHTMLКонтекстноеМенюГруппа1РасширеннаяПодсказка" id="127"/>
+										<ChildItems>
+											<Button name="ПриОбработкеHTMLСветлая" id="128">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПриОбработкеHTMLСветлая</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Расш1_СветлаяТема</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Светлая</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ПриОбработкеHTMLСветлаяРасширеннаяПодсказка" id="129"/>
+											</Button>
+											<Button name="ПриОбработкеHTMLТемная" id="130">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПриОбработкеHTMLТемная</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Расш1_ТемнаяТема</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Темная</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ПриОбработкеHTMLТемнаяРасширеннаяПодсказка" id="131"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+								</ChildItems>
+							</ContextMenu>
 							<ExtendedTooltip name="ПриОбработкеHTMLРасширеннаяПодсказка" id="122"/>
 							<Events>
 								<Event name="DocumentComplete" callType="After">Расш1_ПриОбработкеHTMLДокументСформированПосле</Event>
@@ -376,7 +430,61 @@
 						<HTMLDocumentField name="ВыборкаДанныхHTML" id="123">
 							<DataPath>ВыборкаДанныхHTML</DataPath>
 							<TitleLocation>None</TitleLocation>
-							<ContextMenu name="ВыборкаДанныхHTMLКонтекстноеМеню" id="124"/>
+							<ContextMenu name="ВыборкаДанныхHTMLКонтекстноеМеню" id="124">
+								<ChildItems>
+									<Popup name="ВыборкаДанныхHTMLКонтекстноеМенюГруппа2" id="132">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Темы</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>При обработке HTMLКонтекстное меню группа1</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Picture>
+											<xr:Ref>CommonPicture.Расш1_ВыборТемы</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ВыборкаДанныхHTMLКонтекстноеМенюГруппа2РасширеннаяПодсказка" id="133"/>
+										<ChildItems>
+											<Button name="ВыборкаДанныхHTMLСветлая" id="134">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ВыборкаДанныхHTMLСветлая</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Расш1_СветлаяТема</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Светлая</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ВыборкаДанныхHTMLСветлаяРасширеннаяПодсказка" id="135"/>
+											</Button>
+											<Button name="ВыборкаДанныхHTMLТемная" id="136">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ВыборкаДанныхHTMLТемная</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.Расш1_ТемнаяТема</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Темная</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ВыборкаДанныхHTMLТемнаяРасширеннаяПодсказка" id="137"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+								</ChildItems>
+							</ContextMenu>
 							<ExtendedTooltip name="ВыборкаДанныхHTMLРасширеннаяПодсказка" id="125"/>
 							<Events>
 								<Event name="DocumentComplete" callType="After">Расш1_ВыборкаДанныхHTMLДокументСформированПосле</Event>
@@ -419,6 +527,68 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ПриОбработкеHTMLСветлая" id="1000000">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>При обработке HTMLСветлая</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>При обработке HTMLСветлая</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action callType="After">Расш1_ПриОбработкеHTMLСветлаяПосле</Action>
+		</Command>
+		<Command name="ПриОбработкеHTMLТемная" id="1000001">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>При обработке HTMLТемная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>При обработке HTMLТемная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action callType="After">Расш1_ПриОбработкеHTMLТемнаяПосле</Action>
+		</Command>
+		<Command name="ВыборкаДанныхHTMLСветлая" id="1000002">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выборка данных HTMLСветлая</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выборка данных HTMLСветлая</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action callType="After">Расш1_ВыборкаДанныхHTMLСветлаяПосле</Action>
+		</Command>
+		<Command name="ВыборкаДанныхHTMLТемная" id="1000003">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выборка данных HTMLТемная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выборка данных HTMLТемная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action callType="After">Расш1_ВыборкаДанныхHTMLТемнаяПосле</Action>
+		</Command>
+	</Commands>
 	<BaseForm version="2.11">
 		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 			<ChildItems>

@@ -7,11 +7,6 @@
 				<CommandName>0</CommandName>
 				<ExtendedTooltip name="ФормаДобавитьЭлементВСоставКонвертацииРасширеннаяПодсказка" id="33"/>
 			</Button>
-			<Button name="ФормаКоманда1" id="37">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СветлаяТема</CommandName>
-				<ExtendedTooltip name="ФормаКоманда1РасширеннаяПодсказка" id="38"/>
-			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -108,16 +103,51 @@
 			<TitleLocation>None</TitleLocation>
 			<ContextMenu name="HTMLДокументКонтекстноеМеню" id="40">
 				<ChildItems>
-					<Button name="HTMLДокументКонтекстноеМенюСветлаяТема" id="42">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.СветлаяТема</CommandName>
-						<ExtendedTooltip name="HTMLДокументКонтекстноеМенюСветлаяТемаРасширеннаяПодсказка" id="43"/>
-					</Button>
-					<Button name="HTMLДокументКонтекстноеМенюТемнаяТема" id="44">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ТемнаяТема</CommandName>
-						<ExtendedTooltip name="HTMLДокументКонтекстноеМенюТемнаяТемаРасширеннаяПодсказка" id="45"/>
-					</Button>
+					<Popup name="HTMLДокументКонтекстноеМенюГруппа1" id="46">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Темы</v8:content>
+							</v8:item>
+						</Title>
+						<Picture>
+							<xr:Ref>CommonPicture.Расш1_ВыборТемы</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="HTMLДокументКонтекстноеМенюГруппа1РасширеннаяПодсказка" id="47"/>
+						<ChildItems>
+							<Button name="HTMLДокументКонтекстноеМенюСветлаяТема" id="42">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СветлаяТема</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.Расш1_СветлаяТема</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Светлая</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="HTMLДокументКонтекстноеМенюСветлаяТемаРасширеннаяПодсказка" id="43"/>
+							</Button>
+							<Button name="HTMLДокументКонтекстноеМенюТемнаяТема" id="44">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ТемнаяТема</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.Расш1_ТемнаяТема</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Темная</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="HTMLДокументКонтекстноеМенюТемнаяТемаРасширеннаяПодсказка" id="45"/>
+							</Button>
+						</ChildItems>
+					</Popup>
 				</ChildItems>
 			</ContextMenu>
 			<ExtendedTooltip name="HTMLДокументРасширеннаяПодсказка" id="41"/>
@@ -148,7 +178,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Светлая тема</v8:content>
+					<v8:content>Светлая</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -163,7 +193,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Темная тема</v8:content>
+					<v8:content>Темная</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
