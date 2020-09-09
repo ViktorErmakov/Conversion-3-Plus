@@ -13,3 +13,5 @@
 Изменение темы консоли:
 
 ![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/Theme.gif)
+
+Используемые иконки в расширении взяты с https://tilda.cc/free-icons
