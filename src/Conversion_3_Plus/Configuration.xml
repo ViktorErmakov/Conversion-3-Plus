@@ -28,7 +28,7 @@
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
-				<xr:ObjectId>75a0a85b-b7fb-45a9-b6f1-b8849b846858</xr:ObjectId>
+				<xr:ObjectId>7532cd15-afd3-40ca-9fdc-8b59a91baaed</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
@@ -75,6 +75,8 @@
 			<Catalog>Конвертации</Catalog>
 			<Catalog>ПравилаОбработкиДанных</Catalog>
 			<Catalog>ПравилаКонвертацииОбъектов</Catalog>
+			<Catalog>Конфигурации</Catalog>
+			<Catalog>Объекты</Catalog>
 			<Enum>ВариантыИдентификацииОбъектов</Enum>
 			<DataProcessor>ЗагрузкаПравилСинхронизацииИзФайлов</DataProcessor>
 			<DataProcessor>НастройкаПравилОбмена</DataProcessor>
