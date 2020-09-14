@@ -30,7 +30,6 @@
 			<ExtendedConfigurationObject>0a9b4d2e-a605-43e9-82e7-46dd5c001092</ExtendedConfigurationObject>
 		</Properties>
 		<ChildObjects>
-			<Template>Расш1_ОписаниеМетаданных</Template>
 			<Command uuid="bbf40987-1000-44b3-a670-dbdc0d3d37fa">
 				<Properties>
 					<Name>Расш1_Команда1</Name>
