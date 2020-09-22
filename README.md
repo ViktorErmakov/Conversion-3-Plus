@@ -12,7 +12,7 @@
 
 
 
-### 2.Изменznm темe консоли:
+### 2. Изменять тему консоли:
 
 ![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/Theme.gif)
 
