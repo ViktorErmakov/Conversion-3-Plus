@@ -12,13 +12,13 @@
 
 
 
-### 2.Изменение темы консоли:
+### 2.Изменznm темe консоли:
 
 ![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/Theme.gif)
 
 
 
-### 3. Подсказки с использованием объектов метаданных конфигураций источника и приемника:
+### 3. Получать подсказки по объектам метаданных конфигураций источника и приемника:
 
 ![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/Meta.gif)
 
