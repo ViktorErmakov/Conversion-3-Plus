@@ -14,4 +14,8 @@
 
 ![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/Theme.gif)
 
+Подсказки с использованием объектов метаданных конфигураций источника и приемника:
+
+![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/Meta.gif)
+
 Используемые иконки в расширении взяты с https://tilda.cc/free-icons
