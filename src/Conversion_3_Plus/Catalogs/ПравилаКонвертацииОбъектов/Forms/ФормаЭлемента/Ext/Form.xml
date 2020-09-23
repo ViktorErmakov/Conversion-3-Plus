@@ -801,6 +801,21 @@
 							<ContextMenu name="АлгоритмПослеЗагрузкиВсехДанныхТекстКонтекстноеМеню" id="248"/>
 							<ExtendedTooltip name="АлгоритмПослеЗагрузкиВсехДанныхТекстРасширеннаяПодсказка" id="249"/>
 						</TextDocumentField>
+						<HTMLDocumentField name="ПослеЗагрузкиВсехДанныхHTML" id="281">
+							<DataPath>ПослеЗагрузкиВсехДанныхHTML</DataPath>
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Просмотр алгоритма (редактирование осуществляется из формы алгоритма)</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПослеЗагрузкиВсехДанныхHTMLКонтекстноеМеню" id="282"/>
+							<ExtendedTooltip name="ПослеЗагрузкиВсехДанныхHTMLРасширеннаяПодсказка" id="283"/>
+							<Events>
+								<Event name="DocumentComplete" callType="After">Расш1_ПослеЗагрузкиВсехДанныхHTMLДокументСформированПосле</Event>
+							</Events>
+						</HTMLDocumentField>
 					</ChildItems>
 				</Page>
 				<Page name="Страница_Идентификация" id="87">
@@ -1048,6 +1063,21 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Описание метаданных JSON</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПослеЗагрузкиВсехДанныхHTML" id="1000004">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>После загрузки всех данных HTML</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

@@ -148,6 +148,11 @@
 							</Button>
 						</ChildItems>
 					</Popup>
+					<Button name="HTMLДокументКонтекстноеМенюЗаменитьВхождения" id="48">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаменитьВхождения</CommandName>
+						<ExtendedTooltip name="HTMLДокументКонтекстноеМенюЗаменитьВхожденияРасширеннаяПодсказка" id="49"/>
+					</Button>
 				</ChildItems>
 			</ContextMenu>
 			<ExtendedTooltip name="HTMLДокументРасширеннаяПодсказка" id="41"/>
@@ -203,6 +208,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action callType="After">Расш1_ТемнаяТемаПосле</Action>
+		</Command>
+		<Command name="ЗаменитьВхождения" id="1000002">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить вхождения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить вхождения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action callType="After">Расш1_ЗаменитьВхожденияПосле</Action>
 		</Command>
 	</Commands>
 	<BaseForm version="2.11">
