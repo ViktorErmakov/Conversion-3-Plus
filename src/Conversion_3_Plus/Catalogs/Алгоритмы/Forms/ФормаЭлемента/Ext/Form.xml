@@ -7,6 +7,11 @@
 				<CommandName>0</CommandName>
 				<ExtendedTooltip name="ФормаДобавитьЭлементВСоставКонвертацииРасширеннаяПодсказка" id="33"/>
 			</Button>
+			<Button name="ФормаЗаменитьВхождения" id="50">
+				<Type>CommandBarButton</Type>
+				<CommandName>1000002:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+				<ExtendedTooltip name="ФормаЗаменитьВхожденияРасширеннаяПодсказка" id="51"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -98,68 +103,6 @@
 			<ContextMenu name="АлгоритмКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="АлгоритмРасширеннаяПодсказка" id="12"/>
 		</TextDocumentField>
-		<HTMLDocumentField name="HTMLДокумент" id="39">
-			<DataPath>HTMLДокумент</DataPath>
-			<TitleLocation>None</TitleLocation>
-			<ContextMenu name="HTMLДокументКонтекстноеМеню" id="40">
-				<ChildItems>
-					<Popup name="HTMLДокументКонтекстноеМенюГруппа1" id="46">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Темы</v8:content>
-							</v8:item>
-						</Title>
-						<Picture>
-							<xr:Ref>CommonPicture.Расш1_ВыборТемы</xr:Ref>
-							<xr:LoadTransparent>true</xr:LoadTransparent>
-						</Picture>
-						<ExtendedTooltip name="HTMLДокументКонтекстноеМенюГруппа1РасширеннаяПодсказка" id="47"/>
-						<ChildItems>
-							<Button name="HTMLДокументКонтекстноеМенюСветлаяТема" id="42">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.СветлаяТема</CommandName>
-								<Picture>
-									<xr:Ref>CommonPicture.Расш1_СветлаяТема</xr:Ref>
-									<xr:LoadTransparent>true</xr:LoadTransparent>
-								</Picture>
-								<Title>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Светлая</v8:content>
-									</v8:item>
-								</Title>
-								<ExtendedTooltip name="HTMLДокументКонтекстноеМенюСветлаяТемаРасширеннаяПодсказка" id="43"/>
-							</Button>
-							<Button name="HTMLДокументКонтекстноеМенюТемнаяТема" id="44">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ТемнаяТема</CommandName>
-								<Picture>
-									<xr:Ref>CommonPicture.Расш1_ТемнаяТема</xr:Ref>
-									<xr:LoadTransparent>true</xr:LoadTransparent>
-								</Picture>
-								<Title>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Темная</v8:content>
-									</v8:item>
-								</Title>
-								<ExtendedTooltip name="HTMLДокументКонтекстноеМенюТемнаяТемаРасширеннаяПодсказка" id="45"/>
-							</Button>
-						</ChildItems>
-					</Popup>
-					<Button name="HTMLДокументКонтекстноеМенюЗаменитьВхождения" id="48">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ЗаменитьВхождения</CommandName>
-						<ExtendedTooltip name="HTMLДокументКонтекстноеМенюЗаменитьВхожденияРасширеннаяПодсказка" id="49"/>
-					</Button>
-				</ChildItems>
-			</ContextMenu>
-			<ExtendedTooltip name="HTMLДокументРасширеннаяПодсказка" id="41"/>
-			<Events>
-				<Event name="DocumentComplete" callType="After">Расш1_HTMLДокументДокументСформированПосле</Event>
-			</Events>
-		</HTMLDocumentField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="HTMLДокумент" id="1000000">
@@ -178,53 +121,6 @@
 			</Type>
 		</Attribute>
 	</Attributes>
-	<Commands>
-		<Command name="СветлаяТема" id="1000000">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Светлая</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Светлая тема</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action callType="After">Расш1_СветлаяТемаПосле</Action>
-		</Command>
-		<Command name="ТемнаяТема" id="1000001">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Темная</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Темная тема</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action callType="After">Расш1_ТемнаяТемаПосле</Action>
-		</Command>
-		<Command name="ЗаменитьВхождения" id="1000002">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Заменить вхождения</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Заменить вхождения</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action callType="After">Расш1_ЗаменитьВхожденияПосле</Action>
-		</Command>
-	</Commands>
 	<BaseForm version="2.11">
 		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 			<ChildItems>
