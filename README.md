@@ -12,7 +12,7 @@
 
 
 
-### 2. Изменять тему консоли:
+### 2. Изменять тему консоли, для каждой вкладки отдельно:
 
 ![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/Theme.gif)
 
@@ -22,6 +22,10 @@
 
 ![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/Meta.gif)
 
+
+### 4. Заменить все вхождения слова:
+
+![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/Change.gif)
 
 
 Используемые иконки в расширении взяты с https://tilda.cc/free-icons
