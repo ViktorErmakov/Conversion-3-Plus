@@ -28,7 +28,7 @@
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
-				<xr:ObjectId>3db2642e-b1a6-4224-9d31-060f1486e73d</xr:ObjectId>
+				<xr:ObjectId>a9577b2c-468f-4c92-bdbb-dde524964e63</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
@@ -68,7 +68,7 @@
 			<CommonTemplate>bsl_console</CommonTemplate>
 			<CommonTemplate>VanessaEditor</CommonTemplate>
 			<CommonModule>Расш1_КоллекцияМетаданных</CommonModule>
-			<CommonModule>Расш1_ПередНачаломРаботыСистемы</CommonModule>
+			<CommonModule>Расш1_КонсольКодаВызовСервера</CommonModule>
 			<CommonModule>Расш1_КонсольКода</CommonModule>
 			<CommonModule>Расш1_ЖурналРегистрации</CommonModule>
 			<Catalog>Алгоритмы</Catalog>
