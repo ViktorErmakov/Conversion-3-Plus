@@ -78,6 +78,18 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="59929d86-7e99-4d4d-878d-c4ea8efcd048">
+				<InternalInfo/>
+				<Properties>
+					<Name>ИспользоватьДляОтправки</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>bdfaa804-67b1-4e54-9b00-4d0163b3c989</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
 			<Form>ФормаЭлемента</Form>
 		</ChildObjects>
 	</Catalog>
