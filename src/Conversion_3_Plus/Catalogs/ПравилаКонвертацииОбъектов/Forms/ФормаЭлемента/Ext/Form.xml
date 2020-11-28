@@ -151,6 +151,9 @@
 									</ChoiceList>
 									<ContextMenu name="Тумблер_ОбластьПримененияКонтекстноеМеню" id="55"/>
 									<ExtendedTooltip name="Тумблер_ОбластьПримененияРасширеннаяПодсказка" id="56"/>
+									<Events>
+										<Event name="OnChange" callType="After">Расш1_Тумблер_ОбластьПримененияПриИзмененииПосле</Event>
+									</Events>
 								</RadioButtonField>
 								<CheckBoxField name="ПравилоДляГруппыСправочника" id="155">
 									<TitleLocation>Right</TitleLocation>

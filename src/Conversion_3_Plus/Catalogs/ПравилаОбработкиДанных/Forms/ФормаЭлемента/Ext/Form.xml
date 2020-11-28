@@ -141,6 +141,9 @@
 									</EditFormat>
 									<ContextMenu name="ИспользоватьДляОтправкиКонтекстноеМеню" id="11"/>
 									<ExtendedTooltip name="ИспользоватьДляОтправкиРасширеннаяПодсказка" id="12"/>
+									<Events>
+										<Event name="OnChange" callType="After">Расш1_ИспользоватьДляОтправкиПриИзмененииПосле</Event>
+									</Events>
 								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
