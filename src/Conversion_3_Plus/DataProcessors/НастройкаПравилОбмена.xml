@@ -16,6 +16,7 @@
 			<Comment/>
 			<ObjectBelonging>Adopted</ObjectBelonging>
 			<ExtendedConfigurationObject>2c6e8405-398e-481e-b71b-136cd4a29675</ExtendedConfigurationObject>
+			<DefaultForm>DataProcessor.НастройкаПравилОбмена.Form.ОсновнаяФорма</DefaultForm>
 		</Properties>
 		<ChildObjects>
 			<Form>ОсновнаяФорма</Form>
