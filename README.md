@@ -28,7 +28,7 @@
 ![Иллюстрация к проекту](https://github.com/ViktorErmakov/Conversion3.0.1/raw/master/screenshots/Change.gif)
 
 
-Используемые иконки в расширении взяты с https://tilda.cc/free-icons
+Используемые иконки в расширении взяты с https://www.flaticon.com/
 
 ## Исправлены болячки конвертации данных 3.0:
 ### 1. Отображение "Алгоритмов" в назначенных группах.
