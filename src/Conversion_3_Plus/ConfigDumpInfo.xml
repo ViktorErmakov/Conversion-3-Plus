@@ -37,7 +37,7 @@
 			<Metadata name="Catalog.ПравилаОбработкиДанных.Attribute.АлгоритмПриОбработке" id="e237837e-b49c-4007-bc31-8e0fed549fbb"/>
 		</Metadata>
 		<Metadata name="Catalog.ПравилаОбработкиДанных.Form.ФормаЭлемента" id="b2aa7cf6-daa4-463a-86b3-894a7487d60d" configVersion="8bebe1cdc31ab765e10224101d2323e25b8dbf74"/>
-		<Metadata name="Catalog.ПравилаОбработкиДанных.Form.ФормаЭлемента.Form" id="b2aa7cf6-daa4-463a-86b3-894a7487d60d.0" configVersion="4a9f75ac16cd894ee34566a26113131ca239c79d"/>
+		<Metadata name="Catalog.ПравилаОбработкиДанных.Form.ФормаЭлемента.Form" id="b2aa7cf6-daa4-463a-86b3-894a7487d60d.0" configVersion="5f425d3adad95a76b3c8c8c2c63bc152433b550b"/>
 		<Metadata name="CommonModule.Расш1_ЖурналРегистрации" id="286946da-84e0-4ae1-829e-2ca2cabccfb9" configVersion="979eec6aa873d1e3d3c0040a200a9c4ee1c870b4"/>
 		<Metadata name="CommonModule.Расш1_ЖурналРегистрации.Module" id="286946da-84e0-4ae1-829e-2ca2cabccfb9.0" configVersion="fe2ba5bad9e8cbfa74d017df53db8ebeac8b0799"/>
 		<Metadata name="CommonModule.Расш1_КоллекцияМетаданных" id="dfa947af-ae77-44a6-a75c-ac0b85a3eaa3" configVersion="4163dcd164592955125e488991896c87e0b43e99"/>
