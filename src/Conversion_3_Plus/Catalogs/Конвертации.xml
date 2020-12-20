@@ -78,6 +78,42 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<TabularSection uuid="9cacbcfd-11c1-4826-8b6b-20cb93fa3944">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.Конвертации.Параметры" category="TabularSection">
+						<xr:TypeId>85ea484a-120d-45ad-a400-997a6fea3c8a</xr:TypeId>
+						<xr:ValueId>79e93a41-4140-431c-962f-7037dfa59c7d</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.Конвертации.Параметры" category="TabularSectionRow">
+						<xr:TypeId>7321edb1-99c8-4df9-b06e-46832460537f</xr:TypeId>
+						<xr:ValueId>7543ff7c-0143-407c-a4b7-a327b11791a3</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>Параметры</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>556f7b1b-7ec2-419c-929a-e59038bc17c2</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="6b03fb88-ead7-462b-9efc-f29a69b1ce40">
+						<InternalInfo/>
+						<Properties>
+							<Name>Параметр</Name>
+							<Comment/>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<ExtendedConfigurationObject>c0eb5fda-ed27-4366-9c8b-06c9508127ec</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>50</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
 			<Form>ФормаЭлемента</Form>
 		</ChildObjects>
 	</Catalog>

@@ -46,6 +46,22 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="e189c8b8-9715-4353-9d18-f730969e3352">
+				<InternalInfo/>
+				<Properties>
+					<Name>Параметры</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>a7c339e5-4b47-4e79-8e9f-cdf590dab02c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
 			<Form>ФормаЭлемента</Form>
 		</ChildObjects>
 	</Catalog>
