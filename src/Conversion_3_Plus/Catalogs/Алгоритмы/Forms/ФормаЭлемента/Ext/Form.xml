@@ -20,6 +20,17 @@
 		<Event name="OnCreateAtServer" callType="After">Расш1_ПриСозданииНаСервереПосле</Event>
 	</Events>
 	<ChildItems>
+		<LabelDecoration name="ДекорацияНуженЗахват" id="43">
+			<TextColor>style:FieldSelectionBackColor</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для редактирования следует захватить объект</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияНуженЗахватКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ДекорацияНуженЗахватРасширеннаяПодсказка" id="45"/>
+		</LabelDecoration>
 		<UsualGroup name="ГруппаИерархия" id="19">
 			<Title>
 				<v8:item>
@@ -47,6 +58,17 @@
 					<ContextMenu name="ГруппаКонтекстноеМеню" id="24"/>
 					<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="25"/>
 				</InputField>
+				<LabelDecoration name="ДекорацияЗахвачен" id="40">
+					<TextColor>style:SpecialTextColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>захвачен</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияЗахваченКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ДекорацияЗахваченРасширеннаяПодсказка" id="42"/>
+				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаИдентификация" id="21">
@@ -95,6 +117,16 @@
 					<ContextMenu name="ЭкспортныйКонтекстноеМеню" id="35"/>
 					<ExtendedTooltip name="ЭкспортныйРасширеннаяПодсказка" id="36"/>
 				</CheckBoxField>
+				<CheckBoxField name="ИспользуетсяПриЗагрузке" id="37">
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользуетсяПриЗагрузкеКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ИспользуетсяПриЗагрузкеРасширеннаяПодсказка" id="39"/>
+				</CheckBoxField>
+				<InputField name="ТегВырезки" id="46">
+					<ContextMenu name="ТегВырезкиКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ТегВырезкиРасширеннаяПодсказка" id="48"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 		<TextDocumentField name="Алгоритм" id="10">
@@ -116,6 +148,17 @@
 			</ChildItems>
 		</AutoCommandBar>
 		<ChildItems>
+			<LabelDecoration name="ДекорацияНуженЗахват" id="43">
+				<TextColor>style:FieldSelectionBackColor</TextColor>
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Для редактирования следует захватить объект</v8:content>
+					</v8:item>
+				</Title>
+				<ContextMenu name="ДекорацияНуженЗахватКонтекстноеМеню" id="44"/>
+				<ExtendedTooltip name="ДекорацияНуженЗахватРасширеннаяПодсказка" id="45"/>
+			</LabelDecoration>
 			<UsualGroup name="ГруппаИерархия" id="19">
 				<Title>
 					<v8:item>
@@ -143,6 +186,17 @@
 						<ContextMenu name="ГруппаКонтекстноеМеню" id="24"/>
 						<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="25"/>
 					</InputField>
+					<LabelDecoration name="ДекорацияЗахвачен" id="40">
+						<TextColor>style:SpecialTextColor</TextColor>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>захвачен</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="ДекорацияЗахваченКонтекстноеМеню" id="41"/>
+						<ExtendedTooltip name="ДекорацияЗахваченРасширеннаяПодсказка" id="42"/>
+					</LabelDecoration>
 				</ChildItems>
 			</UsualGroup>
 			<UsualGroup name="ГруппаИдентификация" id="21">
@@ -191,6 +245,16 @@
 						<ContextMenu name="ЭкспортныйКонтекстноеМеню" id="35"/>
 						<ExtendedTooltip name="ЭкспортныйРасширеннаяПодсказка" id="36"/>
 					</CheckBoxField>
+					<CheckBoxField name="ИспользуетсяПриЗагрузке" id="37">
+						<TitleLocation>Right</TitleLocation>
+						<CheckBoxType>Auto</CheckBoxType>
+						<ContextMenu name="ИспользуетсяПриЗагрузкеКонтекстноеМеню" id="38"/>
+						<ExtendedTooltip name="ИспользуетсяПриЗагрузкеРасширеннаяПодсказка" id="39"/>
+					</CheckBoxField>
+					<InputField name="ТегВырезки" id="46">
+						<ContextMenu name="ТегВырезкиКонтекстноеМеню" id="47"/>
+						<ExtendedTooltip name="ТегВырезкиРасширеннаяПодсказка" id="48"/>
+					</InputField>
 				</ChildItems>
 			</UsualGroup>
 			<TextDocumentField name="Алгоритм" id="10">

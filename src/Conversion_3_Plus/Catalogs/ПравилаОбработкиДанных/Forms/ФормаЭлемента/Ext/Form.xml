@@ -15,6 +15,17 @@
 		<Event name="OnCreateAtServer" callType="After">Расш1_ПриСозданииНаСервереПосле</Event>
 	</Events>
 	<ChildItems>
+		<LabelDecoration name="ДекорацияНуженЗахват" id="174">
+			<TextColor>style:FieldSelectionBackColor</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для редактирования следует захватить объект</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияНуженЗахватКонтекстноеМеню" id="175"/>
+			<ExtendedTooltip name="ДекорацияНуженЗахватРасширеннаяПодсказка" id="176"/>
+		</LabelDecoration>
 		<Pages name="Страницы" id="85">
 			<Title>
 				<v8:item>
@@ -69,6 +80,17 @@
 									<ContextMenu name="ОтключитьКонтекстноеМеню" id="90"/>
 									<ExtendedTooltip name="ОтключитьРасширеннаяПодсказка" id="91"/>
 								</CheckBoxField>
+								<LabelDecoration name="ДекорацияЗахвачен" id="171">
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>захвачен</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияЗахваченКонтекстноеМеню" id="172"/>
+									<ExtendedTooltip name="ДекорацияЗахваченРасширеннаяПодсказка" id="173"/>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<InputField name="Наименование" id="1">
@@ -220,6 +242,12 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<FileDragMode>AsFile</FileDragMode>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Правила конвертации объектов</v8:content>
+								</v8:item>
+							</Title>
 							<SearchStringLocation>None</SearchStringLocation>
 							<ViewStatusLocation>None</ViewStatusLocation>
 							<SearchControlLocation>None</SearchControlLocation>
@@ -267,30 +295,52 @@
 						</Table>
 					</ChildItems>
 				</Page>
-				<Page name="Страница_ПриОбработке" id="17">
+				<Page name="ОбработчикиСобытийXDTO" id="120">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>При обработке</v8:content>
+							<v8:content>Обработчики событий</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="Страница_ПриОбработкеРасширеннаяПодсказка" id="18"/>
+					<ExtendedTooltip name="ОбработчикиСобытийXDTOРасширеннаяПодсказка" id="121"/>
 					<ChildItems>
-						<InputField name="ИмяОбработчикаПриОбработке" id="79">
+						<Pages name="СтраницыОбработчикиXDTO" id="122">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Имя обработчика</v8:content>
+									<v8:content>Страницы обработчики XDTO</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTipRepresentation>Button</ToolTipRepresentation>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<ContextMenu name="ИмяОбработчикаПриОбработкеКонтекстноеМеню" id="80"/>
-							<ExtendedTooltip name="ИмяОбработчикаПриОбработкеРасширеннаяПодсказка" id="81">
-								<Title formatted="true">
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>&lt;b&gt;&lt;fontsize 12&gt;Обработчик "При обработке&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;fontsize 12&gt;"&lt;/&gt;&lt;/&gt;
+							<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыОбработчикиXDTOРасширеннаяПодсказка" id="123"/>
+							<Events>
+								<Event name="OnCurrentPageChange" callType="After">Расш1_СтраницыПриСменеСтраницыПосле</Event>
+							</Events>
+							<ChildItems>
+								<Page name="Страница_ПриОбработке" id="17">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>При обработке</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Страница_ПриОбработкеРасширеннаяПодсказка" id="18"/>
+									<ChildItems>
+										<InputField name="ИмяОбработчикаПриОбработке" id="79">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Имя обработчика</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ИмяОбработчикаПриОбработкеКонтекстноеМеню" id="80"/>
+											<ExtendedTooltip name="ИмяОбработчикаПриОбработкеРасширеннаяПодсказка" id="81">
+												<Title formatted="true">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>&lt;b&gt;&lt;fontsize 12&gt;Обработчик "При обработке&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;fontsize 12&gt;"&lt;/&gt;&lt;/&gt;
 
 &lt;b&gt;&lt;fontsize 10&gt;Параметры:&lt;/&gt;&lt;/&gt;
 
@@ -310,42 +360,41 @@
 
 &lt;b&gt;&lt;fontsize 10&gt;Описание:&lt;/&gt;&lt;/&gt;
 Обработчик предназначен для реализации логики конвертации данных на уровне объектов.</v8:content>
-									</v8:item>
-								</Title>
-							</ExtendedTooltip>
-						</InputField>
-						<TextDocumentField name="АлгоритмПриОбработке" id="30">
-							<DataPath>1/0:e237837e-b49c-4007-bc31-8e0fed549fbb</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<ContextMenu name="АлгоритмПриОбработкеКонтекстноеМеню" id="31"/>
-							<ExtendedTooltip name="АлгоритмПриОбработкеРасширеннаяПодсказка" id="32"/>
-						</TextDocumentField>
-					</ChildItems>
-				</Page>
-				<Page name="Страница_ВыборкаДанных" id="92">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выборка данных</v8:content>
-						</v8:item>
-					</Title>
-					<ExtendedTooltip name="Страница_ВыборкаДанныхРасширеннаяПодсказка" id="93"/>
-					<ChildItems>
-						<InputField name="ИмяОбработчикаВыборкаДанных" id="94">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Имя обработчика</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTipRepresentation>Button</ToolTipRepresentation>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<ContextMenu name="ИмяОбработчикаВыборкаДанныхКонтекстноеМеню" id="95"/>
-							<ExtendedTooltip name="ИмяОбработчикаВыборкаДанныхРасширеннаяПодсказка" id="96">
-								<Title formatted="true">
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>&lt;b&gt;&lt;fontsize 12&gt;Обработчик "Выборка данных&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;fontsize 12&gt;"&lt;/&gt;&lt;/&gt;
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</InputField>
+										<TextDocumentField name="АлгоритмПриОбработке" id="30">
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="АлгоритмПриОбработкеКонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="АлгоритмПриОбработкеРасширеннаяПодсказка" id="32"/>
+										</TextDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="Страница_ВыборкаДанных" id="92">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выборка данных</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Страница_ВыборкаДанныхРасширеннаяПодсказка" id="93"/>
+									<ChildItems>
+										<InputField name="ИмяОбработчикаВыборкаДанных" id="94">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Имя обработчика</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ИмяОбработчикаВыборкаДанныхКонтекстноеМеню" id="95"/>
+											<ExtendedTooltip name="ИмяОбработчикаВыборкаДанныхРасширеннаяПодсказка" id="96">
+												<Title formatted="true">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>&lt;b&gt;&lt;fontsize 12&gt;Обработчик "Выборка данных&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;fontsize 12&gt;"&lt;/&gt;&lt;/&gt;
 
 &lt;b&gt;&lt;fontsize 10&gt;Параметры:&lt;/&gt;&lt;/&gt;
 
@@ -360,16 +409,264 @@
 
 &lt;b&gt;&lt;fontsize 10&gt;Описание:&lt;/&gt;&lt;/&gt;
 Обработчик предназначен для реализации произвольного алгоритма выборки объектов, подлежащих выгрузке.</v8:content>
-									</v8:item>
-								</Title>
-							</ExtendedTooltip>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</InputField>
+										<TextDocumentField name="АлгоритмВыборкаДанных" id="97">
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="АлгоритмВыборкаДанныхКонтекстноеМеню" id="98"/>
+											<ExtendedTooltip name="АлгоритмВыборкаДанныхРасширеннаяПодсказка" id="99"/>
+										</TextDocumentField>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="ОбработчикиСобытийXML" id="124">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработчики событий</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОбработчикиСобытийXMLРасширеннаяПодсказка" id="125"/>
+					<ChildItems>
+						<Pages name="СтраницыОбработчикиXML" id="126">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы обработчики XML</v8:content>
+								</v8:item>
+							</Title>
+							<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыОбработчикиXMLРасширеннаяПодсказка" id="127"/>
+							<ChildItems>
+								<Page name="ПередОбработкой" id="128">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перед обработкой</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПередОбработкойРасширеннаяПодсказка" id="129"/>
+									<ChildItems>
+										<InputField name="ИмяОбработчикаПередОбработкой" id="130">
+											<ReadOnly>true</ReadOnly>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ИмяОбработчикаПередОбработкойКонтекстноеМеню" id="131"/>
+											<ExtendedTooltip name="ИмяОбработчикаПередОбработкойРасширеннаяПодсказка" id="132">
+												<Title formatted="true">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 12&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Перед обработкой&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt; 
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Условия возникновения события&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Событие выполняется перед обработкой каждого правила выгрузки один раз.  Используется для установки дополнительных параметров перед выгрузкой данных, для  переопределения выборки объектов, подлежащей выгрузке, либо для выгрузки  дополнительной информации
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Параметры:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Отказ - Булево. Если установить значение Истина, то выгрузка данных по  данному правилу не производится 
+Параметры - Структура, в которой хранятся переменные доступные во всех  обработчиках
+ИмяПКО - Строка. Имя правила конвертации объектов, указанное по умолчанию в  правиле выгрузки данных. При выгрузке конкретных объектов может быть  изменено
+Правило - ссылка на данное правило выгрузки данных
+ИсходящиеДанные - Произвольный. Произвольные вспомогательные данные,  доступные при выгрузке объектов выборки 
+ВыборкаДанных - Запрос, Результат запроса, Выборка из результата запроса или  произвольная коллекция выгружаемых объектов. Используется, когда способ выгрузки  данных - Произвольный алгоритм. Если определить данную переменную, то обход  коллекции и выгрузка объектов будет осуществляться автоматически
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 8&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Важно: 
+&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;Если для выборки данных ПВД используется  произвольный алгоритм и в обработчике ПВД "Перед обработкой" инициируется  параметр &lt;b&gt;&lt;font Arial&gt;&lt;fontsize 8&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;ВыборкаДанных&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;, то для ПКО следует установить признак  "Не запоминать выгруженные объекты".
+
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Пример:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+ДатаИзмененияОбъекта = ДатаНачала;
+Сообщить("Контрагенты");
+Запрос = СоздатьОбъект("Запрос");
+ТекстЗапроса = "
+|ТекущийЭлемент =  Справочник.Партнеры.ТекущийЭлемент;
+|ДатаИзменения =  Справочник.Партнеры.ДатаИзменения;
+|Группировка  ТекущийЭлемент;
+|Условие(ДатаИзменения &gt;&gt;= ДатаИзмененияОбъекта);";
+Запрос.Выполнить(ТекстЗапроса);
+Пока Запрос.Группировка(1) = 1  Цикл
+ ВыгрузитьПоПравилу(Запрос.ТекущийЭлемент, , , ,  "Контрагенты");
+КонецЦикла;
+</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</InputField>
+										<TextDocumentField name="АлгоритмПередОбработкойПравила" id="133">
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="АлгоритмПередОбработкойПравилаКонтекстноеМеню" id="134"/>
+											<ExtendedTooltip name="АлгоритмПередОбработкойПравилаРасширеннаяПодсказка" id="135"/>
+										</TextDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="ПередВыгрузкой" id="136">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перед выгрузкой</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПередВыгрузкойРасширеннаяПодсказка" id="137"/>
+									<ChildItems>
+										<InputField name="ИмяОбработчикаПередВыгрузкой" id="141">
+											<ReadOnly>true</ReadOnly>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ИмяОбработчикаПередВыгрузкойКонтекстноеМеню" id="142"/>
+											<ExtendedTooltip name="ИмяОбработчикаПередВыгрузкойРасширеннаяПодсказка" id="143">
+												<Title formatted="true">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 12&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Перед выгрузкой объекта&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt; 
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Условия возникновения события&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Событие выполняется при получении очередного объекта из выборки, до передачи  этого объекта правилу конвертации.
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Параметры:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Отказ - Булево. Если установить значение Истина, то выгрузка объекта  производится не будет
+Параметры - Структура, в которой хранятся переменные доступные во всех  обработчиках
+ИмяПКО - Строка. Имя правила конвертации объектов, указанное по умолчанию в  правиле выгрузки данных. При выгрузке конкретных объектов может быть  изменено
+Правило - ссылка на данное правило выгрузки данных
+ВходящиеДанные - произвольные вспомогательные данные, инициализированные в  обработчике «Перед обработкой» правила выгрузки данных как ИсходящиеДанные.
+ИсходящиеДанные – произвольные вспомогательные данные, передаваемые правилу  конвертации объекта. В обработчиках ПКО данная информация будет доступна как  переменная ВходящиеДанные
+Объект - Произвольный. Выгружаемый объект. Может быть переопределен или  назначен непосредственно в обработчике.
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Пример:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Если Объект.ЭтоГруппа() = 0 Тогда
+ Отказ = 1;
+КонецЕсли;
+</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</InputField>
+										<TextDocumentField name="АлгоритмПередВыгрузкойОбъекта" id="138">
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="АлгоритмПередВыгрузкойОбъектаКонтекстноеМеню" id="139"/>
+											<ExtendedTooltip name="АлгоритмПередВыгрузкойОбъектаРасширеннаяПодсказка" id="140"/>
+										</TextDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="ПослеВыгрузки" id="144">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>После выгрузки</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПослеВыгрузкиРасширеннаяПодсказка" id="145"/>
+									<ChildItems>
+										<InputField name="ИмяОбработчикаПослеВыгрузки" id="146">
+											<ReadOnly>true</ReadOnly>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ИмяОбработчикаПослеВыгрузкиКонтекстноеМеню" id="147"/>
+											<ExtendedTooltip name="ИмяОбработчикаПослеВыгрузкиРасширеннаяПодсказка" id="148">
+												<Title formatted="true">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 12&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;После выгрузки объекта&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt; 
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Условия возникновения события&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Событие выполняется после выгрузки объекта по правилу конвертации. Может  использоваться для выгрузки дополнительной связанной информации.
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Параметры:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Параметры - Структура, в которой хранятся переменные доступные во всех  обработчиках
+Объект - ссылка на выгруженный объект
+ИмяПКО - Имя правила конвертации объектов, по которому была осуществлена  выгрузка объекта источника.
+ВходящиеДанные - Произвольный. Произвольные вспомогательные данные,  инициализированные в обработчике ПередОбработкой правила выгрузки
+ИсходящиеДанные - Произвольный - произвольные вспомогательные данные,  передаваемые правилу конвертации объектов и возможно модифицированные в  обработчиках событий правила конвертации объектов.
+УзелСсылки - xml-узел ссылки выгруженного объекта
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Пример:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Параметры.ВыгруженнаяНоменклатура.Добавить(Объект);
+</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</InputField>
+										<TextDocumentField name="АлгоритмПослеВыгрузкиОбъекта" id="149">
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="АлгоритмПослеВыгрузкиОбъектаКонтекстноеМеню" id="150"/>
+											<ExtendedTooltip name="АлгоритмПослеВыгрузкиОбъектаРасширеннаяПодсказка" id="151"/>
+										</TextDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="ПослеОбработки" id="152">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>После обработки</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПослеОбработкиРасширеннаяПодсказка" id="153"/>
+									<ChildItems>
+										<InputField name="ИмяОбработчикаПослеОбработки" id="157">
+											<ReadOnly>true</ReadOnly>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ИмяОбработчикаПослеОбработкиКонтекстноеМеню" id="158"/>
+											<ExtendedTooltip name="ИмяОбработчикаПослеОбработкиРасширеннаяПодсказка" id="159">
+												<Title formatted="true">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 12&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;После обработки&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt; 
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Условия возникновения события&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Событие выполняется после выгрузки всех данныхпо определенному правилу  выгрузки. Для каждого правила выгрузки данных выполняется только один раз, если  по этому правилу происходила выгрузка данных.
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Параметры:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Параметры - Структура, в которой хранятся переменные доступные во всех  обработчиках
+ИмяПКО - Строка. Имя правила конвертации объектов, указанное по умолчанию в  правиле выгрузки данных. При выгрузке конкретных объектов может быть  изменено
+Правило - ссылка на данное правило выгрузки данных
+ИсходящиеДанные – произвольные вспомогательные данные, определенные в  обработчике «Перед обработкой»
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Пример:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Сообщить("Выгрузка контрагентов завершена.")
+</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</InputField>
+										<TextDocumentField name="АлгоритмПослеОбработкиПравила" id="154">
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="АлгоритмПослеОбработкиПравилаКонтекстноеМеню" id="155"/>
+											<ExtendedTooltip name="АлгоритмПослеОбработкиПравилаРасширеннаяПодсказка" id="156"/>
+										</TextDocumentField>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="Дополнительно" id="160">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДополнительноРасширеннаяПодсказка" id="161"/>
+					<ChildItems>
+						<InputField name="Порядок" id="162">
+							<ContextMenu name="ПорядокКонтекстноеМеню" id="163"/>
+							<ExtendedTooltip name="ПорядокРасширеннаяПодсказка" id="164"/>
 						</InputField>
-						<TextDocumentField name="АлгоритмВыборкаДанных" id="97">
-							<DataPath>1/0:35565935-4b6a-4cd5-818f-7054b8a9cc9e</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<ContextMenu name="АлгоритмВыборкаДанныхКонтекстноеМеню" id="98"/>
-							<ExtendedTooltip name="АлгоритмВыборкаДанныхРасширеннаяПодсказка" id="99"/>
-						</TextDocumentField>
+						<CheckBoxField name="ВыбиратьДанныеДляВыгрузкиОднимЗапросом" id="165">
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВыбиратьДанныеДляВыгрузкиОднимЗапросомКонтекстноеМеню" id="166"/>
+							<ExtendedTooltip name="ВыбиратьДанныеДляВыгрузкиОднимЗапросомРасширеннаяПодсказка" id="167"/>
+						</CheckBoxField>
+						<CheckBoxField name="НеВыгружатьОбъектыСозданныеВБазеПриемнике" id="168">
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеВыгружатьОбъектыСозданныеВБазеПриемникеКонтекстноеМеню" id="169"/>
+							<ExtendedTooltip name="НеВыгружатьОбъектыСозданныеВБазеПриемникеРасширеннаяПодсказка" id="170"/>
+						</CheckBoxField>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -387,6 +684,17 @@
 			</ChildItems>
 		</AutoCommandBar>
 		<ChildItems>
+			<LabelDecoration name="ДекорацияНуженЗахват" id="174">
+				<TextColor>style:FieldSelectionBackColor</TextColor>
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Для редактирования следует захватить объект</v8:content>
+					</v8:item>
+				</Title>
+				<ContextMenu name="ДекорацияНуженЗахватКонтекстноеМеню" id="175"/>
+				<ExtendedTooltip name="ДекорацияНуженЗахватРасширеннаяПодсказка" id="176"/>
+			</LabelDecoration>
 			<Pages name="Страницы" id="85">
 				<Title>
 					<v8:item>
@@ -438,6 +746,17 @@
 										<ContextMenu name="ОтключитьКонтекстноеМеню" id="90"/>
 										<ExtendedTooltip name="ОтключитьРасширеннаяПодсказка" id="91"/>
 									</CheckBoxField>
+									<LabelDecoration name="ДекорацияЗахвачен" id="171">
+										<TextColor>style:SpecialTextColor</TextColor>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>захвачен</v8:content>
+											</v8:item>
+										</Title>
+										<ContextMenu name="ДекорацияЗахваченКонтекстноеМеню" id="172"/>
+										<ExtendedTooltip name="ДекорацияЗахваченРасширеннаяПодсказка" id="173"/>
+									</LabelDecoration>
 								</ChildItems>
 							</UsualGroup>
 							<InputField name="Наименование" id="1">
@@ -586,6 +905,12 @@
 								<EnableStartDrag>true</EnableStartDrag>
 								<EnableDrag>true</EnableDrag>
 								<FileDragMode>AsFile</FileDragMode>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Правила конвертации объектов</v8:content>
+									</v8:item>
+								</Title>
 								<SearchStringLocation>None</SearchStringLocation>
 								<ViewStatusLocation>None</ViewStatusLocation>
 								<SearchControlLocation>None</SearchControlLocation>
@@ -633,30 +958,49 @@
 							</Table>
 						</ChildItems>
 					</Page>
-					<Page name="Страница_ПриОбработке" id="17">
+					<Page name="ОбработчикиСобытийXDTO" id="120">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
-								<v8:content>При обработке</v8:content>
+								<v8:content>Обработчики событий</v8:content>
 							</v8:item>
 						</Title>
-						<ExtendedTooltip name="Страница_ПриОбработкеРасширеннаяПодсказка" id="18"/>
+						<ExtendedTooltip name="ОбработчикиСобытийXDTOРасширеннаяПодсказка" id="121"/>
 						<ChildItems>
-							<InputField name="ИмяОбработчикаПриОбработке" id="79">
+							<Pages name="СтраницыОбработчикиXDTO" id="122">
 								<Title>
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Имя обработчика</v8:content>
+										<v8:content>Страницы обработчики XDTO</v8:content>
 									</v8:item>
 								</Title>
-								<ToolTipRepresentation>Button</ToolTipRepresentation>
-								<AutoMaxWidth>false</AutoMaxWidth>
-								<ContextMenu name="ИмяОбработчикаПриОбработкеКонтекстноеМеню" id="80"/>
-								<ExtendedTooltip name="ИмяОбработчикаПриОбработкеРасширеннаяПодсказка" id="81">
-									<Title formatted="true">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;fontsize 12&gt;Обработчик "При обработке&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;fontsize 12&gt;"&lt;/&gt;&lt;/&gt;
+								<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
+								<ExtendedTooltip name="СтраницыОбработчикиXDTOРасширеннаяПодсказка" id="123"/>
+								<ChildItems>
+									<Page name="Страница_ПриОбработке" id="17">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>При обработке</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="Страница_ПриОбработкеРасширеннаяПодсказка" id="18"/>
+										<ChildItems>
+											<InputField name="ИмяОбработчикаПриОбработке" id="79">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Имя обработчика</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTipRepresentation>Button</ToolTipRepresentation>
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<ContextMenu name="ИмяОбработчикаПриОбработкеКонтекстноеМеню" id="80"/>
+												<ExtendedTooltip name="ИмяОбработчикаПриОбработкеРасширеннаяПодсказка" id="81">
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;b&gt;&lt;fontsize 12&gt;Обработчик "При обработке&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;fontsize 12&gt;"&lt;/&gt;&lt;/&gt;
 
 &lt;b&gt;&lt;fontsize 10&gt;Параметры:&lt;/&gt;&lt;/&gt;
 
@@ -676,42 +1020,41 @@
 
 &lt;b&gt;&lt;fontsize 10&gt;Описание:&lt;/&gt;&lt;/&gt;
 Обработчик предназначен для реализации логики конвертации данных на уровне объектов.</v8:content>
-										</v8:item>
-									</Title>
-								</ExtendedTooltip>
-							</InputField>
-							<TextDocumentField name="АлгоритмПриОбработке" id="30">
-								<DataPath>1/0:e237837e-b49c-4007-bc31-8e0fed549fbb</DataPath>
-								<TitleLocation>None</TitleLocation>
-								<ContextMenu name="АлгоритмПриОбработкеКонтекстноеМеню" id="31"/>
-								<ExtendedTooltip name="АлгоритмПриОбработкеРасширеннаяПодсказка" id="32"/>
-							</TextDocumentField>
-						</ChildItems>
-					</Page>
-					<Page name="Страница_ВыборкаДанных" id="92">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Выборка данных</v8:content>
-							</v8:item>
-						</Title>
-						<ExtendedTooltip name="Страница_ВыборкаДанныхРасширеннаяПодсказка" id="93"/>
-						<ChildItems>
-							<InputField name="ИмяОбработчикаВыборкаДанных" id="94">
-								<Title>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Имя обработчика</v8:content>
-									</v8:item>
-								</Title>
-								<ToolTipRepresentation>Button</ToolTipRepresentation>
-								<AutoMaxWidth>false</AutoMaxWidth>
-								<ContextMenu name="ИмяОбработчикаВыборкаДанныхКонтекстноеМеню" id="95"/>
-								<ExtendedTooltip name="ИмяОбработчикаВыборкаДанныхРасширеннаяПодсказка" id="96">
-									<Title formatted="true">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;b&gt;&lt;fontsize 12&gt;Обработчик "Выборка данных&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;fontsize 12&gt;"&lt;/&gt;&lt;/&gt;
+														</v8:item>
+													</Title>
+												</ExtendedTooltip>
+											</InputField>
+											<TextDocumentField name="АлгоритмПриОбработке" id="30">
+												<TitleLocation>None</TitleLocation>
+												<ContextMenu name="АлгоритмПриОбработкеКонтекстноеМеню" id="31"/>
+												<ExtendedTooltip name="АлгоритмПриОбработкеРасширеннаяПодсказка" id="32"/>
+											</TextDocumentField>
+										</ChildItems>
+									</Page>
+									<Page name="Страница_ВыборкаДанных" id="92">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Выборка данных</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="Страница_ВыборкаДанныхРасширеннаяПодсказка" id="93"/>
+										<ChildItems>
+											<InputField name="ИмяОбработчикаВыборкаДанных" id="94">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Имя обработчика</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTipRepresentation>Button</ToolTipRepresentation>
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<ContextMenu name="ИмяОбработчикаВыборкаДанныхКонтекстноеМеню" id="95"/>
+												<ExtendedTooltip name="ИмяОбработчикаВыборкаДанныхРасширеннаяПодсказка" id="96">
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;b&gt;&lt;fontsize 12&gt;Обработчик "Выборка данных&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;fontsize 12&gt;"&lt;/&gt;&lt;/&gt;
 
 &lt;b&gt;&lt;fontsize 10&gt;Параметры:&lt;/&gt;&lt;/&gt;
 
@@ -726,16 +1069,264 @@
 
 &lt;b&gt;&lt;fontsize 10&gt;Описание:&lt;/&gt;&lt;/&gt;
 Обработчик предназначен для реализации произвольного алгоритма выборки объектов, подлежащих выгрузке.</v8:content>
-										</v8:item>
-									</Title>
-								</ExtendedTooltip>
+														</v8:item>
+													</Title>
+												</ExtendedTooltip>
+											</InputField>
+											<TextDocumentField name="АлгоритмВыборкаДанных" id="97">
+												<TitleLocation>None</TitleLocation>
+												<ContextMenu name="АлгоритмВыборкаДанныхКонтекстноеМеню" id="98"/>
+												<ExtendedTooltip name="АлгоритмВыборкаДанныхРасширеннаяПодсказка" id="99"/>
+											</TextDocumentField>
+										</ChildItems>
+									</Page>
+								</ChildItems>
+							</Pages>
+						</ChildItems>
+					</Page>
+					<Page name="ОбработчикиСобытийXML" id="124">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Обработчики событий</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ОбработчикиСобытийXMLРасширеннаяПодсказка" id="125"/>
+						<ChildItems>
+							<Pages name="СтраницыОбработчикиXML" id="126">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Страницы обработчики XML</v8:content>
+									</v8:item>
+								</Title>
+								<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
+								<ExtendedTooltip name="СтраницыОбработчикиXMLРасширеннаяПодсказка" id="127"/>
+								<ChildItems>
+									<Page name="ПередОбработкой" id="128">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Перед обработкой</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ПередОбработкойРасширеннаяПодсказка" id="129"/>
+										<ChildItems>
+											<InputField name="ИмяОбработчикаПередОбработкой" id="130">
+												<ReadOnly>true</ReadOnly>
+												<ToolTipRepresentation>Button</ToolTipRepresentation>
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<ContextMenu name="ИмяОбработчикаПередОбработкойКонтекстноеМеню" id="131"/>
+												<ExtendedTooltip name="ИмяОбработчикаПередОбработкойРасширеннаяПодсказка" id="132">
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 12&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Перед обработкой&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt; 
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Условия возникновения события&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Событие выполняется перед обработкой каждого правила выгрузки один раз.  Используется для установки дополнительных параметров перед выгрузкой данных, для  переопределения выборки объектов, подлежащей выгрузке, либо для выгрузки  дополнительной информации
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Параметры:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Отказ - Булево. Если установить значение Истина, то выгрузка данных по  данному правилу не производится 
+Параметры - Структура, в которой хранятся переменные доступные во всех  обработчиках
+ИмяПКО - Строка. Имя правила конвертации объектов, указанное по умолчанию в  правиле выгрузки данных. При выгрузке конкретных объектов может быть  изменено
+Правило - ссылка на данное правило выгрузки данных
+ИсходящиеДанные - Произвольный. Произвольные вспомогательные данные,  доступные при выгрузке объектов выборки 
+ВыборкаДанных - Запрос, Результат запроса, Выборка из результата запроса или  произвольная коллекция выгружаемых объектов. Используется, когда способ выгрузки  данных - Произвольный алгоритм. Если определить данную переменную, то обход  коллекции и выгрузка объектов будет осуществляться автоматически
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 8&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Важно: 
+&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;Если для выборки данных ПВД используется  произвольный алгоритм и в обработчике ПВД "Перед обработкой" инициируется  параметр &lt;b&gt;&lt;font Arial&gt;&lt;fontsize 8&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;ВыборкаДанных&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;, то для ПКО следует установить признак  "Не запоминать выгруженные объекты".
+
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Пример:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+ДатаИзмененияОбъекта = ДатаНачала;
+Сообщить("Контрагенты");
+Запрос = СоздатьОбъект("Запрос");
+ТекстЗапроса = "
+|ТекущийЭлемент =  Справочник.Партнеры.ТекущийЭлемент;
+|ДатаИзменения =  Справочник.Партнеры.ДатаИзменения;
+|Группировка  ТекущийЭлемент;
+|Условие(ДатаИзменения &gt;&gt;= ДатаИзмененияОбъекта);";
+Запрос.Выполнить(ТекстЗапроса);
+Пока Запрос.Группировка(1) = 1  Цикл
+ ВыгрузитьПоПравилу(Запрос.ТекущийЭлемент, , , ,  "Контрагенты");
+КонецЦикла;
+</v8:content>
+														</v8:item>
+													</Title>
+												</ExtendedTooltip>
+											</InputField>
+											<TextDocumentField name="АлгоритмПередОбработкойПравила" id="133">
+												<TitleLocation>None</TitleLocation>
+												<ContextMenu name="АлгоритмПередОбработкойПравилаКонтекстноеМеню" id="134"/>
+												<ExtendedTooltip name="АлгоритмПередОбработкойПравилаРасширеннаяПодсказка" id="135"/>
+											</TextDocumentField>
+										</ChildItems>
+									</Page>
+									<Page name="ПередВыгрузкой" id="136">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Перед выгрузкой</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ПередВыгрузкойРасширеннаяПодсказка" id="137"/>
+										<ChildItems>
+											<InputField name="ИмяОбработчикаПередВыгрузкой" id="141">
+												<ReadOnly>true</ReadOnly>
+												<ToolTipRepresentation>Button</ToolTipRepresentation>
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<ContextMenu name="ИмяОбработчикаПередВыгрузкойКонтекстноеМеню" id="142"/>
+												<ExtendedTooltip name="ИмяОбработчикаПередВыгрузкойРасширеннаяПодсказка" id="143">
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 12&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Перед выгрузкой объекта&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt; 
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Условия возникновения события&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Событие выполняется при получении очередного объекта из выборки, до передачи  этого объекта правилу конвертации.
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Параметры:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Отказ - Булево. Если установить значение Истина, то выгрузка объекта  производится не будет
+Параметры - Структура, в которой хранятся переменные доступные во всех  обработчиках
+ИмяПКО - Строка. Имя правила конвертации объектов, указанное по умолчанию в  правиле выгрузки данных. При выгрузке конкретных объектов может быть  изменено
+Правило - ссылка на данное правило выгрузки данных
+ВходящиеДанные - произвольные вспомогательные данные, инициализированные в  обработчике «Перед обработкой» правила выгрузки данных как ИсходящиеДанные.
+ИсходящиеДанные – произвольные вспомогательные данные, передаваемые правилу  конвертации объекта. В обработчиках ПКО данная информация будет доступна как  переменная ВходящиеДанные
+Объект - Произвольный. Выгружаемый объект. Может быть переопределен или  назначен непосредственно в обработчике.
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Пример:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Если Объект.ЭтоГруппа() = 0 Тогда
+ Отказ = 1;
+КонецЕсли;
+</v8:content>
+														</v8:item>
+													</Title>
+												</ExtendedTooltip>
+											</InputField>
+											<TextDocumentField name="АлгоритмПередВыгрузкойОбъекта" id="138">
+												<TitleLocation>None</TitleLocation>
+												<ContextMenu name="АлгоритмПередВыгрузкойОбъектаКонтекстноеМеню" id="139"/>
+												<ExtendedTooltip name="АлгоритмПередВыгрузкойОбъектаРасширеннаяПодсказка" id="140"/>
+											</TextDocumentField>
+										</ChildItems>
+									</Page>
+									<Page name="ПослеВыгрузки" id="144">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>После выгрузки</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ПослеВыгрузкиРасширеннаяПодсказка" id="145"/>
+										<ChildItems>
+											<InputField name="ИмяОбработчикаПослеВыгрузки" id="146">
+												<ReadOnly>true</ReadOnly>
+												<ToolTipRepresentation>Button</ToolTipRepresentation>
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<ContextMenu name="ИмяОбработчикаПослеВыгрузкиКонтекстноеМеню" id="147"/>
+												<ExtendedTooltip name="ИмяОбработчикаПослеВыгрузкиРасширеннаяПодсказка" id="148">
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 12&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;После выгрузки объекта&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt; 
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Условия возникновения события&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Событие выполняется после выгрузки объекта по правилу конвертации. Может  использоваться для выгрузки дополнительной связанной информации.
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Параметры:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Параметры - Структура, в которой хранятся переменные доступные во всех  обработчиках
+Объект - ссылка на выгруженный объект
+ИмяПКО - Имя правила конвертации объектов, по которому была осуществлена  выгрузка объекта источника.
+ВходящиеДанные - Произвольный. Произвольные вспомогательные данные,  инициализированные в обработчике ПередОбработкой правила выгрузки
+ИсходящиеДанные - Произвольный - произвольные вспомогательные данные,  передаваемые правилу конвертации объектов и возможно модифицированные в  обработчиках событий правила конвертации объектов.
+УзелСсылки - xml-узел ссылки выгруженного объекта
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Пример:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Параметры.ВыгруженнаяНоменклатура.Добавить(Объект);
+</v8:content>
+														</v8:item>
+													</Title>
+												</ExtendedTooltip>
+											</InputField>
+											<TextDocumentField name="АлгоритмПослеВыгрузкиОбъекта" id="149">
+												<TitleLocation>None</TitleLocation>
+												<ContextMenu name="АлгоритмПослеВыгрузкиОбъектаКонтекстноеМеню" id="150"/>
+												<ExtendedTooltip name="АлгоритмПослеВыгрузкиОбъектаРасширеннаяПодсказка" id="151"/>
+											</TextDocumentField>
+										</ChildItems>
+									</Page>
+									<Page name="ПослеОбработки" id="152">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>После обработки</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ПослеОбработкиРасширеннаяПодсказка" id="153"/>
+										<ChildItems>
+											<InputField name="ИмяОбработчикаПослеОбработки" id="157">
+												<ReadOnly>true</ReadOnly>
+												<ToolTipRepresentation>Button</ToolTipRepresentation>
+												<AutoMaxWidth>false</AutoMaxWidth>
+												<ContextMenu name="ИмяОбработчикаПослеОбработкиКонтекстноеМеню" id="158"/>
+												<ExtendedTooltip name="ИмяОбработчикаПослеОбработкиРасширеннаяПодсказка" id="159">
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 12&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;После обработки&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt; 
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Условия возникновения события&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Событие выполняется после выгрузки всех данныхпо определенному правилу  выгрузки. Для каждого правила выгрузки данных выполняется только один раз, если  по этому правилу происходила выгрузка данных.
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Параметры:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Параметры - Структура, в которой хранятся переменные доступные во всех  обработчиках
+ИмяПКО - Строка. Имя правила конвертации объектов, указанное по умолчанию в  правиле выгрузки данных. При выгрузке конкретных объектов может быть  изменено
+Правило - ссылка на данное правило выгрузки данных
+ИсходящиеДанные – произвольные вспомогательные данные, определенные в  обработчике «Перед обработкой»
+&lt;b&gt;&lt;font Arial&gt;&lt;fontsize 9&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;Пример:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+ 
+Сообщить("Выгрузка контрагентов завершена.")
+</v8:content>
+														</v8:item>
+													</Title>
+												</ExtendedTooltip>
+											</InputField>
+											<TextDocumentField name="АлгоритмПослеОбработкиПравила" id="154">
+												<TitleLocation>None</TitleLocation>
+												<ContextMenu name="АлгоритмПослеОбработкиПравилаКонтекстноеМеню" id="155"/>
+												<ExtendedTooltip name="АлгоритмПослеОбработкиПравилаРасширеннаяПодсказка" id="156"/>
+											</TextDocumentField>
+										</ChildItems>
+									</Page>
+								</ChildItems>
+							</Pages>
+						</ChildItems>
+					</Page>
+					<Page name="Дополнительно" id="160">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дополнительно</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ДополнительноРасширеннаяПодсказка" id="161"/>
+						<ChildItems>
+							<InputField name="Порядок" id="162">
+								<ContextMenu name="ПорядокКонтекстноеМеню" id="163"/>
+								<ExtendedTooltip name="ПорядокРасширеннаяПодсказка" id="164"/>
 							</InputField>
-							<TextDocumentField name="АлгоритмВыборкаДанных" id="97">
-								<DataPath>1/0:35565935-4b6a-4cd5-818f-7054b8a9cc9e</DataPath>
-								<TitleLocation>None</TitleLocation>
-								<ContextMenu name="АлгоритмВыборкаДанныхКонтекстноеМеню" id="98"/>
-								<ExtendedTooltip name="АлгоритмВыборкаДанныхРасширеннаяПодсказка" id="99"/>
-							</TextDocumentField>
+							<CheckBoxField name="ВыбиратьДанныеДляВыгрузкиОднимЗапросом" id="165">
+								<TitleLocation>Right</TitleLocation>
+								<CheckBoxType>Auto</CheckBoxType>
+								<ContextMenu name="ВыбиратьДанныеДляВыгрузкиОднимЗапросомКонтекстноеМеню" id="166"/>
+								<ExtendedTooltip name="ВыбиратьДанныеДляВыгрузкиОднимЗапросомРасширеннаяПодсказка" id="167"/>
+							</CheckBoxField>
+							<CheckBoxField name="НеВыгружатьОбъектыСозданныеВБазеПриемнике" id="168">
+								<TitleLocation>Right</TitleLocation>
+								<CheckBoxType>Auto</CheckBoxType>
+								<ContextMenu name="НеВыгружатьОбъектыСозданныеВБазеПриемникеКонтекстноеМеню" id="169"/>
+								<ExtendedTooltip name="НеВыгружатьОбъектыСозданныеВБазеПриемникеРасширеннаяПодсказка" id="170"/>
+							</CheckBoxField>
 						</ChildItems>
 					</Page>
 				</ChildItems>

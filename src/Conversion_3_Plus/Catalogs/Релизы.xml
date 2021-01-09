@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="4d70f5e2-db94-4564-984e-b2a88350fed8">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Релизы" category="Object">
+				<xr:TypeId>3eaed2d9-b91d-486c-a539-626ead7b5510</xr:TypeId>
+				<xr:ValueId>05bef900-1597-4457-b2bc-474476be401c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Релизы" category="Ref">
+				<xr:TypeId>8dbda6ff-be5d-4146-be34-59683725003a</xr:TypeId>
+				<xr:ValueId>3584f5f8-d45b-4f57-9ce4-f1768ee1cffe</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Релизы" category="Selection">
+				<xr:TypeId>bf8e2a09-037e-4a94-8fcf-4a7d07aa827e</xr:TypeId>
+				<xr:ValueId>c86b4707-4c9a-442b-8425-74f9a10d40b2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Релизы" category="List">
+				<xr:TypeId>07e6f184-1556-4f2d-ae2e-2b4d072fbb6f</xr:TypeId>
+				<xr:ValueId>2a5d13d1-1955-45b1-a055-06a4169c9631</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Релизы" category="Manager">
+				<xr:TypeId>bf2fd917-cc59-4704-b3e2-723226873a51</xr:TypeId>
+				<xr:ValueId>6b1b52fa-d73b-4c5a-b011-f899deca5eb6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Релизы</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>0a9b4d2e-a605-43e9-82e7-46dd5c001092</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Command uuid="b203b132-9669-497b-8ae1-19bc198b1ebe">
+				<Properties>
+					<Name>Расш1_Команда1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновить описание метаданных консоль</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.Релизы</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

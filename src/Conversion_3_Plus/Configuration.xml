@@ -28,7 +28,7 @@
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
-				<xr:ObjectId>f9b3a9b2-0618-463a-aa17-c596d7c6f6d1</xr:ObjectId>
+				<xr:ObjectId>09887a5f-dfcd-4a39-9a35-eedcdebc4aad</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
@@ -71,15 +71,15 @@
 			<CommonModule>Расш1_КонсольКодаВызовСервера</CommonModule>
 			<CommonModule>Расш1_КонсольКода</CommonModule>
 			<CommonModule>Расш1_ЖурналРегистрации</CommonModule>
+			<CommonModule>КонвертацияДанныхXDTOКлиент</CommonModule>
 			<Catalog>Алгоритмы</Catalog>
 			<Catalog>Конвертации</Catalog>
 			<Catalog>ПравилаОбработкиДанных</Catalog>
 			<Catalog>ПравилаКонвертацииОбъектов</Catalog>
 			<Catalog>Конфигурации</Catalog>
 			<Catalog>Объекты</Catalog>
+			<Catalog>Релизы</Catalog>
 			<Enum>ВариантыИдентификацииОбъектов</Enum>
-			<DataProcessor>ЗагрузкаПравилСинхронизацииИзФайлов</DataProcessor>
-			<DataProcessor>НастройкаПравилОбмена</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

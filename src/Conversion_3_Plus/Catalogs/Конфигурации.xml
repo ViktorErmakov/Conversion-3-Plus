@@ -27,32 +27,8 @@
 			<Name>Конфигурации</Name>
 			<Comment/>
 			<ObjectBelonging>Adopted</ObjectBelonging>
-			<ExtendedConfigurationObject>0a9b4d2e-a605-43e9-82e7-46dd5c001092</ExtendedConfigurationObject>
+			<ExtendedConfigurationObject>c2ac19dc-4792-4a28-a5b3-5f1671f79bdb</ExtendedConfigurationObject>
 		</Properties>
-		<ChildObjects>
-			<Command uuid="bbf40987-1000-44b3-a670-dbdc0d3d37fa">
-				<Properties>
-					<Name>Расш1_Команда1</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Обновить описание метаданных консоль</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Group>FormCommandBarImportant</Group>
-					<CommandParameterType>
-						<v8:Type>cfg:CatalogRef.Конфигурации</v8:Type>
-					</CommandParameterType>
-					<ParameterUseMode>Single</ParameterUseMode>
-					<ModifiesData>false</ModifiesData>
-					<Representation>Auto</Representation>
-					<ToolTip/>
-					<Picture/>
-					<Shortcut/>
-					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
-				</Properties>
-			</Command>
-		</ChildObjects>
+		<ChildObjects/>
 	</Catalog>
 </MetaDataObject>
