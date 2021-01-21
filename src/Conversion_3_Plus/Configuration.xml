@@ -72,6 +72,7 @@
 			<CommonModule>Расш1_КонсольКода</CommonModule>
 			<CommonModule>Расш1_ЖурналРегистрации</CommonModule>
 			<CommonModule>КонвертацияДанныхXDTOКлиент</CommonModule>
+			<CommonForm>ВыборКонфигурацийИсточникаПриемника</CommonForm>
 			<Catalog>Алгоритмы</Catalog>
 			<Catalog>Конвертации</Catalog>
 			<Catalog>ПравилаОбработкиДанных</Catalog>

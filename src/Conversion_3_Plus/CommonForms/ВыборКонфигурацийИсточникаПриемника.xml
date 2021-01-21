@@ -1,23 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
-	<CommonModule uuid="dfa947af-ae77-44a6-a75c-ac0b85a3eaa3">
+	<CommonForm uuid="fe205321-a737-4ec1-8496-313dad2f38f7">
+		<InternalInfo/>
 		<Properties>
-			<Name>Расш1_КоллекцияМетаданных</Name>
-			<Synonym>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Коллекция метаданных дял консоли кода</v8:content>
-				</v8:item>
-			</Synonym>
+			<Name>ВыборКонфигурацийИсточникаПриемника</Name>
 			<Comment/>
-			<Global>false</Global>
-			<ClientManagedApplication>false</ClientManagedApplication>
-			<Server>true</Server>
-			<ExternalConnection>false</ExternalConnection>
-			<ClientOrdinaryApplication>false</ClientOrdinaryApplication>
-			<ServerCall>false</ServerCall>
-			<Privileged>false</Privileged>
-			<ReturnValuesReuse>DontUse</ReturnValuesReuse>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>d0356fdb-c8c3-4f4e-9950-6c0f05261765</ExtendedConfigurationObject>
+			<FormType>Managed</FormType>
 		</Properties>
-	</CommonModule>
+	</CommonForm>
 </MetaDataObject>

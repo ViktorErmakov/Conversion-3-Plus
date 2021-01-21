@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Конвертации данных для конфигураций</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ТекущиеКонфигурации" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущие конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ТекущиеКонфигурацииРасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<InputField name="ТекущаяКонфигурацияИсточник" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конфигурация №1</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТекущаяКонфигурацияИсточникКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ТекущаяКонфигурацияИсточникРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ТекущаяКонфигурацияПриемник" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конфигурация №2</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТекущаяКонфигурацияПриемникКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ТекущаяКонфигурацияПриемникРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<UsualGroup name="ГруппаОтборПоРодителю" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отбор по родителю</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтборПоРодителюРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьОтборПоРодителю" id="53">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор по родителю</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьОтборПоРодителюКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="ИспользоватьОтборПоРодителюРасширеннаяПодсказка" id="55"/>
+						</CheckBoxField>
+						<InputField name="ОтборПоРодителю" id="56">
+							<TitleLocation>None</TitleLocation>
+							<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+							<ContextMenu name="ОтборПоРодителюКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ОтборПоРодителюРасширеннаяПодсказка" id="58"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОтборПоСтатусу" id="46">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отбор по статусу</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтборПоСтатусуРасширеннаяПодсказка" id="47"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьОтборПоСтатусу" id="48">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор по статусу</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьОтборПоСтатусуКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="ИспользоватьОтборПоСтатусуРасширеннаяПодсказка" id="50"/>
+						</CheckBoxField>
+						<InputField name="ОтборПоСтатусу" id="43">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В работе</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ОтборПоСтатусуКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ОтборПоСтатусуРасширеннаяПодсказка" id="45"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Конвертации" id="22">
+			<Representation>Tree</Representation>
+			<ReadOnly>true</ReadOnly>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<Header>false</Header>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конвертации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переход к настройке конвертации осуществляется двойным щелчком.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<ContextMenu name="КонвертацииКонтекстноеМеню" id="23"/>
+			<AutoCommandBar name="КонвертацииКоманднаяПанель" id="24">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="КонвертацииРасширеннаяПодсказка" id="25"/>
+			<SearchStringAddition name="КонвертацииSearchString" id="34">
+				<AdditionSource>
+					<Item>Конвертации</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КонвертацииSearchStringContextMenu" id="35"/>
+				<ExtendedTooltip name="КонвертацииSearchStringExtendedTooltip" id="36"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КонвертацииViewStatus" id="37">
+				<AdditionSource>
+					<Item>Конвертации</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КонвертацииViewStatusContextMenu" id="38"/>
+				<ExtendedTooltip name="КонвертацииViewStatusExtendedTooltip" id="39"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КонвертацииSearchControl" id="40">
+				<AdditionSource>
+					<Item>Конвертации</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КонвертацииSearchControlContextMenu" id="41"/>
+				<ExtendedTooltip name="КонвертацииSearchControlExtendedTooltip" id="42"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="1282f000-23b6-4887-87f4-9e8e79db3d32" callType="After">Расш1_КонвертацииВыборПосле</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="КонвертацииСсылка" id="26">
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КонвертацииСсылкаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="КонвертацииСсылкаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="КонвертацииНаименование" id="29">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КонвертацииНаименованиеКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="КонвертацииНаименованиеРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.11">
+		<Title>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конвертации данных для конфигураций</v8:content>
+			</v8:item>
+		</Title>
+		<AutoTitle>false</AutoTitle>
+		<CommandBarLocation>None</CommandBarLocation>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+		<ChildItems>
+			<UsualGroup name="ТекущиеКонфигурации" id="20">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Текущие конфигурации</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Horizontal</Group>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ТекущиеКонфигурацииРасширеннаяПодсказка" id="21"/>
+				<ChildItems>
+					<InputField name="ТекущаяКонфигурацияИсточник" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Конфигурация №1</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="ТекущаяКонфигурацияИсточникКонтекстноеМеню" id="2"/>
+						<ExtendedTooltip name="ТекущаяКонфигурацияИсточникРасширеннаяПодсказка" id="3"/>
+					</InputField>
+					<InputField name="ТекущаяКонфигурацияПриемник" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Конфигурация №2</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="ТекущаяКонфигурацияПриемникКонтекстноеМеню" id="5"/>
+						<ExtendedTooltip name="ТекущаяКонфигурацияПриемникРасширеннаяПодсказка" id="6"/>
+					</InputField>
+					<UsualGroup name="ГруппаОтборПоРодителю" id="51">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа отбор по родителю</v8:content>
+							</v8:item>
+						</Title>
+						<Group>AlwaysHorizontal</Group>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ГруппаОтборПоРодителюРасширеннаяПодсказка" id="52"/>
+						<ChildItems>
+							<CheckBoxField name="ИспользоватьОтборПоРодителю" id="53">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Отбор по родителю</v8:content>
+									</v8:item>
+								</Title>
+								<TitleLocation>Right</TitleLocation>
+								<CheckBoxType>Auto</CheckBoxType>
+								<ContextMenu name="ИспользоватьОтборПоРодителюКонтекстноеМеню" id="54"/>
+								<ExtendedTooltip name="ИспользоватьОтборПоРодителюРасширеннаяПодсказка" id="55"/>
+							</CheckBoxField>
+							<InputField name="ОтборПоРодителю" id="56">
+								<TitleLocation>None</TitleLocation>
+								<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+								<ContextMenu name="ОтборПоРодителюКонтекстноеМеню" id="57"/>
+								<ExtendedTooltip name="ОтборПоРодителюРасширеннаяПодсказка" id="58"/>
+							</InputField>
+						</ChildItems>
+					</UsualGroup>
+					<UsualGroup name="ГруппаОтборПоСтатусу" id="46">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа отбор по статусу</v8:content>
+							</v8:item>
+						</Title>
+						<Group>AlwaysHorizontal</Group>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ГруппаОтборПоСтатусуРасширеннаяПодсказка" id="47"/>
+						<ChildItems>
+							<CheckBoxField name="ИспользоватьОтборПоСтатусу" id="48">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Отбор по статусу</v8:content>
+									</v8:item>
+								</Title>
+								<TitleLocation>Right</TitleLocation>
+								<CheckBoxType>Auto</CheckBoxType>
+								<ContextMenu name="ИспользоватьОтборПоСтатусуКонтекстноеМеню" id="49"/>
+								<ExtendedTooltip name="ИспользоватьОтборПоСтатусуРасширеннаяПодсказка" id="50"/>
+							</CheckBoxField>
+							<InputField name="ОтборПоСтатусу" id="43">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>В работе</v8:content>
+									</v8:item>
+								</Title>
+								<TitleLocation>None</TitleLocation>
+								<ContextMenu name="ОтборПоСтатусуКонтекстноеМеню" id="44"/>
+								<ExtendedTooltip name="ОтборПоСтатусуРасширеннаяПодсказка" id="45"/>
+							</InputField>
+						</ChildItems>
+					</UsualGroup>
+				</ChildItems>
+			</UsualGroup>
+			<Table name="Конвертации" id="22">
+				<Representation>Tree</Representation>
+				<ReadOnly>true</ReadOnly>
+				<ChangeRowSet>false</ChangeRowSet>
+				<ChangeRowOrder>false</ChangeRowOrder>
+				<Header>false</Header>
+				<AutoInsertNewRow>true</AutoInsertNewRow>
+				<EnableStartDrag>true</EnableStartDrag>
+				<EnableDrag>true</EnableDrag>
+				<FileDragMode>AsFile</FileDragMode>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Конвертации</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Переход к настройке конвертации осуществляется двойным щелчком.</v8:content>
+					</v8:item>
+				</ToolTip>
+				<SearchStringLocation>None</SearchStringLocation>
+				<ViewStatusLocation>None</ViewStatusLocation>
+				<SearchControlLocation>None</SearchControlLocation>
+				<ContextMenu name="КонвертацииКонтекстноеМеню" id="23"/>
+				<AutoCommandBar name="КонвертацииКоманднаяПанель" id="24">
+					<Autofill>false</Autofill>
+				</AutoCommandBar>
+				<ExtendedTooltip name="КонвертацииРасширеннаяПодсказка" id="25"/>
+				<SearchStringAddition name="КонвертацииSearchString" id="34">
+					<AdditionSource>
+						<Item>Конвертации</Item>
+						<Type>SearchStringRepresentation</Type>
+					</AdditionSource>
+					<ContextMenu name="КонвертацииSearchStringContextMenu" id="35"/>
+					<ExtendedTooltip name="КонвертацииSearchStringExtendedTooltip" id="36"/>
+				</SearchStringAddition>
+				<ViewStatusAddition name="КонвертацииViewStatus" id="37">
+					<AdditionSource>
+						<Item>Конвертации</Item>
+						<Type>ViewStatusRepresentation</Type>
+					</AdditionSource>
+					<ContextMenu name="КонвертацииViewStatusContextMenu" id="38"/>
+					<ExtendedTooltip name="КонвертацииViewStatusExtendedTooltip" id="39"/>
+				</ViewStatusAddition>
+				<SearchControlAddition name="КонвертацииSearchControl" id="40">
+					<AdditionSource>
+						<Item>Конвертации</Item>
+						<Type>SearchControl</Type>
+					</AdditionSource>
+					<ContextMenu name="КонвертацииSearchControlContextMenu" id="41"/>
+					<ExtendedTooltip name="КонвертацииSearchControlExtendedTooltip" id="42"/>
+				</SearchControlAddition>
+				<ChildItems>
+					<InputField name="КонвертацииСсылка" id="26">
+						<Visible>false</Visible>
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="КонвертацииСсылкаКонтекстноеМеню" id="27"/>
+						<ExtendedTooltip name="КонвертацииСсылкаРасширеннаяПодсказка" id="28"/>
+					</InputField>
+					<InputField name="КонвертацииНаименование" id="29">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="КонвертацииНаименованиеКонтекстноеМеню" id="30"/>
+						<ExtendedTooltip name="КонвертацииНаименованиеРасширеннаяПодсказка" id="31"/>
+					</InputField>
+				</ChildItems>
+			</Table>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>
