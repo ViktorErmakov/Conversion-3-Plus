@@ -1,2 +1,2 @@
 chcp 65001
-call vrunner decompileext Conversion_3_Plus D:/Repo/Conversion3.0.1/src/Conversion_3_Plus --ibconnection /F"D:\1С\_1C_BASE\Конвертация данных 3.1 (демо)" --db-user Администратор
+call vrunner decompileext Conversion_3_Plus C:/_1C_Repo/Conversion-3-Plus/src/Conversion_3_Plus --ibconnection /F'C:\_1C_BASE\Конвертация данных (демо) 3' --db-user Администратор --v8version 8.3.19.1229
