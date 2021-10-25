@@ -28,9 +28,30 @@
 			<Comment/>
 			<ObjectBelonging>Adopted</ObjectBelonging>
 			<ExtendedConfigurationObject>ac03d05d-31ff-4be8-8134-befc15ed8a20</ExtendedConfigurationObject>
+			<Hierarchical>true</Hierarchical>
+			<Owners>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Релизы</xr:Item>
+			</Owners>
 		</Properties>
 		<ChildObjects>
-			<Template>Расш1_Запрос_ОписаниеМетаданныхОбъектов</Template>
+			<Attribute uuid="86c221ec-3207-4faa-8b0e-763484e9bab2">
+				<InternalInfo/>
+				<Properties>
+					<Name>Имя</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>35277a40-8eae-4ba3-886e-04e15c93bfdc</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Template>Расш1_Запрос_ОписаниеКоллекцииМетаданных</Template>
+			<Template>Расш1_Запрос_ОписаниеОбъектаМетаданных</Template>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

@@ -88,11 +88,36 @@
 								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="Код" id="51">
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<ContextMenu name="КодКонтекстноеМеню" id="52"/>
-							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="53"/>
-						</InputField>
+						<UsualGroup name="ГруппаИдентификатор" id="507">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа идентификатор</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИдентификаторРасширеннаяПодсказка" id="504"/>
+							<ChildItems>
+								<InputField name="Код" id="51">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="КодКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="53"/>
+								</InputField>
+								<Button name="ЗаполнитьИдентификатор" id="508">
+									<Type>UsualButton</Type>
+									<CommandName>0</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заполнить</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ЗаполнитьИдентификаторРасширеннаяПодсказка" id="506"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 						<UsualGroup name="ГруппаОбъекты" id="76">
 							<Title>
 								<v8:item>
@@ -108,7 +133,9 @@
 								<InputField name="ОбъектКонфигурации" id="10">
 									<EditMode>EnterOnInput</EditMode>
 									<Height>1</Height>
+									<DropListButton>false</DropListButton>
 									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
 									<ContextMenu name="ОбъектКонфигурацииКонтекстноеМеню" id="11"/>
 									<ExtendedTooltip name="ОбъектКонфигурацииРасширеннаяПодсказка" id="12"/>
 								</InputField>
@@ -119,7 +146,9 @@
 									<ExtendedTooltip name="ОбъектФорматаРасширеннаяПодсказка" id="15"/>
 								</InputField>
 								<InputField name="ОбъектКонфигурацииКорреспондент" id="254">
+									<DropListButton>false</DropListButton>
 									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
 									<ContextMenu name="ОбъектКонфигурацииКорреспондентКонтекстноеМеню" id="255"/>
 									<ExtendedTooltip name="ОбъектКонфигурацииКорреспондентРасширеннаяПодсказка" id="256"/>
 								</InputField>
@@ -216,14 +245,6 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="Описание" id="150">
-							<TitleLocation>Top</TitleLocation>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<MultiLine>true</MultiLine>
-							<ExtendedEdit>true</ExtendedEdit>
-							<ContextMenu name="ОписаниеКонтекстноеМеню" id="151"/>
-							<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="152"/>
-						</InputField>
 					</ChildItems>
 				</Page>
 				<Page name="Страница_ПравилаКонвертацииСвойств" id="176">
@@ -330,6 +351,10 @@
 									<ContextMenu name="ПравилаКонвертацииСвойствСвойствоКонфигурацииКонтекстноеМеню" id="198"/>
 									<ExtendedTooltip name="ПравилаКонвертацииСвойствСвойствоКонфигурацииРасширеннаяПодсказка" id="199"/>
 								</LabelField>
+								<LabelField name="ПравилаКонвертацииСвойствТипСвойстваКонфигурации" id="215">
+									<ContextMenu name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКонтекстноеМеню" id="216"/>
+									<ExtendedTooltip name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииРасширеннаяПодсказка" id="217"/>
+								</LabelField>
 								<ColumnGroup name="ПравилаКонвертацииСвойствXML" id="454">
 									<Title>
 										<v8:item>
@@ -384,6 +409,10 @@
 										</ColumnGroup>
 									</ChildItems>
 								</ColumnGroup>
+								<LabelField name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКорреспондента" id="442">
+									<ContextMenu name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКорреспондентаКонтекстноеМеню" id="443"/>
+									<ExtendedTooltip name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКорреспондентаРасширеннаяПодсказка" id="444"/>
+								</LabelField>
 								<ColumnGroup name="ПравилаКонвертацииСвойствXDTO" id="456">
 									<Title>
 										<v8:item>
@@ -409,17 +438,9 @@
 									<ContextMenu name="ПравилаКонвертацииСвойствПравилоКонвертацииСвойстваКонтекстноеМеню" id="213"/>
 									<ExtendedTooltip name="ПравилаКонвертацииСвойствПравилоКонвертацииСвойстваРасширеннаяПодсказка" id="214"/>
 								</LabelField>
-								<LabelField name="ПравилаКонвертацииСвойствТипСвойстваКонфигурации" id="215">
-									<ContextMenu name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКонтекстноеМеню" id="216"/>
-									<ExtendedTooltip name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииРасширеннаяПодсказка" id="217"/>
-								</LabelField>
 								<LabelField name="ПравилаКонвертацииСвойствТипСвойстваФормата" id="218">
 									<ContextMenu name="ПравилаКонвертацииСвойствТипСвойстваФорматаКонтекстноеМеню" id="219"/>
 									<ExtendedTooltip name="ПравилаКонвертацииСвойствТипСвойстваФорматаРасширеннаяПодсказка" id="220"/>
-								</LabelField>
-								<LabelField name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКорреспондента" id="442">
-									<ContextMenu name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКорреспондентаКонтекстноеМеню" id="443"/>
-									<ExtendedTooltip name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКорреспондентаРасширеннаяПодсказка" id="444"/>
 								</LabelField>
 							</ChildItems>
 						</Table>
@@ -444,7 +465,7 @@
 							<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
 							<ExtendedTooltip name="ОбработчикиXDTOРасширеннаяПодсказка" id="260"/>
 							<Events>
-								<Event name="OnCurrentPageChange" callType="After">Расш1_СтраницыПриСменеСтраницыПосле</Event>
+								<Event name="OnCurrentPageChange" callType="After">Расш1_ОбработчикиXMLПриСменеСтраницыПосле</Event>
 							</Events>
 							<ChildItems>
 								<Page name="Страница_ПриОтправке" id="35">
@@ -679,6 +700,10 @@
 															</v8:item>
 														</Title>
 													</ExtendedTooltip>
+													<Events>
+														<Event name="OnChange" callType="After">Расш1_АлгоритмПослеЗагрузкиВсехДанныхПриИзмененииПосле</Event>
+														<Event name="Opening" callType="Override">Расш1_АлгоритмПослеЗагрузкиВсехДанныхОткрытиеВместо</Event>
+													</Events>
 												</InputField>
 												<Button name="ПоказатьТекстАлгоритмаПослеЗагрузкиВсехДанных" id="252">
 													<Type>Hyperlink</Type>
@@ -725,6 +750,9 @@
 							</Title>
 							<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
 							<ExtendedTooltip name="ОбработчикиXMLРасширеннаяПодсказка" id="264"/>
+							<Events>
+								<Event name="OnCurrentPageChange" callType="After">Расш1_ОбработчикиXMLПриСменеСтраницыПосле</Event>
+							</Events>
 							<ChildItems>
 								<Page name="Страница_ПередВыгрузкой" id="265">
 									<Title>
@@ -1668,11 +1696,36 @@
 									</LabelDecoration>
 								</ChildItems>
 							</UsualGroup>
-							<InputField name="Код" id="51">
-								<AutoMaxWidth>false</AutoMaxWidth>
-								<ContextMenu name="КодКонтекстноеМеню" id="52"/>
-								<ExtendedTooltip name="КодРасширеннаяПодсказка" id="53"/>
-							</InputField>
+							<UsualGroup name="ГруппаИдентификатор" id="503">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа идентификатор</v8:content>
+									</v8:item>
+								</Title>
+								<Group>AlwaysHorizontal</Group>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаИдентификаторРасширеннаяПодсказка" id="504"/>
+								<ChildItems>
+									<InputField name="Код" id="51">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<ContextMenu name="КодКонтекстноеМеню" id="52"/>
+										<ExtendedTooltip name="КодРасширеннаяПодсказка" id="53"/>
+									</InputField>
+									<Button name="ЗаполнитьИдентификатор" id="505">
+										<Type>UsualButton</Type>
+										<CommandName>0</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Заполнить</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЗаполнитьИдентификаторРасширеннаяПодсказка" id="506"/>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
 							<UsualGroup name="ГруппаОбъекты" id="76">
 								<Title>
 									<v8:item>
@@ -1688,7 +1741,9 @@
 									<InputField name="ОбъектКонфигурации" id="10">
 										<EditMode>EnterOnInput</EditMode>
 										<Height>1</Height>
+										<DropListButton>false</DropListButton>
 										<ChoiceButton>true</ChoiceButton>
+										<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
 										<ContextMenu name="ОбъектКонфигурацииКонтекстноеМеню" id="11"/>
 										<ExtendedTooltip name="ОбъектКонфигурацииРасширеннаяПодсказка" id="12"/>
 									</InputField>
@@ -1699,7 +1754,9 @@
 										<ExtendedTooltip name="ОбъектФорматаРасширеннаяПодсказка" id="15"/>
 									</InputField>
 									<InputField name="ОбъектКонфигурацииКорреспондент" id="254">
+										<DropListButton>false</DropListButton>
 										<ChoiceButton>true</ChoiceButton>
+										<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
 										<ContextMenu name="ОбъектКонфигурацииКорреспондентКонтекстноеМеню" id="255"/>
 										<ExtendedTooltip name="ОбъектКонфигурацииКорреспондентРасширеннаяПодсказка" id="256"/>
 									</InputField>
@@ -1793,14 +1850,6 @@
 									</InputField>
 								</ChildItems>
 							</UsualGroup>
-							<InputField name="Описание" id="150">
-								<TitleLocation>Top</TitleLocation>
-								<AutoMaxWidth>false</AutoMaxWidth>
-								<MultiLine>true</MultiLine>
-								<ExtendedEdit>true</ExtendedEdit>
-								<ContextMenu name="ОписаниеКонтекстноеМеню" id="151"/>
-								<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="152"/>
-							</InputField>
 						</ChildItems>
 					</Page>
 					<Page name="Страница_ПравилаКонвертацииСвойств" id="176">
@@ -1908,6 +1957,10 @@
 										<ContextMenu name="ПравилаКонвертацииСвойствСвойствоКонфигурацииКонтекстноеМеню" id="419"/>
 										<ExtendedTooltip name="ПравилаКонвертацииСвойствСвойствоКонфигурацииРасширеннаяПодсказка" id="420"/>
 									</LabelField>
+									<LabelField name="ПравилаКонвертацииСвойствТипСвойстваКонфигурации" id="430">
+										<ContextMenu name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКонтекстноеМеню" id="431"/>
+										<ExtendedTooltip name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииРасширеннаяПодсказка" id="432"/>
+									</LabelField>
 									<ColumnGroup name="ПравилаКонвертацииСвойствXML" id="454">
 										<Title>
 											<v8:item>
@@ -1962,6 +2015,10 @@
 											</ColumnGroup>
 										</ChildItems>
 									</ColumnGroup>
+									<LabelField name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКорреспондента" id="442">
+										<ContextMenu name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКорреспондентаКонтекстноеМеню" id="443"/>
+										<ExtendedTooltip name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКорреспондентаРасширеннаяПодсказка" id="444"/>
+									</LabelField>
 									<ColumnGroup name="ПравилаКонвертацииСвойствXDTO" id="456">
 										<Title>
 											<v8:item>
@@ -1987,17 +2044,9 @@
 										<ContextMenu name="ПравилаКонвертацииСвойствПравилоКонвертацииСвойстваКонтекстноеМеню" id="428"/>
 										<ExtendedTooltip name="ПравилаКонвертацииСвойствПравилоКонвертацииСвойстваРасширеннаяПодсказка" id="429"/>
 									</LabelField>
-									<LabelField name="ПравилаКонвертацииСвойствТипСвойстваКонфигурации" id="430">
-										<ContextMenu name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКонтекстноеМеню" id="431"/>
-										<ExtendedTooltip name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииРасширеннаяПодсказка" id="432"/>
-									</LabelField>
 									<LabelField name="ПравилаКонвертацииСвойствТипСвойстваФормата" id="433">
 										<ContextMenu name="ПравилаКонвертацииСвойствТипСвойстваФорматаКонтекстноеМеню" id="434"/>
 										<ExtendedTooltip name="ПравилаКонвертацииСвойствТипСвойстваФорматаРасширеннаяПодсказка" id="435"/>
-									</LabelField>
-									<LabelField name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКорреспондента" id="442">
-										<ContextMenu name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКорреспондентаКонтекстноеМеню" id="443"/>
-										<ExtendedTooltip name="ПравилаКонвертацииСвойствТипСвойстваКонфигурацииКорреспондентаРасширеннаяПодсказка" id="444"/>
 									</LabelField>
 								</ChildItems>
 							</Table>

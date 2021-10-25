@@ -62,9 +62,12 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<StyleItem>ТекстЗапрещеннойЯчейкиЦвет</StyleItem>
+			<StyleItem>ПравоНедействительногоПользователяФон</StyleItem>
 			<CommonPicture>Расш1_Получение</CommonPicture>
 			<CommonPicture>Расш1_Отправка</CommonPicture>
 			<CommonPicture>Расш1_Заменить</CommonPicture>
+			<CommonPicture>Папка</CommonPicture>
 			<CommonTemplate>bsl_console</CommonTemplate>
 			<CommonTemplate>VanessaEditor</CommonTemplate>
 			<CommonModule>Расш1_КоллекцияМетаданных</CommonModule>
@@ -72,7 +75,7 @@
 			<CommonModule>Расш1_КонсольКода</CommonModule>
 			<CommonModule>Расш1_ЖурналРегистрации</CommonModule>
 			<CommonModule>КонвертацияДанныхXDTOКлиент</CommonModule>
-			<CommonForm>ВыборКонфигурацийИсточникаПриемника</CommonForm>
+			<CommonModule>Расш1_МодульПовтИсп</CommonModule>
 			<Catalog>Алгоритмы</Catalog>
 			<Catalog>Конвертации</Catalog>
 			<Catalog>ПравилаОбработкиДанных</Catalog>
@@ -80,7 +83,11 @@
 			<Catalog>Конфигурации</Catalog>
 			<Catalog>Объекты</Catalog>
 			<Catalog>Релизы</Catalog>
+			<Catalog>Свойства</Catalog>
+			<Catalog>Значения</Catalog>
 			<Enum>ВариантыИдентификацииОбъектов</Enum>
+			<Enum>ВидыСвойств</Enum>
+			<DataProcessor>НастройкаПравилОбмена</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

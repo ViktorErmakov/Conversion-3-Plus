@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Catalog uuid="66fa4f2a-f74f-4065-b878-8b77180f7045">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Свойства" category="Object">
+				<xr:TypeId>6a5c7a4b-18fc-46ef-b122-38678a061b6e</xr:TypeId>
+				<xr:ValueId>44b548a1-07b7-4aed-a634-c9d7f3fe27a9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Свойства" category="Ref">
+				<xr:TypeId>bb9e4edf-435d-40d3-841c-674cddd21f8f</xr:TypeId>
+				<xr:ValueId>6f6adaad-bab9-4ca1-914a-c0b5b9543f46</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Свойства" category="Selection">
+				<xr:TypeId>84ff0164-c109-47c2-9c7f-59d050cc5b5d</xr:TypeId>
+				<xr:ValueId>c89c9462-c9ed-4d86-8ef9-8328f22b47d3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Свойства" category="List">
+				<xr:TypeId>43c13898-8ced-4f17-a697-3f00c7f92c6b</xr:TypeId>
+				<xr:ValueId>ebe034d1-85ac-4c62-a594-262a70278f7b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Свойства" category="Manager">
+				<xr:TypeId>ba70df8a-a772-4068-8636-f35646b32d94</xr:TypeId>
+				<xr:ValueId>7c284ede-6d0e-4113-a0bc-851517873d0c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Свойства</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>f3707464-2a14-4985-bd92-b2906fe80703</ExtendedConfigurationObject>
+			<Hierarchical>true</Hierarchical>
+			<HierarchyType>HierarchyFoldersAndItems</HierarchyType>
+			<Owners>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Объекты</xr:Item>
+			</Owners>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="f6b24f55-28cd-48bd-8e98-cb6f9fd14783">
+				<InternalInfo/>
+				<Properties>
+					<Name>ТипыСтрокой</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>88e0934d-f5b7-4d3b-a324-4f6c5b80407c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="de887f8f-c3c5-4ede-bb93-711d23fd037e">
+				<InternalInfo/>
+				<Properties>
+					<Name>Вид</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>7727b533-9762-4bdd-ae6f-c7bd22ad8be8</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыСвойств</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="3210c9a1-5f77-4493-a8b1-2114100f8d99">
+				<InternalInfo/>
+				<Properties>
+					<Name>Синоним</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>9e441ff9-cd6f-45c0-a5a8-d6cefa01a348</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

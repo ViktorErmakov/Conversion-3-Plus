@@ -93,18 +93,43 @@
 								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="Наименование" id="1">
+						<UsualGroup name="ГруппаИдентификатор" id="177">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Идентификатор правила</v8:content>
+									<v8:content>Группа идентификатор</v8:content>
 								</v8:item>
 							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
-							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
-						</InputField>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИдентификаторРасширеннаяПодсказка" id="178"/>
+							<ChildItems>
+								<InputField name="Наименование" id="1">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Идентификатор правила</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<Button name="ЗаполнитьИдентификатор" id="179">
+									<Type>UsualButton</Type>
+									<CommandName>0</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заполнить</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ЗаполнитьИдентификаторРасширеннаяПодсказка" id="180"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 						<UsualGroup name="ГруппаТумблеры" id="48">
 							<Title>
 								<v8:item>
@@ -174,7 +199,9 @@
 						</UsualGroup>
 						<InputField name="ОбъектВыборки" id="73">
 							<AutoMaxWidth>false</AutoMaxWidth>
+							<DropListButton>false</DropListButton>
 							<ChoiceButton>true</ChoiceButton>
+							<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
 							<ChooseType>false</ChooseType>
 							<ContextMenu name="ОбъектВыборкиКонтекстноеМеню" id="74"/>
 							<ExtendedTooltip name="ОбъектВыборкиРасширеннаяПодсказка" id="75"/>
@@ -667,6 +694,19 @@
 							<ContextMenu name="НеВыгружатьОбъектыСозданныеВБазеПриемникеКонтекстноеМеню" id="169"/>
 							<ExtendedTooltip name="НеВыгружатьОбъектыСозданныеВБазеПриемникеРасширеннаяПодсказка" id="170"/>
 						</CheckBoxField>
+						<InputField name="Описание" id="181">
+							<Width>50</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ОписаниеКонтекстноеМеню" id="182"/>
+							<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="183"/>
+						</InputField>
+						<InputField name="Комментарий" id="184">
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="185"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="186"/>
+						</InputField>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -759,18 +799,43 @@
 									</LabelDecoration>
 								</ChildItems>
 							</UsualGroup>
-							<InputField name="Наименование" id="1">
+							<UsualGroup name="ГруппаИдентификатор" id="177">
 								<Title>
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Идентификатор правила</v8:content>
+										<v8:content>Группа идентификатор</v8:content>
 									</v8:item>
 								</Title>
-								<EditMode>EnterOnInput</EditMode>
-								<AutoMaxWidth>false</AutoMaxWidth>
-								<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
-								<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
-							</InputField>
+								<Group>AlwaysHorizontal</Group>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаИдентификаторРасширеннаяПодсказка" id="178"/>
+								<ChildItems>
+									<InputField name="Наименование" id="1">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Идентификатор правила</v8:content>
+											</v8:item>
+										</Title>
+										<EditMode>EnterOnInput</EditMode>
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+										<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+									</InputField>
+									<Button name="ЗаполнитьИдентификатор" id="179">
+										<Type>UsualButton</Type>
+										<CommandName>0</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Заполнить</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЗаполнитьИдентификаторРасширеннаяПодсказка" id="180"/>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
 							<UsualGroup name="ГруппаТумблеры" id="48">
 								<Title>
 									<v8:item>
@@ -837,7 +902,9 @@
 							</UsualGroup>
 							<InputField name="ОбъектВыборки" id="73">
 								<AutoMaxWidth>false</AutoMaxWidth>
+								<DropListButton>false</DropListButton>
 								<ChoiceButton>true</ChoiceButton>
+								<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
 								<ChooseType>false</ChooseType>
 								<ContextMenu name="ОбъектВыборкиКонтекстноеМеню" id="74"/>
 								<ExtendedTooltip name="ОбъектВыборкиРасширеннаяПодсказка" id="75"/>
@@ -1327,6 +1394,19 @@
 								<ContextMenu name="НеВыгружатьОбъектыСозданныеВБазеПриемникеКонтекстноеМеню" id="169"/>
 								<ExtendedTooltip name="НеВыгружатьОбъектыСозданныеВБазеПриемникеРасширеннаяПодсказка" id="170"/>
 							</CheckBoxField>
+							<InputField name="Описание" id="181">
+								<Width>50</Width>
+								<HorizontalStretch>true</HorizontalStretch>
+								<VerticalStretch>true</VerticalStretch>
+								<MultiLine>true</MultiLine>
+								<ContextMenu name="ОписаниеКонтекстноеМеню" id="182"/>
+								<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="183"/>
+							</InputField>
+							<InputField name="Комментарий" id="184">
+								<HorizontalStretch>true</HorizontalStretch>
+								<ContextMenu name="КомментарийКонтекстноеМеню" id="185"/>
+								<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="186"/>
+							</InputField>
 						</ChildItems>
 					</Page>
 				</ChildItems>

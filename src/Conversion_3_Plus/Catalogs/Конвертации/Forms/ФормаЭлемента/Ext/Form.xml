@@ -64,6 +64,9 @@
 				</v8:item>
 			</Title>
 			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="21"/>
+			<Events>
+				<Event name="OnCurrentPageChange" callType="After">Расш1_СтраницыПриСменеСтраницыПосле</Event>
+			</Events>
 			<ChildItems>
 				<Page name="СтраницаКонвертацияXDTO" id="102">
 					<Title>
@@ -160,6 +163,24 @@
 								</RadioButtonField>
 							</ChildItems>
 						</UsualGroup>
+						<InputField name="ИмяФайлаДляСохранения_МодульМенеджера" id="287">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выгружать модуль в файл</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Если не заполнено, выгрузка производится в буфер обмена</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ИмяФайлаДляСохранения_МодульМенеджераКонтекстноеМеню" id="280"/>
+							<ExtendedTooltip name="ИмяФайлаДляСохранения_МодульМенеджераРасширеннаяПодсказка" id="289"/>
+						</InputField>
 						<Pages name="ГруппаДанныеКонвертацииXDTO" id="269">
 							<Title>
 								<v8:item>
@@ -255,6 +276,9 @@
 											</Title>
 											<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
 											<ExtendedTooltip name="СтраницыОбработчикиРасширеннаяПодсказка" id="105"/>
+											<Events>
+												<Event name="OnCurrentPageChange" callType="After">Расш1_СтраницыОбработчикиПриСменеСтраницыПосле</Event>
+											</Events>
 											<ChildItems>
 												<Page name="ПередКонвертацией" id="24">
 													<Title>
@@ -439,6 +463,17 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
+						<InputField name="ИмяФайлаДляСохранения" id="282">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выгружать правила в файл</v8:content>
+								</v8:item>
+							</Title>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ИмяФайлаДляСохраненияКонтекстноеМеню" id="290"/>
+							<ExtendedTooltip name="ИмяФайлаДляСохраненияРасширеннаяПодсказка" id="291"/>
+						</InputField>
 						<LabelDecoration name="ДекорацияОбработчики" id="273">
 							<TextColor>style:FieldSelectionBackColor</TextColor>
 							<Font ref="style:LargeTextFont" kind="StyleItem"/>
@@ -1395,6 +1430,24 @@
 									</RadioButtonField>
 								</ChildItems>
 							</UsualGroup>
+							<InputField name="ИмяФайлаДляСохранения_МодульМенеджера" id="279">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Выгружать модуль в файл</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Если не заполнено, выгрузка производится в буфер обмена</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+								<ChoiceButton>true</ChoiceButton>
+								<ContextMenu name="ИмяФайлаДляСохранения_МодульМенеджераКонтекстноеМеню" id="280"/>
+								<ExtendedTooltip name="ИмяФайлаДляСохранения_МодульМенеджераРасширеннаяПодсказка" id="281"/>
+							</InputField>
 							<Pages name="ГруппаДанныеКонвертацииXDTO" id="269">
 								<Title>
 									<v8:item>
@@ -1674,6 +1727,17 @@
 									</InputField>
 								</ChildItems>
 							</UsualGroup>
+							<InputField name="ИмяФайлаДляСохранения" id="282">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Выгружать правила в файл</v8:content>
+									</v8:item>
+								</Title>
+								<ChoiceButton>true</ChoiceButton>
+								<ContextMenu name="ИмяФайлаДляСохраненияКонтекстноеМеню" id="283"/>
+								<ExtendedTooltip name="ИмяФайлаДляСохраненияРасширеннаяПодсказка" id="284"/>
+							</InputField>
 							<LabelDecoration name="ДекорацияОбработчики" id="273">
 								<TextColor>style:FieldSelectionBackColor</TextColor>
 								<Font ref="style:LargeTextFont" kind="StyleItem"/>

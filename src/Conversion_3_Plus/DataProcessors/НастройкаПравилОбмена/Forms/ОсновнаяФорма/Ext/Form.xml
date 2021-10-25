@@ -1,0 +1,3104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ПодменюСохранитьМодуль" id="534">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сохранить модуль менеджера обмена</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Подменю сохранить модуль</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ПодменюСохранитьМодульРасширеннаяПодсказка" id="535"/>
+				<ChildItems>
+					<Button name="НаТекущийМомент" id="536">
+						<Type>CommandBarButton</Type>
+						<CommandName>0</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>По состоянию на текущий момент</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="НаТекущийМоментРасширеннаяПодсказка" id="537"/>
+					</Button>
+					<Button name="ПоСостояниюХранилища" id="538">
+						<Type>CommandBarButton</Type>
+						<CommandName>0</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>По состоянию хранилища</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ПоСостояниюХранилищаРасширеннаяПодсказка" id="539"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<Button name="ФормаСохранитьМодуль" id="81">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьМодульРасширеннаяПодсказка" id="82"/>
+			</Button>
+			<Button name="ФормаВыгрузкаКонвертацииXML" id="540">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаВыгрузкаКонвертацииXMLРасширеннаяПодсказка" id="541"/>
+			</Button>
+			<Button name="ФормаНастроитьКонвертацию" id="384">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаНастроитьКонвертациюРасширеннаяПодсказка" id="385"/>
+			</Button>
+			<Button name="ФормаЗагрузкаОбработчиков" id="456">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>0</CommandName>
+				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаЗагрузкаОбработчиковРасширеннаяПодсказка" id="457"/>
+			</Button>
+			<Button name="ФормаПроверитьКонвертацию" id="626">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаПроверитьКонвертациюРасширеннаяПодсказка" id="627"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Конвертация" id="113">
+			<Visible>false</Visible>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="КонвертацияКонтекстноеМеню" id="114"/>
+			<ExtendedTooltip name="КонвертацияРасширеннаяПодсказка" id="115"/>
+		</InputField>
+		<UsualGroup name="ГруппаВсеПравила" id="373">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа все правила</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВсеПравилаРасширеннаяПодсказка" id="374"/>
+			<ChildItems>
+				<Pages name="Страницы" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<Page name="ПОД" id="39">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Правила обработки данных</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ExtendedTooltip name="ПОДРасширеннаяПодсказка" id="40"/>
+							<ChildItems>
+								<Table name="ГруппыПравил_ПОД" id="562">
+									<Representation>Tree</Representation>
+									<Header>false</Header>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<ContextMenu name="ГруппыПравил_ПОДКонтекстноеМеню" id="563"/>
+									<AutoCommandBar name="ГруппыПравил_ПОДКоманднаяПанель" id="564">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ГруппыПравил_ПОДРасширеннаяПодсказка" id="565"/>
+									<SearchStringAddition name="ГруппыПравил_ПОДСтрокаПоиска" id="566">
+										<AdditionSource>
+											<Item>ГруппыПравил_ПОД</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравил_ПОДСтрокаПоискаКонтекстноеМеню" id="567"/>
+										<ExtendedTooltip name="ГруппыПравил_ПОДСтрокаПоискаРасширеннаяПодсказка" id="568"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ГруппыПравил_ПОДСостояниеПросмотра" id="569">
+										<AdditionSource>
+											<Item>ГруппыПравил_ПОД</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравил_ПОДСостояниеПросмотраКонтекстноеМеню" id="570"/>
+										<ExtendedTooltip name="ГруппыПравил_ПОДСостояниеПросмотраРасширеннаяПодсказка" id="571"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ГруппыПравил_ПОДУправлениеПоиском" id="572">
+										<AdditionSource>
+											<Item>ГруппыПравил_ПОД</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравил_ПОДУправлениеПоискомКонтекстноеМеню" id="573"/>
+										<ExtendedTooltip name="ГруппыПравил_ПОДУправлениеПоискомРасширеннаяПодсказка" id="574"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ГруппыПравил_ПОДНаименование" id="575">
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ГруппыПравил_ПОДНаименованиеКонтекстноеМеню" id="576"/>
+											<ExtendedTooltip name="ГруппыПравил_ПОДНаименованиеРасширеннаяПодсказка" id="577"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Table name="ПравилаОбработкиДанных" id="138">
+									<Representation>Tree</Representation>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<FileDragMode>AsFile</FileDragMode>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Правила обработки данных</v8:content>
+										</v8:item>
+									</Title>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="ПравилаОбработкиДанныхКонтекстноеМеню" id="139">
+										<ChildItems>
+											<Button name="ПравилаОбработкиДанныхКонтекстноеМенюИзменитьВыделенные" id="450">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ПравилаОбработкиДанныхКонтекстноеМенюИзменитьВыделенныеРасширеннаяПодсказка" id="451"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="ПравилаОбработкиДанныхКоманднаяПанель" id="140">
+										<ChildItems>
+											<SearchStringAddition name="ПОД_СтрокаПоиска" id="643">
+												<AdditionSource>
+													<Item>ПравилаОбработкиДанных</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>ПОД строка поиска</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ПОД_СтрокаПоискаКонтекстноеМеню" id="644"/>
+												<ExtendedTooltip name="ПОД_СтрокаПоискаРасширеннаяПодсказка" id="645"/>
+											</SearchStringAddition>
+											<Button name="ПравилаОбработкиДанныхПерейтиКПКО" id="382">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ПравилаОбработкиДанныхПерейтиКПКОРасширеннаяПодсказка" id="383"/>
+											</Button>
+											<Button name="ПравилаОбработкиДанныхИзменитьВыделенные" id="440">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ПравилаОбработкиДанныхИзменитьВыделенныеРасширеннаяПодсказка" id="441"/>
+											</Button>
+											<Button name="ПравилаОбработкиДанныхОбщаяКомандаЗахватитьОбъект" id="542">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<DataPath>138:02023637-7868-4a5f-8576-835a76e0c9ba/57</DataPath>
+												<ExtendedTooltip name="ПравилаОбработкиДанныхОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="543"/>
+											</Button>
+											<Button name="ПравилаОбработкиДанныхОбщаяКомандаСнятьЗахватОбъекта" id="552">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<DataPath>138:02023637-7868-4a5f-8576-835a76e0c9ba/57</DataPath>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ПравилаОбработкиДанныхОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="553"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ПравилаОбработкиДанныхРасширеннаяПодсказка" id="141"/>
+									<SearchStringAddition name="ПравилаОбработкиДанныхСтрокаПоиска" id="395" DisplayImportance="High">
+										<AdditionSource>
+											<Item>ПравилаОбработкиДанных</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПравилаОбработкиДанныхСтрокаПоискаКонтекстноеМеню" id="396"/>
+										<ExtendedTooltip name="ПравилаОбработкиДанныхСтрокаПоискаРасширеннаяПодсказка" id="397"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПравилаОбработкиДанныхСостояниеПросмотра" id="398">
+										<AdditionSource>
+											<Item>ПравилаОбработкиДанных</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПравилаОбработкиДанныхСостояниеПросмотраКонтекстноеМеню" id="399"/>
+										<ExtendedTooltip name="ПравилаОбработкиДанныхСостояниеПросмотраРасширеннаяПодсказка" id="400"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПравилаОбработкиДанныхУправлениеПоиском" id="401">
+										<AdditionSource>
+											<Item>ПравилаОбработкиДанных</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПравилаОбработкиДанныхУправлениеПоискомКонтекстноеМеню" id="402"/>
+										<ExtendedTooltip name="ПравилаОбработкиДанныхУправлениеПоискомРасширеннаяПодсказка" id="403"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection" callType="After">Расш1_ПравилаОбработкиДанныхВыборПосле</Event>
+									</Events>
+									<ChildItems>
+										<CheckBoxField name="ПравилаОбработкиДанныхЗахваченДругимПользователем" id="528">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Захвачен другим пользователем</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаОбработкиДанныхЗахваченДругимПользователемКонтекстноеМеню" id="529"/>
+											<ExtendedTooltip name="ПравилаОбработкиДанныхЗахваченДругимПользователемРасширеннаяПодсказка" id="530"/>
+										</CheckBoxField>
+										<CheckBoxField name="ПравилаОбработкиДанныхЗахваченТекущимПользователем" id="531">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Захвачен текущим пользователем</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаОбработкиДанныхЗахваченТекущимПользователемКонтекстноеМеню" id="532"/>
+											<ExtendedTooltip name="ПравилаОбработкиДанныхЗахваченТекущимПользователемРасширеннаяПодсказка" id="533"/>
+										</CheckBoxField>
+										<LabelField name="ПравилаОбработкиДанныхНаименование" id="145">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Идентификатор правила</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПравилаОбработкиДанныхНаименованиеКонтекстноеМеню" id="146"/>
+											<ExtendedTooltip name="ПравилаОбработкиДанныхНаименованиеРасширеннаяПодсказка" id="147"/>
+										</LabelField>
+										<CheckBoxField name="ПравилаОбработкиДанныхИспользоватьДляОтправки" id="172">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отправка</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаОбработкиДанныхИспользоватьДляОтправкиКонтекстноеМеню" id="173"/>
+											<ExtendedTooltip name="ПравилаОбработкиДанныхИспользоватьДляОтправкиРасширеннаяПодсказка" id="174"/>
+										</CheckBoxField>
+										<CheckBoxField name="ПравилаОбработкиДанныхИспользоватьДляПолучения" id="175">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Получение</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаОбработкиДанныхИспользоватьДляПолученияКонтекстноеМеню" id="176"/>
+											<ExtendedTooltip name="ПравилаОбработкиДанныхИспользоватьДляПолученияРасширеннаяПодсказка" id="177"/>
+										</CheckBoxField>
+										<LabelField name="ПравилаОбработкиДанныхОбъектВыборки" id="178">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Объект выборки</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПравилаОбработкиДанныхОбъектВыборкиКонтекстноеМеню" id="179"/>
+											<ExtendedTooltip name="ПравилаОбработкиДанныхОбъектВыборкиРасширеннаяПодсказка" id="180"/>
+										</LabelField>
+										<LabelField name="ПравилаОбработкиДанныхПравилоКонвертацииОбъекта" id="181">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Правило конвертации объекта</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПравилаОбработкиДанныхПравилоКонвертацииОбъектаКонтекстноеМеню" id="182"/>
+											<ExtendedTooltip name="ПравилаОбработкиДанныхПравилоКонвертацииОбъектаРасширеннаяПодсказка" id="183"/>
+										</LabelField>
+										<CheckBoxField name="ПравилаОбработкиДанныхОтключить" id="634">
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаОбработкиДанныхОтключитьКонтекстноеМеню" id="635"/>
+											<ExtendedTooltip name="ПравилаОбработкиДанныхОтключитьРасширеннаяПодсказка" id="636"/>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ПКО" id="37">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Правила конвертации объектов</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ExtendedTooltip name="ПКОРасширеннаяПодсказка" id="38"/>
+							<ChildItems>
+								<Table name="ГруппыПравилПКО" id="458">
+									<Representation>Tree</Representation>
+									<Header>false</Header>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<InitialTreeView>ExpandAllLevels</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группы правил</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ГруппыПравилПКОКонтекстноеМеню" id="459"/>
+									<AutoCommandBar name="ГруппыПравилПКОКоманднаяПанель" id="460">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ГруппыПравилПКОРасширеннаяПодсказка" id="461"/>
+									<SearchStringAddition name="ГруппыПравилПКОСтрокаПоиска" id="462">
+										<AdditionSource>
+											<Item>ГруппыПравилПКО</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравилПКОСтрокаПоискаКонтекстноеМеню" id="463"/>
+										<ExtendedTooltip name="ГруппыПравилПКОСтрокаПоискаРасширеннаяПодсказка" id="464"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ГруппыПравилПКОСостояниеПросмотра" id="465">
+										<AdditionSource>
+											<Item>ГруппыПравилПКО</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравилПКОСостояниеПросмотраКонтекстноеМеню" id="466"/>
+										<ExtendedTooltip name="ГруппыПравилПКОСостояниеПросмотраРасширеннаяПодсказка" id="467"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ГруппыПравилПКОУправлениеПоиском" id="468">
+										<AdditionSource>
+											<Item>ГруппыПравилПКО</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравилПКОУправлениеПоискомКонтекстноеМеню" id="469"/>
+										<ExtendedTooltip name="ГруппыПравилПКОУправлениеПоискомРасширеннаяПодсказка" id="470"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ГруппыПравилНаименование" id="471">
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ГруппыПравилНаименованиеКонтекстноеМеню" id="472"/>
+											<ExtendedTooltip name="ГруппыПравилНаименованиеРасширеннаяПодсказка" id="473"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Table name="ПравилаКонвертацииОбъектов" id="190">
+									<Representation>Tree</Representation>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<FileDragMode>AsFile</FileDragMode>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Правила конвертации объектов</v8:content>
+										</v8:item>
+									</Title>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="ПравилаКонвертацииОбъектовКонтекстноеМеню" id="191">
+										<ChildItems>
+											<Button name="ПравилаКонвертацииОбъектовКонтекстноеМенюИзменитьВыделенные" id="452">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ПравилаКонвертацииОбъектовКонтекстноеМенюИзменитьВыделенныеРасширеннаяПодсказка" id="453"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="ПравилаКонвертацииОбъектовКоманднаяПанель" id="192">
+										<ChildItems>
+											<SearchStringAddition name="ПКО_СтрокаПоиска" id="646">
+												<AdditionSource>
+													<Item>ПравилаКонвертацииОбъектов</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>ПКО строка поиска</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ПКО_СтрокаПоискаКонтекстноеМеню" id="647"/>
+												<ExtendedTooltip name="ПКО_СтрокаПоискаРасширеннаяПодсказка" id="648"/>
+											</SearchStringAddition>
+											<Button name="ПравилаКонвертацииОбъектовИзменитьВыделенные" id="442">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ПравилаКонвертацииОбъектовИзменитьВыделенныеРасширеннаяПодсказка" id="443"/>
+											</Button>
+											<Button name="ПравилаКонвертацииОбъектовОбщаяКомандаЗахватитьОбъект" id="544">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<DataPath>190:02023637-7868-4a5f-8576-835a76e0c9ba/73</DataPath>
+												<ExtendedTooltip name="ПравилаКонвертацииОбъектовОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="545"/>
+											</Button>
+											<Button name="ПравилаКонвертацииОбъектовОбщаяКомандаСнятьЗахватОбъекта" id="554">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<DataPath>190:02023637-7868-4a5f-8576-835a76e0c9ba/73</DataPath>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ПравилаКонвертацииОбъектовОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="555"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ПравилаКонвертацииОбъектовРасширеннаяПодсказка" id="193"/>
+									<SearchStringAddition name="ПравилаКонвертацииОбъектовСтрокаПоиска" id="404">
+										<AdditionSource>
+											<Item>ПравилаКонвертацииОбъектов</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПравилаКонвертацииОбъектовСтрокаПоискаКонтекстноеМеню" id="405"/>
+										<ExtendedTooltip name="ПравилаКонвертацииОбъектовСтрокаПоискаРасширеннаяПодсказка" id="406"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПравилаКонвертацииОбъектовСостояниеПросмотра" id="407">
+										<AdditionSource>
+											<Item>ПравилаКонвертацииОбъектов</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПравилаКонвертацииОбъектовСостояниеПросмотраКонтекстноеМеню" id="408"/>
+										<ExtendedTooltip name="ПравилаКонвертацииОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="409"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПравилаКонвертацииОбъектовУправлениеПоиском" id="410">
+										<AdditionSource>
+											<Item>ПравилаКонвертацииОбъектов</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПравилаКонвертацииОбъектовУправлениеПоискомКонтекстноеМеню" id="411"/>
+										<ExtendedTooltip name="ПравилаКонвертацииОбъектовУправлениеПоискомРасширеннаяПодсказка" id="412"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection" callType="After">Расш1_ПравилаКонвертацииОбъектовВыборПосле</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="ПравилаКонвертацииОбъектовКод" id="194">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Идентификатор правила</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПравилаКонвертацииОбъектовКодКонтекстноеМеню" id="195"/>
+											<ExtendedTooltip name="ПравилаКонвертацииОбъектовКодРасширеннаяПодсказка" id="196"/>
+										</LabelField>
+										<CheckBoxField name="ПравилаКонвертацииОбъектовИспользоватьДляОтправки" id="230">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отправка</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаКонвертацииОбъектовИспользоватьДляОтправкиКонтекстноеМеню" id="231"/>
+											<ExtendedTooltip name="ПравилаКонвертацииОбъектовИспользоватьДляОтправкиРасширеннаяПодсказка" id="232"/>
+										</CheckBoxField>
+										<CheckBoxField name="ПравилаКонвертацииОбъектовИспользоватьДляПолучения" id="233">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Получение</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаКонвертацииОбъектовИспользоватьДляПолученияКонтекстноеМеню" id="234"/>
+											<ExtendedTooltip name="ПравилаКонвертацииОбъектовИспользоватьДляПолученияРасширеннаяПодсказка" id="235"/>
+										</CheckBoxField>
+										<LabelField name="ПравилаКонвертацииОбъектовОбъектКонфигурации" id="236">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Объект конфигурации</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПравилаКонвертацииОбъектовОбъектКонфигурацииКонтекстноеМеню" id="237"/>
+											<ExtendedTooltip name="ПравилаКонвертацииОбъектовОбъектКонфигурацииРасширеннаяПодсказка" id="238"/>
+										</LabelField>
+										<LabelField name="ПравилаКонвертацииОбъектовОбъектКонфигурацииКорреспондент" id="474">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Получатель</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПравилаКонвертацииОбъектовОбъектКонфигурацииКорреспондентКонтекстноеМеню" id="475"/>
+											<ExtendedTooltip name="ПравилаКонвертацииОбъектовОбъектКонфигурацииКорреспондентРасширеннаяПодсказка" id="476"/>
+										</LabelField>
+										<CheckBoxField name="ПравилаКонвертацииОбъектовЗахваченТекущимПользователем" id="519">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Захвачен текущим пользователем</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаКонвертацииОбъектовЗахваченТекущимПользователемКонтекстноеМеню" id="520"/>
+											<ExtendedTooltip name="ПравилаКонвертацииОбъектовЗахваченТекущимПользователемРасширеннаяПодсказка" id="521"/>
+										</CheckBoxField>
+										<CheckBoxField name="ПравилаКонвертацииОбъектовЗахваченДругимПользователем" id="516">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Захвачен другим пользователем</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаКонвертацииОбъектовЗахваченДругимПользователемКонтекстноеМеню" id="517"/>
+											<ExtendedTooltip name="ПравилаКонвертацииОбъектовЗахваченДругимПользователемРасширеннаяПодсказка" id="518"/>
+										</CheckBoxField>
+										<LabelField name="ПравилаКонвертацииОбъектовОбъектФормата" id="239">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Объект формата</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПравилаКонвертацииОбъектовОбъектФорматаКонтекстноеМеню" id="240"/>
+											<ExtendedTooltip name="ПравилаКонвертацииОбъектовОбъектФорматаРасширеннаяПодсказка" id="241"/>
+										</LabelField>
+										<CheckBoxField name="ПравилаКонвертацииОбъектовОтключить" id="637">
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаКонвертацииОбъектовОтключитьКонтекстноеМеню" id="638"/>
+											<ExtendedTooltip name="ПравилаКонвертацииОбъектовОтключитьРасширеннаяПодсказка" id="639"/>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ПКПД" id="89">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Правила конвертации предопределенных данных</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ExtendedTooltip name="ПКПДРасширеннаяПодсказка" id="90"/>
+							<ChildItems>
+								<Table name="ГруппыПравил_ПКПД" id="578">
+									<Representation>Tree</Representation>
+									<Header>false</Header>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<ContextMenu name="ГруппыПравил_ПКПДКонтекстноеМеню" id="579"/>
+									<AutoCommandBar name="ГруппыПравил_ПКПДКоманднаяПанель" id="580">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ГруппыПравил_ПКПДРасширеннаяПодсказка" id="581"/>
+									<SearchStringAddition name="ГруппыПравил_ПКПДСтрокаПоиска" id="582">
+										<AdditionSource>
+											<Item>ГруппыПравил_ПКПД</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравил_ПКПДСтрокаПоискаКонтекстноеМеню" id="583"/>
+										<ExtendedTooltip name="ГруппыПравил_ПКПДСтрокаПоискаРасширеннаяПодсказка" id="584"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ГруппыПравил_ПКПДСостояниеПросмотра" id="585">
+										<AdditionSource>
+											<Item>ГруппыПравил_ПКПД</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравил_ПКПДСостояниеПросмотраКонтекстноеМеню" id="586"/>
+										<ExtendedTooltip name="ГруппыПравил_ПКПДСостояниеПросмотраРасширеннаяПодсказка" id="587"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ГруппыПравил_ПКПДУправлениеПоиском" id="588">
+										<AdditionSource>
+											<Item>ГруппыПравил_ПКПД</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравил_ПКПДУправлениеПоискомКонтекстноеМеню" id="589"/>
+										<ExtendedTooltip name="ГруппыПравил_ПКПДУправлениеПоискомРасширеннаяПодсказка" id="590"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ГруппыПравил_ПКПДНаименование" id="591">
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ГруппыПравил_ПКПДНаименованиеКонтекстноеМеню" id="592"/>
+											<ExtendedTooltip name="ГруппыПравил_ПКПДНаименованиеРасширеннаяПодсказка" id="593"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Table name="ПравилаКонвертацииПредопределенныхДанных" id="282">
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<FileDragMode>AsFile</FileDragMode>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Правила конвертации предопределенных данных</v8:content>
+										</v8:item>
+									</Title>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхКонтекстноеМеню" id="283">
+										<ChildItems>
+											<Button name="ПравилаКонвертацииПредопределенныхДанныхКонтекстноеМенюИзменитьВыделенные" id="454">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхКонтекстноеМенюИзменитьВыделенныеРасширеннаяПодсказка" id="455"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="ПравилаКонвертацииПредопределенныхДанныхКоманднаяПанель" id="284">
+										<ChildItems>
+											<SearchStringAddition name="ПКПД_СтрокаПоиска" id="649">
+												<AdditionSource>
+													<Item>ПравилаКонвертацииПредопределенныхДанных</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>ПКПД строка поиска</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ПКПД_СтрокаПоискаКонтекстноеМеню" id="650"/>
+												<ExtendedTooltip name="ПКПД_СтрокаПоискаРасширеннаяПодсказка" id="651"/>
+											</SearchStringAddition>
+											<Button name="ПравилаКонвертацииПредопределенныхДанныхИзменитьВыделенные" id="444">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхИзменитьВыделенныеРасширеннаяПодсказка" id="445"/>
+											</Button>
+											<Button name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаЗахватитьОбъект" id="546">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<DataPath>282:02023637-7868-4a5f-8576-835a76e0c9ba/42</DataPath>
+												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="547"/>
+											</Button>
+											<Button name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаСнятьЗахватОбъекта" id="556">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<DataPath>282:02023637-7868-4a5f-8576-835a76e0c9ba/42</DataPath>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="557"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхРасширеннаяПодсказка" id="285"/>
+									<SearchStringAddition name="ПравилаКонвертацииПредопределенныхДанныхСтрокаПоиска" id="413">
+										<AdditionSource>
+											<Item>ПравилаКонвертацииПредопределенныхДанных</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхСтрокаПоискаКонтекстноеМеню" id="414"/>
+										<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхСтрокаПоискаРасширеннаяПодсказка" id="415"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПравилаКонвертацииПредопределенныхДанныхСостояниеПросмотра" id="416">
+										<AdditionSource>
+											<Item>ПравилаКонвертацииПредопределенныхДанных</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхСостояниеПросмотраКонтекстноеМеню" id="417"/>
+										<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхСостояниеПросмотраРасширеннаяПодсказка" id="418"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПравилаКонвертацииПредопределенныхДанныхУправлениеПоиском" id="419">
+										<AdditionSource>
+											<Item>ПравилаКонвертацииПредопределенныхДанных</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхУправлениеПоискомКонтекстноеМеню" id="420"/>
+										<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхУправлениеПоискомРасширеннаяПодсказка" id="421"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<CheckBoxField name="ПравилаКонвертацииПредопределенныхДанныхЗахваченТекущимПользователем" id="525">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Захвачен текущим пользователем</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхЗахваченТекущимПользователемКонтекстноеМеню" id="526"/>
+											<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхЗахваченТекущимПользователемРасширеннаяПодсказка" id="527"/>
+										</CheckBoxField>
+										<CheckBoxField name="ПравилаКонвертацииПредопределенныхДанныхЗахваченДругимПользователем" id="522">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Захвачен другим пользователем</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхЗахваченДругимПользователемКонтекстноеМеню" id="523"/>
+											<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхЗахваченДругимПользователемРасширеннаяПодсказка" id="524"/>
+										</CheckBoxField>
+										<LabelField name="ПравилаКонвертацииПредопределенныхДанныхКод" id="286">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Идентификатор правила</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхКодКонтекстноеМеню" id="287"/>
+											<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхКодРасширеннаяПодсказка" id="288"/>
+										</LabelField>
+										<CheckBoxField name="ПравилаКонвертацииПредопределенныхДанныхИспользоватьДляОтправки" id="310">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отправка</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхИспользоватьДляОтправкиКонтекстноеМеню" id="311"/>
+											<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхИспользоватьДляОтправкиРасширеннаяПодсказка" id="312"/>
+										</CheckBoxField>
+										<CheckBoxField name="ПравилаКонвертацииПредопределенныхДанныхИспользоватьДляПолучения" id="313">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Получение</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхИспользоватьДляПолученияКонтекстноеМеню" id="314"/>
+											<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхИспользоватьДляПолученияРасширеннаяПодсказка" id="315"/>
+										</CheckBoxField>
+										<LabelField name="ПравилаКонвертацииПредопределенныхДанныхОбъектКонфигурации" id="316">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Объект конфигурации</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхОбъектКонфигурацииКонтекстноеМеню" id="317"/>
+											<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОбъектКонфигурацииРасширеннаяПодсказка" id="318"/>
+										</LabelField>
+										<LabelField name="ПравилаКонвертацииПредопределенныхДанныхОбъектКонфигурацииКорреспондент" id="477">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Получатель</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхОбъектКонфигурацииКорреспондентКонтекстноеМеню" id="478"/>
+											<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОбъектКонфигурацииКорреспондентРасширеннаяПодсказка" id="479"/>
+										</LabelField>
+										<LabelField name="ПравилаКонвертацииПредопределенныхДанныхОбъектФормата" id="319">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Объект формата</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхОбъектФорматаКонтекстноеМеню" id="320"/>
+											<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОбъектФорматаРасширеннаяПодсказка" id="321"/>
+										</LabelField>
+										<CheckBoxField name="ПравилаКонвертацииПредопределенныхДанныхОтключить" id="640">
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхОтключитьКонтекстноеМеню" id="641"/>
+											<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОтключитьРасширеннаяПодсказка" id="642"/>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ГруппаАлгоритмы" id="57">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Алгоритмы</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ExtendedTooltip name="ГруппаАлгоритмыРасширеннаяПодсказка" id="58"/>
+							<ChildItems>
+								<Table name="ГруппыПравил_Алгоритмы" id="594">
+									<Representation>Tree</Representation>
+									<Header>false</Header>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<ContextMenu name="ГруппыПравил_АлгоритмыКонтекстноеМеню" id="595"/>
+									<AutoCommandBar name="ГруппыПравил_АлгоритмыКоманднаяПанель" id="596">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ГруппыПравил_АлгоритмыРасширеннаяПодсказка" id="597"/>
+									<SearchStringAddition name="ГруппыПравил_АлгоритмыСтрокаПоиска" id="598">
+										<AdditionSource>
+											<Item>ГруппыПравил_Алгоритмы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравил_АлгоритмыСтрокаПоискаКонтекстноеМеню" id="599"/>
+										<ExtendedTooltip name="ГруппыПравил_АлгоритмыСтрокаПоискаРасширеннаяПодсказка" id="600"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ГруппыПравил_АлгоритмыСостояниеПросмотра" id="601">
+										<AdditionSource>
+											<Item>ГруппыПравил_Алгоритмы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравил_АлгоритмыСостояниеПросмотраКонтекстноеМеню" id="602"/>
+										<ExtendedTooltip name="ГруппыПравил_АлгоритмыСостояниеПросмотраРасширеннаяПодсказка" id="603"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ГруппыПравил_АлгоритмыУправлениеПоиском" id="604">
+										<AdditionSource>
+											<Item>ГруппыПравил_Алгоритмы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравил_АлгоритмыУправлениеПоискомКонтекстноеМеню" id="605"/>
+										<ExtendedTooltip name="ГруппыПравил_АлгоритмыУправлениеПоискомРасширеннаяПодсказка" id="606"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ГруппыПравил_АлгоритмыНаименование" id="607">
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ГруппыПравил_АлгоритмыНаименованиеКонтекстноеМеню" id="608"/>
+											<ExtendedTooltip name="ГруппыПравил_АлгоритмыНаименованиеРасширеннаяПодсказка" id="609"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Table name="Алгоритмы" id="363">
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<FileDragMode>AsFile</FileDragMode>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Алгоритмы</v8:content>
+										</v8:item>
+									</Title>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="АлгоритмыКонтекстноеМеню" id="364"/>
+									<AutoCommandBar name="АлгоритмыКоманднаяПанель" id="365">
+										<ChildItems>
+											<SearchStringAddition name="Алгоритмы_СтрокаПоиска" id="652">
+												<AdditionSource>
+													<Item>Алгоритмы</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Алгоритмы строка поиска</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="Алгоритмы_СтрокаПоискаКонтекстноеМеню" id="653"/>
+												<ExtendedTooltip name="Алгоритмы_СтрокаПоискаРасширеннаяПодсказка" id="654"/>
+											</SearchStringAddition>
+											<Button name="АлгоритмыИзменитьВыделенные" id="446">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="АлгоритмыИзменитьВыделенныеРасширеннаяПодсказка" id="447"/>
+											</Button>
+											<Button name="АлгоритмыОбщаяКомандаЗахватитьОбъект" id="548">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<DataPath>363:02023637-7868-4a5f-8576-835a76e0c9ba/29</DataPath>
+												<ExtendedTooltip name="АлгоритмыОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="549"/>
+											</Button>
+											<Button name="АлгоритмыОбщаяКомандаСнятьЗахватОбъекта" id="558">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<DataPath>363:02023637-7868-4a5f-8576-835a76e0c9ba/29</DataPath>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="АлгоритмыОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="559"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="АлгоритмыРасширеннаяПодсказка" id="366"/>
+									<SearchStringAddition name="АлгоритмыСтрокаПоиска" id="422">
+										<AdditionSource>
+											<Item>Алгоритмы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="АлгоритмыСтрокаПоискаКонтекстноеМеню" id="423"/>
+										<ExtendedTooltip name="АлгоритмыСтрокаПоискаРасширеннаяПодсказка" id="424"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="АлгоритмыСостояниеПросмотра" id="425">
+										<AdditionSource>
+											<Item>Алгоритмы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="АлгоритмыСостояниеПросмотраКонтекстноеМеню" id="426"/>
+										<ExtendedTooltip name="АлгоритмыСостояниеПросмотраРасширеннаяПодсказка" id="427"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="АлгоритмыУправлениеПоиском" id="428">
+										<AdditionSource>
+											<Item>Алгоритмы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="АлгоритмыУправлениеПоискомКонтекстноеМеню" id="429"/>
+										<ExtendedTooltip name="АлгоритмыУправлениеПоискомРасширеннаяПодсказка" id="430"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection" callType="After">Расш1_АлгоритмыВыборПосле</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="АлгоритмыКод" id="367">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Имя</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="АлгоритмыКодКонтекстноеМеню" id="368"/>
+											<ExtendedTooltip name="АлгоритмыКодРасширеннаяПодсказка" id="369"/>
+										</LabelField>
+										<LabelField name="АлгоритмыПараметры" id="370">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Параметры</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="АлгоритмыПараметрыКонтекстноеМеню" id="371"/>
+											<ExtendedTooltip name="АлгоритмыПараметрыРасширеннаяПодсказка" id="372"/>
+										</LabelField>
+										<CheckBoxField name="АлгоритмыЗахваченТекущимПользователем" id="507">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Захвачен текущим пользователем</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АлгоритмыЗахваченТекущимПользователемКонтекстноеМеню" id="508"/>
+											<ExtendedTooltip name="АлгоритмыЗахваченТекущимПользователемРасширеннаяПодсказка" id="509"/>
+										</CheckBoxField>
+										<CheckBoxField name="АлгоритмыЗахваченДругимПользователем" id="504">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Захвачен другим пользователем</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АлгоритмыЗахваченДругимПользователемКонтекстноеМеню" id="505"/>
+											<ExtendedTooltip name="АлгоритмыЗахваченДругимПользователемРасширеннаяПодсказка" id="506"/>
+										</CheckBoxField>
+										<CheckBoxField name="АлгоритмыОтключить" id="628">
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АлгоритмыОтключитьКонтекстноеМеню" id="629"/>
+											<ExtendedTooltip name="АлгоритмыОтключитьРасширеннаяПодсказка" id="630"/>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ГруппаЗапросы" id="480">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запросы</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ExtendedTooltip name="ГруппаЗапросыРасширеннаяПодсказка" id="481"/>
+							<ChildItems>
+								<Table name="ГруппыПравил_Запросы" id="610">
+									<Representation>Tree</Representation>
+									<Header>false</Header>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<ContextMenu name="ГруппыПравил_ЗапросыКонтекстноеМеню" id="611"/>
+									<AutoCommandBar name="ГруппыПравил_ЗапросыКоманднаяПанель" id="612">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ГруппыПравил_ЗапросыРасширеннаяПодсказка" id="613"/>
+									<SearchStringAddition name="ГруппыПравил_ЗапросыСтрокаПоиска" id="614">
+										<AdditionSource>
+											<Item>ГруппыПравил_Запросы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравил_ЗапросыСтрокаПоискаКонтекстноеМеню" id="615"/>
+										<ExtendedTooltip name="ГруппыПравил_ЗапросыСтрокаПоискаРасширеннаяПодсказка" id="616"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ГруппыПравил_ЗапросыСостояниеПросмотра" id="617">
+										<AdditionSource>
+											<Item>ГруппыПравил_Запросы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравил_ЗапросыСостояниеПросмотраКонтекстноеМеню" id="618"/>
+										<ExtendedTooltip name="ГруппыПравил_ЗапросыСостояниеПросмотраРасширеннаяПодсказка" id="619"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ГруппыПравил_ЗапросыУправлениеПоиском" id="620">
+										<AdditionSource>
+											<Item>ГруппыПравил_Запросы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ГруппыПравил_ЗапросыУправлениеПоискомКонтекстноеМеню" id="621"/>
+										<ExtendedTooltip name="ГруппыПравил_ЗапросыУправлениеПоискомРасширеннаяПодсказка" id="622"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ГруппыПравил_ЗапросыНаименование" id="623">
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ГруппыПравил_ЗапросыНаименованиеКонтекстноеМеню" id="624"/>
+											<ExtendedTooltip name="ГруппыПравил_ЗапросыНаименованиеРасширеннаяПодсказка" id="625"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Table name="Запросы" id="482">
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<FileDragMode>AsFile</FileDragMode>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Запросы</v8:content>
+										</v8:item>
+									</Title>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="ЗапросыКонтекстноеМеню" id="483"/>
+									<AutoCommandBar name="ЗапросыКоманднаяПанель" id="484">
+										<ChildItems>
+											<Button name="ЗапросыОбщаяКомандаЗахватитьОбъект" id="550">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<DataPath>482:02023637-7868-4a5f-8576-835a76e0c9ba/7</DataPath>
+												<ExtendedTooltip name="ЗапросыОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="551"/>
+											</Button>
+											<Button name="ЗапросыОбщаяКомандаСнятьЗахватОбъекта" id="560">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<DataPath>482:02023637-7868-4a5f-8576-835a76e0c9ba/7</DataPath>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ЗапросыОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="561"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ЗапросыРасширеннаяПодсказка" id="485"/>
+									<SearchStringAddition name="ЗапросыСтрокаПоиска" id="486">
+										<AdditionSource>
+											<Item>Запросы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗапросыСтрокаПоискаКонтекстноеМеню" id="487"/>
+										<ExtendedTooltip name="ЗапросыСтрокаПоискаРасширеннаяПодсказка" id="488"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ЗапросыСостояниеПросмотра" id="489">
+										<AdditionSource>
+											<Item>Запросы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗапросыСостояниеПросмотраКонтекстноеМеню" id="490"/>
+										<ExtendedTooltip name="ЗапросыСостояниеПросмотраРасширеннаяПодсказка" id="491"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ЗапросыУправлениеПоиском" id="492">
+										<AdditionSource>
+											<Item>Запросы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗапросыУправлениеПоискомКонтекстноеМеню" id="493"/>
+										<ExtendedTooltip name="ЗапросыУправлениеПоискомРасширеннаяПодсказка" id="494"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<CheckBoxField name="ЗапросыЗахваченТекущимПользователем" id="513">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Захвачен текущим пользователем</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗапросыЗахваченТекущимПользователемКонтекстноеМеню" id="514"/>
+											<ExtendedTooltip name="ЗапросыЗахваченТекущимПользователемРасширеннаяПодсказка" id="515"/>
+										</CheckBoxField>
+										<CheckBoxField name="ЗапросыЗахваченДругимПользователем" id="510">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Захвачен другим пользователем</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗапросыЗахваченДругимПользователемКонтекстноеМеню" id="511"/>
+											<ExtendedTooltip name="ЗапросыЗахваченДругимПользователемРасширеннаяПодсказка" id="512"/>
+										</CheckBoxField>
+										<LabelField name="ЗапросыКод" id="501">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Имя запроса</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ЗапросыКодКонтекстноеМеню" id="502"/>
+											<ExtendedTooltip name="ЗапросыКодРасширеннаяПодсказка" id="503"/>
+										</LabelField>
+										<CheckBoxField name="ЗапросыИспользуетсяПриЗагрузке" id="498">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Используется при загрузке</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗапросыИспользуетсяПриЗагрузкеКонтекстноеМеню" id="499"/>
+											<ExtendedTooltip name="ЗапросыИспользуетсяПриЗагрузкеРасширеннаяПодсказка" id="500"/>
+										</CheckBoxField>
+										<CheckBoxField name="ЗапросыОтключить" id="631">
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗапросыОтключитьКонтекстноеМеню" id="632"/>
+											<ExtendedTooltip name="ЗапросыОтключитьРасширеннаяПодсказка" id="633"/>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Алгоритмы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Алгоритмы.ЗахваченДругимПользователем</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Алгоритмы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Алгоритмы.ЗахваченТекущимПользователем</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПравилаОбработкиДанных</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ПравилаОбработкиДанных.ЗахваченДругимПользователем</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПравилаОбработкиДанных</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ПравилаОбработкиДанных.ЗахваченТекущимПользователем</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПравилаКонвертацииОбъектов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ПравилаКонвертацииОбъектов.ЗахваченДругимПользователем</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПравилаКонвертацииОбъектов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ПравилаКонвертацииОбъектов.ЗахваченТекущимПользователем</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПравилаКонвертацииПредопределенныхДанных</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ПравилаКонвертацииПредопределенныхДанных.ЗахваченДругимПользователем</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПравилаКонвертацииПредопределенныхДанных</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ПравилаКонвертацииПредопределенныхДанных.ЗахваченТекущимПользователем</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Запросы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Запросы.ЗахваченДругимПользователем</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Запросы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Запросы.ЗахваченТекущимПользователем</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Алгоритмы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Алгоритмы.Отключить</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Запросы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Запросы.Отключить</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПравилаОбработкиДанных</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ПравилаОбработкиДанных.Отключить</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПравилаКонвертацииОбъектов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ПравилаКонвертацииОбъектов.Отключить</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПравилаКонвертацииПредопределенныхДанных</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ПравилаКонвертацииПредопределенныхДанных.Отключить</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<BaseForm version="2.12">
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<ChildItems>
+				<Popup name="ПодменюСохранитьМодуль" id="534">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохранить модуль менеджера обмена</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подменю сохранить модуль</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПодменюСохранитьМодульРасширеннаяПодсказка" id="535"/>
+					<ChildItems>
+						<Button name="НаТекущийМомент" id="536">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>По состоянию на текущий момент</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="НаТекущийМоментРасширеннаяПодсказка" id="537"/>
+						</Button>
+						<Button name="ПоСостояниюХранилища" id="538">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>По состоянию хранилища</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПоСостояниюХранилищаРасширеннаяПодсказка" id="539"/>
+						</Button>
+					</ChildItems>
+				</Popup>
+				<Button name="ФормаСохранитьМодуль" id="81">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаСохранитьМодульРасширеннаяПодсказка" id="82"/>
+				</Button>
+				<Button name="ФормаВыгрузкаКонвертацииXML" id="540">
+					<Type>CommandBarButton</Type>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаВыгрузкаКонвертацииXMLРасширеннаяПодсказка" id="541"/>
+				</Button>
+				<Button name="ФормаНастроитьКонвертацию" id="384">
+					<Type>CommandBarButton</Type>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаНастроитьКонвертациюРасширеннаяПодсказка" id="385"/>
+				</Button>
+				<Button name="ФормаЗагрузкаОбработчиков" id="456">
+					<Type>CommandBarButton</Type>
+					<Representation>Text</Representation>
+					<CommandName>0</CommandName>
+					<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+					<ExtendedTooltip name="ФормаЗагрузкаОбработчиковРасширеннаяПодсказка" id="457"/>
+				</Button>
+				<Button name="ФормаПроверитьКонвертацию" id="626">
+					<Type>CommandBarButton</Type>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаПроверитьКонвертациюРасширеннаяПодсказка" id="627"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<InputField name="Конвертация" id="113">
+				<Visible>false</Visible>
+				<AutoMarkIncomplete>true</AutoMarkIncomplete>
+				<ContextMenu name="КонвертацияКонтекстноеМеню" id="114"/>
+				<ExtendedTooltip name="КонвертацияРасширеннаяПодсказка" id="115"/>
+			</InputField>
+			<UsualGroup name="ГруппаВсеПравила" id="373">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа все правила</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Horizontal</Group>
+				<Representation>None</Representation>
+				<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаВсеПравилаРасширеннаяПодсказка" id="374"/>
+				<ChildItems>
+					<Pages name="Страницы" id="35">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Страницы</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="36"/>
+						<ChildItems>
+							<Page name="ПОД" id="39">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Правила обработки данных</v8:content>
+									</v8:item>
+								</Title>
+								<Group>AlwaysHorizontal</Group>
+								<ExtendedTooltip name="ПОДРасширеннаяПодсказка" id="40"/>
+								<ChildItems>
+									<Table name="ГруппыПравил_ПОД" id="562">
+										<Representation>Tree</Representation>
+										<Header>false</Header>
+										<AutoInsertNewRow>true</AutoInsertNewRow>
+										<EnableStartDrag>true</EnableStartDrag>
+										<EnableDrag>true</EnableDrag>
+										<ContextMenu name="ГруппыПравил_ПОДКонтекстноеМеню" id="563"/>
+										<AutoCommandBar name="ГруппыПравил_ПОДКоманднаяПанель" id="564">
+											<Autofill>false</Autofill>
+										</AutoCommandBar>
+										<ExtendedTooltip name="ГруппыПравил_ПОДРасширеннаяПодсказка" id="565"/>
+										<SearchStringAddition name="ГруппыПравил_ПОДСтрокаПоиска" id="566">
+											<AdditionSource>
+												<Item>ГруппыПравил_ПОД</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравил_ПОДСтрокаПоискаКонтекстноеМеню" id="567"/>
+											<ExtendedTooltip name="ГруппыПравил_ПОДСтрокаПоискаРасширеннаяПодсказка" id="568"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="ГруппыПравил_ПОДСостояниеПросмотра" id="569">
+											<AdditionSource>
+												<Item>ГруппыПравил_ПОД</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравил_ПОДСостояниеПросмотраКонтекстноеМеню" id="570"/>
+											<ExtendedTooltip name="ГруппыПравил_ПОДСостояниеПросмотраРасширеннаяПодсказка" id="571"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="ГруппыПравил_ПОДУправлениеПоиском" id="572">
+											<AdditionSource>
+												<Item>ГруппыПравил_ПОД</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравил_ПОДУправлениеПоискомКонтекстноеМеню" id="573"/>
+											<ExtendedTooltip name="ГруппыПравил_ПОДУправлениеПоискомРасширеннаяПодсказка" id="574"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<InputField name="ГруппыПравил_ПОДНаименование" id="575">
+												<TitleLocation>None</TitleLocation>
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ГруппыПравил_ПОДНаименованиеКонтекстноеМеню" id="576"/>
+												<ExtendedTooltip name="ГруппыПравил_ПОДНаименованиеРасширеннаяПодсказка" id="577"/>
+											</InputField>
+										</ChildItems>
+									</Table>
+									<Table name="ПравилаОбработкиДанных" id="138">
+										<Representation>Tree</Representation>
+										<UseAlternationRowColor>true</UseAlternationRowColor>
+										<FileDragMode>AsFile</FileDragMode>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Правила обработки данных</v8:content>
+											</v8:item>
+										</Title>
+										<SearchStringLocation>None</SearchStringLocation>
+										<ViewStatusLocation>None</ViewStatusLocation>
+										<SearchControlLocation>None</SearchControlLocation>
+										<AutoRefresh>false</AutoRefresh>
+										<AutoRefreshPeriod>60</AutoRefreshPeriod>
+										<Period>
+											<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+											<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+											<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+										</Period>
+										<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+										<RestoreCurrentRow>false</RestoreCurrentRow>
+										<TopLevelParent xsi:nil="true"/>
+										<ShowRoot>true</ShowRoot>
+										<AllowRootChoice>false</AllowRootChoice>
+										<UpdateOnDataChange>Auto</UpdateOnDataChange>
+										<ContextMenu name="ПравилаОбработкиДанныхКонтекстноеМеню" id="139">
+											<ChildItems>
+												<Button name="ПравилаОбработкиДанныхКонтекстноеМенюИзменитьВыделенные" id="450">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="ПравилаОбработкиДанныхКонтекстноеМенюИзменитьВыделенныеРасширеннаяПодсказка" id="451"/>
+												</Button>
+											</ChildItems>
+										</ContextMenu>
+										<AutoCommandBar name="ПравилаОбработкиДанныхКоманднаяПанель" id="140">
+											<ChildItems>
+												<SearchStringAddition name="ПОД_СтрокаПоиска" id="643">
+													<AdditionSource>
+														<Item>ПравилаОбработкиДанных</Item>
+														<Type>SearchStringRepresentation</Type>
+													</AdditionSource>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ПОД строка поиска</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПОД_СтрокаПоискаКонтекстноеМеню" id="644"/>
+													<ExtendedTooltip name="ПОД_СтрокаПоискаРасширеннаяПодсказка" id="645"/>
+												</SearchStringAddition>
+												<Button name="ПравилаОбработкиДанныхПерейтиКПКО" id="382">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="ПравилаОбработкиДанныхПерейтиКПКОРасширеннаяПодсказка" id="383"/>
+												</Button>
+												<Button name="ПравилаОбработкиДанныхИзменитьВыделенные" id="440">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="ПравилаОбработкиДанныхИзменитьВыделенныеРасширеннаяПодсказка" id="441"/>
+												</Button>
+												<Button name="ПравилаОбработкиДанныхОбщаяКомандаЗахватитьОбъект" id="542">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<DataPath>138:02023637-7868-4a5f-8576-835a76e0c9ba/57</DataPath>
+													<ExtendedTooltip name="ПравилаОбработкиДанныхОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="543"/>
+												</Button>
+												<Button name="ПравилаОбработкиДанныхОбщаяКомандаСнятьЗахватОбъекта" id="552">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<DataPath>138:02023637-7868-4a5f-8576-835a76e0c9ba/57</DataPath>
+													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="ПравилаОбработкиДанныхОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="553"/>
+												</Button>
+											</ChildItems>
+										</AutoCommandBar>
+										<ExtendedTooltip name="ПравилаОбработкиДанныхРасширеннаяПодсказка" id="141"/>
+										<SearchStringAddition name="ПравилаОбработкиДанныхСтрокаПоиска" id="395" DisplayImportance="High">
+											<AdditionSource>
+												<Item>ПравилаОбработкиДанных</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ПравилаОбработкиДанныхСтрокаПоискаКонтекстноеМеню" id="396"/>
+											<ExtendedTooltip name="ПравилаОбработкиДанныхСтрокаПоискаРасширеннаяПодсказка" id="397"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="ПравилаОбработкиДанныхСостояниеПросмотра" id="398">
+											<AdditionSource>
+												<Item>ПравилаОбработкиДанных</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ПравилаОбработкиДанныхСостояниеПросмотраКонтекстноеМеню" id="399"/>
+											<ExtendedTooltip name="ПравилаОбработкиДанныхСостояниеПросмотраРасширеннаяПодсказка" id="400"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="ПравилаОбработкиДанныхУправлениеПоиском" id="401">
+											<AdditionSource>
+												<Item>ПравилаОбработкиДанных</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="ПравилаОбработкиДанныхУправлениеПоискомКонтекстноеМеню" id="402"/>
+											<ExtendedTooltip name="ПравилаОбработкиДанныхУправлениеПоискомРасширеннаяПодсказка" id="403"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<CheckBoxField name="ПравилаОбработкиДанныхЗахваченДругимПользователем" id="528">
+												<Visible>false</Visible>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Захвачен другим пользователем</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаОбработкиДанныхЗахваченДругимПользователемКонтекстноеМеню" id="529"/>
+												<ExtendedTooltip name="ПравилаОбработкиДанныхЗахваченДругимПользователемРасширеннаяПодсказка" id="530"/>
+											</CheckBoxField>
+											<CheckBoxField name="ПравилаОбработкиДанныхЗахваченТекущимПользователем" id="531">
+												<Visible>false</Visible>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Захвачен текущим пользователем</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаОбработкиДанныхЗахваченТекущимПользователемКонтекстноеМеню" id="532"/>
+												<ExtendedTooltip name="ПравилаОбработкиДанныхЗахваченТекущимПользователемРасширеннаяПодсказка" id="533"/>
+											</CheckBoxField>
+											<LabelField name="ПравилаОбработкиДанныхНаименование" id="145">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Идентификатор правила</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ПравилаОбработкиДанныхНаименованиеКонтекстноеМеню" id="146"/>
+												<ExtendedTooltip name="ПравилаОбработкиДанныхНаименованиеРасширеннаяПодсказка" id="147"/>
+											</LabelField>
+											<CheckBoxField name="ПравилаОбработкиДанныхИспользоватьДляОтправки" id="172">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Отправка</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаОбработкиДанныхИспользоватьДляОтправкиКонтекстноеМеню" id="173"/>
+												<ExtendedTooltip name="ПравилаОбработкиДанныхИспользоватьДляОтправкиРасширеннаяПодсказка" id="174"/>
+											</CheckBoxField>
+											<CheckBoxField name="ПравилаОбработкиДанныхИспользоватьДляПолучения" id="175">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Получение</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаОбработкиДанныхИспользоватьДляПолученияКонтекстноеМеню" id="176"/>
+												<ExtendedTooltip name="ПравилаОбработкиДанныхИспользоватьДляПолученияРасширеннаяПодсказка" id="177"/>
+											</CheckBoxField>
+											<LabelField name="ПравилаОбработкиДанныхОбъектВыборки" id="178">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Объект выборки</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ПравилаОбработкиДанныхОбъектВыборкиКонтекстноеМеню" id="179"/>
+												<ExtendedTooltip name="ПравилаОбработкиДанныхОбъектВыборкиРасширеннаяПодсказка" id="180"/>
+											</LabelField>
+											<LabelField name="ПравилаОбработкиДанныхПравилоКонвертацииОбъекта" id="181">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Правило конвертации объекта</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ПравилаОбработкиДанныхПравилоКонвертацииОбъектаКонтекстноеМеню" id="182"/>
+												<ExtendedTooltip name="ПравилаОбработкиДанныхПравилоКонвертацииОбъектаРасширеннаяПодсказка" id="183"/>
+											</LabelField>
+											<CheckBoxField name="ПравилаОбработкиДанныхОтключить" id="634">
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаОбработкиДанныхОтключитьКонтекстноеМеню" id="635"/>
+												<ExtendedTooltip name="ПравилаОбработкиДанныхОтключитьРасширеннаяПодсказка" id="636"/>
+											</CheckBoxField>
+										</ChildItems>
+									</Table>
+								</ChildItems>
+							</Page>
+							<Page name="ПКО" id="37">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Правила конвертации объектов</v8:content>
+									</v8:item>
+								</Title>
+								<Group>AlwaysHorizontal</Group>
+								<ExtendedTooltip name="ПКОРасширеннаяПодсказка" id="38"/>
+								<ChildItems>
+									<Table name="ГруппыПравилПКО" id="458">
+										<Representation>Tree</Representation>
+										<Header>false</Header>
+										<AutoInsertNewRow>true</AutoInsertNewRow>
+										<InitialTreeView>ExpandAllLevels</InitialTreeView>
+										<EnableStartDrag>true</EnableStartDrag>
+										<EnableDrag>true</EnableDrag>
+										<FileDragMode>AsFile</FileDragMode>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группы правил</v8:content>
+											</v8:item>
+										</Title>
+										<ContextMenu name="ГруппыПравилПКОКонтекстноеМеню" id="459"/>
+										<AutoCommandBar name="ГруппыПравилПКОКоманднаяПанель" id="460">
+											<Autofill>false</Autofill>
+										</AutoCommandBar>
+										<ExtendedTooltip name="ГруппыПравилПКОРасширеннаяПодсказка" id="461"/>
+										<SearchStringAddition name="ГруппыПравилПКОСтрокаПоиска" id="462">
+											<AdditionSource>
+												<Item>ГруппыПравилПКО</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравилПКОСтрокаПоискаКонтекстноеМеню" id="463"/>
+											<ExtendedTooltip name="ГруппыПравилПКОСтрокаПоискаРасширеннаяПодсказка" id="464"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="ГруппыПравилПКОСостояниеПросмотра" id="465">
+											<AdditionSource>
+												<Item>ГруппыПравилПКО</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравилПКОСостояниеПросмотраКонтекстноеМеню" id="466"/>
+											<ExtendedTooltip name="ГруппыПравилПКОСостояниеПросмотраРасширеннаяПодсказка" id="467"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="ГруппыПравилПКОУправлениеПоиском" id="468">
+											<AdditionSource>
+												<Item>ГруппыПравилПКО</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравилПКОУправлениеПоискомКонтекстноеМеню" id="469"/>
+											<ExtendedTooltip name="ГруппыПравилПКОУправлениеПоискомРасширеннаяПодсказка" id="470"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<InputField name="ГруппыПравилНаименование" id="471">
+												<ReadOnly>true</ReadOnly>
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ГруппыПравилНаименованиеКонтекстноеМеню" id="472"/>
+												<ExtendedTooltip name="ГруппыПравилНаименованиеРасширеннаяПодсказка" id="473"/>
+											</InputField>
+										</ChildItems>
+									</Table>
+									<Table name="ПравилаКонвертацииОбъектов" id="190">
+										<Representation>Tree</Representation>
+										<UseAlternationRowColor>true</UseAlternationRowColor>
+										<FileDragMode>AsFile</FileDragMode>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Правила конвертации объектов</v8:content>
+											</v8:item>
+										</Title>
+										<SearchStringLocation>None</SearchStringLocation>
+										<ViewStatusLocation>None</ViewStatusLocation>
+										<SearchControlLocation>None</SearchControlLocation>
+										<AutoRefresh>false</AutoRefresh>
+										<AutoRefreshPeriod>60</AutoRefreshPeriod>
+										<Period>
+											<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+											<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+											<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+										</Period>
+										<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+										<RestoreCurrentRow>false</RestoreCurrentRow>
+										<TopLevelParent xsi:nil="true"/>
+										<ShowRoot>true</ShowRoot>
+										<AllowRootChoice>false</AllowRootChoice>
+										<UpdateOnDataChange>Auto</UpdateOnDataChange>
+										<ContextMenu name="ПравилаКонвертацииОбъектовКонтекстноеМеню" id="191">
+											<ChildItems>
+												<Button name="ПравилаКонвертацииОбъектовКонтекстноеМенюИзменитьВыделенные" id="452">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="ПравилаКонвертацииОбъектовКонтекстноеМенюИзменитьВыделенныеРасширеннаяПодсказка" id="453"/>
+												</Button>
+											</ChildItems>
+										</ContextMenu>
+										<AutoCommandBar name="ПравилаКонвертацииОбъектовКоманднаяПанель" id="192">
+											<ChildItems>
+												<SearchStringAddition name="ПКО_СтрокаПоиска" id="646">
+													<AdditionSource>
+														<Item>ПравилаКонвертацииОбъектов</Item>
+														<Type>SearchStringRepresentation</Type>
+													</AdditionSource>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ПКО строка поиска</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПКО_СтрокаПоискаКонтекстноеМеню" id="647"/>
+													<ExtendedTooltip name="ПКО_СтрокаПоискаРасширеннаяПодсказка" id="648"/>
+												</SearchStringAddition>
+												<Button name="ПравилаКонвертацииОбъектовИзменитьВыделенные" id="442">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="ПравилаКонвертацииОбъектовИзменитьВыделенныеРасширеннаяПодсказка" id="443"/>
+												</Button>
+												<Button name="ПравилаКонвертацииОбъектовОбщаяКомандаЗахватитьОбъект" id="544">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<DataPath>190:02023637-7868-4a5f-8576-835a76e0c9ba/73</DataPath>
+													<ExtendedTooltip name="ПравилаКонвертацииОбъектовОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="545"/>
+												</Button>
+												<Button name="ПравилаКонвертацииОбъектовОбщаяКомандаСнятьЗахватОбъекта" id="554">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<DataPath>190:02023637-7868-4a5f-8576-835a76e0c9ba/73</DataPath>
+													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="ПравилаКонвертацииОбъектовОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="555"/>
+												</Button>
+											</ChildItems>
+										</AutoCommandBar>
+										<ExtendedTooltip name="ПравилаКонвертацииОбъектовРасширеннаяПодсказка" id="193"/>
+										<SearchStringAddition name="ПравилаКонвертацииОбъектовСтрокаПоиска" id="404">
+											<AdditionSource>
+												<Item>ПравилаКонвертацииОбъектов</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ПравилаКонвертацииОбъектовСтрокаПоискаКонтекстноеМеню" id="405"/>
+											<ExtendedTooltip name="ПравилаКонвертацииОбъектовСтрокаПоискаРасширеннаяПодсказка" id="406"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="ПравилаКонвертацииОбъектовСостояниеПросмотра" id="407">
+											<AdditionSource>
+												<Item>ПравилаКонвертацииОбъектов</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ПравилаКонвертацииОбъектовСостояниеПросмотраКонтекстноеМеню" id="408"/>
+											<ExtendedTooltip name="ПравилаКонвертацииОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="409"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="ПравилаКонвертацииОбъектовУправлениеПоиском" id="410">
+											<AdditionSource>
+												<Item>ПравилаКонвертацииОбъектов</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="ПравилаКонвертацииОбъектовУправлениеПоискомКонтекстноеМеню" id="411"/>
+											<ExtendedTooltip name="ПравилаКонвертацииОбъектовУправлениеПоискомРасширеннаяПодсказка" id="412"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<LabelField name="ПравилаКонвертацииОбъектовКод" id="194">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Идентификатор правила</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ПравилаКонвертацииОбъектовКодКонтекстноеМеню" id="195"/>
+												<ExtendedTooltip name="ПравилаКонвертацииОбъектовКодРасширеннаяПодсказка" id="196"/>
+											</LabelField>
+											<CheckBoxField name="ПравилаКонвертацииОбъектовИспользоватьДляОтправки" id="230">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Отправка</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаКонвертацииОбъектовИспользоватьДляОтправкиКонтекстноеМеню" id="231"/>
+												<ExtendedTooltip name="ПравилаКонвертацииОбъектовИспользоватьДляОтправкиРасширеннаяПодсказка" id="232"/>
+											</CheckBoxField>
+											<CheckBoxField name="ПравилаКонвертацииОбъектовИспользоватьДляПолучения" id="233">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Получение</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаКонвертацииОбъектовИспользоватьДляПолученияКонтекстноеМеню" id="234"/>
+												<ExtendedTooltip name="ПравилаКонвертацииОбъектовИспользоватьДляПолученияРасширеннаяПодсказка" id="235"/>
+											</CheckBoxField>
+											<LabelField name="ПравилаКонвертацииОбъектовОбъектКонфигурации" id="236">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Объект конфигурации</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ПравилаКонвертацииОбъектовОбъектКонфигурацииКонтекстноеМеню" id="237"/>
+												<ExtendedTooltip name="ПравилаКонвертацииОбъектовОбъектКонфигурацииРасширеннаяПодсказка" id="238"/>
+											</LabelField>
+											<LabelField name="ПравилаКонвертацииОбъектовОбъектКонфигурацииКорреспондент" id="474">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Получатель</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ПравилаКонвертацииОбъектовОбъектКонфигурацииКорреспондентКонтекстноеМеню" id="475"/>
+												<ExtendedTooltip name="ПравилаКонвертацииОбъектовОбъектКонфигурацииКорреспондентРасширеннаяПодсказка" id="476"/>
+											</LabelField>
+											<CheckBoxField name="ПравилаКонвертацииОбъектовЗахваченТекущимПользователем" id="519">
+												<Visible>false</Visible>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Захвачен текущим пользователем</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаКонвертацииОбъектовЗахваченТекущимПользователемКонтекстноеМеню" id="520"/>
+												<ExtendedTooltip name="ПравилаКонвертацииОбъектовЗахваченТекущимПользователемРасширеннаяПодсказка" id="521"/>
+											</CheckBoxField>
+											<CheckBoxField name="ПравилаКонвертацииОбъектовЗахваченДругимПользователем" id="516">
+												<Visible>false</Visible>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Захвачен другим пользователем</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаКонвертацииОбъектовЗахваченДругимПользователемКонтекстноеМеню" id="517"/>
+												<ExtendedTooltip name="ПравилаКонвертацииОбъектовЗахваченДругимПользователемРасширеннаяПодсказка" id="518"/>
+											</CheckBoxField>
+											<LabelField name="ПравилаКонвертацииОбъектовОбъектФормата" id="239">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Объект формата</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ПравилаКонвертацииОбъектовОбъектФорматаКонтекстноеМеню" id="240"/>
+												<ExtendedTooltip name="ПравилаКонвертацииОбъектовОбъектФорматаРасширеннаяПодсказка" id="241"/>
+											</LabelField>
+											<CheckBoxField name="ПравилаКонвертацииОбъектовОтключить" id="637">
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаКонвертацииОбъектовОтключитьКонтекстноеМеню" id="638"/>
+												<ExtendedTooltip name="ПравилаКонвертацииОбъектовОтключитьРасширеннаяПодсказка" id="639"/>
+											</CheckBoxField>
+										</ChildItems>
+									</Table>
+								</ChildItems>
+							</Page>
+							<Page name="ПКПД" id="89">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Правила конвертации предопределенных данных</v8:content>
+									</v8:item>
+								</Title>
+								<Group>AlwaysHorizontal</Group>
+								<ExtendedTooltip name="ПКПДРасширеннаяПодсказка" id="90"/>
+								<ChildItems>
+									<Table name="ГруппыПравил_ПКПД" id="578">
+										<Representation>Tree</Representation>
+										<Header>false</Header>
+										<AutoInsertNewRow>true</AutoInsertNewRow>
+										<EnableStartDrag>true</EnableStartDrag>
+										<EnableDrag>true</EnableDrag>
+										<ContextMenu name="ГруппыПравил_ПКПДКонтекстноеМеню" id="579"/>
+										<AutoCommandBar name="ГруппыПравил_ПКПДКоманднаяПанель" id="580">
+											<Autofill>false</Autofill>
+										</AutoCommandBar>
+										<ExtendedTooltip name="ГруппыПравил_ПКПДРасширеннаяПодсказка" id="581"/>
+										<SearchStringAddition name="ГруппыПравил_ПКПДСтрокаПоиска" id="582">
+											<AdditionSource>
+												<Item>ГруппыПравил_ПКПД</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравил_ПКПДСтрокаПоискаКонтекстноеМеню" id="583"/>
+											<ExtendedTooltip name="ГруппыПравил_ПКПДСтрокаПоискаРасширеннаяПодсказка" id="584"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="ГруппыПравил_ПКПДСостояниеПросмотра" id="585">
+											<AdditionSource>
+												<Item>ГруппыПравил_ПКПД</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравил_ПКПДСостояниеПросмотраКонтекстноеМеню" id="586"/>
+											<ExtendedTooltip name="ГруппыПравил_ПКПДСостояниеПросмотраРасширеннаяПодсказка" id="587"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="ГруппыПравил_ПКПДУправлениеПоиском" id="588">
+											<AdditionSource>
+												<Item>ГруппыПравил_ПКПД</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравил_ПКПДУправлениеПоискомКонтекстноеМеню" id="589"/>
+											<ExtendedTooltip name="ГруппыПравил_ПКПДУправлениеПоискомРасширеннаяПодсказка" id="590"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<InputField name="ГруппыПравил_ПКПДНаименование" id="591">
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ГруппыПравил_ПКПДНаименованиеКонтекстноеМеню" id="592"/>
+												<ExtendedTooltip name="ГруппыПравил_ПКПДНаименованиеРасширеннаяПодсказка" id="593"/>
+											</InputField>
+										</ChildItems>
+									</Table>
+									<Table name="ПравилаКонвертацииПредопределенныхДанных" id="282">
+										<UseAlternationRowColor>true</UseAlternationRowColor>
+										<FileDragMode>AsFile</FileDragMode>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Правила конвертации предопределенных данных</v8:content>
+											</v8:item>
+										</Title>
+										<SearchStringLocation>None</SearchStringLocation>
+										<ViewStatusLocation>None</ViewStatusLocation>
+										<SearchControlLocation>None</SearchControlLocation>
+										<AutoRefresh>false</AutoRefresh>
+										<AutoRefreshPeriod>60</AutoRefreshPeriod>
+										<Period>
+											<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+											<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+											<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+										</Period>
+										<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+										<RestoreCurrentRow>false</RestoreCurrentRow>
+										<TopLevelParent xsi:nil="true"/>
+										<ShowRoot>true</ShowRoot>
+										<AllowRootChoice>false</AllowRootChoice>
+										<UpdateOnDataChange>Auto</UpdateOnDataChange>
+										<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхКонтекстноеМеню" id="283">
+											<ChildItems>
+												<Button name="ПравилаКонвертацииПредопределенныхДанныхКонтекстноеМенюИзменитьВыделенные" id="454">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхКонтекстноеМенюИзменитьВыделенныеРасширеннаяПодсказка" id="455"/>
+												</Button>
+											</ChildItems>
+										</ContextMenu>
+										<AutoCommandBar name="ПравилаКонвертацииПредопределенныхДанныхКоманднаяПанель" id="284">
+											<ChildItems>
+												<SearchStringAddition name="ПКПД_СтрокаПоиска" id="649">
+													<AdditionSource>
+														<Item>ПравилаКонвертацииПредопределенныхДанных</Item>
+														<Type>SearchStringRepresentation</Type>
+													</AdditionSource>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ПКПД строка поиска</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПКПД_СтрокаПоискаКонтекстноеМеню" id="650"/>
+													<ExtendedTooltip name="ПКПД_СтрокаПоискаРасширеннаяПодсказка" id="651"/>
+												</SearchStringAddition>
+												<Button name="ПравилаКонвертацииПредопределенныхДанныхИзменитьВыделенные" id="444">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхИзменитьВыделенныеРасширеннаяПодсказка" id="445"/>
+												</Button>
+												<Button name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаЗахватитьОбъект" id="546">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<DataPath>282:02023637-7868-4a5f-8576-835a76e0c9ba/42</DataPath>
+													<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="547"/>
+												</Button>
+												<Button name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаСнятьЗахватОбъекта" id="556">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<DataPath>282:02023637-7868-4a5f-8576-835a76e0c9ba/42</DataPath>
+													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="557"/>
+												</Button>
+											</ChildItems>
+										</AutoCommandBar>
+										<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхРасширеннаяПодсказка" id="285"/>
+										<SearchStringAddition name="ПравилаКонвертацииПредопределенныхДанныхСтрокаПоиска" id="413">
+											<AdditionSource>
+												<Item>ПравилаКонвертацииПредопределенныхДанных</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхСтрокаПоискаКонтекстноеМеню" id="414"/>
+											<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхСтрокаПоискаРасширеннаяПодсказка" id="415"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="ПравилаКонвертацииПредопределенныхДанныхСостояниеПросмотра" id="416">
+											<AdditionSource>
+												<Item>ПравилаКонвертацииПредопределенныхДанных</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхСостояниеПросмотраКонтекстноеМеню" id="417"/>
+											<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхСостояниеПросмотраРасширеннаяПодсказка" id="418"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="ПравилаКонвертацииПредопределенныхДанныхУправлениеПоиском" id="419">
+											<AdditionSource>
+												<Item>ПравилаКонвертацииПредопределенныхДанных</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхУправлениеПоискомКонтекстноеМеню" id="420"/>
+											<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхУправлениеПоискомРасширеннаяПодсказка" id="421"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<CheckBoxField name="ПравилаКонвертацииПредопределенныхДанныхЗахваченТекущимПользователем" id="525">
+												<Visible>false</Visible>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Захвачен текущим пользователем</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхЗахваченТекущимПользователемКонтекстноеМеню" id="526"/>
+												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхЗахваченТекущимПользователемРасширеннаяПодсказка" id="527"/>
+											</CheckBoxField>
+											<CheckBoxField name="ПравилаКонвертацииПредопределенныхДанныхЗахваченДругимПользователем" id="522">
+												<Visible>false</Visible>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Захвачен другим пользователем</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхЗахваченДругимПользователемКонтекстноеМеню" id="523"/>
+												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхЗахваченДругимПользователемРасширеннаяПодсказка" id="524"/>
+											</CheckBoxField>
+											<LabelField name="ПравилаКонвертацииПредопределенныхДанныхКод" id="286">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Идентификатор правила</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхКодКонтекстноеМеню" id="287"/>
+												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхКодРасширеннаяПодсказка" id="288"/>
+											</LabelField>
+											<CheckBoxField name="ПравилаКонвертацииПредопределенныхДанныхИспользоватьДляОтправки" id="310">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Отправка</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхИспользоватьДляОтправкиКонтекстноеМеню" id="311"/>
+												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхИспользоватьДляОтправкиРасширеннаяПодсказка" id="312"/>
+											</CheckBoxField>
+											<CheckBoxField name="ПравилаКонвертацииПредопределенныхДанныхИспользоватьДляПолучения" id="313">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Получение</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхИспользоватьДляПолученияКонтекстноеМеню" id="314"/>
+												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхИспользоватьДляПолученияРасширеннаяПодсказка" id="315"/>
+											</CheckBoxField>
+											<LabelField name="ПравилаКонвертацииПредопределенныхДанныхОбъектКонфигурации" id="316">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Объект конфигурации</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхОбъектКонфигурацииКонтекстноеМеню" id="317"/>
+												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОбъектКонфигурацииРасширеннаяПодсказка" id="318"/>
+											</LabelField>
+											<LabelField name="ПравилаКонвертацииПредопределенныхДанныхОбъектКонфигурацииКорреспондент" id="477">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Получатель</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхОбъектКонфигурацииКорреспондентКонтекстноеМеню" id="478"/>
+												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОбъектКонфигурацииКорреспондентРасширеннаяПодсказка" id="479"/>
+											</LabelField>
+											<LabelField name="ПравилаКонвертацииПредопределенныхДанныхОбъектФормата" id="319">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Объект формата</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхОбъектФорматаКонтекстноеМеню" id="320"/>
+												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОбъектФорматаРасширеннаяПодсказка" id="321"/>
+											</LabelField>
+											<CheckBoxField name="ПравилаКонвертацииПредопределенныхДанныхОтключить" id="640">
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхОтключитьКонтекстноеМеню" id="641"/>
+												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОтключитьРасширеннаяПодсказка" id="642"/>
+											</CheckBoxField>
+										</ChildItems>
+									</Table>
+								</ChildItems>
+							</Page>
+							<Page name="ГруппаАлгоритмы" id="57">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Алгоритмы</v8:content>
+									</v8:item>
+								</Title>
+								<Group>AlwaysHorizontal</Group>
+								<ExtendedTooltip name="ГруппаАлгоритмыРасширеннаяПодсказка" id="58"/>
+								<ChildItems>
+									<Table name="ГруппыПравил_Алгоритмы" id="594">
+										<Representation>Tree</Representation>
+										<Header>false</Header>
+										<AutoInsertNewRow>true</AutoInsertNewRow>
+										<EnableStartDrag>true</EnableStartDrag>
+										<EnableDrag>true</EnableDrag>
+										<ContextMenu name="ГруппыПравил_АлгоритмыКонтекстноеМеню" id="595"/>
+										<AutoCommandBar name="ГруппыПравил_АлгоритмыКоманднаяПанель" id="596">
+											<Autofill>false</Autofill>
+										</AutoCommandBar>
+										<ExtendedTooltip name="ГруппыПравил_АлгоритмыРасширеннаяПодсказка" id="597"/>
+										<SearchStringAddition name="ГруппыПравил_АлгоритмыСтрокаПоиска" id="598">
+											<AdditionSource>
+												<Item>ГруппыПравил_Алгоритмы</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравил_АлгоритмыСтрокаПоискаКонтекстноеМеню" id="599"/>
+											<ExtendedTooltip name="ГруппыПравил_АлгоритмыСтрокаПоискаРасширеннаяПодсказка" id="600"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="ГруппыПравил_АлгоритмыСостояниеПросмотра" id="601">
+											<AdditionSource>
+												<Item>ГруппыПравил_Алгоритмы</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравил_АлгоритмыСостояниеПросмотраКонтекстноеМеню" id="602"/>
+											<ExtendedTooltip name="ГруппыПравил_АлгоритмыСостояниеПросмотраРасширеннаяПодсказка" id="603"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="ГруппыПравил_АлгоритмыУправлениеПоиском" id="604">
+											<AdditionSource>
+												<Item>ГруппыПравил_Алгоритмы</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравил_АлгоритмыУправлениеПоискомКонтекстноеМеню" id="605"/>
+											<ExtendedTooltip name="ГруппыПравил_АлгоритмыУправлениеПоискомРасширеннаяПодсказка" id="606"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<InputField name="ГруппыПравил_АлгоритмыНаименование" id="607">
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ГруппыПравил_АлгоритмыНаименованиеКонтекстноеМеню" id="608"/>
+												<ExtendedTooltip name="ГруппыПравил_АлгоритмыНаименованиеРасширеннаяПодсказка" id="609"/>
+											</InputField>
+										</ChildItems>
+									</Table>
+									<Table name="Алгоритмы" id="363">
+										<UseAlternationRowColor>true</UseAlternationRowColor>
+										<FileDragMode>AsFile</FileDragMode>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Алгоритмы</v8:content>
+											</v8:item>
+										</Title>
+										<SearchStringLocation>None</SearchStringLocation>
+										<ViewStatusLocation>None</ViewStatusLocation>
+										<SearchControlLocation>None</SearchControlLocation>
+										<AutoRefresh>false</AutoRefresh>
+										<AutoRefreshPeriod>60</AutoRefreshPeriod>
+										<Period>
+											<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+											<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+											<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+										</Period>
+										<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+										<RestoreCurrentRow>false</RestoreCurrentRow>
+										<TopLevelParent xsi:nil="true"/>
+										<ShowRoot>true</ShowRoot>
+										<AllowRootChoice>false</AllowRootChoice>
+										<UpdateOnDataChange>Auto</UpdateOnDataChange>
+										<ContextMenu name="АлгоритмыКонтекстноеМеню" id="364"/>
+										<AutoCommandBar name="АлгоритмыКоманднаяПанель" id="365">
+											<ChildItems>
+												<SearchStringAddition name="Алгоритмы_СтрокаПоиска" id="652">
+													<AdditionSource>
+														<Item>Алгоритмы</Item>
+														<Type>SearchStringRepresentation</Type>
+													</AdditionSource>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Алгоритмы строка поиска</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Алгоритмы_СтрокаПоискаКонтекстноеМеню" id="653"/>
+													<ExtendedTooltip name="Алгоритмы_СтрокаПоискаРасширеннаяПодсказка" id="654"/>
+												</SearchStringAddition>
+												<Button name="АлгоритмыИзменитьВыделенные" id="446">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="АлгоритмыИзменитьВыделенныеРасширеннаяПодсказка" id="447"/>
+												</Button>
+												<Button name="АлгоритмыОбщаяКомандаЗахватитьОбъект" id="548">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<DataPath>363:02023637-7868-4a5f-8576-835a76e0c9ba/29</DataPath>
+													<ExtendedTooltip name="АлгоритмыОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="549"/>
+												</Button>
+												<Button name="АлгоритмыОбщаяКомандаСнятьЗахватОбъекта" id="558">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<DataPath>363:02023637-7868-4a5f-8576-835a76e0c9ba/29</DataPath>
+													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="АлгоритмыОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="559"/>
+												</Button>
+											</ChildItems>
+										</AutoCommandBar>
+										<ExtendedTooltip name="АлгоритмыРасширеннаяПодсказка" id="366"/>
+										<SearchStringAddition name="АлгоритмыСтрокаПоиска" id="422">
+											<AdditionSource>
+												<Item>Алгоритмы</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="АлгоритмыСтрокаПоискаКонтекстноеМеню" id="423"/>
+											<ExtendedTooltip name="АлгоритмыСтрокаПоискаРасширеннаяПодсказка" id="424"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="АлгоритмыСостояниеПросмотра" id="425">
+											<AdditionSource>
+												<Item>Алгоритмы</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="АлгоритмыСостояниеПросмотраКонтекстноеМеню" id="426"/>
+											<ExtendedTooltip name="АлгоритмыСостояниеПросмотраРасширеннаяПодсказка" id="427"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="АлгоритмыУправлениеПоиском" id="428">
+											<AdditionSource>
+												<Item>Алгоритмы</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="АлгоритмыУправлениеПоискомКонтекстноеМеню" id="429"/>
+											<ExtendedTooltip name="АлгоритмыУправлениеПоискомРасширеннаяПодсказка" id="430"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<LabelField name="АлгоритмыКод" id="367">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Имя</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="АлгоритмыКодКонтекстноеМеню" id="368"/>
+												<ExtendedTooltip name="АлгоритмыКодРасширеннаяПодсказка" id="369"/>
+											</LabelField>
+											<LabelField name="АлгоритмыПараметры" id="370">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Параметры</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="АлгоритмыПараметрыКонтекстноеМеню" id="371"/>
+												<ExtendedTooltip name="АлгоритмыПараметрыРасширеннаяПодсказка" id="372"/>
+											</LabelField>
+											<CheckBoxField name="АлгоритмыЗахваченТекущимПользователем" id="507">
+												<Visible>false</Visible>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Захвачен текущим пользователем</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="АлгоритмыЗахваченТекущимПользователемКонтекстноеМеню" id="508"/>
+												<ExtendedTooltip name="АлгоритмыЗахваченТекущимПользователемРасширеннаяПодсказка" id="509"/>
+											</CheckBoxField>
+											<CheckBoxField name="АлгоритмыЗахваченДругимПользователем" id="504">
+												<Visible>false</Visible>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Захвачен другим пользователем</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="АлгоритмыЗахваченДругимПользователемКонтекстноеМеню" id="505"/>
+												<ExtendedTooltip name="АлгоритмыЗахваченДругимПользователемРасширеннаяПодсказка" id="506"/>
+											</CheckBoxField>
+											<CheckBoxField name="АлгоритмыОтключить" id="628">
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="АлгоритмыОтключитьКонтекстноеМеню" id="629"/>
+												<ExtendedTooltip name="АлгоритмыОтключитьРасширеннаяПодсказка" id="630"/>
+											</CheckBoxField>
+										</ChildItems>
+									</Table>
+								</ChildItems>
+							</Page>
+							<Page name="ГруппаЗапросы" id="480">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Запросы</v8:content>
+									</v8:item>
+								</Title>
+								<Group>AlwaysHorizontal</Group>
+								<ExtendedTooltip name="ГруппаЗапросыРасширеннаяПодсказка" id="481"/>
+								<ChildItems>
+									<Table name="ГруппыПравил_Запросы" id="610">
+										<Representation>Tree</Representation>
+										<Header>false</Header>
+										<AutoInsertNewRow>true</AutoInsertNewRow>
+										<EnableStartDrag>true</EnableStartDrag>
+										<EnableDrag>true</EnableDrag>
+										<ContextMenu name="ГруппыПравил_ЗапросыКонтекстноеМеню" id="611"/>
+										<AutoCommandBar name="ГруппыПравил_ЗапросыКоманднаяПанель" id="612">
+											<Autofill>false</Autofill>
+										</AutoCommandBar>
+										<ExtendedTooltip name="ГруппыПравил_ЗапросыРасширеннаяПодсказка" id="613"/>
+										<SearchStringAddition name="ГруппыПравил_ЗапросыСтрокаПоиска" id="614">
+											<AdditionSource>
+												<Item>ГруппыПравил_Запросы</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравил_ЗапросыСтрокаПоискаКонтекстноеМеню" id="615"/>
+											<ExtendedTooltip name="ГруппыПравил_ЗапросыСтрокаПоискаРасширеннаяПодсказка" id="616"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="ГруппыПравил_ЗапросыСостояниеПросмотра" id="617">
+											<AdditionSource>
+												<Item>ГруппыПравил_Запросы</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравил_ЗапросыСостояниеПросмотраКонтекстноеМеню" id="618"/>
+											<ExtendedTooltip name="ГруппыПравил_ЗапросыСостояниеПросмотраРасширеннаяПодсказка" id="619"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="ГруппыПравил_ЗапросыУправлениеПоиском" id="620">
+											<AdditionSource>
+												<Item>ГруппыПравил_Запросы</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="ГруппыПравил_ЗапросыУправлениеПоискомКонтекстноеМеню" id="621"/>
+											<ExtendedTooltip name="ГруппыПравил_ЗапросыУправлениеПоискомРасширеннаяПодсказка" id="622"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<InputField name="ГруппыПравил_ЗапросыНаименование" id="623">
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ГруппыПравил_ЗапросыНаименованиеКонтекстноеМеню" id="624"/>
+												<ExtendedTooltip name="ГруппыПравил_ЗапросыНаименованиеРасширеннаяПодсказка" id="625"/>
+											</InputField>
+										</ChildItems>
+									</Table>
+									<Table name="Запросы" id="482">
+										<UseAlternationRowColor>true</UseAlternationRowColor>
+										<FileDragMode>AsFile</FileDragMode>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Запросы</v8:content>
+											</v8:item>
+										</Title>
+										<AutoRefresh>false</AutoRefresh>
+										<AutoRefreshPeriod>60</AutoRefreshPeriod>
+										<Period>
+											<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+											<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+											<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+										</Period>
+										<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+										<RestoreCurrentRow>false</RestoreCurrentRow>
+										<TopLevelParent xsi:nil="true"/>
+										<ShowRoot>true</ShowRoot>
+										<AllowRootChoice>false</AllowRootChoice>
+										<UpdateOnDataChange>Auto</UpdateOnDataChange>
+										<ContextMenu name="ЗапросыКонтекстноеМеню" id="483"/>
+										<AutoCommandBar name="ЗапросыКоманднаяПанель" id="484">
+											<ChildItems>
+												<Button name="ЗапросыОбщаяКомандаЗахватитьОбъект" id="550">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<DataPath>482:02023637-7868-4a5f-8576-835a76e0c9ba/7</DataPath>
+													<ExtendedTooltip name="ЗапросыОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="551"/>
+												</Button>
+												<Button name="ЗапросыОбщаяКомандаСнятьЗахватОбъекта" id="560">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<DataPath>482:02023637-7868-4a5f-8576-835a76e0c9ba/7</DataPath>
+													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="ЗапросыОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="561"/>
+												</Button>
+											</ChildItems>
+										</AutoCommandBar>
+										<ExtendedTooltip name="ЗапросыРасширеннаяПодсказка" id="485"/>
+										<SearchStringAddition name="ЗапросыСтрокаПоиска" id="486">
+											<AdditionSource>
+												<Item>Запросы</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ЗапросыСтрокаПоискаКонтекстноеМеню" id="487"/>
+											<ExtendedTooltip name="ЗапросыСтрокаПоискаРасширеннаяПодсказка" id="488"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="ЗапросыСостояниеПросмотра" id="489">
+											<AdditionSource>
+												<Item>Запросы</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ЗапросыСостояниеПросмотраКонтекстноеМеню" id="490"/>
+											<ExtendedTooltip name="ЗапросыСостояниеПросмотраРасширеннаяПодсказка" id="491"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="ЗапросыУправлениеПоиском" id="492">
+											<AdditionSource>
+												<Item>Запросы</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="ЗапросыУправлениеПоискомКонтекстноеМеню" id="493"/>
+											<ExtendedTooltip name="ЗапросыУправлениеПоискомРасширеннаяПодсказка" id="494"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<CheckBoxField name="ЗапросыЗахваченТекущимПользователем" id="513">
+												<Visible>false</Visible>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Захвачен текущим пользователем</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ЗапросыЗахваченТекущимПользователемКонтекстноеМеню" id="514"/>
+												<ExtendedTooltip name="ЗапросыЗахваченТекущимПользователемРасширеннаяПодсказка" id="515"/>
+											</CheckBoxField>
+											<CheckBoxField name="ЗапросыЗахваченДругимПользователем" id="510">
+												<Visible>false</Visible>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Захвачен другим пользователем</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ЗапросыЗахваченДругимПользователемКонтекстноеМеню" id="511"/>
+												<ExtendedTooltip name="ЗапросыЗахваченДругимПользователемРасширеннаяПодсказка" id="512"/>
+											</CheckBoxField>
+											<LabelField name="ЗапросыКод" id="501">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Имя запроса</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ЗапросыКодКонтекстноеМеню" id="502"/>
+												<ExtendedTooltip name="ЗапросыКодРасширеннаяПодсказка" id="503"/>
+											</LabelField>
+											<CheckBoxField name="ЗапросыИспользуетсяПриЗагрузке" id="498">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Используется при загрузке</v8:content>
+													</v8:item>
+												</Title>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ЗапросыИспользуетсяПриЗагрузкеКонтекстноеМеню" id="499"/>
+												<ExtendedTooltip name="ЗапросыИспользуетсяПриЗагрузкеРасширеннаяПодсказка" id="500"/>
+											</CheckBoxField>
+											<CheckBoxField name="ЗапросыОтключить" id="631">
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ЗапросыОтключитьКонтекстноеМеню" id="632"/>
+												<ExtendedTooltip name="ЗапросыОтключитьРасширеннаяПодсказка" id="633"/>
+											</CheckBoxField>
+										</ChildItems>
+									</Table>
+								</ChildItems>
+							</Page>
+						</ChildItems>
+					</Pages>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes>
+			<ConditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Алгоритмы</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Алгоритмы.ЗахваченДругимПользователем</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Алгоритмы</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Алгоритмы.ЗахваченТекущимПользователем</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПравилаОбработкиДанных</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПравилаОбработкиДанных.ЗахваченДругимПользователем</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПравилаОбработкиДанных</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПравилаОбработкиДанных.ЗахваченТекущимПользователем</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПравилаКонвертацииОбъектов</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПравилаКонвертацииОбъектов.ЗахваченДругимПользователем</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПравилаКонвертацииОбъектов</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПравилаКонвертацииОбъектов.ЗахваченТекущимПользователем</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПравилаКонвертацииПредопределенныхДанных</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПравилаКонвертацииПредопределенныхДанных.ЗахваченДругимПользователем</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПравилаКонвертацииПредопределенныхДанных</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПравилаКонвертацииПредопределенныхДанных.ЗахваченТекущимПользователем</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Запросы</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Запросы.ЗахваченДругимПользователем</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Запросы</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Запросы.ЗахваченТекущимПользователем</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Алгоритмы</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Алгоритмы.Отключить</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Запросы</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Запросы.Отключить</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПравилаОбработкиДанных</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПравилаОбработкиДанных.Отключить</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПравилаКонвертацииОбъектов</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПравилаКонвертацииОбъектов.Отключить</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПравилаКонвертацииПредопределенныхДанных</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПравилаКонвертацииПредопределенныхДанных.Отключить</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</ConditionalAppearance>
+		</Attributes>
+	</BaseForm>
+</Form>
