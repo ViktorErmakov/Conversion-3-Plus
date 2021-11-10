@@ -341,7 +341,7 @@
 							<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
 							<ExtendedTooltip name="СтраницыОбработчикиXDTOРасширеннаяПодсказка" id="123"/>
 							<Events>
-								<Event name="OnCurrentPageChange" callType="After">Расш1_СтраницыПриСменеСтраницыПосле</Event>
+								<Event name="OnCurrentPageChange" callType="After">Расш1_СтраницыОбработчикиXDTOПриСменеСтраницыПосле</Event>
 							</Events>
 							<ChildItems>
 								<Page name="Страница_ПриОбработке" id="17">

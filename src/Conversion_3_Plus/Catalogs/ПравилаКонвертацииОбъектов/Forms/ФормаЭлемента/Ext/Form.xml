@@ -152,6 +152,19 @@
 									<ContextMenu name="ОбъектКонфигурацииКорреспондентКонтекстноеМеню" id="255"/>
 									<ExtendedTooltip name="ОбъектКонфигурацииКорреспондентРасширеннаяПодсказка" id="256"/>
 								</InputField>
+								<CheckBoxField name="ОбъектСДвижениями" id="510">
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вместе с объектом конвертируются движения по регистрам</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОбъектСДвижениямиКонтекстноеМеню" id="511"/>
+									<ExtendedTooltip name="ОбъектСДвижениямиРасширеннаяПодсказка" id="512"/>
+								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ОбластьПрименения" id="49">
@@ -1216,6 +1229,19 @@
 									<CommandName>0</CommandName>
 									<ExtendedTooltip name="ЗадатьПорядокПолейПоискаРасширеннаяПодсказка" id="90"/>
 								</Button>
+								<LabelDecoration name="Предупреждение_МногоПолей" id="513">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Первый вариант поиска содержит более 5 полей поиска. При интерактивном сопоставлении  будут задействованы только первые 5 полей поиска.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Предупреждение_МногоПолейКонтекстноеМеню" id="515"/>
+									<ExtendedTooltip name="Предупреждение_МногоПолейРасширеннаяПодсказка" id="509"/>
+								</LabelDecoration>
 								<UsualGroup name="Страница_Идентификация_ГоризонтальнаяГруппа1" id="148">
 									<Title>
 										<v8:item>
@@ -1760,6 +1786,19 @@
 										<ContextMenu name="ОбъектКонфигурацииКорреспондентКонтекстноеМеню" id="255"/>
 										<ExtendedTooltip name="ОбъектКонфигурацииКорреспондентРасширеннаяПодсказка" id="256"/>
 									</InputField>
+									<CheckBoxField name="ОбъектСДвижениями" id="510">
+										<TitleLocation>Right</TitleLocation>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Вместе с объектом конвертируются движения по регистрам</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ToolTipRepresentation>Button</ToolTipRepresentation>
+										<CheckBoxType>Auto</CheckBoxType>
+										<ContextMenu name="ОбъектСДвижениямиКонтекстноеМеню" id="511"/>
+										<ExtendedTooltip name="ОбъектСДвижениямиРасширеннаяПодсказка" id="512"/>
+									</CheckBoxField>
 								</ChildItems>
 							</UsualGroup>
 							<UsualGroup name="ОбластьПрименения" id="49">
@@ -2812,6 +2851,19 @@
 										<CommandName>0</CommandName>
 										<ExtendedTooltip name="ЗадатьПорядокПолейПоискаРасширеннаяПодсказка" id="90"/>
 									</Button>
+									<LabelDecoration name="Предупреждение_МногоПолей" id="507">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<HorizontalStretch>true</HorizontalStretch>
+										<TextColor>style:SpecialTextColor</TextColor>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Первый вариант поиска содержит более 5 полей поиска. При интерактивном сопоставлении  будут задействованы только первые 5 полей поиска.</v8:content>
+											</v8:item>
+										</Title>
+										<ContextMenu name="Предупреждение_МногоПолейКонтекстноеМеню" id="508"/>
+										<ExtendedTooltip name="Предупреждение_МногоПолейРасширеннаяПодсказка" id="509"/>
+									</LabelDecoration>
 									<UsualGroup name="Страница_Идентификация_ГоризонтальнаяГруппа1" id="148">
 										<Title>
 											<v8:item>
