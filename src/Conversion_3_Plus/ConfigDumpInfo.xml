@@ -16,7 +16,7 @@
 			<Metadata name="Catalog.Конвертации.Attribute.АлгоритмПередОтложеннымЗаполнением" id="b8d23f58-a31b-4ddb-ae89-a691c0dc033f"/>
 		</Metadata>
 		<Metadata name="Catalog.Конвертации.Form.ФормаЭлемента" id="5d37fef3-d25a-47ba-b0b6-ae5afd183484" configVersion="8288bd9bfa83939f90878602ebbd77f58a501d8e"/>
-		<Metadata name="Catalog.Конвертации.Form.ФормаЭлемента.Form" id="5d37fef3-d25a-47ba-b0b6-ae5afd183484.0" configVersion="416d01462ec2dff88b79bc2c1fd0f837d0166ce4"/>
+		<Metadata name="Catalog.Конвертации.Form.ФормаЭлемента.Form" id="5d37fef3-d25a-47ba-b0b6-ae5afd183484.0" configVersion="c82dae9c787e6318b4ea1884043d3fb2b8e5e47d"/>
 		<Metadata name="Catalog.Конвертации.ManagerModule" id="d4284e5e-80d8-4aa1-9989-2e22cee73c77.3" configVersion="0ddad49104ab4fb16b0d1e6d2cb15938cecc631e"/>
 		<Metadata name="Catalog.Конфигурации" id="cf2cda8d-20b2-443a-acc5-ec3bb16ebff8" configVersion="73580ad4b7a573aae11bfb27cbe9fbbdb3769e79"/>
 		<Metadata name="Catalog.Конфигурации.ManagerModule" id="cf2cda8d-20b2-443a-acc5-ec3bb16ebff8.3" configVersion="586e34d295d17473bbcef243c5a4e1e784cf109e"/>
@@ -35,7 +35,7 @@
 			<Metadata name="Catalog.ПравилаКонвертацииОбъектов.Attribute.АлгоритмПередПолучениемДанных" id="c37b0df0-94c7-4084-b8cb-3164dbb45c7b"/>
 		</Metadata>
 		<Metadata name="Catalog.ПравилаКонвертацииОбъектов.Form.ФормаЭлемента" id="f05ccd14-0ba7-4ac4-a1b1-bdeec2eeb0ec" configVersion="0818fed6d0c02007119b74046c943b0b29600f2d"/>
-		<Metadata name="Catalog.ПравилаКонвертацииОбъектов.Form.ФормаЭлемента.Form" id="f05ccd14-0ba7-4ac4-a1b1-bdeec2eeb0ec.0" configVersion="edf34d34ecf0c88f1e9dacd3abbd46c5912f16b7"/>
+		<Metadata name="Catalog.ПравилаКонвертацииОбъектов.Form.ФормаЭлемента.Form" id="f05ccd14-0ba7-4ac4-a1b1-bdeec2eeb0ec.0" configVersion="2975ecd61de4d8bbe30a6e2986b30066c4e7a1b0"/>
 		<Metadata name="Catalog.ПравилаКонвертацииОбъектов.ObjectModule" id="48b18325-0eaa-4c5e-94ef-171dc6b58e8e.0" configVersion="7afd334879892ef3f073943e762405ac54c31fcf"/>
 		<Metadata name="Catalog.ПравилаОбработкиДанных" id="e44dbc68-16bf-4393-bef5-7c919f30714a" configVersion="24be50713e990fabf764afb08465f5f1a3e1f440">
 			<Metadata name="Catalog.ПравилаОбработкиДанных.Attribute.АлгоритмВыборкаДанных" id="35565935-4b6a-4cd5-818f-7054b8a9cc9e"/>

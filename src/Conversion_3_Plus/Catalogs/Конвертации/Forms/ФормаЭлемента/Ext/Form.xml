@@ -189,6 +189,9 @@
 								</v8:item>
 							</Title>
 							<ExtendedTooltip name="ГруппаДанныеКонвертацииXDTOРасширеннаяПодсказка" id="270"/>
+							<Events>
+								<Event name="OnCurrentPageChange" callType="After">Расш1_ГруппаДанныеКонвертацииXDTOПриСменеСтраницыПосле</Event>
+							</Events>
 							<ChildItems>
 								<Page name="СтраницаВерсииФормата" id="267">
 									<Title>
