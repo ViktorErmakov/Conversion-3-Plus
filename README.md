@@ -1,4 +1,10 @@
+[![Строки кода](https://sonar.openbsl.ru/api/project_badges/measure?project=conversion-3-plus&metric=ncloc)](https://sonar.openbsl.ru/dashboard?id=conversion-3-plus)
+[![Статус порога качества](https://sonar.openbsl.ru/api/project_badges/measure?project=conversion-3-plus&metric=alert_status)](https://sonar.openbsl.ru/dashboard?id=conversion-3-plus)
+[![Ошибки](https://sonar.openbsl.ru/api/project_badges/measure?project=conversion-3-plus&metric=bugs)](https://sonar.openbsl.ru/dashboard?id=conversion-3-plus)
 [![Дефекты кода](https://sonar.openbsl.ru/api/project_badges/measure?project=conversion-3-plus&metric=code_smells)](https://sonar.openbsl.ru/dashboard?id=conversion-3-plus)
+[![Дублирующиеся строки (%)](https://sonar.openbsl.ru/api/project_badges/measure?project=conversion-3-plus&metric=duplicated_lines_density)](https://sonar.openbsl.ru/dashboard?id=conversion-3-plus)
+[![Технический долг](https://sonar.openbsl.ru/api/project_badges/measure?project=conversion-3-plus&metric=sqale_index)](https://sonar.openbsl.ru/dashboard?id=conversion-3-plus)
+
 
 # Conversion 3 Plus
 
