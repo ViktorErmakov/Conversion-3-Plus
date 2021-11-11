@@ -1,3 +1,5 @@
+[![Дефекты кода](https://sonar.openbsl.ru/api/project_badges/measure?project=conversion-3-plus&metric=code_smells)](https://sonar.openbsl.ru/dashboard?id=conversion-3-plus)
+
 # Conversion 3 Plus
 
 Публикация на инфостарте: https://infostart.ru/public/1289837/
