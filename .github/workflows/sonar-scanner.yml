@@ -4,16 +4,13 @@ on:
   pull_request:
     branches:
     - master
-    - features
   push: 
     branches: 
     - master
-    - develope
-    - features
 
 jobs:
   SonarScanner:
-    if: github.repository == 'BlizD/Tasks'
+    if: github.repository == 'ViktorErmakov/Conversion-3-Plus'
     runs-on: ubuntu-latest
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
