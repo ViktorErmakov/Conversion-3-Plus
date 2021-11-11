@@ -13,7 +13,7 @@
 			<Global>false</Global>
 			<ClientManagedApplication>false</ClientManagedApplication>
 			<Server>true</Server>
-			<ExternalConnection>false</ExternalConnection>
+			<ExternalConnection>true</ExternalConnection>
 			<ClientOrdinaryApplication>true</ClientOrdinaryApplication>
 			<ServerCall>true</ServerCall>
 			<Privileged>false</Privileged>

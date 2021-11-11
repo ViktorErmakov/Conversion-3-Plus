@@ -52,15 +52,15 @@
 		</Metadata>
 		<Metadata name="CommonModule.КонвертацияДанныхXDTOКлиент" id="c2b2659a-e200-48f4-becc-dd2bf499799a" configVersion="04712135198314e156d7f8d73c47f16666d4fb1a"/>
 		<Metadata name="CommonModule.КонвертацияДанныхXDTOКлиент.Module" id="c2b2659a-e200-48f4-becc-dd2bf499799a.0" configVersion="dea615951e0d429b754c57a84d4a27edc94d98bd"/>
-		<Metadata name="CommonModule.Расш1_ЖурналРегистрации" id="286946da-84e0-4ae1-829e-2ca2cabccfb9" configVersion="7fa63baeff0bd607dc70a2a33127e73754d5c929"/>
+		<Metadata name="CommonModule.Расш1_ЖурналРегистрации" id="286946da-84e0-4ae1-829e-2ca2cabccfb9" configVersion="509b00e4399ab5d5ad72b6b625aff4effd95bec0"/>
 		<Metadata name="CommonModule.Расш1_ЖурналРегистрации.Module" id="286946da-84e0-4ae1-829e-2ca2cabccfb9.0" configVersion="240ae42bab877702f8a4aac40772058f28dcb494"/>
-		<Metadata name="CommonModule.Расш1_КоллекцияМетаданных" id="dfa947af-ae77-44a6-a75c-ac0b85a3eaa3" configVersion="1d4fe854342c2bdf94c4075940fc5e84ee50c16d"/>
-		<Metadata name="CommonModule.Расш1_КоллекцияМетаданных.Module" id="dfa947af-ae77-44a6-a75c-ac0b85a3eaa3.0" configVersion="fcc191cbfc2bdd1242197c3dcc92cd3dcb98138c"/>
-		<Metadata name="CommonModule.Расш1_КонсольКода" id="04550ac2-fb6b-43ce-87fa-b76a9694731e" configVersion="23931d8ed0a65a66f6d7c3886900be81be6c84fc"/>
+		<Metadata name="CommonModule.Расш1_КоллекцияМетаданных" id="dfa947af-ae77-44a6-a75c-ac0b85a3eaa3" configVersion="2461023b33e1a7557931cdc578d22c9eccc30473"/>
+		<Metadata name="CommonModule.Расш1_КоллекцияМетаданных.Module" id="dfa947af-ae77-44a6-a75c-ac0b85a3eaa3.0" configVersion="50394176a471ed2ecf6200e0f78e911fe08086ae"/>
+		<Metadata name="CommonModule.Расш1_КонсольКода" id="04550ac2-fb6b-43ce-87fa-b76a9694731e" configVersion="d610b4f28937cb16f29ddffb1c13fd30ce91c132"/>
 		<Metadata name="CommonModule.Расш1_КонсольКода.Module" id="04550ac2-fb6b-43ce-87fa-b76a9694731e.0" configVersion="3c382c22d3234dc145e15e4855393d055c688126"/>
-		<Metadata name="CommonModule.Расш1_КонсольКодаВызовСервера" id="34723076-e100-4d28-b5ee-aa01dc4bb0c9" configVersion="35eb882677c398c434baad2d4a79d4ac13486e7a"/>
+		<Metadata name="CommonModule.Расш1_КонсольКодаВызовСервера" id="34723076-e100-4d28-b5ee-aa01dc4bb0c9" configVersion="ed1fed519a77da280ea59738523dbbc383b45774"/>
 		<Metadata name="CommonModule.Расш1_КонсольКодаВызовСервера.Module" id="34723076-e100-4d28-b5ee-aa01dc4bb0c9.0" configVersion="b2f2557ece2175d8ab402edf5649eef9bde1a4b7"/>
-		<Metadata name="CommonModule.Расш1_МодульПовтИсп" id="21a1a7ab-2a95-49ed-92bf-c08bba487e0c" configVersion="f70422287ac1eee935dce3b959ca2d4fc37260f8"/>
+		<Metadata name="CommonModule.Расш1_МодульПовтИсп" id="21a1a7ab-2a95-49ed-92bf-c08bba487e0c" configVersion="462b1494bd338bfe49d1f974cdb895df2d548972"/>
 		<Metadata name="CommonModule.Расш1_МодульПовтИсп.Module" id="21a1a7ab-2a95-49ed-92bf-c08bba487e0c.0" configVersion="7e410f5ccc4cee8fdbdcb4354d666b6113105368"/>
 		<Metadata name="CommonPicture.Папка" id="add29ad8-d5f5-4dd4-850d-2f1f33fef143" configVersion="74cb5a55cd109fdf2e70f72fe1a3f2d7a5496475"/>
 		<Metadata name="CommonPicture.Расш1_Заменить" id="381b0d85-aa8a-4c99-8709-aacb57802759" configVersion="11b76df3a92b4f013929e4d36a266e56925f05d3"/>
