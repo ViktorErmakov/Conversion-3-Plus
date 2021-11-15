@@ -73,7 +73,7 @@
 		<Metadata name="CommonTemplate.VanessaEditor.Template" id="19fd7017-ce3a-405c-abdd-4083b2cf72bb.0" configVersion="a3b039d3d7a42e5bb87a551fe69586cd99751f03"/>
 		<Metadata name="CommonTemplate.bsl_console" id="67717df6-0c6e-44f0-b9aa-5577a2ac5e66" configVersion="26496c0916eddbb6cbfe8f04bd9d76b9fc4aac1e"/>
 		<Metadata name="CommonTemplate.bsl_console.Template" id="67717df6-0c6e-44f0-b9aa-5577a2ac5e66.0" configVersion="45cf4d69524026fd69b17de6022f44e28f67bba6"/>
-		<Metadata name="Configuration.Conversion_3_Plus" id="3cba61a5-b662-40e9-ab53-fc0968a9512f" configVersion="193cb13591483388c84a96d74712eb1fac1cce6c"/>
+		<Metadata name="Configuration.Conversion_3_Plus" id="3cba61a5-b662-40e9-ab53-fc0968a9512f" configVersion="2f4009347d0d75f083dfac503e66aca4237e49b0"/>
 		<Metadata name="Configuration.Conversion_3_Plus.HomePageWorkArea" id="1c3a9f11-649f-4334-b4be-db24bc0eb274.8" configVersion="921ab7aa93a943891538c47890ea3718cd7ac037"/>
 		<Metadata name="Configuration.Conversion_3_Plus.ManagedApplicationModule" id="1c3a9f11-649f-4334-b4be-db24bc0eb274.6" configVersion="60287b5452cc18ba64a6018b541f99a60dd5ba97"/>
 		<Metadata name="Configuration.Conversion_3_Plus.SessionModule" id="1c3a9f11-649f-4334-b4be-db24bc0eb274.7" configVersion="64e5ab86836105638aeab1e976965fcd85835c0d"/>
