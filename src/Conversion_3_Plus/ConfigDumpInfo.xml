@@ -6,7 +6,7 @@
 			<Metadata name="Catalog.Алгоритмы.Attribute.Параметры" id="e189c8b8-9715-4353-9d18-f730969e3352"/>
 		</Metadata>
 		<Metadata name="Catalog.Алгоритмы.Form.ФормаЭлемента" id="3afc977b-23b3-4e85-b6ba-4c0925954c3e" configVersion="fc15a9ab1ff15d8a95e70c7956f3621f651cbe2e"/>
-		<Metadata name="Catalog.Алгоритмы.Form.ФормаЭлемента.Form" id="3afc977b-23b3-4e85-b6ba-4c0925954c3e.0" configVersion="13fb3e1aec6a5411993ccc7ff9d1d76e9aa4e4fc"/>
+		<Metadata name="Catalog.Алгоритмы.Form.ФормаЭлемента.Form" id="3afc977b-23b3-4e85-b6ba-4c0925954c3e.0" configVersion="a1bb9d6157c059ad7407bd90fd457c980c5e669e"/>
 		<Metadata name="Catalog.Значения" id="fa66b332-b902-4fce-874e-45fbd393b272" configVersion="f09613abcfb41ca0e9584b401f20583104990d71"/>
 		<Metadata name="Catalog.Конвертации" id="d4284e5e-80d8-4aa1-9989-2e22cee73c77" configVersion="c3395910f2ab738b32114c6604092a30e4230645">
 			<Metadata name="Catalog.Конвертации.Attribute.АлгоритмПередКонвертацией" id="41ec869b-6e6d-4586-9b8c-e090cf7d9ba7"/>
@@ -55,7 +55,7 @@
 		<Metadata name="CommonModule.Расш1_ЖурналРегистрации" id="286946da-84e0-4ae1-829e-2ca2cabccfb9" configVersion="509b00e4399ab5d5ad72b6b625aff4effd95bec0"/>
 		<Metadata name="CommonModule.Расш1_ЖурналРегистрации.Module" id="286946da-84e0-4ae1-829e-2ca2cabccfb9.0" configVersion="240ae42bab877702f8a4aac40772058f28dcb494"/>
 		<Metadata name="CommonModule.Расш1_КоллекцияМетаданных" id="dfa947af-ae77-44a6-a75c-ac0b85a3eaa3" configVersion="2461023b33e1a7557931cdc578d22c9eccc30473"/>
-		<Metadata name="CommonModule.Расш1_КоллекцияМетаданных.Module" id="dfa947af-ae77-44a6-a75c-ac0b85a3eaa3.0" configVersion="50394176a471ed2ecf6200e0f78e911fe08086ae"/>
+		<Metadata name="CommonModule.Расш1_КоллекцияМетаданных.Module" id="dfa947af-ae77-44a6-a75c-ac0b85a3eaa3.0" configVersion="9099178d48925ed019b0c778302007862b12ccae"/>
 		<Metadata name="CommonModule.Расш1_КонсольКода" id="04550ac2-fb6b-43ce-87fa-b76a9694731e" configVersion="d610b4f28937cb16f29ddffb1c13fd30ce91c132"/>
 		<Metadata name="CommonModule.Расш1_КонсольКода.Module" id="04550ac2-fb6b-43ce-87fa-b76a9694731e.0" configVersion="3c382c22d3234dc145e15e4855393d055c688126"/>
 		<Metadata name="CommonModule.Расш1_КонсольКодаВызовСервера" id="34723076-e100-4d28-b5ee-aa01dc4bb0c9" configVersion="ed1fed519a77da280ea59738523dbbc383b45774"/>
