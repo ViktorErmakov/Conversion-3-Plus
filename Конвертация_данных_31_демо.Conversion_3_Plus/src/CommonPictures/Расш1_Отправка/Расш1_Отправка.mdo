@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9784bdd9-3c4a-4733-a000-1aef976d0ca5">
+  <name>Расш1_Отправка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расш1 отправка</value>
+  </synonym>
+  <availabilityForChoice>true</availabilityForChoice>
+</mdclass:CommonPicture>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="3cba61a5-b662-40e9-ab53-fc0968a9512f">
+  <name>Conversion_3_Plus</name>
+  <synonym>
+    <key>ru</key>
+    <value>Conversion 3 plus</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <usePurposes>Checked</usePurposes>
+    <managedApplicationModule>Extended</managedApplicationModule>
+    <sessionModule>Extended</sessionModule>
+    <homePageWorkArea>Extended</homePageWorkArea>
+    <defaultLanguage>Checked</defaultLanguage>
+    <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="1c3a9f11-649f-4334-b4be-db24bc0eb274"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="a9daf372-d469-4e90-af31-09ad0f0fe9bc"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="f8c4ef7f-fa94-4f65-9f74-a1877b64afc1"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="827f879f-dc53-4949-a538-f52c76b8bc4c"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="19c9aefe-29b7-4028-bfc8-b6a412668336"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="448bd4d4-b616-45c5-8c11-f61706118e8e"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="09887a5f-dfcd-4a39-9a35-eedcdebc4aad"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>Расш1_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.10</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <vendor>@VErmakov</vendor>
+  <version>1.1.1</version>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <languages uuid="ebeae06c-8e81-453f-a2a4-1d47714a332d" extendedConfigurationObject="fa4b0c84-7a43-4ab6-ad87-b4d5483f4d2c">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <styleItems>StyleItem.ТекстЗапрещеннойЯчейкиЦвет</styleItems>
+  <styleItems>StyleItem.ПравоНедействительногоПользователяФон</styleItems>
+  <commonPictures>CommonPicture.Расш1_Получение</commonPictures>
+  <commonPictures>CommonPicture.Расш1_Отправка</commonPictures>
+  <commonPictures>CommonPicture.Расш1_Заменить</commonPictures>
+  <commonPictures>CommonPicture.Папка</commonPictures>
+  <commonTemplates>CommonTemplate.bsl_console</commonTemplates>
+  <commonTemplates>CommonTemplate.VanessaEditor</commonTemplates>
+  <commonModules>CommonModule.Расш1_КоллекцияМетаданных</commonModules>
+  <commonModules>CommonModule.Расш1_КонсольКодаВызовСервера</commonModules>
+  <commonModules>CommonModule.Расш1_КонсольКода</commonModules>
+  <commonModules>CommonModule.Расш1_ЖурналРегистрации</commonModules>
+  <commonModules>CommonModule.КонвертацияДанныхXDTOКлиент</commonModules>
+  <commonModules>CommonModule.Расш1_МодульПовтИсп</commonModules>
+  <commonCommands>CommonCommand.ЗахватитьОбъект</commonCommands>
+  <commonCommands>CommonCommand.СнятьЗахватОбъекта</commonCommands>
+  <catalogs>Catalog.Алгоритмы</catalogs>
+  <catalogs>Catalog.Конвертации</catalogs>
+  <catalogs>Catalog.ПравилаОбработкиДанных</catalogs>
+  <catalogs>Catalog.ПравилаКонвертацииОбъектов</catalogs>
+  <catalogs>Catalog.Конфигурации</catalogs>
+  <catalogs>Catalog.Объекты</catalogs>
+  <catalogs>Catalog.Релизы</catalogs>
+  <catalogs>Catalog.Свойства</catalogs>
+  <catalogs>Catalog.Значения</catalogs>
+  <catalogs>Catalog.ПравилаКонвертацииПредопределенныхДанных</catalogs>
+  <catalogs>Catalog.СоставыКонвертаций</catalogs>
+  <catalogs>Catalog.Запросы</catalogs>
+  <enums>Enum.ВариантыИдентификацииОбъектов</enums>
+  <enums>Enum.ВидыСвойств</enums>
+  <dataProcessors>DataProcessor.НастройкаПравилОбмена</dataProcessors>
+</mdclass:Configuration>

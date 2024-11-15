@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="66fa4f2a-f74f-4065-b878-8b77180f7045" extendedConfigurationObject="f3707464-2a14-4985-bd92-b2906fe80703">
+  <producedTypes>
+    <objectType typeId="6a5c7a4b-18fc-46ef-b122-38678a061b6e" valueTypeId="44b548a1-07b7-4aed-a634-c9d7f3fe27a9"/>
+    <refType typeId="bb9e4edf-435d-40d3-841c-674cddd21f8f" valueTypeId="6f6adaad-bab9-4ca1-914a-c0b5b9543f46"/>
+    <selectionType typeId="84ff0164-c109-47c2-9c7f-59d050cc5b5d" valueTypeId="c89c9462-c9ed-4d86-8ef9-8328f22b47d3"/>
+    <listType typeId="43c13898-8ced-4f17-a697-3f00c7f92c6b" valueTypeId="ebe034d1-85ac-4c62-a594-262a70278f7b"/>
+    <managerType typeId="ba70df8a-a772-4068-8636-f35646b32d94" valueTypeId="7c284ede-6d0e-4113-a0bc-851517873d0c"/>
+  </producedTypes>
+  <name>Свойства</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <hierarchical>Checked</hierarchical>
+    <hierarchyType>Checked</hierarchyType>
+    <owners>Checked</owners>
+  </extension>
+  <hierarchical>true</hierarchical>
+  <owners>Catalog.Объекты</owners>
+  <attributes uuid="f6b24f55-28cd-48bd-8e98-cb6f9fd14783" extendedConfigurationObject="88e0934d-f5b7-4d3b-a324-4f6c5b80407c">
+    <name>ТипыСтрокой</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers/>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="de887f8f-c3c5-4ede-bb93-711d23fd037e" extendedConfigurationObject="7727b533-9762-4bdd-ae6f-c7bd22ad8be8">
+    <name>Вид</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.ВидыСвойств</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="3210c9a1-5f77-4493-a8b1-2114100f8d99" extendedConfigurationObject="9e441ff9-cd6f-45c0-a5a8-d6cefa01a348">
+    <name>Синоним</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+</mdclass:Catalog>

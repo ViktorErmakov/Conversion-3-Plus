@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="23bdb80d-2d78-40e4-acdf-b5732663b143" extendedConfigurationObject="a89dcb4c-9da0-4a58-a7ad-1978a216b163">
+  <producedTypes>
+    <objectType typeId="cc0d7203-1b97-48d0-90da-3458058f275a" valueTypeId="3d2c84b9-24fd-4d4c-bbdd-8f4149751a3b"/>
+    <refType typeId="5423deae-1479-49a2-9ff0-ea064910cc2d" valueTypeId="c5ae3252-34b3-4c0a-95e8-f605b20cbacb"/>
+    <selectionType typeId="32e6d7ff-c060-46f2-a968-256dba08bd46" valueTypeId="ae619bb3-a508-488d-bf4e-dafff70c0230"/>
+    <listType typeId="4ed03a19-7627-4b9a-94ec-71a301d630b0" valueTypeId="dacae9ac-8b65-4b6a-b63b-5bad6bf57741"/>
+    <managerType typeId="a1a66a84-2a1f-4e00-bf61-79329e8964c9" valueTypeId="d174eb5e-6707-4ae1-a613-c3c845ca5f63"/>
+  </producedTypes>
+  <name>Алгоритмы</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <attributes uuid="27e95288-398f-4373-a9c1-1b13eec908ba" extendedConfigurationObject="e00f57e3-f072-4f9e-8bbe-a2c64e822dae">
+    <name>Алгоритм</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers/>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="e189c8b8-9715-4353-9d18-f730969e3352" extendedConfigurationObject="a7c339e5-4b47-4e79-8e9f-cdf590dab02c">
+    <name>Параметры</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers/>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <forms uuid="3afc977b-23b3-4e85-b6ba-4c0925954c3e" extendedConfigurationObject="f4780bf2-efe9-4fd6-a4d2-30fa3d63a8ed">
+    <name>ФормаЭлемента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+</mdclass:Catalog>

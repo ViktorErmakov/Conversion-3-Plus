@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="03c7698d-9acb-401a-977e-6e3da0655b30" extendedConfigurationObject="d0aeb7f1-3c00-46ca-a311-452aa54a89c9">
+  <producedTypes>
+    <objectType typeId="d00d983e-25d2-4f4e-a294-fc11d6e3e537" valueTypeId="b9df7892-b1ff-4f50-bc73-c0f3a3a05c59"/>
+    <refType typeId="18f3156f-0181-4f3c-a91f-3dc89b7d74f6" valueTypeId="1fd1b823-c8f7-47ca-ad20-4e39785e9eda"/>
+    <selectionType typeId="dccfde8e-43f1-4318-ac8b-f7670b79b5ac" valueTypeId="513523b6-d350-4903-b854-926e81d147fd"/>
+    <listType typeId="e874ad03-37df-4582-8a1c-5814f458e7e0" valueTypeId="307f4005-f010-438a-bdbc-7c4f65cf3c1a"/>
+    <managerType typeId="b667469f-24a8-41ef-bb43-8cc141d8868b" valueTypeId="17eeff60-6051-4579-b07e-75da0d931696"/>
+  </producedTypes>
+  <name>ПравилаКонвертацииПредопределенныхДанных</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="4314dd05-d95e-4fad-8455-cb59a79f5da2" extendedConfigurationObject="6d5a0576-358b-41de-be23-64a55f5820db">
+    <name>ОбъектКонфигурации</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Объекты</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
+  <attributes uuid="75fd8f55-b3e2-4e14-a201-2fec3ba7a0ee" extendedConfigurationObject="365e8dec-3332-4b6d-b1d1-22236e00e167">
+    <name>ИспользоватьДляПолучения</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
+  <attributes uuid="e8aefc2f-a2c9-4534-ae6b-b6e7b8ad0e1f" extendedConfigurationObject="00178d15-303f-4623-995d-8d546a517427">
+    <name>ОбъектФормата</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+  </attributes>
+  <attributes uuid="33437944-b362-446e-95c4-6b5b5759c447" extendedConfigurationObject="910a91bb-6887-4902-99c9-47601488b540">
+    <name>ОбъектКонфигурацииКорреспондент</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Объекты</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
+  <attributes uuid="8ff332c6-5899-4d8d-a851-2ee0a15ae199" extendedConfigurationObject="e2c77fb3-1911-4f6c-ab9a-bd58f53391a7">
+    <name>ИспользоватьДляОтправки</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
+</mdclass:Catalog>

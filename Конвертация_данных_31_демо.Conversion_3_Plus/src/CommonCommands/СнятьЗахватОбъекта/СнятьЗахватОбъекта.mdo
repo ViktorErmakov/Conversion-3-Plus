@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="21cc23dc-353e-4557-9222-113b813234e0" extendedConfigurationObject="519bf91f-a78f-476f-be56-6647ccb4787f">
+  <name>СнятьЗахватОбъекта</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:BasicCommandExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <group>Checked</group>
+    <commandParameterTypeExtension/>
+  </extension>
+  <group>FormCommandBarImportant</group>
+</mdclass:CommonCommand>

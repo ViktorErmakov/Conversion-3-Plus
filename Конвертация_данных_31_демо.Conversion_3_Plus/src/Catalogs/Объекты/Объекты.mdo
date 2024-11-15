@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="e78ba419-2291-498e-95bd-4122cd5b56a2" extendedConfigurationObject="ac03d05d-31ff-4be8-8134-befc15ed8a20">
+  <producedTypes>
+    <objectType typeId="a9325083-c80d-40ec-a51d-eb53bcc7a10e" valueTypeId="f9061b16-3ce9-4701-b782-9ab64a7f9681"/>
+    <refType typeId="1e2e7d7f-94d5-49a4-944b-994a6488090b" valueTypeId="d90dc841-f446-4ff5-88cd-d277837e7b31"/>
+    <selectionType typeId="c34c02d4-757e-4f21-8f05-97b4ff6b132f" valueTypeId="8e21ed90-9d2a-41f7-8b51-ea999c93ea86"/>
+    <listType typeId="30e9d365-583d-4a61-8c80-2c8cd54dba1e" valueTypeId="4859ba3c-57fb-4425-9b87-d024bed9f39d"/>
+    <managerType typeId="1f1fd474-f3be-444a-aefb-0d7c0f5c0bf2" valueTypeId="01a5ad41-5df6-42e1-aae0-42aba3edc291"/>
+  </producedTypes>
+  <name>Объекты</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <managerModule>Extended</managerModule>
+    <hierarchical>Checked</hierarchical>
+    <owners>Checked</owners>
+  </extension>
+  <hierarchical>true</hierarchical>
+  <owners>Catalog.Релизы</owners>
+  <attributes uuid="86c221ec-3207-4faa-8b0e-763484e9bab2" extendedConfigurationObject="35277a40-8eae-4ba3-886e-04e15c93bfdc">
+    <name>Имя</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <templates uuid="0a186c08-beb5-4174-816c-f4693b65e479">
+    <name>Расш1_Запрос_ОписаниеКоллекцииМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос описание метаданных объектов</value>
+    </synonym>
+    <comment>bsl console</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="562ed5e4-2606-4f87-b9a2-3a8785e48770">
+    <name>Расш1_Запрос_ОписаниеОбъектаМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос описание объекта метаданных</value>
+    </synonym>
+    <comment>bsl console</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:Catalog>

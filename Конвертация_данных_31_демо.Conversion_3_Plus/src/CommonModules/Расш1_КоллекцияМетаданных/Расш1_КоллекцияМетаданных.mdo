@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dfa947af-ae77-44a6-a75c-ac0b85a3eaa3">
+  <name>Расш1_КоллекцияМетаданных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коллекция метаданных дял консоли кода</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

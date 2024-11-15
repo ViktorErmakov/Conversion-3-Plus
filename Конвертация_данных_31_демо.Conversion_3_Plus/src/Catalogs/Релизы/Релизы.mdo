@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="4d70f5e2-db94-4564-984e-b2a88350fed8" extendedConfigurationObject="0a9b4d2e-a605-43e9-82e7-46dd5c001092">
+  <producedTypes>
+    <objectType typeId="3eaed2d9-b91d-486c-a539-626ead7b5510" valueTypeId="05bef900-1597-4457-b2bc-474476be401c"/>
+    <refType typeId="8dbda6ff-be5d-4146-be34-59683725003a" valueTypeId="3584f5f8-d45b-4f57-9ce4-f1768ee1cffe"/>
+    <selectionType typeId="bf8e2a09-037e-4a94-8fcf-4a7d07aa827e" valueTypeId="c86b4707-4c9a-442b-8425-74f9a10d40b2"/>
+    <listType typeId="07e6f184-1556-4f2d-ae2e-2b4d072fbb6f" valueTypeId="2a5d13d1-1955-45b1-a055-06a4169c9631"/>
+    <managerType typeId="bf2fd917-cc59-4704-b3e2-723226873a51" valueTypeId="6b1b52fa-d73b-4c5a-b011-f899deca5eb6"/>
+  </producedTypes>
+  <name>Релизы</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <managerModule>Extended</managerModule>
+  </extension>
+  <commands uuid="fde34b2a-eddc-4d46-9d07-26e998bb681e">
+    <name>Расш1_Команда1</name>
+    <extension xsi:type="mdclassExtension:BasicCommandExtension">
+      <group>Checked</group>
+    </extension>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Catalog>
