@@ -60,7 +60,6 @@
   <commonCommands>CommonCommand.ИсторияИзменений</commonCommands>
   <catalogs>Catalog.Алгоритмы</catalogs>
   <catalogs>Catalog.Конвертации</catalogs>
-  <catalogs>Catalog.ПравилаОбработкиДанных</catalogs>
   <catalogs>Catalog.Конфигурации</catalogs>
   <catalogs>Catalog.Объекты</catalogs>
   <catalogs>Catalog.ПравилаКонвертацииОбъектов</catalogs>
@@ -71,6 +70,7 @@
   <catalogs>Catalog.СоставыКонвертаций</catalogs>
   <catalogs>Catalog.Запросы</catalogs>
   <catalogs>Catalog.ПравилаКонвертацииСвойств</catalogs>
+  <catalogs>Catalog.ПравилаОбработкиДанных</catalogs>
   <enums>Enum.ВариантыИдентификацииОбъектов</enums>
   <enums>Enum.ВидыСвойств</enums>
   <dataProcessors>DataProcessor.НастройкаПравилОбмена</dataProcessors>
