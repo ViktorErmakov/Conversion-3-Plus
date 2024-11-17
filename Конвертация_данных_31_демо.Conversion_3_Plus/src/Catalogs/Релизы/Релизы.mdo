@@ -14,7 +14,7 @@
     <managerModule>Extended</managerModule>
   </extension>
   <commands uuid="fde34b2a-eddc-4d46-9d07-26e998bb681e">
-    <name>Расш1_Команда1</name>
+    <name>Расш1_ОбновитьОписаниеМетаданных</name>
     <extension xsi:type="mdclassExtension:BasicCommandExtension">
       <group>Checked</group>
     </extension>
