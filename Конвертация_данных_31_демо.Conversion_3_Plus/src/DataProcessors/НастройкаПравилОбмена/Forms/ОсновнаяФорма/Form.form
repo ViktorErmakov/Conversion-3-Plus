@@ -7,9 +7,6 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:DataPath">
-      <segments>Объект.Конвертация</segments>
-    </dataPath>
     <extendedTooltip>
       <name>КонвертацияРасширеннаяПодсказка</name>
       <id>115</id>
@@ -67,9 +64,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>ГруппыПравил_ПОД</segments>
-          </dataPath>
           <titleLocation>None</titleLocation>
           <items xsi:type="form:FormField">
             <name>ГруппыПравил_ПОДНаименование</name>
@@ -79,9 +73,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ГруппыПравил_ПОД.Наименование</segments>
-            </dataPath>
             <titleLocation>None</titleLocation>
             <extendedTooltip>
               <name>ГруппыПравил_ПОДНаименованиеРасширеннаяПодсказка</name>
@@ -135,9 +126,6 @@
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравил_ПОДСтрокаПоиска</name>
             <id>566</id>
             <extendedTooltip>
@@ -145,9 +133,6 @@
               <id>568</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -160,9 +145,6 @@
               <id>567</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <source>ГруппыПравил_ПОД</source>
@@ -173,9 +155,6 @@
           <viewStatusAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравил_ПОДСостояниеПросмотра</name>
             <id>569</id>
             <extendedTooltip>
@@ -183,9 +162,6 @@
               <id>571</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -198,9 +174,6 @@
               <id>570</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
@@ -212,9 +185,6 @@
           <searchControlAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравил_ПОДУправлениеПоиском</name>
             <id>572</id>
             <extendedTooltip>
@@ -222,9 +192,6 @@
               <id>574</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -237,9 +204,6 @@
               <id>573</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
@@ -307,9 +271,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>ПравилаОбработкиДанных</segments>
-          </dataPath>
           <titleLocation>None</titleLocation>
           <items xsi:type="form:FormField">
             <name>ПравилаОбработкиДанныхЗахваченДругимПользователем</name>
@@ -415,9 +376,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаОбработкиДанных.Наименование</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаОбработкиДанныхНаименованиеРасширеннаяПодсказка</name>
               <id>147</id>
@@ -465,9 +423,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаОбработкиДанных.ИспользоватьДляОтправки</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаОбработкиДанныхИспользоватьДляОтправкиРасширеннаяПодсказка</name>
               <id>174</id>
@@ -512,9 +467,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаОбработкиДанных.ИспользоватьДляПолучения</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаОбработкиДанныхИспользоватьДляПолученияРасширеннаяПодсказка</name>
               <id>177</id>
@@ -559,9 +511,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаОбработкиДанных.ОбъектВыборки</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаОбработкиДанныхОбъектВыборкиРасширеннаяПодсказка</name>
               <id>180</id>
@@ -609,9 +558,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаОбработкиДанных.ПравилоКонвертацииОбъекта</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаОбработкиДанныхПравилоКонвертацииОбъектаРасширеннаяПодсказка</name>
               <id>183</id>
@@ -716,7 +662,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ПерейтиКПКО</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -747,7 +693,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ИзменитьВыделенные</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -763,9 +709,6 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Items.ПравилаОбработкиДанных.CurrentData.Ссылка</segments>
-              </dataPath>
               <extendedTooltip>
                 <name>ПравилаОбработкиДанныхОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка</name>
                 <id>543</id>
@@ -796,9 +739,6 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Items.ПравилаОбработкиДанных.CurrentData.Ссылка</segments>
-              </dataPath>
               <extendedTooltip>
                 <name>ПравилаОбработкиДанныхОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка</name>
                 <id>553</id>
@@ -838,9 +778,6 @@
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ПравилаОбработкиДанныхСтрокаПоиска</name>
             <id>395</id>
             <extendedTooltip>
@@ -848,9 +785,6 @@
               <id>397</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -863,9 +797,6 @@
               <id>396</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <source>ПравилаОбработкиДанных</source>
@@ -876,9 +807,6 @@
           <viewStatusAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ПравилаОбработкиДанныхСостояниеПросмотра</name>
             <id>398</id>
             <extendedTooltip>
@@ -886,9 +814,6 @@
               <id>400</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -901,9 +826,6 @@
               <id>399</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
@@ -915,9 +837,6 @@
           <searchControlAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ПравилаОбработкиДанныхУправлениеПоиском</name>
             <id>401</id>
             <extendedTooltip>
@@ -925,9 +844,6 @@
               <id>403</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -940,9 +856,6 @@
               <id>402</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
@@ -992,7 +905,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ИзменитьВыделенные</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1089,9 +1002,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>ГруппыПравил_ПКО</segments>
-          </dataPath>
           <titleLocation>None</titleLocation>
           <items xsi:type="form:FormField">
             <name>ГруппыПравилНаименование</name>
@@ -1101,9 +1011,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ГруппыПравил_ПКО.Наименование</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ГруппыПравилНаименованиеРасширеннаяПодсказка</name>
               <id>473</id>
@@ -1157,9 +1064,6 @@
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравилПКОСтрокаПоиска</name>
             <id>462</id>
             <extendedTooltip>
@@ -1167,9 +1071,6 @@
               <id>464</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1182,9 +1083,6 @@
               <id>463</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <source>ГруппыПравилПКО</source>
@@ -1195,9 +1093,6 @@
           <viewStatusAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравилПКОСостояниеПросмотра</name>
             <id>465</id>
             <extendedTooltip>
@@ -1205,9 +1100,6 @@
               <id>467</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1220,9 +1112,6 @@
               <id>466</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
@@ -1234,9 +1123,6 @@
           <searchControlAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравилПКОУправлениеПоиском</name>
             <id>468</id>
             <extendedTooltip>
@@ -1244,9 +1130,6 @@
               <id>470</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1259,9 +1142,6 @@
               <id>469</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
@@ -1329,9 +1209,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>ПравилаКонвертацииОбъектов</segments>
-          </dataPath>
           <titleLocation>None</titleLocation>
           <items xsi:type="form:FormField">
             <name>ПравилаКонвертацииОбъектовКод</name>
@@ -1345,9 +1222,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаКонвертацииОбъектов.Код</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаКонвертацииОбъектовКодРасширеннаяПодсказка</name>
               <id>196</id>
@@ -1395,9 +1269,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаКонвертацииОбъектов.ИспользоватьДляОтправки</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаКонвертацииОбъектовИспользоватьДляОтправкиРасширеннаяПодсказка</name>
               <id>232</id>
@@ -1442,9 +1313,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаКонвертацииОбъектов.ИспользоватьДляПолучения</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаКонвертацииОбъектовИспользоватьДляПолученияРасширеннаяПодсказка</name>
               <id>235</id>
@@ -1489,9 +1357,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаКонвертацииОбъектов.ОбъектКонфигурации</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаКонвертацииОбъектовОбъектКонфигурацииРасширеннаяПодсказка</name>
               <id>238</id>
@@ -1539,9 +1404,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаКонвертацииОбъектов.ОбъектКонфигурацииКорреспондент</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаКонвертацииОбъектовОбъектКонфигурацииКорреспондентРасширеннаяПодсказка</name>
               <id>476</id>
@@ -1681,9 +1543,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаКонвертацииОбъектов.ОбъектФормата</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаКонвертацииОбъектовОбъектФорматаРасширеннаяПодсказка</name>
               <id>241</id>
@@ -1788,7 +1647,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ИзменитьВыделенные</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1804,9 +1663,6 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Items.ПравилаКонвертацииОбъектов.CurrentData.Ссылка</segments>
-              </dataPath>
               <extendedTooltip>
                 <name>ПравилаКонвертацииОбъектовОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка</name>
                 <id>545</id>
@@ -1837,9 +1693,6 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Items.ПравилаКонвертацииОбъектов.CurrentData.Ссылка</segments>
-              </dataPath>
               <extendedTooltip>
                 <name>ПравилаКонвертацииОбъектовОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка</name>
                 <id>555</id>
@@ -1874,9 +1727,6 @@
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ПравилаКонвертацииОбъектовСтрокаПоиска</name>
             <id>404</id>
             <extendedTooltip>
@@ -1884,9 +1734,6 @@
               <id>406</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1899,9 +1746,6 @@
               <id>405</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <source>ПравилаКонвертацииОбъектов</source>
@@ -1912,9 +1756,6 @@
           <viewStatusAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ПравилаКонвертацииОбъектовСостояниеПросмотра</name>
             <id>407</id>
             <extendedTooltip>
@@ -1922,9 +1763,6 @@
               <id>409</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1937,9 +1775,6 @@
               <id>408</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
@@ -1951,9 +1786,6 @@
           <searchControlAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ПравилаКонвертацииОбъектовУправлениеПоиском</name>
             <id>410</id>
             <extendedTooltip>
@@ -1961,9 +1793,6 @@
               <id>412</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -1976,9 +1805,6 @@
               <id>411</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
@@ -2028,7 +1854,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ИзменитьВыделенные</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2121,9 +1947,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>ГруппыПравил_ПКПД</segments>
-          </dataPath>
           <titleLocation>None</titleLocation>
           <items xsi:type="form:FormField">
             <name>ГруппыПравил_ПКПДНаименование</name>
@@ -2133,9 +1956,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ГруппыПравил_ПКПД.Наименование</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ГруппыПравил_ПКПДНаименованиеРасширеннаяПодсказка</name>
               <id>593</id>
@@ -2188,9 +2008,6 @@
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравил_ПКПДСтрокаПоиска</name>
             <id>582</id>
             <extendedTooltip>
@@ -2198,9 +2015,6 @@
               <id>584</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2213,9 +2027,6 @@
               <id>583</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <source>ГруппыПравил_ПКПД</source>
@@ -2226,9 +2037,6 @@
           <viewStatusAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравил_ПКПДСостояниеПросмотра</name>
             <id>585</id>
             <extendedTooltip>
@@ -2236,9 +2044,6 @@
               <id>587</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2251,9 +2056,6 @@
               <id>586</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
@@ -2265,9 +2067,6 @@
           <searchControlAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравил_ПКПДУправлениеПоиском</name>
             <id>588</id>
             <extendedTooltip>
@@ -2275,9 +2074,6 @@
               <id>590</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2290,9 +2086,6 @@
               <id>589</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
@@ -2360,9 +2153,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>ПравилаКонвертацииПредопределенныхДанных</segments>
-          </dataPath>
           <titleLocation>None</titleLocation>
           <items xsi:type="form:FormField">
             <name>ПравилаКонвертацииПредопределенныхДанныхЗахваченТекущимПользователем</name>
@@ -2468,9 +2258,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаКонвертацииПредопределенныхДанных.Код</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаКонвертацииПредопределенныхДанныхКодРасширеннаяПодсказка</name>
               <id>288</id>
@@ -2518,9 +2305,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаКонвертацииПредопределенныхДанных.ИспользоватьДляОтправки</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаКонвертацииПредопределенныхДанныхИспользоватьДляОтправкиРасширеннаяПодсказка</name>
               <id>312</id>
@@ -2565,9 +2349,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаКонвертацииПредопределенныхДанных.ИспользоватьДляПолучения</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаКонвертацииПредопределенныхДанныхИспользоватьДляПолученияРасширеннаяПодсказка</name>
               <id>315</id>
@@ -2612,9 +2393,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаКонвертацииПредопределенныхДанных.ОбъектКонфигурации</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаКонвертацииПредопределенныхДанныхОбъектКонфигурацииРасширеннаяПодсказка</name>
               <id>318</id>
@@ -2662,9 +2440,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаКонвертацииПредопределенныхДанных.ОбъектКонфигурацииКорреспондент</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаКонвертацииПредопределенныхДанныхОбъектКонфигурацииКорреспондентРасширеннаяПодсказка</name>
               <id>479</id>
@@ -2712,9 +2487,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаКонвертацииПредопределенныхДанных.ОбъектФормата</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаКонвертацииПредопределенныхДанныхОбъектФорматаРасширеннаяПодсказка</name>
               <id>321</id>
@@ -2758,9 +2530,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ПравилаКонвертацииПредопределенныхДанных.Отключить</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ПравилаКонвертацииПредопределенныхДанныхОтключитьРасширеннаяПодсказка</name>
               <id>642</id>
@@ -2819,7 +2588,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ИзменитьВыделенные</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2835,9 +2604,6 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Items.ПравилаКонвертацииПредопределенныхДанных.CurrentData.Ссылка</segments>
-              </dataPath>
               <extendedTooltip>
                 <name>ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка</name>
                 <id>547</id>
@@ -2868,9 +2634,6 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Items.ПравилаКонвертацииПредопределенныхДанных.CurrentData.Ссылка</segments>
-              </dataPath>
               <extendedTooltip>
                 <name>ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка</name>
                 <id>557</id>
@@ -2905,9 +2668,6 @@
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ПравилаКонвертацииПредопределенныхДанныхСтрокаПоиска</name>
             <id>413</id>
             <extendedTooltip>
@@ -2915,9 +2675,6 @@
               <id>415</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2930,9 +2687,6 @@
               <id>414</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <source>ПравилаКонвертацииПредопределенныхДанных</source>
@@ -2943,9 +2697,6 @@
           <viewStatusAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ПравилаКонвертацииПредопределенныхДанныхСостояниеПросмотра</name>
             <id>416</id>
             <extendedTooltip>
@@ -2953,9 +2704,6 @@
               <id>418</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -2968,9 +2716,6 @@
               <id>417</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
@@ -2982,9 +2727,6 @@
           <searchControlAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ПравилаКонвертацииПредопределенныхДанныхУправлениеПоиском</name>
             <id>419</id>
             <extendedTooltip>
@@ -2992,9 +2734,6 @@
               <id>421</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3007,9 +2746,6 @@
               <id>420</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
@@ -3059,7 +2795,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ИзменитьВыделенные</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3152,9 +2888,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>ГруппыПравил_Алгоритмы</segments>
-          </dataPath>
           <titleLocation>None</titleLocation>
           <items xsi:type="form:FormField">
             <name>ГруппыПравил_АлгоритмыНаименование</name>
@@ -3164,9 +2897,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ГруппыПравил_Алгоритмы.Наименование</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ГруппыПравил_АлгоритмыНаименованиеРасширеннаяПодсказка</name>
               <id>609</id>
@@ -3219,9 +2949,6 @@
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравил_АлгоритмыСтрокаПоиска</name>
             <id>598</id>
             <extendedTooltip>
@@ -3229,9 +2956,6 @@
               <id>600</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3244,9 +2968,6 @@
               <id>599</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <source>ГруппыПравил_Алгоритмы</source>
@@ -3257,9 +2978,6 @@
           <viewStatusAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравил_АлгоритмыСостояниеПросмотра</name>
             <id>601</id>
             <extendedTooltip>
@@ -3267,9 +2985,6 @@
               <id>603</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3282,9 +2997,6 @@
               <id>602</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
@@ -3296,9 +3008,6 @@
           <searchControlAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравил_АлгоритмыУправлениеПоиском</name>
             <id>604</id>
             <extendedTooltip>
@@ -3306,9 +3015,6 @@
               <id>606</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3321,9 +3027,6 @@
               <id>605</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
@@ -3391,9 +3094,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Алгоритмы</segments>
-          </dataPath>
           <titleLocation>None</titleLocation>
           <items xsi:type="form:FormField">
             <name>АлгоритмыКод</name>
@@ -3407,9 +3107,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Алгоритмы.Код</segments>
-            </dataPath>
             <extendedTooltip>
               <name>АлгоритмыКодРасширеннаяПодсказка</name>
               <id>369</id>
@@ -3457,9 +3154,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Алгоритмы.Параметры</segments>
-            </dataPath>
             <extendedTooltip>
               <name>АлгоритмыПараметрыРасширеннаяПодсказка</name>
               <id>372</id>
@@ -3595,9 +3289,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Алгоритмы.Отключить</segments>
-            </dataPath>
             <extendedTooltip>
               <name>АлгоритмыОтключитьРасширеннаяПодсказка</name>
               <id>630</id>
@@ -3656,7 +3347,7 @@
                   <horizontalAlign>Left</horizontalAlign>
                 </extInfo>
               </extendedTooltip>
-              <commandName>Form.Command.ИзменитьВыделенные</commandName>
+              <commandName>0</commandName>
               <representation>Auto</representation>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3672,9 +3363,6 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Items.Алгоритмы.CurrentData.Ссылка</segments>
-              </dataPath>
               <extendedTooltip>
                 <name>АлгоритмыОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка</name>
                 <id>549</id>
@@ -3705,9 +3393,6 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Items.Алгоритмы.CurrentData.Ссылка</segments>
-              </dataPath>
               <extendedTooltip>
                 <name>АлгоритмыОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка</name>
                 <id>559</id>
@@ -3742,9 +3427,6 @@
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>АлгоритмыСтрокаПоиска</name>
             <id>422</id>
             <extendedTooltip>
@@ -3752,9 +3434,6 @@
               <id>424</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3767,9 +3446,6 @@
               <id>423</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <source>Алгоритмы</source>
@@ -3780,9 +3456,6 @@
           <viewStatusAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>АлгоритмыСостояниеПросмотра</name>
             <id>425</id>
             <extendedTooltip>
@@ -3790,9 +3463,6 @@
               <id>427</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3805,9 +3475,6 @@
               <id>426</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
@@ -3819,9 +3486,6 @@
           <searchControlAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>АлгоритмыУправлениеПоиском</name>
             <id>428</id>
             <extendedTooltip>
@@ -3829,9 +3493,6 @@
               <id>430</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -3844,9 +3505,6 @@
               <id>429</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
@@ -3959,9 +3617,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>ГруппыПравил_Запросы</segments>
-          </dataPath>
           <titleLocation>None</titleLocation>
           <items xsi:type="form:FormField">
             <name>ГруппыПравил_ЗапросыНаименование</name>
@@ -3971,9 +3626,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ГруппыПравил_Запросы.Наименование</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ГруппыПравил_ЗапросыНаименованиеРасширеннаяПодсказка</name>
               <id>625</id>
@@ -4026,9 +3678,6 @@
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравил_ЗапросыСтрокаПоиска</name>
             <id>614</id>
             <extendedTooltip>
@@ -4036,9 +3685,6 @@
               <id>616</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4051,9 +3697,6 @@
               <id>615</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <source>ГруппыПравил_Запросы</source>
@@ -4064,9 +3707,6 @@
           <viewStatusAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравил_ЗапросыСостояниеПросмотра</name>
             <id>617</id>
             <extendedTooltip>
@@ -4074,9 +3714,6 @@
               <id>619</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4089,9 +3726,6 @@
               <id>618</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
@@ -4103,9 +3737,6 @@
           <searchControlAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ГруппыПравил_ЗапросыУправлениеПоиском</name>
             <id>620</id>
             <extendedTooltip>
@@ -4113,9 +3744,6 @@
               <id>622</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4128,9 +3756,6 @@
               <id>621</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
@@ -4198,9 +3823,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Запросы</segments>
-          </dataPath>
           <titleLocation>None</titleLocation>
           <items xsi:type="form:FormField">
             <name>ЗапросыЗахваченТекущимПользователем</name>
@@ -4306,9 +3928,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Запросы.Код</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ЗапросыКодРасширеннаяПодсказка</name>
               <id>503</id>
@@ -4356,9 +3975,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Запросы.ИспользуетсяПриЗагрузке</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ЗапросыИспользуетсяПриЗагрузкеРасширеннаяПодсказка</name>
               <id>500</id>
@@ -4399,9 +4015,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Запросы.Отключить</segments>
-            </dataPath>
             <extendedTooltip>
               <name>ЗапросыОтключитьРасширеннаяПодсказка</name>
               <id>633</id>
@@ -4445,9 +4058,6 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Items.Запросы.CurrentData.Ссылка</segments>
-              </dataPath>
               <extendedTooltip>
                 <name>ЗапросыОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка</name>
                 <id>551</id>
@@ -4478,9 +4088,6 @@
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>Items.Запросы.CurrentData.Ссылка</segments>
-              </dataPath>
               <extendedTooltip>
                 <name>ЗапросыОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка</name>
                 <id>561</id>
@@ -4515,9 +4122,6 @@
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ЗапросыСтрокаПоиска</name>
             <id>486</id>
             <extendedTooltip>
@@ -4525,9 +4129,6 @@
               <id>488</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4540,9 +4141,6 @@
               <id>487</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <source>Запросы</source>
@@ -4553,9 +4151,6 @@
           <viewStatusAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ЗапросыСостояниеПросмотра</name>
             <id>489</id>
             <extendedTooltip>
@@ -4563,9 +4158,6 @@
               <id>491</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4578,9 +4170,6 @@
               <id>490</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>ViewStatusAddition</type>
@@ -4592,9 +4181,6 @@
           <searchControlAddition>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <name>ЗапросыУправлениеПоиском</name>
             <id>492</id>
             <extendedTooltip>
@@ -4602,9 +4188,6 @@
               <id>494</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <type>Label</type>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
@@ -4617,9 +4200,6 @@
               <id>493</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
             <type>SearchControlAddition</type>
@@ -4814,7 +4394,7 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <commandName>Form.Command.СохранитьМодуль</commandName>
+        <commandName>0</commandName>
         <representation>Auto</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -4848,7 +4428,7 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <commandName>Form.Command.СохранитьМодуль_Хранилище</commandName>
+        <commandName>0</commandName>
         <representation>Auto</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -4911,7 +4491,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.Command.СохранитьМодуль</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <defaultButton>true</defaultButton>
       <autoMaxWidth>true</autoMaxWidth>
@@ -4942,7 +4522,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.Command.ВыгрузкаКонвертацииXML</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -4972,7 +4552,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.Command.НастроитьКонвертацию</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -5002,7 +4582,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.Command.ЗагрузкаОбработчиков</commandName>
+      <commandName>0</commandName>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
@@ -5032,7 +4612,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.Command.ПроверитьКонвертацию</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -5048,13 +4628,13 @@
     <autoFill>true</autoFill>
   </autoCommandBar>
   <handlers xsi:type="form:EventHandlerExtension">
-    <event>OnCreateAtServer</event>
-    <name>Расш1_ПриСозданииНаСервереПосле</name>
+    <event>ChoiceProcessing</event>
+    <name>Расш1_ОбработкаВыбораПосле</name>
     <callType>After</callType>
   </handlers>
   <handlers xsi:type="form:EventHandlerExtension">
-    <event>ChoiceProcessing</event>
-    <name>Расш1_ОбработкаВыбораПосле</name>
+    <event>OnCreateAtServer</event>
+    <name>Расш1_ПриСозданииНаСервереПосле</name>
     <callType>After</callType>
   </handlers>
   <saveWindowSettings>true</saveWindowSettings>

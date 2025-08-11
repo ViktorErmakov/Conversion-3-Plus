@@ -30,7 +30,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>@VErmakov</vendor>
-  <version>1.1.1</version>
+  <version>1.1.2</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <languages uuid="ebeae06c-8e81-453f-a2a4-1d47714a332d" extendedConfigurationObject="fa4b0c84-7a43-4ab6-ad87-b4d5483f4d2c">
     <name>Русский</name>
@@ -42,7 +42,6 @@
     <languageCode>ru</languageCode>
   </languages>
   <styleItems>StyleItem.ТекстЗапрещеннойЯчейкиЦвет</styleItems>
-  <styleItems>StyleItem.ПравоНедействительногоПользователяФон</styleItems>
   <commonPictures>CommonPicture.Расш1_Получение</commonPictures>
   <commonPictures>CommonPicture.Расш1_Отправка</commonPictures>
   <commonPictures>CommonPicture.Расш1_Заменить</commonPictures>

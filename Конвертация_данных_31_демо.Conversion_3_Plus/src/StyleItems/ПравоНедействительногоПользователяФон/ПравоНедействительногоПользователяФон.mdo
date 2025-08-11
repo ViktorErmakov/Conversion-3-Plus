@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="c6a9c421-389f-452f-9690-41e289487a55" extendedConfigurationObject="46692974-34aa-45e1-8fec-9b36064073cd">
-  <name>ПравоНедействительногоПользователяФон</name>
-  <objectBelonging>Adopted</objectBelonging>
-  <extension xsi:type="mdclassExtension:StyleItemExtension">
-    <extendedConfigurationObject>Checked</extendedConfigurationObject>
-    <type>Checked</type>
-  </extension>
-</mdclass:StyleItem>

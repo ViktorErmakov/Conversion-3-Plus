@@ -221,7 +221,7 @@
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>ЦветТекста</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>
@@ -271,7 +271,7 @@
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>ЦветТекста</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>
@@ -321,7 +321,7 @@
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>ЦветТекста</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>

@@ -12,7 +12,6 @@
   <extension xsi:type="mdclassExtension:CatalogExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <attributes uuid="7c5a39e8-f4d6-42c0-97c2-ab188859ea67" extendedConfigurationObject="9b7486b4-680a-4082-b108-961456f1270b">
     <name>Отключить</name>
     <objectBelonging>Adopted</objectBelonging>

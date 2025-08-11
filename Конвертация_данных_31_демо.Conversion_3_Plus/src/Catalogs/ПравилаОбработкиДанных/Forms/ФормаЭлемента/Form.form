@@ -68,9 +68,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>СписокКонвертаций</segments>
-          </dataPath>
           <extendedTooltip>
             <name>СписокКонвертацийРасширеннаяПодсказка</name>
             <id>102</id>
@@ -119,9 +116,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ГруппаПравил</segments>
-          </dataPath>
           <extendedTooltip>
             <name>ГруппаРасширеннаяПодсказка</name>
             <id>84</id>
@@ -169,9 +163,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.Отключить</segments>
-          </dataPath>
           <titleLocation>Right</titleLocation>
           <extendedTooltip>
             <name>ОтключитьРасширеннаяПодсказка</name>
@@ -297,9 +288,6 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.Description</segments>
-        </dataPath>
         <extendedTooltip>
           <name>НаименованиеРасширеннаяПодсказка</name>
           <id>3</id>
@@ -349,9 +337,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.СпособВыборки</segments>
-          </dataPath>
           <extendedTooltip>
             <name>СпособВыборкиРасширеннаяПодсказка</name>
             <id>52</id>
@@ -416,9 +401,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ИспользоватьДляОтправки</segments>
-          </dataPath>
           <handlers xsi:type="form:EventHandlerExtension">
             <event>OnChange</event>
             <name>Расш1_ИспользоватьДляОтправкиПриИзмененииПосле</name>
@@ -503,9 +485,6 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.ОбъектВыборки</segments>
-        </dataPath>
         <extendedTooltip>
           <name>ОбъектВыборкиРасширеннаяПодсказка</name>
           <id>75</id>
@@ -559,9 +538,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>ИспользоватьНесколькоПравилКонвертации</segments>
-          </dataPath>
           <titleLocation>Left</titleLocation>
           <extendedTooltip>
             <name>ИспользоватьНесколькоПравилКонвертацииРасширеннаяПодсказка</name>
@@ -609,9 +585,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ПравилоКонвертацииОбъекта</segments>
-          </dataPath>
           <extendedTooltip>
             <name>ПравилоКонвертацииОбъектаРасширеннаяПодсказка</name>
             <id>47</id>
@@ -664,9 +637,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ОчисткаДанных</segments>
-          </dataPath>
           <titleLocation>Right</titleLocation>
           <toolTipRepresentation>Button</toolTipRepresentation>
           <extendedTooltip>
@@ -750,9 +720,6 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.ПравилаКонвертацииОбъектов</segments>
-        </dataPath>
         <titleLocation>None</titleLocation>
         <items xsi:type="form:FormField">
           <name>ПравилаКонвертацииОбъектовНомерСтроки</name>
@@ -808,9 +775,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ПравилаКонвертацииОбъектов.ПравилоКонвертацииОбъекта</segments>
-          </dataPath>
           <extendedTooltip>
             <name>ПравилаКонвертацииОбъектовПравилоКонвертацииОбъектаРасширеннаяПодсказка</name>
             <id>67</id>
@@ -865,9 +829,6 @@
         <searchStringAddition>
           <visible>true</visible>
           <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <name>ПравилаКонвертацииОбъектовСтрокаПоиска</name>
           <id>103</id>
           <extendedTooltip>
@@ -875,9 +836,6 @@
             <id>105</id>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -890,9 +848,6 @@
             <id>104</id>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <source>ПравилаКонвертацииОбъектов</source>
@@ -903,9 +858,6 @@
         <viewStatusAddition>
           <visible>true</visible>
           <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <name>ПравилаКонвертацииОбъектовСостояниеПросмотра</name>
           <id>106</id>
           <extendedTooltip>
@@ -913,9 +865,6 @@
             <id>108</id>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -928,9 +877,6 @@
             <id>107</id>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
@@ -942,9 +888,6 @@
         <searchControlAddition>
           <visible>true</visible>
           <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
           <name>ПравилаКонвертацииОбъектовУправлениеПоиском</name>
           <id>109</id>
           <extendedTooltip>
@@ -952,9 +895,6 @@
             <id>111</id>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -967,9 +907,6 @@
             <id>110</id>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
@@ -1079,9 +1016,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ИмяОбработчикаПриОбработке</segments>
-            </dataPath>
             <toolTipRepresentation>Button</toolTipRepresentation>
             <extendedTooltip>
               <name>ИмяОбработчикаПриОбработкеРасширеннаяПодсказка</name>
@@ -1153,9 +1087,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Объект.АлгоритмПриОбработке</segments>
-            </dataPath>
             <titleLocation>None</titleLocation>
             <extendedTooltip>
               <name>АлгоритмПриОбработкеРасширеннаяПодсказка</name>
@@ -1241,9 +1172,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ИмяОбработчикаВыборкаДанных</segments>
-            </dataPath>
             <toolTipRepresentation>Button</toolTipRepresentation>
             <extendedTooltip>
               <name>ИмяОбработчикаВыборкаДанныхРасширеннаяПодсказка</name>
@@ -1310,9 +1238,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Объект.АлгоритмВыборкаДанных</segments>
-            </dataPath>
             <titleLocation>None</titleLocation>
             <extendedTooltip>
               <name>АлгоритмВыборкаДанныхРасширеннаяПодсказка</name>
@@ -1465,9 +1390,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ИмяОбработчикаПередОбработкой</segments>
-            </dataPath>
             <toolTipRepresentation>Button</toolTipRepresentation>
             <extendedTooltip>
               <name>ИмяОбработчикаПередОбработкойРасширеннаяПодсказка</name>
@@ -1550,9 +1472,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Объект.АлгоритмПередОбработкойПравила</segments>
-            </dataPath>
             <titleLocation>None</titleLocation>
             <extendedTooltip>
               <name>АлгоритмПередОбработкойПравилаРасширеннаяПодсказка</name>
@@ -1634,9 +1553,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ИмяОбработчикаПередВыгрузкой</segments>
-            </dataPath>
             <toolTipRepresentation>Button</toolTipRepresentation>
             <extendedTooltip>
               <name>ИмяОбработчикаПередВыгрузкойРасширеннаяПодсказка</name>
@@ -1708,9 +1624,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Объект.АлгоритмПередВыгрузкойОбъекта</segments>
-            </dataPath>
             <titleLocation>None</titleLocation>
             <extendedTooltip>
               <name>АлгоритмПередВыгрузкойОбъектаРасширеннаяПодсказка</name>
@@ -1792,9 +1705,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ИмяОбработчикаПослеВыгрузки</segments>
-            </dataPath>
             <toolTipRepresentation>Button</toolTipRepresentation>
             <extendedTooltip>
               <name>ИмяОбработчикаПослеВыгрузкиРасширеннаяПодсказка</name>
@@ -1863,9 +1773,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Объект.АлгоритмПослеВыгрузкиОбъекта</segments>
-            </dataPath>
             <titleLocation>None</titleLocation>
             <extendedTooltip>
               <name>АлгоритмПослеВыгрузкиОбъектаРасширеннаяПодсказка</name>
@@ -1947,9 +1854,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>ИмяОбработчикаПослеОбработки</segments>
-            </dataPath>
             <toolTipRepresentation>Button</toolTipRepresentation>
             <extendedTooltip>
               <name>ИмяОбработчикаПослеОбработкиРасширеннаяПодсказка</name>
@@ -2016,9 +1920,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Объект.АлгоритмПослеОбработкиПравила</segments>
-            </dataPath>
             <titleLocation>None</titleLocation>
             <extendedTooltip>
               <name>АлгоритмПослеОбработкиПравилаРасширеннаяПодсказка</name>
@@ -2160,9 +2061,6 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.Порядок</segments>
-        </dataPath>
         <extendedTooltip>
           <name>ПорядокРасширеннаяПодсказка</name>
           <id>164</id>
@@ -2210,9 +2108,6 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.ВыбиратьДанныеДляВыгрузкиОднимЗапросом</segments>
-        </dataPath>
         <titleLocation>Right</titleLocation>
         <extendedTooltip>
           <name>ВыбиратьДанныеДляВыгрузкиОднимЗапросомРасширеннаяПодсказка</name>
@@ -2254,9 +2149,6 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.НеВыгружатьОбъектыСозданныеВБазеПриемнике</segments>
-        </dataPath>
         <titleLocation>Right</titleLocation>
         <extendedTooltip>
           <name>НеВыгружатьОбъектыСозданныеВБазеПриемникеРасширеннаяПодсказка</name>
@@ -2381,7 +2273,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.Command.ДобавитьЭлементВСоставКонвертации</commandName>
+      <commandName>0</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>

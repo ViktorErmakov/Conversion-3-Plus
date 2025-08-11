@@ -12,8 +12,6 @@
   <extension xsi:type="mdclassExtension:CatalogExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
-  <checkUnique>true</checkUnique>
   <attributes uuid="df76ad73-a272-4849-aeff-6823a8a15a7d" extendedConfigurationObject="c4ebbd7e-82e7-414a-9cda-9739581df92c">
     <name>СвойствоКонфигурацииКорреспондента</name>
     <objectBelonging>Adopted</objectBelonging>
