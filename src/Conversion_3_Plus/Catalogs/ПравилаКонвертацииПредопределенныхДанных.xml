@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Catalog uuid="03c7698d-9acb-401a-977e-6e3da0655b30">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПравилаКонвертацииПредопределенныхДанных" category="Object">
+				<xr:TypeId>d00d983e-25d2-4f4e-a294-fc11d6e3e537</xr:TypeId>
+				<xr:ValueId>b9df7892-b1ff-4f50-bc73-c0f3a3a05c59</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПравилаКонвертацииПредопределенныхДанных" category="Ref">
+				<xr:TypeId>18f3156f-0181-4f3c-a91f-3dc89b7d74f6</xr:TypeId>
+				<xr:ValueId>1fd1b823-c8f7-47ca-ad20-4e39785e9eda</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПравилаКонвертацииПредопределенныхДанных" category="Selection">
+				<xr:TypeId>dccfde8e-43f1-4318-ac8b-f7670b79b5ac</xr:TypeId>
+				<xr:ValueId>513523b6-d350-4903-b854-926e81d147fd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПравилаКонвертацииПредопределенныхДанных" category="List">
+				<xr:TypeId>e874ad03-37df-4582-8a1c-5814f458e7e0</xr:TypeId>
+				<xr:ValueId>307f4005-f010-438a-bdbc-7c4f65cf3c1a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПравилаКонвертацииПредопределенныхДанных" category="Manager">
+				<xr:TypeId>b667469f-24a8-41ef-bb43-8cc141d8868b</xr:TypeId>
+				<xr:ValueId>17eeff60-6051-4579-b07e-75da0d931696</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПравилаКонвертацииПредопределенныхДанных</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>d0aeb7f1-3c00-46ca-a311-452aa54a89c9</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="4314dd05-d95e-4fad-8455-cb59a79f5da2">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОбъектКонфигурации</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6d5a0576-358b-41de-be23-64a55f5820db</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Объекты</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="75fd8f55-b3e2-4e14-a201-2fec3ba7a0ee">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ИспользоватьДляПолучения</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>365e8dec-3332-4b6d-b1d1-22236e00e167</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e8aefc2f-a2c9-4534-ae6b-b6e7b8ad0e1f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОбъектФормата</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>00178d15-303f-4623-995d-8d546a517427</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="33437944-b362-446e-95c4-6b5b5759c447">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОбъектКонфигурацииКорреспондент</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>910a91bb-6887-4902-99c9-47601488b540</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Объекты</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="8ff332c6-5899-4d8d-a851-2ee0a15ae199">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ИспользоватьДляОтправки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e2c77fb3-1911-4f6c-ab9a-bd58f53391a7</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

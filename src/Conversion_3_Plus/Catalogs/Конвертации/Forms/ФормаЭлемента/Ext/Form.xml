@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ФормаОбщаяКомандаИсторияИзменений" id="92">
 				<Type>CommandBarButton</Type>
-				<CommandName>0</CommandName>
+				<CommandName>CommonCommand.ИсторияИзменений</CommandName>
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаОбщаяКомандаИсторияИзмененийРасширеннаяПодсказка" id="93"/>
 			</Button>
@@ -17,6 +18,7 @@
 	</Events>
 	<ChildItems>
 		<InputField name="Родитель" id="276">
+			<AutoMaxWidth>false</AutoMaxWidth>
 			<ContextMenu name="РодительКонтекстноеМеню" id="277"/>
 			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="278"/>
 		</InputField>
@@ -35,6 +37,7 @@
 			<ChildItems>
 				<InputField name="Наименование" id="1">
 					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
 				</InputField>
@@ -46,11 +49,13 @@
 							<v8:content>Тип</v8:content>
 						</v8:item>
 					</Title>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<DropListButton>false</DropListButton>
 					<ContextMenu name="ТипКонвертацииКонтекстноеМеню" id="112"/>
 					<ExtendedTooltip name="ТипКонвертацииРасширеннаяПодсказка" id="113"/>
 				</InputField>
 				<InputField name="Статус" id="264">
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<ContextMenu name="СтатусКонтекстноеМеню" id="265"/>
 					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="266"/>
 				</InputField>
@@ -63,6 +68,7 @@
 					<v8:content>Страницы</v8:content>
 				</v8:item>
 			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="21"/>
 			<Events>
 				<Event name="OnCurrentPageChange" callType="After">Расш1_СтраницыПриСменеСтраницыПосле</Event>
@@ -77,16 +83,18 @@
 					</Title>
 					<ExtendedTooltip name="СтраницаКонвертацияXDTOРасширеннаяПодсказка" id="103"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаКонфигурацияXDTO" id="279">
+						<UsualGroup name="ГруппаКонфигурацияXDTO" id="94">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
 									<v8:content>Группа конфигурация XDTO</v8:content>
 								</v8:item>
 							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаКонфигурацияXDTOРасширеннаяПодсказка" id="284"/>
+							<ExtendedTooltip name="ГруппаКонфигурацияXDTOРасширеннаяПодсказка" id="95"/>
 							<ChildItems>
 								<InputField name="Конфигурация" id="4">
 									<EditMode>EnterOnInput</EditMode>
@@ -129,6 +137,8 @@
 										</v8:item>
 									</ToolTip>
 									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 									<RadioButtonType>Tumbler</RadioButtonType>
 									<ChoiceList>
 										<xr:Item>
@@ -163,24 +173,6 @@
 								</RadioButtonField>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="ИмяФайлаДляСохранения_МодульМенеджера" id="287">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Выгружать модуль в файл</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Если не заполнено, выгрузка производится в буфер обмена</v8:content>
-								</v8:item>
-							</ToolTip>
-							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-							<ChoiceButton>true</ChoiceButton>
-							<ContextMenu name="ИмяФайлаДляСохранения_МодульМенеджераКонтекстноеМеню" id="280"/>
-							<ExtendedTooltip name="ИмяФайлаДляСохранения_МодульМенеджераРасширеннаяПодсказка" id="289"/>
-						</InputField>
 						<Pages name="ГруппаДанныеКонвертацииXDTO" id="269">
 							<Title>
 								<v8:item>
@@ -188,6 +180,7 @@
 									<v8:content>Группа данные конвертации XDTO</v8:content>
 								</v8:item>
 							</Title>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
 							<ExtendedTooltip name="ГруппаДанныеКонвертацииXDTOРасширеннаяПодсказка" id="270"/>
 							<Events>
 								<Event name="OnCurrentPageChange" callType="After">Расш1_ГруппаДанныеКонвертацииXDTOПриСменеСтраницыПосле</Event>
@@ -204,6 +197,7 @@
 									<ChildItems>
 										<Table name="ВерсииФормата" id="10">
 											<TitleLocation>Top</TitleLocation>
+											<MaxRowsCount>10</MaxRowsCount>
 											<AutoInsertNewRow>true</AutoInsertNewRow>
 											<EnableStartDrag>true</EnableStartDrag>
 											<EnableDrag>true</EnableDrag>
@@ -312,7 +306,7 @@
 																</Title>
 															</ExtendedTooltip>
 														</InputField>
-														<TextDocumentField name="АлгоритмПередКонвертацией" id="32">
+														<HTMLDocumentField name="АлгоритмПередКонвертацией" id="32">
 															<TitleLocation>None</TitleLocation>
 															<ToolTip>
 																<v8:item>
@@ -324,7 +318,7 @@
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="АлгоритмПередКонвертациейКонтекстноеМеню" id="33"/>
 															<ExtendedTooltip name="АлгоритмПередКонвертациейРасширеннаяПодсказка" id="34"/>
-														</TextDocumentField>
+														</HTMLDocumentField>
 													</ChildItems>
 												</Page>
 												<Page name="ПередОтложеннымЗаполнением" id="43">
@@ -356,7 +350,7 @@
 																</Title>
 															</ExtendedTooltip>
 														</InputField>
-														<TextDocumentField name="АлгоритмПередОтложеннымЗаполнением" id="48">
+														<HTMLDocumentField name="АлгоритмПередОтложеннымЗаполнением" id="48">
 															<TitleLocation>None</TitleLocation>
 															<ToolTip>
 																<v8:item>
@@ -368,7 +362,7 @@
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="АлгоритмПередОтложеннымЗаполнениемКонтекстноеМеню" id="49"/>
 															<ExtendedTooltip name="АлгоритмПередОтложеннымЗаполнениемРасширеннаяПодсказка" id="50"/>
-														</TextDocumentField>
+														</HTMLDocumentField>
 													</ChildItems>
 												</Page>
 												<Page name="ПослеКонвертации" id="38">
@@ -400,7 +394,7 @@
 																</Title>
 															</ExtendedTooltip>
 														</InputField>
-														<TextDocumentField name="АлгоритмПослеКонвертации" id="35">
+														<HTMLDocumentField name="АлгоритмПослеКонвертации" id="35">
 															<TitleLocation>None</TitleLocation>
 															<ToolTip>
 																<v8:item>
@@ -412,7 +406,7 @@
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="АлгоритмПослеКонвертацииКонтекстноеМеню" id="36"/>
 															<ExtendedTooltip name="АлгоритмПослеКонвертацииРасширеннаяПодсказка" id="37"/>
-														</TextDocumentField>
+														</HTMLDocumentField>
 													</ChildItems>
 												</Page>
 											</ChildItems>
@@ -439,7 +433,8 @@
 									<v8:content>Группа конфигурация XML</v8:content>
 								</v8:item>
 							</Title>
-							<Group>AlwaysHorizontal</Group>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКонфигурацияXMLРасширеннаяПодсказка" id="115"/>
@@ -451,6 +446,7 @@
 											<v8:content>Конфигурация источник</v8:content>
 										</v8:item>
 									</Title>
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<ContextMenu name="КонфигурацияИсточникКонтекстноеМеню" id="120"/>
 									<ExtendedTooltip name="КонфигурацияИсточникРасширеннаяПодсказка" id="121"/>
 								</InputField>
@@ -461,22 +457,12 @@
 											<v8:content>Конфигурация приемник</v8:content>
 										</v8:item>
 									</Title>
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<ContextMenu name="КонфигурацияКорреспондентКонтекстноеМеню" id="117"/>
 									<ExtendedTooltip name="КонфигурацияКорреспондентРасширеннаяПодсказка" id="118"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="ИмяФайлаДляСохранения" id="282">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Выгружать правила в файл</v8:content>
-								</v8:item>
-							</Title>
-							<ChoiceButton>true</ChoiceButton>
-							<ContextMenu name="ИмяФайлаДляСохраненияКонтекстноеМеню" id="290"/>
-							<ExtendedTooltip name="ИмяФайлаДляСохраненияРасширеннаяПодсказка" id="291"/>
-						</InputField>
 						<LabelDecoration name="ДекорацияОбработчики" id="273">
 							<TextColor>style:FieldSelectionBackColor</TextColor>
 							<Font ref="style:LargeTextFont" kind="StyleItem"/>
@@ -1255,14 +1241,14 @@
 						</Table>
 					</ChildItems>
 				</Page>
-				<Page name="СтраницаОписание" id="281">
+				<Page name="СтраницаОписание" id="22">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Описание</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="СтраницаОписаниеРасширеннаяПодсказка" id="283"/>
+					<ExtendedTooltip name="СтраницаОписаниеРасширеннаяПодсказка" id="23"/>
 					<ChildItems>
 						<InputField name="Описание" id="108">
 							<TitleLocation>None</TitleLocation>
@@ -1277,12 +1263,13 @@
 		</Pages>
 	</ChildItems>
 	<Attributes/>
-	<BaseForm version="2.12">
+	<BaseForm version="2.19">
+		<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 			<ChildItems>
 				<Button name="ФормаОбщаяКомандаИсторияИзменений" id="92">
 					<Type>CommandBarButton</Type>
-					<CommandName>0</CommandName>
+					<CommandName>CommonCommand.ИсторияИзменений</CommandName>
 					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 					<ExtendedTooltip name="ФормаОбщаяКомандаИсторияИзмененийРасширеннаяПодсказка" id="93"/>
 				</Button>
@@ -1336,6 +1323,7 @@
 						<v8:content>Страницы</v8:content>
 					</v8:item>
 				</Title>
+				<PagesRepresentation>TabsOnTop</PagesRepresentation>
 				<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="21"/>
 				<ChildItems>
 					<Page name="СтраницаКонвертацияXDTO" id="102">
@@ -1433,24 +1421,6 @@
 									</RadioButtonField>
 								</ChildItems>
 							</UsualGroup>
-							<InputField name="ИмяФайлаДляСохранения_МодульМенеджера" id="279">
-								<Title>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Выгружать модуль в файл</v8:content>
-									</v8:item>
-								</Title>
-								<ToolTip>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Если не заполнено, выгрузка производится в буфер обмена</v8:content>
-									</v8:item>
-								</ToolTip>
-								<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-								<ChoiceButton>true</ChoiceButton>
-								<ContextMenu name="ИмяФайлаДляСохранения_МодульМенеджераКонтекстноеМеню" id="280"/>
-								<ExtendedTooltip name="ИмяФайлаДляСохранения_МодульМенеджераРасширеннаяПодсказка" id="281"/>
-							</InputField>
 							<Pages name="ГруппаДанныеКонвертацииXDTO" id="269">
 								<Title>
 									<v8:item>
@@ -1458,6 +1428,7 @@
 										<v8:content>Группа данные конвертации XDTO</v8:content>
 									</v8:item>
 								</Title>
+								<PagesRepresentation>TabsOnTop</PagesRepresentation>
 								<ExtendedTooltip name="ГруппаДанныеКонвертацииXDTOРасширеннаяПодсказка" id="270"/>
 								<ChildItems>
 									<Page name="СтраницаВерсииФормата" id="267">
@@ -1730,17 +1701,6 @@
 									</InputField>
 								</ChildItems>
 							</UsualGroup>
-							<InputField name="ИмяФайлаДляСохранения" id="282">
-								<Title>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Выгружать правила в файл</v8:content>
-									</v8:item>
-								</Title>
-								<ChoiceButton>true</ChoiceButton>
-								<ContextMenu name="ИмяФайлаДляСохраненияКонтекстноеМеню" id="283"/>
-								<ExtendedTooltip name="ИмяФайлаДляСохраненияРасширеннаяПодсказка" id="284"/>
-							</InputField>
 							<LabelDecoration name="ДекорацияОбработчики" id="273">
 								<TextColor>style:FieldSelectionBackColor</TextColor>
 								<Font ref="style:LargeTextFont" kind="StyleItem"/>

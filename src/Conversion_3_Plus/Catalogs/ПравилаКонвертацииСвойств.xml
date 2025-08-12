@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Catalog uuid="da92f249-0e27-432d-8261-1ef82c130720">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПравилаКонвертацииСвойств" category="Object">
+				<xr:TypeId>b9f5d3fa-9f52-418a-b2e6-bf8d78e3ce1f</xr:TypeId>
+				<xr:ValueId>7e4342bb-1958-4182-a4e9-95cf7db855cb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПравилаКонвертацииСвойств" category="Ref">
+				<xr:TypeId>5a843eff-a4f0-472b-9aa2-ca93c76f8d85</xr:TypeId>
+				<xr:ValueId>8abe2043-4dd4-40f9-9afc-f7282a30ee21</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПравилаКонвертацииСвойств" category="Selection">
+				<xr:TypeId>b6ab40a8-d0c6-4964-9320-207a2980239c</xr:TypeId>
+				<xr:ValueId>c5332619-04f4-47ad-aeca-e1f3d657d21f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПравилаКонвертацииСвойств" category="List">
+				<xr:TypeId>bc8f7575-1b80-4b0a-a5e6-30117d71e909</xr:TypeId>
+				<xr:ValueId>efe9ae0d-6c13-4737-940d-215081172223</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПравилаКонвертацииСвойств" category="Manager">
+				<xr:TypeId>490c798a-a965-4f74-a811-ca9840380f89</xr:TypeId>
+				<xr:ValueId>c4050d9b-dc22-4107-b9f3-c2e79018e995</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПравилаКонвертацииСвойств</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>53fad8f7-3a2e-4008-acf7-679dd43289bc</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="df76ad73-a272-4849-aeff-6823a8a15a7d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СвойствоКонфигурацииКорреспондента</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c4ebbd7e-82e7-414a-9cda-9739581df92c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Свойства</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="d3b1dafa-6057-40e2-a91b-d31d5e5d458a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ТипСвойстваФормата</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b65376f0-1db7-41f4-aa56-063158cb56de</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="56534505-bf65-4deb-85d0-7a02fa341c40">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СвойствоФормата</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>056c862d-90b1-4163-8449-40664b4e38e6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="c8de1c0e-4910-45fa-aebd-253981ffbfeb">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ТипСвойстваКонфигурацииКорреспондента</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>4176f10e-f658-4698-9d7b-2eef0dcdc4ee</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="702c9b41-6729-462d-82e8-ff0ea5c7f3fb">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПравилоКонвертацииСвойства</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d7e1e600-cb57-4a5d-83cf-cf32bc48ea77</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="7eabcd3b-f5e6-4598-bd1f-7c8cbbd20c72">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПолучитьИзВходящихДанных</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0dc88402-819b-46f7-9ab8-ebb5ce6d6e1c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2fb490ee-eadd-405b-84e9-5c26d37a1f60">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ИмяПараметраДляПередачи</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>957bc851-c6a5-41a9-93f4-fcbfbdc6d014</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ae2fe0cc-abf8-44dc-a781-976c66db4ff8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ИспользуетсяАлгоритмКонвертации</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6d73149e-6cf4-42e8-9646-afb42ee758e1</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="900f299d-a88e-429e-b5ca-dce09e8d9560">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ТипСвойстваКонфигурации</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>dee5c9bc-7439-479e-b1e5-5bff9d59eaa7</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="5230a98a-3f71-4361-a764-6e9828b4d333">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СвойствоКонфигурации</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9936a156-e5f4-49d0-b3ac-3f64ebebe607</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Свойства</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

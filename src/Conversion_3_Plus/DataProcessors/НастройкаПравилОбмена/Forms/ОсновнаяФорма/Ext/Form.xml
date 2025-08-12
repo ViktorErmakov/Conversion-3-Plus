@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Popup name="ПодменюСохранитьМодуль" id="534">
@@ -71,6 +71,10 @@
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing" callType="After">Расш1_ОбработкаВыбораПосле</Event>
+		<Event name="OnCreateAtServer" callType="After">Расш1_ПриСозданииНаСервереПосле</Event>
+	</Events>
 	<ChildItems>
 		<InputField name="Конвертация" id="113">
 			<Visible>false</Visible>
@@ -86,6 +90,7 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
 			<ShowTitle>false</ShowTitle>
@@ -98,6 +103,7 @@
 							<v8:content>Страницы</v8:content>
 						</v8:item>
 					</Title>
+					<PagesRepresentation>TabsOnTop</PagesRepresentation>
 					<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="36"/>
 					<ChildItems>
 						<Page name="ПОД" id="39">
@@ -180,6 +186,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="ПравилаОбработкиДанныхКонтекстноеМеню" id="139">
 										<ChildItems>
 											<Button name="ПравилаОбработкиДанныхКонтекстноеМенюИзменитьВыделенные" id="450">
@@ -191,20 +198,6 @@
 									</ContextMenu>
 									<AutoCommandBar name="ПравилаОбработкиДанныхКоманднаяПанель" id="140">
 										<ChildItems>
-											<SearchStringAddition name="ПОД_СтрокаПоиска" id="643">
-												<AdditionSource>
-													<Item>ПравилаОбработкиДанных</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<Title>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>ПОД строка поиска</v8:content>
-													</v8:item>
-												</Title>
-												<ContextMenu name="ПОД_СтрокаПоискаКонтекстноеМеню" id="644"/>
-												<ExtendedTooltip name="ПОД_СтрокаПоискаРасширеннаяПодсказка" id="645"/>
-											</SearchStringAddition>
 											<Button name="ПравилаОбработкиДанныхПерейтиКПКО" id="382">
 												<Type>CommandBarButton</Type>
 												<CommandName>0</CommandName>
@@ -219,14 +212,12 @@
 											</Button>
 											<Button name="ПравилаОбработкиДанныхОбщаяКомандаЗахватитьОбъект" id="542">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
-												<DataPath>138:02023637-7868-4a5f-8576-835a76e0c9ba/57</DataPath>
+												<CommandName>CommonCommand.ЗахватитьОбъект</CommandName>
 												<ExtendedTooltip name="ПравилаОбработкиДанныхОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="543"/>
 											</Button>
 											<Button name="ПравилаОбработкиДанныхОбщаяКомандаСнятьЗахватОбъекта" id="552">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
-												<DataPath>138:02023637-7868-4a5f-8576-835a76e0c9ba/57</DataPath>
+												<CommandName>CommonCommand.СнятьЗахватОбъекта</CommandName>
 												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 												<ExtendedTooltip name="ПравилаОбработкиДанныхОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="553"/>
 											</Button>
@@ -258,7 +249,7 @@
 										<ExtendedTooltip name="ПравилаОбработкиДанныхУправлениеПоискомРасширеннаяПодсказка" id="403"/>
 									</SearchControlAddition>
 									<Events>
-										<Event name="Selection" callType="After">Расш1_ПравилаОбработкиДанныхВыборПосле</Event>
+										<Event name="Selection" callType="After">ПравилаОбработкиДанныхВыборПосле</Event>
 									</Events>
 									<ChildItems>
 										<CheckBoxField name="ПравилаОбработкиДанныхЗахваченДругимПользователем" id="528">
@@ -434,6 +425,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="ПравилаКонвертацииОбъектовКонтекстноеМеню" id="191">
 										<ChildItems>
 											<Button name="ПравилаКонвертацииОбъектовКонтекстноеМенюИзменитьВыделенные" id="452">
@@ -445,20 +437,6 @@
 									</ContextMenu>
 									<AutoCommandBar name="ПравилаКонвертацииОбъектовКоманднаяПанель" id="192">
 										<ChildItems>
-											<SearchStringAddition name="ПКО_СтрокаПоиска" id="646">
-												<AdditionSource>
-													<Item>ПравилаКонвертацииОбъектов</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<Title>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>ПКО строка поиска</v8:content>
-													</v8:item>
-												</Title>
-												<ContextMenu name="ПКО_СтрокаПоискаКонтекстноеМеню" id="647"/>
-												<ExtendedTooltip name="ПКО_СтрокаПоискаРасширеннаяПодсказка" id="648"/>
-											</SearchStringAddition>
 											<Button name="ПравилаКонвертацииОбъектовИзменитьВыделенные" id="442">
 												<Type>CommandBarButton</Type>
 												<CommandName>0</CommandName>
@@ -467,14 +445,12 @@
 											</Button>
 											<Button name="ПравилаКонвертацииОбъектовОбщаяКомандаЗахватитьОбъект" id="544">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
-												<DataPath>190:02023637-7868-4a5f-8576-835a76e0c9ba/73</DataPath>
+												<CommandName>CommonCommand.ЗахватитьОбъект</CommandName>
 												<ExtendedTooltip name="ПравилаКонвертацииОбъектовОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="545"/>
 											</Button>
 											<Button name="ПравилаКонвертацииОбъектовОбщаяКомандаСнятьЗахватОбъекта" id="554">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
-												<DataPath>190:02023637-7868-4a5f-8576-835a76e0c9ba/73</DataPath>
+												<CommandName>CommonCommand.СнятьЗахватОбъекта</CommandName>
 												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 												<ExtendedTooltip name="ПравилаКонвертацииОбъектовОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="555"/>
 											</Button>
@@ -505,9 +481,6 @@
 										<ContextMenu name="ПравилаКонвертацииОбъектовУправлениеПоискомКонтекстноеМеню" id="411"/>
 										<ExtendedTooltip name="ПравилаКонвертацииОбъектовУправлениеПоискомРасширеннаяПодсказка" id="412"/>
 									</SearchControlAddition>
-									<Events>
-										<Event name="Selection" callType="After">Расш1_ПравилаКонвертацииОбъектовВыборПосле</Event>
-									</Events>
 									<ChildItems>
 										<LabelField name="ПравилаКонвертацииОбъектовКод" id="194">
 											<Title>
@@ -682,6 +655,7 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхКонтекстноеМеню" id="283">
 										<ChildItems>
 											<Button name="ПравилаКонвертацииПредопределенныхДанныхКонтекстноеМенюИзменитьВыделенные" id="454">
@@ -693,20 +667,6 @@
 									</ContextMenu>
 									<AutoCommandBar name="ПравилаКонвертацииПредопределенныхДанныхКоманднаяПанель" id="284">
 										<ChildItems>
-											<SearchStringAddition name="ПКПД_СтрокаПоиска" id="649">
-												<AdditionSource>
-													<Item>ПравилаКонвертацииПредопределенныхДанных</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<Title>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>ПКПД строка поиска</v8:content>
-													</v8:item>
-												</Title>
-												<ContextMenu name="ПКПД_СтрокаПоискаКонтекстноеМеню" id="650"/>
-												<ExtendedTooltip name="ПКПД_СтрокаПоискаРасширеннаяПодсказка" id="651"/>
-											</SearchStringAddition>
 											<Button name="ПравилаКонвертацииПредопределенныхДанныхИзменитьВыделенные" id="444">
 												<Type>CommandBarButton</Type>
 												<CommandName>0</CommandName>
@@ -715,14 +675,12 @@
 											</Button>
 											<Button name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаЗахватитьОбъект" id="546">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
-												<DataPath>282:02023637-7868-4a5f-8576-835a76e0c9ba/42</DataPath>
+												<CommandName>CommonCommand.ЗахватитьОбъект</CommandName>
 												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="547"/>
 											</Button>
 											<Button name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаСнятьЗахватОбъекта" id="556">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
-												<DataPath>282:02023637-7868-4a5f-8576-835a76e0c9ba/42</DataPath>
+												<CommandName>CommonCommand.СнятьЗахватОбъекта</CommandName>
 												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 												<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="557"/>
 											</Button>
@@ -927,23 +885,10 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="АлгоритмыКонтекстноеМеню" id="364"/>
 									<AutoCommandBar name="АлгоритмыКоманднаяПанель" id="365">
 										<ChildItems>
-											<SearchStringAddition name="Алгоритмы_СтрокаПоиска" id="652">
-												<AdditionSource>
-													<Item>Алгоритмы</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<Title>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Алгоритмы строка поиска</v8:content>
-													</v8:item>
-												</Title>
-												<ContextMenu name="Алгоритмы_СтрокаПоискаКонтекстноеМеню" id="653"/>
-												<ExtendedTooltip name="Алгоритмы_СтрокаПоискаРасширеннаяПодсказка" id="654"/>
-											</SearchStringAddition>
 											<Button name="АлгоритмыИзменитьВыделенные" id="446">
 												<Type>CommandBarButton</Type>
 												<CommandName>0</CommandName>
@@ -952,14 +897,12 @@
 											</Button>
 											<Button name="АлгоритмыОбщаяКомандаЗахватитьОбъект" id="548">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
-												<DataPath>363:02023637-7868-4a5f-8576-835a76e0c9ba/29</DataPath>
+												<CommandName>CommonCommand.ЗахватитьОбъект</CommandName>
 												<ExtendedTooltip name="АлгоритмыОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="549"/>
 											</Button>
 											<Button name="АлгоритмыОбщаяКомандаСнятьЗахватОбъекта" id="558">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
-												<DataPath>363:02023637-7868-4a5f-8576-835a76e0c9ba/29</DataPath>
+												<CommandName>CommonCommand.СнятьЗахватОбъекта</CommandName>
 												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 												<ExtendedTooltip name="АлгоритмыОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="559"/>
 											</Button>
@@ -990,9 +933,6 @@
 										<ContextMenu name="АлгоритмыУправлениеПоискомКонтекстноеМеню" id="429"/>
 										<ExtendedTooltip name="АлгоритмыУправлениеПоискомРасширеннаяПодсказка" id="430"/>
 									</SearchControlAddition>
-									<Events>
-										<Event name="Selection" callType="After">Расш1_АлгоритмыВыборПосле</Event>
-									</Events>
 									<ChildItems>
 										<LabelField name="АлгоритмыКод" id="367">
 											<Title>
@@ -1122,19 +1062,18 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 									<ContextMenu name="ЗапросыКонтекстноеМеню" id="483"/>
 									<AutoCommandBar name="ЗапросыКоманднаяПанель" id="484">
 										<ChildItems>
 											<Button name="ЗапросыОбщаяКомандаЗахватитьОбъект" id="550">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
-												<DataPath>482:02023637-7868-4a5f-8576-835a76e0c9ba/7</DataPath>
+												<CommandName>CommonCommand.ЗахватитьОбъект</CommandName>
 												<ExtendedTooltip name="ЗапросыОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="551"/>
 											</Button>
 											<Button name="ЗапросыОбщаяКомандаСнятьЗахватОбъекта" id="560">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
-												<DataPath>482:02023637-7868-4a5f-8576-835a76e0c9ba/7</DataPath>
+												<CommandName>CommonCommand.СнятьЗахватОбъекта</CommandName>
 												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 												<ExtendedTooltip name="ЗапросыОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="561"/>
 											</Button>
@@ -1243,7 +1182,7 @@
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветТекста</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
@@ -1283,7 +1222,7 @@
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветТекста</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
@@ -1323,7 +1262,7 @@
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветТекста</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
@@ -1363,7 +1302,7 @@
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветТекста</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
@@ -1403,7 +1342,7 @@
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветТекста</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
@@ -1443,12 +1382,12 @@
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 					</dcscor:item>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:use>false</dcscor:use>
 						<dcscor:parameter>ЦветТекста</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
@@ -1468,7 +1407,7 @@
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 					</dcscor:item>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:use>false</dcscor:use>
@@ -1493,12 +1432,12 @@
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 					</dcscor:item>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:use>false</dcscor:use>
 						<dcscor:parameter>ЦветТекста</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
@@ -1518,7 +1457,7 @@
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 					</dcscor:item>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:use>false</dcscor:use>
@@ -1543,18 +1482,18 @@
 				<dcsset:appearance>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 					</dcscor:item>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:use>false</dcscor:use>
 						<dcscor:parameter>ЦветТекста</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+						<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
 		</ConditionalAppearance>
 	</Attributes>
-	<BaseForm version="2.12">
+	<BaseForm version="2.19">
 		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 			<ChildItems>
 				<Popup name="ПодменюСохранитьМодуль" id="534">
@@ -1653,6 +1592,7 @@
 								<v8:content>Страницы</v8:content>
 							</v8:item>
 						</Title>
+						<PagesRepresentation>TabsOnTop</PagesRepresentation>
 						<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="36"/>
 						<ChildItems>
 							<Page name="ПОД" id="39">
@@ -1712,6 +1652,8 @@
 									<Table name="ПравилаОбработкиДанных" id="138">
 										<Representation>Tree</Representation>
 										<UseAlternationRowColor>true</UseAlternationRowColor>
+										<EnableStartDrag>true</EnableStartDrag>
+										<EnableDrag>true</EnableDrag>
 										<FileDragMode>AsFile</FileDragMode>
 										<Title>
 											<v8:item>
@@ -1735,6 +1677,7 @@
 										<ShowRoot>true</ShowRoot>
 										<AllowRootChoice>false</AllowRootChoice>
 										<UpdateOnDataChange>Auto</UpdateOnDataChange>
+										<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 										<ContextMenu name="ПравилаОбработкиДанныхКонтекстноеМеню" id="139">
 											<ChildItems>
 												<Button name="ПравилаОбработкиДанныхКонтекстноеМенюИзменитьВыделенные" id="450">
@@ -1746,20 +1689,6 @@
 										</ContextMenu>
 										<AutoCommandBar name="ПравилаОбработкиДанныхКоманднаяПанель" id="140">
 											<ChildItems>
-												<SearchStringAddition name="ПОД_СтрокаПоиска" id="643">
-													<AdditionSource>
-														<Item>ПравилаОбработкиДанных</Item>
-														<Type>SearchStringRepresentation</Type>
-													</AdditionSource>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>ПОД строка поиска</v8:content>
-														</v8:item>
-													</Title>
-													<ContextMenu name="ПОД_СтрокаПоискаКонтекстноеМеню" id="644"/>
-													<ExtendedTooltip name="ПОД_СтрокаПоискаРасширеннаяПодсказка" id="645"/>
-												</SearchStringAddition>
 												<Button name="ПравилаОбработкиДанныхПерейтиКПКО" id="382">
 													<Type>CommandBarButton</Type>
 													<CommandName>0</CommandName>
@@ -1774,21 +1703,19 @@
 												</Button>
 												<Button name="ПравилаОбработкиДанныхОбщаяКомандаЗахватитьОбъект" id="542">
 													<Type>CommandBarButton</Type>
-													<CommandName>0</CommandName>
-													<DataPath>138:02023637-7868-4a5f-8576-835a76e0c9ba/57</DataPath>
+													<CommandName>CommonCommand.ЗахватитьОбъект</CommandName>
 													<ExtendedTooltip name="ПравилаОбработкиДанныхОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="543"/>
 												</Button>
 												<Button name="ПравилаОбработкиДанныхОбщаяКомандаСнятьЗахватОбъекта" id="552">
 													<Type>CommandBarButton</Type>
-													<CommandName>0</CommandName>
-													<DataPath>138:02023637-7868-4a5f-8576-835a76e0c9ba/57</DataPath>
+													<CommandName>CommonCommand.СнятьЗахватОбъекта</CommandName>
 													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 													<ExtendedTooltip name="ПравилаОбработкиДанныхОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="553"/>
 												</Button>
 											</ChildItems>
 										</AutoCommandBar>
 										<ExtendedTooltip name="ПравилаОбработкиДанныхРасширеннаяПодсказка" id="141"/>
-										<SearchStringAddition name="ПравилаОбработкиДанныхСтрокаПоиска" id="395" DisplayImportance="High">
+										<SearchStringAddition name="ПравилаОбработкиДанныхСтрокаПоиска" id="395">
 											<AdditionSource>
 												<Item>ПравилаОбработкиДанных</Item>
 												<Type>SearchStringRepresentation</Type>
@@ -1963,6 +1890,8 @@
 									<Table name="ПравилаКонвертацииОбъектов" id="190">
 										<Representation>Tree</Representation>
 										<UseAlternationRowColor>true</UseAlternationRowColor>
+										<EnableStartDrag>true</EnableStartDrag>
+										<EnableDrag>true</EnableDrag>
 										<FileDragMode>AsFile</FileDragMode>
 										<Title>
 											<v8:item>
@@ -1986,6 +1915,7 @@
 										<ShowRoot>true</ShowRoot>
 										<AllowRootChoice>false</AllowRootChoice>
 										<UpdateOnDataChange>Auto</UpdateOnDataChange>
+										<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 										<ContextMenu name="ПравилаКонвертацииОбъектовКонтекстноеМеню" id="191">
 											<ChildItems>
 												<Button name="ПравилаКонвертацииОбъектовКонтекстноеМенюИзменитьВыделенные" id="452">
@@ -1997,20 +1927,6 @@
 										</ContextMenu>
 										<AutoCommandBar name="ПравилаКонвертацииОбъектовКоманднаяПанель" id="192">
 											<ChildItems>
-												<SearchStringAddition name="ПКО_СтрокаПоиска" id="646">
-													<AdditionSource>
-														<Item>ПравилаКонвертацииОбъектов</Item>
-														<Type>SearchStringRepresentation</Type>
-													</AdditionSource>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>ПКО строка поиска</v8:content>
-														</v8:item>
-													</Title>
-													<ContextMenu name="ПКО_СтрокаПоискаКонтекстноеМеню" id="647"/>
-													<ExtendedTooltip name="ПКО_СтрокаПоискаРасширеннаяПодсказка" id="648"/>
-												</SearchStringAddition>
 												<Button name="ПравилаКонвертацииОбъектовИзменитьВыделенные" id="442">
 													<Type>CommandBarButton</Type>
 													<CommandName>0</CommandName>
@@ -2019,14 +1935,12 @@
 												</Button>
 												<Button name="ПравилаКонвертацииОбъектовОбщаяКомандаЗахватитьОбъект" id="544">
 													<Type>CommandBarButton</Type>
-													<CommandName>0</CommandName>
-													<DataPath>190:02023637-7868-4a5f-8576-835a76e0c9ba/73</DataPath>
+													<CommandName>CommonCommand.ЗахватитьОбъект</CommandName>
 													<ExtendedTooltip name="ПравилаКонвертацииОбъектовОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="545"/>
 												</Button>
 												<Button name="ПравилаКонвертацииОбъектовОбщаяКомандаСнятьЗахватОбъекта" id="554">
 													<Type>CommandBarButton</Type>
-													<CommandName>0</CommandName>
-													<DataPath>190:02023637-7868-4a5f-8576-835a76e0c9ba/73</DataPath>
+													<CommandName>CommonCommand.СнятьЗахватОбъекта</CommandName>
 													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 													<ExtendedTooltip name="ПравилаКонвертацииОбъектовОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="555"/>
 												</Button>
@@ -2208,6 +2122,8 @@
 									</Table>
 									<Table name="ПравилаКонвертацииПредопределенныхДанных" id="282">
 										<UseAlternationRowColor>true</UseAlternationRowColor>
+										<EnableStartDrag>true</EnableStartDrag>
+										<EnableDrag>true</EnableDrag>
 										<FileDragMode>AsFile</FileDragMode>
 										<Title>
 											<v8:item>
@@ -2231,6 +2147,7 @@
 										<ShowRoot>true</ShowRoot>
 										<AllowRootChoice>false</AllowRootChoice>
 										<UpdateOnDataChange>Auto</UpdateOnDataChange>
+										<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 										<ContextMenu name="ПравилаКонвертацииПредопределенныхДанныхКонтекстноеМеню" id="283">
 											<ChildItems>
 												<Button name="ПравилаКонвертацииПредопределенныхДанныхКонтекстноеМенюИзменитьВыделенные" id="454">
@@ -2242,20 +2159,6 @@
 										</ContextMenu>
 										<AutoCommandBar name="ПравилаКонвертацииПредопределенныхДанныхКоманднаяПанель" id="284">
 											<ChildItems>
-												<SearchStringAddition name="ПКПД_СтрокаПоиска" id="649">
-													<AdditionSource>
-														<Item>ПравилаКонвертацииПредопределенныхДанных</Item>
-														<Type>SearchStringRepresentation</Type>
-													</AdditionSource>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>ПКПД строка поиска</v8:content>
-														</v8:item>
-													</Title>
-													<ContextMenu name="ПКПД_СтрокаПоискаКонтекстноеМеню" id="650"/>
-													<ExtendedTooltip name="ПКПД_СтрокаПоискаРасширеннаяПодсказка" id="651"/>
-												</SearchStringAddition>
 												<Button name="ПравилаКонвертацииПредопределенныхДанныхИзменитьВыделенные" id="444">
 													<Type>CommandBarButton</Type>
 													<CommandName>0</CommandName>
@@ -2264,14 +2167,12 @@
 												</Button>
 												<Button name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаЗахватитьОбъект" id="546">
 													<Type>CommandBarButton</Type>
-													<CommandName>0</CommandName>
-													<DataPath>282:02023637-7868-4a5f-8576-835a76e0c9ba/42</DataPath>
+													<CommandName>CommonCommand.ЗахватитьОбъект</CommandName>
 													<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="547"/>
 												</Button>
 												<Button name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаСнятьЗахватОбъекта" id="556">
 													<Type>CommandBarButton</Type>
-													<CommandName>0</CommandName>
-													<DataPath>282:02023637-7868-4a5f-8576-835a76e0c9ba/42</DataPath>
+													<CommandName>CommonCommand.СнятьЗахватОбъекта</CommandName>
 													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 													<ExtendedTooltip name="ПравилаКонвертацииПредопределенныхДанныхОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="557"/>
 												</Button>
@@ -2453,6 +2354,8 @@
 									</Table>
 									<Table name="Алгоритмы" id="363">
 										<UseAlternationRowColor>true</UseAlternationRowColor>
+										<EnableStartDrag>true</EnableStartDrag>
+										<EnableDrag>true</EnableDrag>
 										<FileDragMode>AsFile</FileDragMode>
 										<Title>
 											<v8:item>
@@ -2476,23 +2379,10 @@
 										<ShowRoot>true</ShowRoot>
 										<AllowRootChoice>false</AllowRootChoice>
 										<UpdateOnDataChange>Auto</UpdateOnDataChange>
+										<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 										<ContextMenu name="АлгоритмыКонтекстноеМеню" id="364"/>
 										<AutoCommandBar name="АлгоритмыКоманднаяПанель" id="365">
 											<ChildItems>
-												<SearchStringAddition name="Алгоритмы_СтрокаПоиска" id="652">
-													<AdditionSource>
-														<Item>Алгоритмы</Item>
-														<Type>SearchStringRepresentation</Type>
-													</AdditionSource>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Алгоритмы строка поиска</v8:content>
-														</v8:item>
-													</Title>
-													<ContextMenu name="Алгоритмы_СтрокаПоискаКонтекстноеМеню" id="653"/>
-													<ExtendedTooltip name="Алгоритмы_СтрокаПоискаРасширеннаяПодсказка" id="654"/>
-												</SearchStringAddition>
 												<Button name="АлгоритмыИзменитьВыделенные" id="446">
 													<Type>CommandBarButton</Type>
 													<CommandName>0</CommandName>
@@ -2501,14 +2391,12 @@
 												</Button>
 												<Button name="АлгоритмыОбщаяКомандаЗахватитьОбъект" id="548">
 													<Type>CommandBarButton</Type>
-													<CommandName>0</CommandName>
-													<DataPath>363:02023637-7868-4a5f-8576-835a76e0c9ba/29</DataPath>
+													<CommandName>CommonCommand.ЗахватитьОбъект</CommandName>
 													<ExtendedTooltip name="АлгоритмыОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="549"/>
 												</Button>
 												<Button name="АлгоритмыОбщаяКомандаСнятьЗахватОбъекта" id="558">
 													<Type>CommandBarButton</Type>
-													<CommandName>0</CommandName>
-													<DataPath>363:02023637-7868-4a5f-8576-835a76e0c9ba/29</DataPath>
+													<CommandName>CommonCommand.СнятьЗахватОбъекта</CommandName>
 													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 													<ExtendedTooltip name="АлгоритмыОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="559"/>
 												</Button>
@@ -2648,6 +2536,7 @@
 									</Table>
 									<Table name="Запросы" id="482">
 										<UseAlternationRowColor>true</UseAlternationRowColor>
+										<EnableStartDrag>true</EnableStartDrag>
 										<FileDragMode>AsFile</FileDragMode>
 										<Title>
 											<v8:item>
@@ -2668,19 +2557,18 @@
 										<ShowRoot>true</ShowRoot>
 										<AllowRootChoice>false</AllowRootChoice>
 										<UpdateOnDataChange>Auto</UpdateOnDataChange>
+										<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 										<ContextMenu name="ЗапросыКонтекстноеМеню" id="483"/>
 										<AutoCommandBar name="ЗапросыКоманднаяПанель" id="484">
 											<ChildItems>
 												<Button name="ЗапросыОбщаяКомандаЗахватитьОбъект" id="550">
 													<Type>CommandBarButton</Type>
-													<CommandName>0</CommandName>
-													<DataPath>482:02023637-7868-4a5f-8576-835a76e0c9ba/7</DataPath>
+													<CommandName>CommonCommand.ЗахватитьОбъект</CommandName>
 													<ExtendedTooltip name="ЗапросыОбщаяКомандаЗахватитьОбъектРасширеннаяПодсказка" id="551"/>
 												</Button>
 												<Button name="ЗапросыОбщаяКомандаСнятьЗахватОбъекта" id="560">
 													<Type>CommandBarButton</Type>
-													<CommandName>0</CommandName>
-													<DataPath>482:02023637-7868-4a5f-8576-835a76e0c9ba/7</DataPath>
+													<CommandName>CommonCommand.СнятьЗахватОбъекта</CommandName>
 													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 													<ExtendedTooltip name="ЗапросыОбщаяКомандаСнятьЗахватОбъектаРасширеннаяПодсказка" id="561"/>
 												</Button>
@@ -2789,7 +2677,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>ЦветТекста</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+							<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -2829,7 +2717,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>ЦветТекста</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+							<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -2869,7 +2757,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>ЦветТекста</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+							<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -2909,7 +2797,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>ЦветТекста</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+							<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -2949,7 +2837,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>ЦветТекста</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+							<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -2989,12 +2877,12 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>ЦветФона</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+							<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:use>false</dcscor:use>
 							<dcscor:parameter>ЦветТекста</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+							<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -3014,7 +2902,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>ЦветФона</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+							<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:use>false</dcscor:use>
@@ -3039,12 +2927,12 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>ЦветФона</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+							<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:use>false</dcscor:use>
 							<dcscor:parameter>ЦветТекста</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+							<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
@@ -3064,7 +2952,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>ЦветФона</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+							<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:use>false</dcscor:use>
@@ -3089,12 +2977,12 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>ЦветФона</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">style:ТекстЗапрещеннойЯчейкиЦвет</dcscor:value>
+							<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:use>false</dcscor:use>
 							<dcscor:parameter>ЦветТекста</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Color">style:ПравоНедействительногоПользователяФон</dcscor:value>
+							<dcscor:value xsi:type="v8ui:Color">#FFFF00</dcscor:value>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>

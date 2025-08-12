@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ФормаДобавитьЭлементВСоставКонвертации" id="112">
@@ -33,6 +34,7 @@
 					<v8:content>Страницы</v8:content>
 				</v8:item>
 			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="86"/>
 			<Events>
 				<Event name="OnCurrentPageChange" callType="After">Расш1_СтраницыПриСменеСтраницыПосле</Event>
@@ -55,6 +57,7 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаВладельцыРасширеннаяПодсказка" id="57"/>
@@ -67,15 +70,27 @@
 											<v8:content>Конвертации</v8:content>
 										</v8:item>
 									</Title>
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<ContextMenu name="СписокКонвертацийКонтекстноеМеню" id="101"/>
 									<ExtendedTooltip name="СписокКонвертацийРасширеннаяПодсказка" id="102"/>
 								</InputField>
 								<InputField name="Группа" id="82">
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<ContextMenu name="ГруппаКонтекстноеМеню" id="83"/>
 									<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="84"/>
 								</InputField>
 								<CheckBoxField name="Отключить" id="89">
 									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>При установке флага правило не будет выгружаться в модуль менеджера обмена</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ОтключитьКонтекстноеМеню" id="90"/>
 									<ExtendedTooltip name="ОтключитьРасширеннаяПодсказка" id="91"/>
@@ -88,48 +103,24 @@
 											<v8:content>захвачен</v8:content>
 										</v8:item>
 									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 									<ContextMenu name="ДекорацияЗахваченКонтекстноеМеню" id="172"/>
 									<ExtendedTooltip name="ДекорацияЗахваченРасширеннаяПодсказка" id="173"/>
 								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
-						<UsualGroup name="ГруппаИдентификатор" id="177">
+						<InputField name="Наименование" id="1">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа идентификатор</v8:content>
+									<v8:content>Идентификатор правила</v8:content>
 								</v8:item>
 							</Title>
-							<Group>AlwaysHorizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаИдентификаторРасширеннаяПодсказка" id="178"/>
-							<ChildItems>
-								<InputField name="Наименование" id="1">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Идентификатор правила</v8:content>
-										</v8:item>
-									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoMaxWidth>false</AutoMaxWidth>
-									<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
-									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
-								</InputField>
-								<Button name="ЗаполнитьИдентификатор" id="179">
-									<Type>UsualButton</Type>
-									<CommandName>0</CommandName>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Заполнить</v8:content>
-										</v8:item>
-									</Title>
-									<ExtendedTooltip name="ЗаполнитьИдентификаторРасширеннаяПодсказка" id="180"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+						</InputField>
 						<UsualGroup name="ГруппаТумблеры" id="48">
 							<Title>
 								<v8:item>
@@ -237,6 +228,7 @@
 									<ExtendedTooltip name="ИспользоватьНесколькоПравилКонвертацииРасширеннаяПодсказка" id="55"/>
 								</CheckBoxField>
 								<InputField name="ПравилоКонвертацииОбъекта" id="45">
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<ListChoiceMode>true</ListChoiceMode>
 									<ContextMenu name="ПравилоКонвертацииОбъектаКонтекстноеМеню" id="46"/>
 									<ExtendedTooltip name="ПравилоКонвертацииОбъектаРасширеннаяПодсказка" id="47"/>
@@ -391,11 +383,11 @@
 												</Title>
 											</ExtendedTooltip>
 										</InputField>
-										<TextDocumentField name="АлгоритмПриОбработке" id="30">
+										<HTMLDocumentField name="АлгоритмПриОбработке" id="30">
 											<TitleLocation>None</TitleLocation>
 											<ContextMenu name="АлгоритмПриОбработкеКонтекстноеМеню" id="31"/>
 											<ExtendedTooltip name="АлгоритмПриОбработкеРасширеннаяПодсказка" id="32"/>
-										</TextDocumentField>
+										</HTMLDocumentField>
 									</ChildItems>
 								</Page>
 								<Page name="Страница_ВыборкаДанных" id="92">
@@ -440,11 +432,11 @@
 												</Title>
 											</ExtendedTooltip>
 										</InputField>
-										<TextDocumentField name="АлгоритмВыборкаДанных" id="97">
+										<HTMLDocumentField name="АлгоритмВыборкаДанных" id="97">
 											<TitleLocation>None</TitleLocation>
 											<ContextMenu name="АлгоритмВыборкаДанныхКонтекстноеМеню" id="98"/>
 											<ExtendedTooltip name="АлгоритмВыборкаДанныхРасширеннаяПодсказка" id="99"/>
-										</TextDocumentField>
+										</HTMLDocumentField>
 									</ChildItems>
 								</Page>
 							</ChildItems>
@@ -694,26 +686,14 @@
 							<ContextMenu name="НеВыгружатьОбъектыСозданныеВБазеПриемникеКонтекстноеМеню" id="169"/>
 							<ExtendedTooltip name="НеВыгружатьОбъектыСозданныеВБазеПриемникеРасширеннаяПодсказка" id="170"/>
 						</CheckBoxField>
-						<InputField name="Описание" id="181">
-							<Width>50</Width>
-							<HorizontalStretch>true</HorizontalStretch>
-							<VerticalStretch>true</VerticalStretch>
-							<MultiLine>true</MultiLine>
-							<ContextMenu name="ОписаниеКонтекстноеМеню" id="182"/>
-							<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="183"/>
-						</InputField>
-						<InputField name="Комментарий" id="184">
-							<HorizontalStretch>true</HorizontalStretch>
-							<ContextMenu name="КомментарийКонтекстноеМеню" id="185"/>
-							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="186"/>
-						</InputField>
 					</ChildItems>
 				</Page>
 			</ChildItems>
 		</Pages>
 	</ChildItems>
 	<Attributes/>
-	<BaseForm version="2.12">
+	<BaseForm version="2.19">
+		<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 			<ChildItems>
 				<Button name="ФормаДобавитьЭлементВСоставКонвертации" id="112">
@@ -742,6 +722,7 @@
 						<v8:content>Страницы</v8:content>
 					</v8:item>
 				</Title>
+				<PagesRepresentation>TabsOnTop</PagesRepresentation>
 				<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="86"/>
 				<ChildItems>
 					<Page name="ОсновныеСведения" id="87">
@@ -799,43 +780,18 @@
 									</LabelDecoration>
 								</ChildItems>
 							</UsualGroup>
-							<UsualGroup name="ГруппаИдентификатор" id="177">
+							<InputField name="Наименование" id="1">
 								<Title>
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Группа идентификатор</v8:content>
+										<v8:content>Идентификатор правила</v8:content>
 									</v8:item>
 								</Title>
-								<Group>AlwaysHorizontal</Group>
-								<Representation>None</Representation>
-								<ShowTitle>false</ShowTitle>
-								<ExtendedTooltip name="ГруппаИдентификаторРасширеннаяПодсказка" id="178"/>
-								<ChildItems>
-									<InputField name="Наименование" id="1">
-										<Title>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Идентификатор правила</v8:content>
-											</v8:item>
-										</Title>
-										<EditMode>EnterOnInput</EditMode>
-										<AutoMaxWidth>false</AutoMaxWidth>
-										<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
-										<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
-									</InputField>
-									<Button name="ЗаполнитьИдентификатор" id="179">
-										<Type>UsualButton</Type>
-										<CommandName>0</CommandName>
-										<Title>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Заполнить</v8:content>
-											</v8:item>
-										</Title>
-										<ExtendedTooltip name="ЗаполнитьИдентификаторРасширеннаяПодсказка" id="180"/>
-									</Button>
-								</ChildItems>
-							</UsualGroup>
+								<EditMode>EnterOnInput</EditMode>
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+								<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+							</InputField>
 							<UsualGroup name="ГруппаТумблеры" id="48">
 								<Title>
 									<v8:item>
@@ -902,9 +858,7 @@
 							</UsualGroup>
 							<InputField name="ОбъектВыборки" id="73">
 								<AutoMaxWidth>false</AutoMaxWidth>
-								<DropListButton>false</DropListButton>
 								<ChoiceButton>true</ChoiceButton>
-								<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
 								<ChooseType>false</ChooseType>
 								<ContextMenu name="ОбъектВыборкиКонтекстноеМеню" id="74"/>
 								<ExtendedTooltip name="ОбъектВыборкиРасширеннаяПодсказка" id="75"/>
@@ -1394,19 +1348,6 @@
 								<ContextMenu name="НеВыгружатьОбъектыСозданныеВБазеПриемникеКонтекстноеМеню" id="169"/>
 								<ExtendedTooltip name="НеВыгружатьОбъектыСозданныеВБазеПриемникеРасширеннаяПодсказка" id="170"/>
 							</CheckBoxField>
-							<InputField name="Описание" id="181">
-								<Width>50</Width>
-								<HorizontalStretch>true</HorizontalStretch>
-								<VerticalStretch>true</VerticalStretch>
-								<MultiLine>true</MultiLine>
-								<ContextMenu name="ОписаниеКонтекстноеМеню" id="182"/>
-								<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="183"/>
-							</InputField>
-							<InputField name="Комментарий" id="184">
-								<HorizontalStretch>true</HorizontalStretch>
-								<ContextMenu name="КомментарийКонтекстноеМеню" id="185"/>
-								<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="186"/>
-							</InputField>
 						</ChildItems>
 					</Page>
 				</ChildItems>

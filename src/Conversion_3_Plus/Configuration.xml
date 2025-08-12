@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
 	<Configuration uuid="3cba61a5-b662-40e9-ab53-fc0968a9512f">
 		<InternalInfo>
 			<xr:ContainedObject>
@@ -32,6 +32,7 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
 			<Name>Conversion_3_Plus</Name>
 			<Synonym>
 				<v8:item>
@@ -41,7 +42,6 @@
 			</Synonym>
 			<Comment/>
 			<ConfigurationExtensionPurpose>Customization</ConfigurationExtensionPurpose>
-			<ObjectBelonging>Adopted</ObjectBelonging>
 			<KeepMappingToExtendedConfigurationObjectsByIDs>true</KeepMappingToExtendedConfigurationObjectsByIDs>
 			<NamePrefix>Расш1_</NamePrefix>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
@@ -51,7 +51,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>@VErmakov</Vendor>
-			<Version>1.1.1</Version>
+			<Version>1.1.3</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -63,7 +63,6 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<StyleItem>ТекстЗапрещеннойЯчейкиЦвет</StyleItem>
-			<StyleItem>ПравоНедействительногоПользователяФон</StyleItem>
 			<CommonPicture>Расш1_Получение</CommonPicture>
 			<CommonPicture>Расш1_Отправка</CommonPicture>
 			<CommonPicture>Расш1_Заменить</CommonPicture>
@@ -76,15 +75,22 @@
 			<CommonModule>Расш1_ЖурналРегистрации</CommonModule>
 			<CommonModule>КонвертацияДанныхXDTOКлиент</CommonModule>
 			<CommonModule>Расш1_МодульПовтИсп</CommonModule>
+			<CommonCommand>ЗахватитьОбъект</CommonCommand>
+			<CommonCommand>СнятьЗахватОбъекта</CommonCommand>
+			<CommonCommand>ИсторияИзменений</CommonCommand>
 			<Catalog>Алгоритмы</Catalog>
 			<Catalog>Конвертации</Catalog>
-			<Catalog>ПравилаОбработкиДанных</Catalog>
-			<Catalog>ПравилаКонвертацииОбъектов</Catalog>
 			<Catalog>Конфигурации</Catalog>
 			<Catalog>Объекты</Catalog>
+			<Catalog>ПравилаКонвертацииОбъектов</Catalog>
 			<Catalog>Релизы</Catalog>
 			<Catalog>Свойства</Catalog>
 			<Catalog>Значения</Catalog>
+			<Catalog>ПравилаКонвертацииПредопределенныхДанных</Catalog>
+			<Catalog>СоставыКонвертаций</Catalog>
+			<Catalog>Запросы</Catalog>
+			<Catalog>ПравилаКонвертацииСвойств</Catalog>
+			<Catalog>ПравилаОбработкиДанных</Catalog>
 			<Enum>ВариантыИдентификацииОбъектов</Enum>
 			<Enum>ВидыСвойств</Enum>
 			<DataProcessor>НастройкаПравилОбмена</DataProcessor>

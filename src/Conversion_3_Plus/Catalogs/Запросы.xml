@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Catalog uuid="ff3786df-7048-41eb-ac74-918fa33f2e0c">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Запросы" category="Object">
+				<xr:TypeId>ef188294-f24b-45c9-ab5f-78f18a642962</xr:TypeId>
+				<xr:ValueId>b684f9b0-418c-4661-b9da-fe307b5bddfd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Запросы" category="Ref">
+				<xr:TypeId>08095e44-3588-4c7a-ba96-fdaa9097feea</xr:TypeId>
+				<xr:ValueId>0efbe9d7-63f2-488e-b415-bd377889682f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Запросы" category="Selection">
+				<xr:TypeId>3f290c0c-edf4-4926-8f71-6fc078227505</xr:TypeId>
+				<xr:ValueId>14b90516-9053-4318-8883-1115b0a280cc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Запросы" category="List">
+				<xr:TypeId>deebd350-d2a1-40d7-84e7-c96efbe84b6d</xr:TypeId>
+				<xr:ValueId>5c27dc26-5004-4a76-b591-807fbda00c08</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Запросы" category="Manager">
+				<xr:TypeId>74dae585-0c13-4f7d-9c80-0880a53fbf8d</xr:TypeId>
+				<xr:ValueId>43dda1f7-a9f9-4005-84b3-1eed8463a3a5</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Запросы</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>149701c2-9d27-44d6-a758-e0add97287e3</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="944345bc-4668-42e5-a860-5ee6b287931c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ИспользуетсяПриЗагрузке</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>196d138d-485c-456b-8331-e10e793bd06c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>
