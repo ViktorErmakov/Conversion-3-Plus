@@ -42,6 +42,7 @@
     <languageCode>ru</languageCode>
   </languages>
   <styleItems>StyleItem.ТекстЗапрещеннойЯчейкиЦвет</styleItems>
+  <styleItems>StyleItem.ПоясняющийТекст</styleItems>
   <commonPictures>CommonPicture.Расш1_Получение</commonPictures>
   <commonPictures>CommonPicture.Расш1_Отправка</commonPictures>
   <commonPictures>CommonPicture.Расш1_Заменить</commonPictures>
