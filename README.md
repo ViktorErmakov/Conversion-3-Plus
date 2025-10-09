@@ -1,3 +1,35 @@
+
+<div align="right">
+  <details>
+    <summary >🌐 Language</summary>
+    <div>
+      <div align="center">
+        <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=en">English</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=zh-CN">简体中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=zh-TW">繁體中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=ja">日本語</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=ko">한국어</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=hi">हिन्दी</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=th">ไทย</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=fr">Français</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=de">Deutsch</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=es">Español</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=it">Italiano</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=ru">Русский</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=pt">Português</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=nl">Nederlands</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=pl">Polski</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=ar">العربية</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=fa">فارسی</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=tr">Türkçe</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=vi">Tiếng Việt</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=id">Bahasa Indonesia</a>
+        | <a href="https://openaitx.github.io/view.html?user=ViktorErmakov&project=Conversion-3-Plus&lang=as">অসমীয়া</
+      </div>
+    </div>
+  </details>
+</div>
+
 [![Строки кода](https://sonar.openbsl.ru/api/project_badges/measure?project=conversion-3-plus&metric=ncloc)](https://sonar.openbsl.ru/dashboard?id=conversion-3-plus)
 [![Статус порога качества](https://sonar.openbsl.ru/api/project_badges/measure?project=conversion-3-plus&metric=alert_status)](https://sonar.openbsl.ru/dashboard?id=conversion-3-plus)
 [![Ошибки](https://sonar.openbsl.ru/api/project_badges/measure?project=conversion-3-plus&metric=bugs)](https://sonar.openbsl.ru/dashboard?id=conversion-3-plus)
