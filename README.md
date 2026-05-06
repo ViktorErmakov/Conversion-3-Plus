@@ -5,6 +5,15 @@
 [![Дублирующиеся строки (%)](https://sonar.openbsl.ru/api/project_badges/measure?project=conversion-3-plus&metric=duplicated_lines_density)](https://sonar.openbsl.ru/dashboard?id=conversion-3-plus)
 [![Технический долг](https://sonar.openbsl.ru/api/project_badges/measure?project=conversion-3-plus&metric=sqale_index)](https://sonar.openbsl.ru/dashboard?id=conversion-3-plus)
 
+## Star History
+
+<a href="https://www.star-history.com/?repos=ViktorErmakov%2FConversion-3-Plus&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ViktorErmakov/Conversion-3-Plus&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ViktorErmakov/Conversion-3-Plus&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ViktorErmakov/Conversion-3-Plus&type=date&legend=top-left" />
+ </picture>
+</a>
 
 # Conversion 3 Plus
 
