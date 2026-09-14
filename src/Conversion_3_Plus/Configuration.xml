@@ -68,7 +68,6 @@
 			<CommonPicture>Расш1_Заменить</CommonPicture>
 			<CommonPicture>Папка</CommonPicture>
 			<CommonTemplate>bsl_console</CommonTemplate>
-			<CommonTemplate>VanessaEditor</CommonTemplate>
 			<CommonModule>Расш1_КоллекцияМетаданных</CommonModule>
 			<CommonModule>Расш1_КонсольКодаВызовСервера</CommonModule>
 			<CommonModule>Расш1_КонсольКода</CommonModule>

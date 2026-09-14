@@ -5,5 +5,5 @@
     <key>ru</key>
     <value>bsl_console</value>
   </synonym>
-  <templateType>BinaryData</templateType>
+  <templateType>TextDocument</templateType>
 </mdclass:CommonTemplate>

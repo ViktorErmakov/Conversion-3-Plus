@@ -48,13 +48,14 @@
   <commonPictures>CommonPicture.Расш1_Заменить</commonPictures>
   <commonPictures>CommonPicture.Папка</commonPictures>
   <commonTemplates>CommonTemplate.bsl_console</commonTemplates>
-  <commonTemplates>CommonTemplate.VanessaEditor</commonTemplates>
   <commonModules>CommonModule.Расш1_КоллекцияМетаданных</commonModules>
   <commonModules>CommonModule.Расш1_КонсольКодаВызовСервера</commonModules>
   <commonModules>CommonModule.Расш1_КонсольКода</commonModules>
   <commonModules>CommonModule.Расш1_ЖурналРегистрации</commonModules>
   <commonModules>CommonModule.КонвертацияДанныхXDTOКлиент</commonModules>
   <commonModules>CommonModule.Расш1_МодульПовтИсп</commonModules>
+  <commonModules>CommonModule.Расш1_КонсольКодаКлиентСервер</commonModules>
+  <commonModules>CommonModule.Расш1_КонсольКодаКлиент</commonModules>
   <commonCommands>CommonCommand.ЗахватитьОбъект</commonCommands>
   <commonCommands>CommonCommand.СнятьЗахватОбъекта</commonCommands>
   <commonCommands>CommonCommand.ИсторияИзменений</commonCommands>

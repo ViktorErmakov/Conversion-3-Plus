@@ -3,9 +3,8 @@
   <name>Расш1_КонсольКода</name>
   <synonym>
     <key>ru</key>
-    <value>Консоль кода на клиенте</value>
+    <value>Консоль кода</value>
   </synonym>
-  <clientManagedApplication>true</clientManagedApplication>
   <server>true</server>
   <externalConnection>true</externalConnection>
   <clientOrdinaryApplication>true</clientOrdinaryApplication>

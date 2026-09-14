@@ -109,8 +109,6 @@
 		<Metadata name="CommonPicture.Расш1_Отправка.Picture" id="9784bdd9-3c4a-4733-a000-1aef976d0ca5.0" configVersion="c4cd4c098fd1330bc6f63f8664ed4fe5b21863cd"/>
 		<Metadata name="CommonPicture.Расш1_Получение" id="e7d5db4e-d89a-487c-9d9a-471730e86d5d" configVersion="f4d47bf45ea8529dc7c17edead2e86b666de0ec5"/>
 		<Metadata name="CommonPicture.Расш1_Получение.Picture" id="e7d5db4e-d89a-487c-9d9a-471730e86d5d.0" configVersion="c567413be29a00ef42cf0a4fdc3dfe3a3a54d946"/>
-		<Metadata name="CommonTemplate.VanessaEditor" id="19fd7017-ce3a-405c-abdd-4083b2cf72bb" configVersion="a6c8a1235fc4c2a1405d4103c13cde77c28f1168"/>
-		<Metadata name="CommonTemplate.VanessaEditor.Template" id="19fd7017-ce3a-405c-abdd-4083b2cf72bb.0" configVersion="a3b039d3d7a42e5bb87a551fe69586cd99751f03"/>
 		<Metadata name="CommonTemplate.bsl_console" id="67717df6-0c6e-44f0-b9aa-5577a2ac5e66" configVersion="26496c0916eddbb6cbfe8f04bd9d76b9fc4aac1e"/>
 		<Metadata name="CommonTemplate.bsl_console.Template" id="67717df6-0c6e-44f0-b9aa-5577a2ac5e66.0" configVersion="45cf4d69524026fd69b17de6022f44e28f67bba6"/>
 		<Metadata name="Configuration.Conversion_3_Plus" id="3cba61a5-b662-40e9-ab53-fc0968a9512f" configVersion="f1e532333eeca1bf628ad885c1d410564533a0f8"/>
