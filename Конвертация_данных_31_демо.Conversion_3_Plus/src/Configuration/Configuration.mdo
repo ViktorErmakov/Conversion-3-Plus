@@ -47,6 +47,7 @@
   <commonPictures>CommonPicture.Расш1_Отправка</commonPictures>
   <commonPictures>CommonPicture.Расш1_Заменить</commonPictures>
   <commonPictures>CommonPicture.Папка</commonPictures>
+  <commonPictures>CommonPicture.ПиктограммыЭлементов</commonPictures>
   <commonTemplates>CommonTemplate.bsl_console</commonTemplates>
   <commonModules>CommonModule.Расш1_КоллекцияМетаданных</commonModules>
   <commonModules>CommonModule.Расш1_КонсольКодаВызовСервера</commonModules>
@@ -56,6 +57,7 @@
   <commonModules>CommonModule.Расш1_МодульПовтИсп</commonModules>
   <commonModules>CommonModule.Расш1_КонсольКодаКлиентСервер</commonModules>
   <commonModules>CommonModule.Расш1_КонсольКодаКлиент</commonModules>
+  <commonModules>CommonModule.Расш1_КонсольКодаКлиентПовтИсп</commonModules>
   <commonCommands>CommonCommand.ЗахватитьОбъект</commonCommands>
   <commonCommands>CommonCommand.СнятьЗахватОбъекта</commonCommands>
   <commonCommands>CommonCommand.ИсторияИзменений</commonCommands>

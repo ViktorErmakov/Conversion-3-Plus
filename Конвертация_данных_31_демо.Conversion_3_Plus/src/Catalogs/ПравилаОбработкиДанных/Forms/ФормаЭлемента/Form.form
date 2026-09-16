@@ -290,7 +290,6 @@
             </extInfo>
           </extendedTooltip>
           <type>UsualButton</type>
-          <commandName>Form.Command.ЗаполнитьИдентификатор</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -425,11 +424,6 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <handlers xsi:type="form:EventHandlerExtension">
-          <event>OnChange</event>
-          <name>Расш1_ИспользоватьДляОтправкиПриИзмененииПосле</name>
-          <callType>After</callType>
-        </handlers>
         <extendedTooltip>
           <name>ИспользоватьДляОтправкиРасширеннаяПодсказка</name>
           <id>12</id>
@@ -1841,12 +1835,12 @@
               <id>31</id>
               <autoFill>true</autoFill>
             </contextMenu>
-            <type>HTMLDocumentField</type>
+            <type>TextDocumentField</type>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:HtmlFieldExtInfo">
+            <extInfo xsi:type="form:TextDocFieldExtInfo">
               <width>50</width>
               <autoMaxWidth>true</autoMaxWidth>
               <height>10</height>
@@ -1967,12 +1961,12 @@
               <id>98</id>
               <autoFill>true</autoFill>
             </contextMenu>
-            <type>HTMLDocumentField</type>
+            <type>TextDocumentField</type>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:HtmlFieldExtInfo">
+            <extInfo xsi:type="form:TextDocFieldExtInfo">
               <width>50</width>
               <autoMaxWidth>true</autoMaxWidth>
               <height>10</height>
@@ -2027,11 +2021,6 @@
         </extendedTooltip>
         <type>Pages</type>
         <extInfo xsi:type="form:PagesGroupExtInfo">
-          <handlers xsi:type="form:EventHandlerExtension">
-            <event>OnCurrentPageChange</event>
-            <name>Расш1_СтраницыОбработчикиXDTOПриСменеСтраницыПосле</name>
-            <callType>After</callType>
-          </handlers>
           <pagesRepresentation>TabsOnLeftHorizontal</pagesRepresentation>
           <currentRowUse>Auto</currentRowUse>
         </extInfo>
@@ -2855,11 +2844,6 @@
     </extendedTooltip>
     <type>Pages</type>
     <extInfo xsi:type="form:PagesGroupExtInfo">
-      <handlers xsi:type="form:EventHandlerExtension">
-        <event>OnCurrentPageChange</event>
-        <name>Расш1_СтраницыПриСменеСтраницыПосле</name>
-        <callType>After</callType>
-      </handlers>
       <pagesRepresentation>TabsOnTop</pagesRepresentation>
       <currentRowUse>Auto</currentRowUse>
     </extInfo>
@@ -2885,7 +2869,6 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>Form.Command.ДобавитьЭлементВСоставКонвертации</commandName>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>

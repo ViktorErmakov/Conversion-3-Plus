@@ -123,7 +123,7 @@
       </typeExtension>
     </extension>
   </attributes>
-  <forms uuid="f05ccd14-0ba7-4ac4-a1b1-bdeec2eeb0ec" extendedConfigurationObject="f1553772-cfa9-4185-9739-8e9b0fa70cdc">
+  <forms uuid="6bdd6a13-2d17-4169-b1b0-e3e39b13f7e3" extendedConfigurationObject="f1553772-cfa9-4185-9739-8e9b0fa70cdc">
     <name>ФормаЭлемента</name>
     <objectBelonging>Adopted</objectBelonging>
     <extension xsi:type="mdclassExtension:BasicFormExtension">
