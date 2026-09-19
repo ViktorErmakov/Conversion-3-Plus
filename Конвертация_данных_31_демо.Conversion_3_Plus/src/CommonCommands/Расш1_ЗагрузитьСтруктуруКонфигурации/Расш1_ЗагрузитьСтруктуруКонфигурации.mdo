@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="750538a6-d277-401d-a55a-b0d298e5c557">
+  <name>Расш1_ЗагрузитьСтруктуруКонфигурации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузить структуру конфигурации из XML/EDT</value>
+  </synonym>
+  <group>CommandGroup.Расш1_КонсольКода</group>
+  <toolTip>
+    <key>ru</key>
+    <value>Открыть загрузку структуры конфигурации из файлов XML или EDT для подсказок консоли</value>
+  </toolTip>
+</mdclass:CommonCommand>

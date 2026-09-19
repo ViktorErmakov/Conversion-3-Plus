@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="944203f8-5aec-4374-a11a-d9121b9ed8e5">
+  <name>Расш1_НастройкиКонсолиКода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки консоли кода</value>
+  </synonym>
+  <group>CommandGroup.Расш1_КонсольКода</group>
+  <toolTip>
+    <key>ru</key>
+    <value>Персональные настройки редактора кода обработчиков</value>
+  </toolTip>
+</mdclass:CommonCommand>

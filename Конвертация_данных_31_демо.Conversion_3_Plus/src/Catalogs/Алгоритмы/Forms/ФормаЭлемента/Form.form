@@ -835,6 +835,11 @@
     <name>Расш1_ПриСозданииНаСервереПосле</name>
     <callType>After</callType>
   </handlers>
+  <handlers xsi:type="form:EventHandlerExtension">
+    <event>NotificationProcessing</event>
+    <name>Расш1_ОбработкаОповещенияПосле</name>
+    <callType>After</callType>
+  </handlers>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>

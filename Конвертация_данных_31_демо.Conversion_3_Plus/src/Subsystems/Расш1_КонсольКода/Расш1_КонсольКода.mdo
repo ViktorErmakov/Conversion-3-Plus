@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d49ffa86-f2e6-4ccb-96bd-00b526931ad4">
+  <name>Расш1_КонсольКода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Консоль кода</value>
+  </synonym>
+  <includeInCommandInterface>false</includeInCommandInterface>
+  <content>CommonCommand.Расш1_НастройкиКонсолиКода</content>
+  <content>CommonCommand.Расш1_ЗагрузитьСтруктуруКонфигурации</content>
+  <content>CommonForm.Расш1_НастройкиКонсолиКода</content>
+</mdclass:Subsystem>

@@ -4633,8 +4633,8 @@
     <callType>After</callType>
   </handlers>
   <handlers xsi:type="form:EventHandlerExtension">
-    <event>OnCreateAtServer</event>
-    <name>Расш1_ПриСозданииНаСервереПосле</name>
+    <event>OnOpen</event>
+    <name>Расш1_ПриОткрытииПосле</name>
     <callType>After</callType>
   </handlers>
   <saveWindowSettings>true</saveWindowSettings>

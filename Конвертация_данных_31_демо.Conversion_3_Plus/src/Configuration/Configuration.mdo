@@ -41,6 +41,9 @@
     </extension>
     <languageCode>ru</languageCode>
   </languages>
+  <subsystems>Subsystem.Расш1_КонсольКода</subsystems>
+  <subsystems>Subsystem.Конвертации</subsystems>
+  <subsystems>Subsystem.Конфигурации</subsystems>
   <styleItems>StyleItem.ТекстЗапрещеннойЯчейкиЦвет</styleItems>
   <styleItems>StyleItem.ПоясняющийТекст</styleItems>
   <commonPictures>CommonPicture.Расш1_Получение</commonPictures>
@@ -61,6 +64,10 @@
   <commonCommands>CommonCommand.ЗахватитьОбъект</commonCommands>
   <commonCommands>CommonCommand.СнятьЗахватОбъекта</commonCommands>
   <commonCommands>CommonCommand.ИсторияИзменений</commonCommands>
+  <commonCommands>CommonCommand.Расш1_ЗагрузитьСтруктуруКонфигурации</commonCommands>
+  <commonCommands>CommonCommand.Расш1_НастройкиКонсолиКода</commonCommands>
+  <commandGroups>CommandGroup.Расш1_КонсольКода</commandGroups>
+  <commonForms>CommonForm.Расш1_НастройкиКонсолиКода</commonForms>
   <catalogs>Catalog.Алгоритмы</catalogs>
   <catalogs>Catalog.Конвертации</catalogs>
   <catalogs>Catalog.Конфигурации</catalogs>

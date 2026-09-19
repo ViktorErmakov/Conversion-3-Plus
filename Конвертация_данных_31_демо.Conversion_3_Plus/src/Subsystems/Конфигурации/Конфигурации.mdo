@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="1b8a569e-19b5-4607-8355-3e4cd845187f" extendedConfigurationObject="6ea34b77-ff9e-4dab-8fc7-4f6890591d84">
+  <name>Конфигурации</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:SubsystemExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <content>Extended</content>
+    <commandInterface>Extended</commandInterface>
+  </extension>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonCommand.Расш1_НастройкиКонсолиКода</content>
+  <content>CommonCommand.Расш1_ЗагрузитьСтруктуруКонфигурации</content>
+</mdclass:Subsystem>
