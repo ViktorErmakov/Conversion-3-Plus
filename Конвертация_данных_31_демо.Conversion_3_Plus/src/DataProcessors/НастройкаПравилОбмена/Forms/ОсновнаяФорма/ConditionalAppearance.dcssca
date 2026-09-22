@@ -246,7 +246,7 @@
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>ЦветТекста</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>

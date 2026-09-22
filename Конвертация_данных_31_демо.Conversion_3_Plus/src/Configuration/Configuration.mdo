@@ -14,6 +14,7 @@
     <homePageWorkArea>Extended</homePageWorkArea>
     <defaultLanguage>Checked</defaultLanguage>
     <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
+    <compatibilityMode>Checked</compatibilityMode>
   </extension>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="1c3a9f11-649f-4334-b4be-db24bc0eb274"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="a9daf372-d469-4e90-af31-09ad0f0fe9bc"/>
@@ -24,7 +25,7 @@
   <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="09887a5f-dfcd-4a39-9a35-eedcdebc4aad"/>
   <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
   <namePrefix>Расш1_</namePrefix>
-  <configurationExtensionCompatibilityMode>8.3.10</configurationExtensionCompatibilityMode>
+  <configurationExtensionCompatibilityMode>8.3.24</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
@@ -32,6 +33,7 @@
   <vendor>@VErmakov</vendor>
   <version>1.1.2</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
+  <compatibilityMode>8.3.24</compatibilityMode>
   <languages uuid="ebeae06c-8e81-453f-a2a4-1d47714a332d" extendedConfigurationObject="fa4b0c84-7a43-4ab6-ad87-b4d5483f4d2c">
     <name>Русский</name>
     <objectBelonging>Adopted</objectBelonging>
@@ -83,5 +85,7 @@
   <catalogs>Catalog.ПравилаОбработкиДанных</catalogs>
   <enums>Enum.ВариантыИдентификацииОбъектов</enums>
   <enums>Enum.ВидыСвойств</enums>
+  <enums>Enum.Расш1_ТемыКонсолиКода</enums>
+  <enums>Enum.Расш1_НасыщенностьШрифтаКонсоли</enums>
   <dataProcessors>DataProcessor.НастройкаПравилОбмена</dataProcessors>
 </mdclass:Configuration>

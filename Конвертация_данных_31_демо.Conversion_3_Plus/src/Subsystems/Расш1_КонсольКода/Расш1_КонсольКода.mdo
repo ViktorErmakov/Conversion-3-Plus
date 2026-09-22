@@ -5,8 +5,9 @@
     <key>ru</key>
     <value>Консоль кода</value>
   </synonym>
-  <includeInCommandInterface>false</includeInCommandInterface>
   <content>CommonCommand.Расш1_НастройкиКонсолиКода</content>
   <content>CommonCommand.Расш1_ЗагрузитьСтруктуруКонфигурации</content>
   <content>CommonForm.Расш1_НастройкиКонсолиКода</content>
+  <content>Enum.Расш1_ТемыКонсолиКода</content>
+  <content>Enum.Расш1_НасыщенностьШрифтаКонсоли</content>
 </mdclass:Subsystem>

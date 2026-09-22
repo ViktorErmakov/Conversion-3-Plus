@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b59222ea-2508-48a9-93e9-fe2619a9674d">
+  <producedTypes>
+    <refType typeId="e78614bc-209d-4dee-abc6-536dc88e761b" valueTypeId="3bbf0f10-ca3e-4248-818a-8bd4a1a6206f"/>
+    <listType typeId="0bd4e6fe-703a-496c-ac63-3990ba47e08c" valueTypeId="d9fd164d-7dcc-41ed-ad84-98bdd5448eee"/>
+    <managerType typeId="05b0ee72-4229-4ea8-b12a-df0d78272518" valueTypeId="d0b45b0c-86ef-4fce-8dc0-3c9f09f5e86c"/>
+  </producedTypes>
+  <name>Расш1_ТемыКонсолиКода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Темы консоли кода</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f6544fda-7a0c-49fe-9663-655414b12244">
+    <name>White</name>
+    <synonym>
+      <key>ru</key>
+      <value>Светлая</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="11c19849-f1d0-4e7a-bbd7-cf92e9c7ec69">
+    <name>WhiteQuery</name>
+    <synonym>
+      <key>ru</key>
+      <value>Светлая запрос</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5b3530a6-3ad9-4d0c-8516-9e7cf2af29c4">
+    <name>Dark</name>
+    <synonym>
+      <key>ru</key>
+      <value>Темная</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d5bfc634-dd9f-4d75-aad2-33fd54cb0652">
+    <name>DarkQuery</name>
+    <synonym>
+      <key>ru</key>
+      <value>Темная запрос</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="10ea8bb2-7de4-4224-a507-fe421e7a8379">
+    <name>EDTWhite</name>
+    <synonym>
+      <key>ru</key>
+      <value>EDT светлая</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cdc85387-62dd-47c6-8171-12b7c8a2a3dc">
+    <name>EDTDark</name>
+    <synonym>
+      <key>ru</key>
+      <value>EDT темная</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
