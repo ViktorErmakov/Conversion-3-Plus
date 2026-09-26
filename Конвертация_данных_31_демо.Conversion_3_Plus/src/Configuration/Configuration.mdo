@@ -48,11 +48,13 @@
   <subsystems>Subsystem.Конфигурации</subsystems>
   <styleItems>StyleItem.ТекстЗапрещеннойЯчейкиЦвет</styleItems>
   <styleItems>StyleItem.ПоясняющийТекст</styleItems>
+  <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
   <commonPictures>CommonPicture.Расш1_Получение</commonPictures>
   <commonPictures>CommonPicture.Расш1_Отправка</commonPictures>
   <commonPictures>CommonPicture.Расш1_Заменить</commonPictures>
   <commonPictures>CommonPicture.Папка</commonPictures>
   <commonPictures>CommonPicture.ПиктограммыЭлементов</commonPictures>
+  <commonPictures>CommonPicture.ДлительнаяОперация48</commonPictures>
   <commonTemplates>CommonTemplate.bsl_console</commonTemplates>
   <commonModules>CommonModule.Расш1_КоллекцияМетаданных</commonModules>
   <commonModules>CommonModule.Расш1_КонсольКодаВызовСервера</commonModules>
@@ -87,5 +89,8 @@
   <enums>Enum.ВидыСвойств</enums>
   <enums>Enum.Расш1_ТемыКонсолиКода</enums>
   <enums>Enum.Расш1_НасыщенностьШрифтаКонсоли</enums>
+  <enums>Enum.Расш1_ВидыМодулей</enums>
   <dataProcessors>DataProcessor.НастройкаПравилОбмена</dataProcessors>
+  <dataProcessors>DataProcessor.ЗагрузкаСтруктурыКонфигурацииИзФайловXML</dataProcessors>
+  <informationRegisters>InformationRegister.Расш1_ТекстыМодулей</informationRegisters>
 </mdclass:Configuration>

@@ -3761,11 +3761,6 @@
     <autoFill>true</autoFill>
   </autoCommandBar>
   <handlers xsi:type="form:EventHandlerExtension">
-    <event>ChoiceProcessing</event>
-    <name>Расш1_ОбработкаВыбораПосле</name>
-    <callType>After</callType>
-  </handlers>
-  <handlers xsi:type="form:EventHandlerExtension">
     <event>OnOpen</event>
     <name>Расш1_ПриОткрытииПосле</name>
     <callType>After</callType>

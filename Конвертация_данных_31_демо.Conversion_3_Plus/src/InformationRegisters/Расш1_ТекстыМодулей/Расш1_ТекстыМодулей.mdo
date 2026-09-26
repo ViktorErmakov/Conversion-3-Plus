@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4806ce6-08fc-476e-ba64-51b34a85b492">
+  <producedTypes>
+    <selectionType typeId="6d61a951-362a-4804-b607-290a8b8e3fa0" valueTypeId="8aa19216-98bb-4901-848f-6cad1b0f6b35"/>
+    <listType typeId="9729b65c-ab36-4497-a96a-46a24f00b89d" valueTypeId="86a508e4-54c5-465f-90aa-b76059d3ca98"/>
+    <managerType typeId="779fb1f3-d728-476a-ad70-a95ca016729d" valueTypeId="372e02f1-4625-4a7a-a598-0b299c9079fe"/>
+    <recordSetType typeId="acfdddf1-4360-48ec-b744-f0348e57e753" valueTypeId="d70eb58b-aa63-49ab-80b4-72ebb876a619"/>
+    <recordKeyType typeId="e73d5e51-73af-430a-8d80-1a0022b7ad18" valueTypeId="9712b604-ebdb-4ce2-ab43-d4b17bd8d1fc"/>
+    <recordType typeId="2f9029e7-f84e-45d5-bbeb-9463e5ad88e7" valueTypeId="2b5fc0c4-c6e8-4c21-9f5d-4bdc5fbbe1fa"/>
+    <recordManagerType typeId="390e199d-9c74-4678-a081-3a06e4d7efc9" valueTypeId="6fc1cdf3-1b15-4b5a-a0a1-e4bd5a583068"/>
+  </producedTypes>
+  <name>Расш1_ТекстыМодулей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тексты модулей</value>
+  </synonym>
+  <comment>Тексты модулей релиза для подсказок консоли</comment>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.Расш1_ТекстыМодулей.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Текст модуля</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Тексты модулей</value>
+  </listPresentation>
+  <resources uuid="76311009-5cdd-4dc3-8bcf-76b21658fa5b">
+    <name>Текст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </resources>
+  <resources uuid="2fe2db90-51d9-45ad-9589-a67e8ed9a02a">
+    <name>Глобальный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Глобальный</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+  </resources>
+  <dimensions uuid="7c3a0b12-e32e-40f4-92a8-bb276324baf2">
+    <name>Релиз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Релиз</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Релизы</types>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="20d84c26-1eca-40c2-b466-d9a648c26a18">
+    <name>Вид</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Расш1_ВидыМодулей</types>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="975f2ce6-a85e-4071-b7ed-0b92e915f2b4">
+    <name>Ключ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="2d674d96-2c6b-4ae5-8f66-a702b447252c">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

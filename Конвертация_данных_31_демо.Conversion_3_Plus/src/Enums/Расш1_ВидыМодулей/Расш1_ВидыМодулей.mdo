@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e78637b-22fc-4979-aace-8ac6a248e528">
+  <producedTypes>
+    <refType typeId="711c181c-8048-49c1-8305-f2e47cfe3dda" valueTypeId="d190f40a-fd16-4519-ba16-c8aa7ccae23a"/>
+    <listType typeId="c40bc375-a080-4c98-a9f7-fab693c9ff74" valueTypeId="d7490812-5141-431b-9100-d31529e689bd"/>
+    <managerType typeId="dacedd6a-41df-41ee-b3aa-3084aa3e6815" valueTypeId="b10fdf4f-ef18-4e91-9988-92d3c5ae247a"/>
+  </producedTypes>
+  <name>Расш1_ВидыМодулей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды модулей</value>
+  </synonym>
+  <comment>Вид текста модуля конфигурации.</comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="42cdf5e5-6e1d-4536-ae32-32e7bc4cc6e8">
+    <name>ОбщийМодуль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общий модуль</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b9e0c824-742d-457c-89fd-b7e40f2fe66d">
+    <name>МодульМенеджера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модуль менеджера</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="37392932-3a7f-4a8c-8b19-dd4a61a10807">
+    <name>МодульОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модуль объекта</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
