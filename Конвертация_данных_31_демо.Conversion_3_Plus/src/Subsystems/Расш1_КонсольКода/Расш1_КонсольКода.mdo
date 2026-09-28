@@ -10,4 +10,6 @@
   <content>CommonForm.Расш1_НастройкиКонсолиКода</content>
   <content>Enum.Расш1_ТемыКонсолиКода</content>
   <content>Enum.Расш1_НасыщенностьШрифтаКонсоли</content>
+  <content>CommonModule.Расш1_ГлобальныйПоиск</content>
+  <content>CommonForm.Расш1_ГлобальныйПоиск</content>
 </mdclass:Subsystem>

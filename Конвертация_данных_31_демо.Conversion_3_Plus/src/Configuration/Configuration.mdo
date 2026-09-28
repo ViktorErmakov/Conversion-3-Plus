@@ -65,6 +65,7 @@
   <commonModules>CommonModule.Расш1_КонсольКодаКлиентСервер</commonModules>
   <commonModules>CommonModule.Расш1_КонсольКодаКлиент</commonModules>
   <commonModules>CommonModule.Расш1_КонсольКодаКлиентПовтИсп</commonModules>
+  <commonModules>CommonModule.Расш1_ГлобальныйПоиск</commonModules>
   <commonCommands>CommonCommand.ЗахватитьОбъект</commonCommands>
   <commonCommands>CommonCommand.СнятьЗахватОбъекта</commonCommands>
   <commonCommands>CommonCommand.ИсторияИзменений</commonCommands>
@@ -72,6 +73,7 @@
   <commonCommands>CommonCommand.Расш1_НастройкиКонсолиКода</commonCommands>
   <commandGroups>CommandGroup.Расш1_КонсольКода</commandGroups>
   <commonForms>CommonForm.Расш1_НастройкиКонсолиКода</commonForms>
+  <commonForms>CommonForm.Расш1_ГлобальныйПоиск</commonForms>
   <catalogs>Catalog.Алгоритмы</catalogs>
   <catalogs>Catalog.Конвертации</catalogs>
   <catalogs>Catalog.Конфигурации</catalogs>
