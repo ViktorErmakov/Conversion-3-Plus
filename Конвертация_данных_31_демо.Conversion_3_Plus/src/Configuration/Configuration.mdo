@@ -12,6 +12,7 @@
     <managedApplicationModule>Extended</managedApplicationModule>
     <sessionModule>Extended</sessionModule>
     <homePageWorkArea>Extended</homePageWorkArea>
+    <mainSectionCommandInterface>Extended</mainSectionCommandInterface>
     <defaultLanguage>Checked</defaultLanguage>
     <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
     <compatibilityMode>Checked</compatibilityMode>
@@ -44,8 +45,6 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.Расш1_КонсольКода</subsystems>
-  <subsystems>Subsystem.Конвертации</subsystems>
-  <subsystems>Subsystem.Конфигурации</subsystems>
   <styleItems>StyleItem.ТекстЗапрещеннойЯчейкиЦвет</styleItems>
   <styleItems>StyleItem.ПоясняющийТекст</styleItems>
   <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
@@ -71,9 +70,11 @@
   <commonCommands>CommonCommand.ИсторияИзменений</commonCommands>
   <commonCommands>CommonCommand.Расш1_ЗагрузитьСтруктуруКонфигурации</commonCommands>
   <commonCommands>CommonCommand.Расш1_НастройкиКонсолиКода</commonCommands>
+  <commonCommands>CommonCommand.Расш1_ГлобальныйПоиск</commonCommands>
   <commandGroups>CommandGroup.Расш1_КонсольКода</commandGroups>
   <commonForms>CommonForm.Расш1_НастройкиКонсолиКода</commonForms>
   <commonForms>CommonForm.Расш1_ГлобальныйПоиск</commonForms>
+  <commonForms>CommonForm.Расш1_ПросмотрТекстаМодуля</commonForms>
   <catalogs>Catalog.Алгоритмы</catalogs>
   <catalogs>Catalog.Конвертации</catalogs>
   <catalogs>Catalog.Конфигурации</catalogs>

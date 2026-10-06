@@ -3,9 +3,10 @@
   <name>Расш1_НастройкиКонсолиКода</name>
   <synonym>
     <key>ru</key>
-    <value>Настройки консоли кода</value>
+    <value>Настройки консоли</value>
   </synonym>
   <group>CommandGroup.Расш1_КонсольКода</group>
+  <representation>Auto</representation>
   <toolTip>
     <key>ru</key>
     <value>Персональные настройки редактора кода обработчиков</value>

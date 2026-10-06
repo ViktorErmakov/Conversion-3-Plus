@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="87554bd4-3069-4b22-ac71-effde2f7b4d4">
+  <name>Расш1_ПросмотрТекстаМодуля</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр текста модуля</value>
+  </synonym>
+  <comment>Просмотр текста модуля конфигурации, загруженного в регистр сведений.</comment>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

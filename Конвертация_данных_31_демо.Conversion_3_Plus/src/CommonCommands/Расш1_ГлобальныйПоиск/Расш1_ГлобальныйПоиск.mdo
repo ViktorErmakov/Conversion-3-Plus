@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f9eaeaf-d643-4565-a276-cdd05a43bcda">
+  <name>Расш1_ГлобальныйПоиск</name>
+  <synonym>
+    <key>ru</key>
+    <value>Глобальный поиск</value>
+  </synonym>
+  <comment>Открывает поиск фразы в текстах конвертации.</comment>
+  <group>CommandGroup.Расш1_КонсольКода</group>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

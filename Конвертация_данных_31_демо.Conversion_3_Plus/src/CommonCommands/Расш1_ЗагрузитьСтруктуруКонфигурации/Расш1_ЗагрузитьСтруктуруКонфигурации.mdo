@@ -6,6 +6,7 @@
     <value>Загрузить структуру конфигурации из XML/EDT</value>
   </synonym>
   <group>CommandGroup.Расш1_КонсольКода</group>
+  <representation>Auto</representation>
   <toolTip>
     <key>ru</key>
     <value>Открыть загрузку структуры конфигурации из файлов XML или EDT для подсказок консоли</value>
