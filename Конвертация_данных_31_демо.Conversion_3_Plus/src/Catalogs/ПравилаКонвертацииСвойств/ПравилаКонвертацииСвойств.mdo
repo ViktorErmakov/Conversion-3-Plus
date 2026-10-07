@@ -160,4 +160,20 @@
       </typeExtension>
     </extension>
   </attributes>
+  <forms uuid="b1c34128-1853-44b5-ae11-df915efdfa24" extendedConfigurationObject="dbb31999-ef5b-48f8-b8aa-4f7c80458a95">
+    <name>ФормаЭлемента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <forms uuid="cb69af90-fc94-474f-a28e-afabb7880b50" extendedConfigurationObject="91204d56-06a6-47a0-b02c-f496b4d3a094">
+    <name>ФормаГруппы</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
 </mdclass:Catalog>

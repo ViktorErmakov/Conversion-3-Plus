@@ -25,4 +25,12 @@
       </typeExtension>
     </extension>
   </attributes>
+  <forms uuid="297ef06e-9988-468c-9038-97f9439178c9" extendedConfigurationObject="d25b4429-09e4-45e4-aef4-7064c0eab4ae">
+    <name>ФормаЭлемента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
 </mdclass:Catalog>

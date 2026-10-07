@@ -80,4 +80,12 @@
       </typeExtension>
     </extension>
   </attributes>
+  <forms uuid="d2aeabee-81e9-4977-8b23-7821216c1d2d" extendedConfigurationObject="fd4d8821-edc3-4427-b4f6-59df54590e11">
+    <name>ФормаЭлементаXML</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
 </mdclass:Catalog>

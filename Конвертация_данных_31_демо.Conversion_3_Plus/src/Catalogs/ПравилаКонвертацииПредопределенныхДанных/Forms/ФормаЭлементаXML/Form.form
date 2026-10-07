@@ -1,0 +1,1800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:Decoration">
+    <name>ДекорацияНуженЗахват</name>
+    <id>65</id>
+    <title>
+      <key>ru</key>
+      <value>Для редактирования следует захватить объект</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ДекорацияНуженЗахватРасширеннаяПодсказка</name>
+      <id>67</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ДекорацияНуженЗахватКонтекстноеМеню</name>
+      <id>66</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>Label</type>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <textColor xsi:type="core:ColorRef">
+      <color>Style.FieldSelectionBackColor</color>
+    </textColor>
+    <extInfo xsi:type="form:LabelDecorationExtInfo">
+      <horizontalAlign>Left</horizontalAlign>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>Страницы</name>
+    <id>75</id>
+    <items xsi:type="form:FormGroup">
+      <name>ОсновныеСведения</name>
+      <id>77</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаВладельцы</name>
+        <id>53</id>
+        <items xsi:type="form:FormField">
+          <name>СписокКонвертаций</name>
+          <id>55</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>СписокКонвертацийРасширеннаяПодсказка</name>
+            <id>57</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокКонвертацийКонтекстноеМеню</name>
+            <id>56</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияЗахвачен</name>
+          <id>62</id>
+          <title>
+            <key>ru</key>
+            <value>захвачен</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияЗахваченРасширеннаяПодсказка</name>
+            <id>64</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияЗахваченКонтекстноеМеню</name>
+            <id>63</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorRef">
+            <color>Style.SpecialTextColor</color>
+          </textColor>
+          <groupHorizontalAlign>Right</groupHorizontalAlign>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа владельцы</value>
+        </title>
+        <horizontalStretch>true</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаВладельцыРасширеннаяПодсказка</name>
+          <id>54</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>AlwaysHorizontal</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ГруппаПравил</name>
+        <id>16</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ГруппаПравилРасширеннаяПодсказка</name>
+          <id>18</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ГруппаПравилКонтекстноеМеню</name>
+          <id>17</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>EnterOnInput</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаИдентификатор</name>
+        <id>70</id>
+        <items xsi:type="form:FormField">
+          <name>Код</name>
+          <id>1</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>КодРасширеннаяПодсказка</name>
+            <id>3</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>КодКонтекстноеМеню</name>
+            <id>2</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Button">
+          <name>ЗаполнитьИдентификатор</name>
+          <id>147</id>
+          <title>
+            <key>ru</key>
+            <value>Заполнить</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ЗаполнитьИдентификаторРасширеннаяПодсказка</name>
+            <id>148</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualButton</type>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа идентификатор</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаИдентификаторРасширеннаяПодсказка</name>
+          <id>71</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>AlwaysHorizontal</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ОбъектКонфигурации</name>
+        <id>4</id>
+        <title>
+          <key>ru</key>
+          <value>Источник</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ОбъектКонфигурацииРасширеннаяПодсказка</name>
+          <id>6</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ОбъектКонфигурацииКонтекстноеМеню</name>
+          <id>5</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>EnterOnInput</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <dropListButton>false</dropListButton>
+          <choiceButton>true</choiceButton>
+          <choiceButtonRepresentation>ShowInInputField</choiceButtonRepresentation>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+          <choiceParameterLinks>
+            <name>Отбор.Владелец</name>
+            <datapath xsi:type="form:DataPath">
+              <segments>ВедущаяКонфигурация</segments>
+            </datapath>
+          </choiceParameterLinks>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ОбъектКонфигурацииКорреспондент</name>
+        <id>25</id>
+        <title>
+          <key>ru</key>
+          <value>Получатель</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ОбъектКонфигурацииКорреспондентРасширеннаяПодсказка</name>
+          <id>27</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ОбъектКонфигурацииКорреспондентКонтекстноеМеню</name>
+          <id>26</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>EnterOnInput</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <dropListButton>false</dropListButton>
+          <choiceButton>true</choiceButton>
+          <choiceButtonRepresentation>ShowInInputField</choiceButtonRepresentation>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+          <choiceParameterLinks>
+            <name>Отбор.Владелец</name>
+            <datapath xsi:type="form:DataPath">
+              <segments>ВедущаяКонфигурацияКорреспондент</segments>
+            </datapath>
+          </choiceParameterLinks>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>Порядок</name>
+        <id>72</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ПорядокРасширеннаяПодсказка</name>
+          <id>74</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ПорядокКонтекстноеМеню</name>
+          <id>73</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Table">
+        <name>СопоставлениеЗначений</name>
+        <id>28</id>
+        <title>
+          <key>ru</key>
+          <value>Сопоставление значений</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <titleLocation>None</titleLocation>
+        <items xsi:type="form:FormField">
+          <name>СопоставлениеЗначенийНомерСтроки</name>
+          <id>41</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>СопоставлениеЗначенийНомерСтрокиРасширеннаяПодсказка</name>
+            <id>43</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СопоставлениеЗначенийНомерСтрокиКонтекстноеМеню</name>
+            <id>42</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>LabelField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:LabelFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>СопоставлениеЗначенийЗначениеКонфигурации</name>
+          <id>44</id>
+          <title>
+            <key>ru</key>
+            <value>Значение источника</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>СопоставлениеЗначенийЗначениеКонфигурацииРасширеннаяПодсказка</name>
+            <id>46</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СопоставлениеЗначенийЗначениеКонфигурацииКонтекстноеМеню</name>
+            <id>45</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>СопоставлениеЗначенийЗначениеКонфигурацииКорреспондент</name>
+          <id>50</id>
+          <title>
+            <key>ru</key>
+            <value>Значение получателя</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>СопоставлениеЗначенийЗначениеКонфигурацииКорреспондентРасширеннаяПодсказка</name>
+            <id>52</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СопоставлениеЗначенийЗначениеКонфигурацииКорреспондентКонтекстноеМеню</name>
+            <id>51</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <autoCommandBar>
+          <name>СопоставлениеЗначенийКоманднаяПанель</name>
+          <id>30</id>
+          <items xsi:type="form:Button">
+            <name>СопоставлениеЗначенийСопоставитьАвтоматически</name>
+            <id>68</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>СопоставлениеЗначенийСопоставитьАвтоматическиРасширеннаяПодсказка</name>
+              <id>69</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>СопоставлениеЗначенийПоказатьНеСопоставленные</name>
+            <id>149</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>СопоставлениеЗначенийПоказатьНеСопоставленныеРасширеннаяПодсказка</name>
+              <id>150</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <horizontalAlign>Left</horizontalAlign>
+          <autoFill>true</autoFill>
+        </autoCommandBar>
+        <searchStringAddition>
+          <name>СопоставлениеЗначенийСтрокаПоиска</name>
+          <id>32</id>
+          <extendedTooltip>
+            <name>СопоставлениеЗначенийСтрокаПоискаРасширеннаяПодсказка</name>
+            <id>34</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СопоставлениеЗначенийСтрокаПоискаКонтекстноеМеню</name>
+            <id>33</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <source>СопоставлениеЗначений</source>
+          <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </searchStringAddition>
+        <viewStatusAddition>
+          <name>СопоставлениеЗначенийСостояниеПросмотра</name>
+          <id>35</id>
+          <extendedTooltip>
+            <name>СопоставлениеЗначенийСостояниеПросмотраРасширеннаяПодсказка</name>
+            <id>37</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СопоставлениеЗначенийСостояниеПросмотраКонтекстноеМеню</name>
+            <id>36</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>ViewStatusAddition</type>
+          <source>СопоставлениеЗначений</source>
+          <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </viewStatusAddition>
+        <searchControlAddition>
+          <name>СопоставлениеЗначенийУправлениеПоиском</name>
+          <id>38</id>
+          <extendedTooltip>
+            <name>СопоставлениеЗначенийУправлениеПоискомРасширеннаяПодсказка</name>
+            <id>40</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СопоставлениеЗначенийУправлениеПоискомКонтекстноеМеню</name>
+            <id>39</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>SearchControlAddition</type>
+          <source>СопоставлениеЗначений</source>
+          <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+          </extInfo>
+        </searchControlAddition>
+        <extendedTooltip>
+          <name>СопоставлениеЗначенийРасширеннаяПодсказка</name>
+          <id>31</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>СопоставлениеЗначенийКонтекстноеМеню</name>
+          <id>29</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <changeRowSet>true</changeRowSet>
+        <changeRowOrder>true</changeRowOrder>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <autoMaxRowsCount>true</autoMaxRowsCount>
+        <selectionMode>MultiRow</selectionMode>
+        <header>true</header>
+        <headerHeight>1</headerHeight>
+        <footerHeight>1</footerHeight>
+        <horizontalScrollBar>AutoUse</horizontalScrollBar>
+        <verticalScrollBar>AutoUse</verticalScrollBar>
+        <horizontalLines>true</horizontalLines>
+        <verticalLines>true</verticalLines>
+        <autoInsertNewRow>true</autoInsertNewRow>
+        <searchOnInput>Auto</searchOnInput>
+        <initialListView>Auto</initialListView>
+        <horizontalStretch>true</horizontalStretch>
+        <verticalStretch>true</verticalStretch>
+        <enableStartDrag>true</enableStartDrag>
+        <enableDrag>true</enableDrag>
+        <rowFilter xsi:type="core:UndefinedValue"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Основные сведения</value>
+      </title>
+      <extendedTooltip>
+        <name>ОсновныеСведенияРасширеннаяПодсказка</name>
+        <id>78</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ОбработчикиСобытий</name>
+      <id>79</id>
+      <items xsi:type="form:FormGroup">
+        <name>ОбработчикиXML</name>
+        <id>81</id>
+        <items xsi:type="form:FormGroup">
+          <name>Страница_ПередВыгрузкой</name>
+          <id>83</id>
+          <items xsi:type="form:FormField">
+            <name>ИмяОбработчикаПередВыгрузкой</name>
+            <id>85</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <toolTipRepresentation>Button</toolTipRepresentation>
+            <extendedTooltip>
+              <name>ИмяОбработчикаПередВыгрузкойРасширеннаяПодсказка</name>
+              <id>87</id>
+              <title>
+                <key>ru</key>
+                <value>&lt;b>&lt;font Arial>&lt;fontsize 12>&lt;color #333333>&lt;bgcolor #FFFFFF>Перед выгрузкой&lt;/>&lt;/>&lt;/>&lt;/>&lt;/> 
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Условия возникновения события&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+Событие выполняется перед выгрузкой каждого объекта в файл обмена, не  зависимо от того как выгружается объект по правилу выгрузки данных либо потому  что на него есть ссылки. Событие вызывается, когда узел объекта приемника еще не  создан и недоступен. Возможен отказ от выгрузки, например, в случае невыполнения  каких-либо условий.
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Параметры:&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+Параметры - Структура, в которой хранятся переменные доступные во всех  обработчиках
+Источник - Произвольный - выгружаемый объект источник (ссылка или  произвольные данные)
+Приемник - Строка. Строковое представление объекта приемника. Может  использоваться для тех правил, у которых приемник является значением  примитивного типа (Строка, Число, Булево, Дата) или если при помощи правила  предполагается идентифицировать по имени предопределенные значения какого-либо  ссылочного типа.
+ВходящиеДанные - Произвольный - произвольные вспомогательные данные,  переданные правилу конвертации из других правил (например из правила выгрузки  данных или правила конвертации свойств). Значение параметра, как правило, имеет  тип Структура, где ключи значений соответствуют структуре свойств объекта  приемника. Таким образом, при конвертации свойств (в правиле конвертации  свойств), конвертируемые данные (или часть данных) могут быть получены из этого  параметра
+ИсходящиеДанные - Произвольный - произвольные вспомогательные данные. Данные  передаются по следующим правилам:
+&lt;font Tahoma>&lt;fontsize 8>&lt;color #000000>&lt;bgcolor #FFFFFF>ПВД.ИсходящиеДанные ->>  ПКО.ВходящиеДанные&lt;/>&lt;/>&lt;/>&lt;/>
+&lt;font Tahoma>&lt;fontsize 8>&lt;color #000000>&lt;bgcolor #FFFFFF>ПКО.ВходящиеДанные ->>  ПКС.ВходящиеДанные&lt;/>&lt;/>&lt;/>&lt;/>
+&lt;font Tahoma>&lt;fontsize 8>&lt;color #000000>&lt;bgcolor #FFFFFF>ПКС.ИсходящиеДанные ->>  ПКО.ВходящиеДанные&lt;/>&lt;/>&lt;/>&lt;/>
+&lt;font Verdana>&lt;fontsize 8>&lt;color #000000>&lt;bgcolor #FFFFFF> &lt;/>&lt;/>&lt;/>&lt;/> 
+ИмяПКО - Имя данного правила конвертации объектов
+ПКО - ссылка на данное правило конвертации объектов
+ВыгруженныеОбъекты - Соответствие.  Содержит перечень выгруженных по данному  правилу объектов. Ключом соответствия является параметр КлючВыгружаемыхДанных,  значением - число-номер объекта в файле. Может использоваться для проверки -  выгружен ли объект по ссылкам из других объектов. В целях оптимизации, при  выгрузке больших массивов данных, значение параметра может быть очищено -  например в обработчике ПослеОбработкиПравилаВыгрузкиДанных
+Отказ - Булево - Если Истина, то объект не выгружается
+КлючВыгружаемыхДанных - Произвольный. По умолчанию - это ссылка на объект  Источник, а если Источник неопределен, то используется ИмяПКО (подразумевается,  что правило описывает в таком случае один объект-приемник). Данный параметр  необходимо использовать если одному объекту источнику могут соответствовать  несколько объектов приемника, например, в зависимости от входящих данных, или в  случае, когда объект приемник полностью заполняется из входящих данных (например  по результатам запроса), а объект источник, как таковой отсутствует.
+ЗапоминатьВыгруженные - Булево. По умолчанию  - определяется в правилах  обмена, но может быть изменено. Универсальная обработка выгрузки данных хранит  все выгруженные объекты в специальном списке и, таким образом, многократно  встречающиеся объекты (по ссылкам из реквизитов других объектов) выгружаются  единожды. Однако, установив данный параметр в значение Ложь, можно отключить  этот режим. Данный режим может быть полезен для оптимизации, например, когда  точно известно, что на выгружаемые объекты нет ссылок, а так же в случае, когда  на основании одного объекта-источника в зависимости от различных условий могут  формироваться несколько различных объектов-приемников. Только для платформы  1С:Предприятие 8.
+НеЗапоминатьВыгруженные - Булево. Параметр противоположный по смыслу  параметру ЗапоминатьВыгруженные. По умолчанию  - определяется в правилах обмена,  но может быть изменено. Только для платформы 1С:Предприятие 7.7.
+НеЗамещатьОбъектПриЗагрузке - Булево. По умолчанию  - определяется в правилах  обмена, но может быть изменено. Если для данного параметра установить значение  Истина, то объект идентифицированный при загрузке (т.е. найденный в  информационной базе приемнике по значению синхронизирующих полей) не будет  изменен/замещен.
+НеСоздаватьЕслиНеНайден – Булево. По умолчанию определяется в форме элемента  правила конвертации объекта. Если Истина, то выполняется только поиск объекта в  приемнике, новый объект не создается.
+ВсеОбъектыВыгружены - Булево. Если установить Истина, то объект не  выгружается - лишь формируется узел ссылки. В списке выгруженных - объект не  ищется.
+ТолькоПолучитьУзелСсылки - Если Истина, то объект не выгружается - лишь  формируется узел ссылки. В списке выгруженных - объект ищется.
+РегистрироватьОбъектНаУзлеОтправителе – Булево. По умолчанию - Ложь. Если  установить значение параметра в Истина, то объект будет зарегистрирован к  выгрузке в базе-приемнике при загрузке данных. Такой режим обмена необходим при  расщеплении одного объекта в первой информационной базе на несколько дочерних  объектов во второй информационной базе (разных типов метаданных). ПКО дочернего  объекта в родительский объект должно выставлять этот флаг в значение Истина. ПКО  родительского объекта в дочерний объект не должно поднимать этот флаг. В  противном случае возможен случай бесконечной миграции объекта между парой  обменивающихся информационных баз. 
+РежимЗаписи - Строка. Режим записи документа. Имеет смысл только если тип  объекта приемника &quot;Документ&quot;. Возможные значения &quot;Запись&quot;, &quot;Проведение&quot;,  &quot;ОтменаПроведения&quot;
+РежимПроведения - Строка. Режим проведения документа. Имеет смысл только если  тип объекта приемника &quot;Документ&quot;. Возможные значения &quot;Неоперативный&quot;,  &quot;Оперативный&quot;
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Пример:&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+Отказ = Источник.ЭтоГруппа();
+Если (ПустаяСтрока(Источник.Адрес) = 1) И   
+ (ПустаяСтрока(Источник.АдресПочт) = 1)  И
+ (ПустаяСтрока(Источник.Телефоны) = 1) И
+ (ПустаяСтрока(Источник.eMail)  = 1) Тогда
+ Отказ = 1;
+КонецЕсли;</value>
+              </title>
+              <formatted>true</formatted>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ИмяОбработчикаПередВыгрузкойКонтекстноеМеню</name>
+              <id>86</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <readOnly>true</readOnly>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>АлгоритмПередВыгрузкойОбъекта</name>
+            <id>88</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <titleLocation>None</titleLocation>
+            <extendedTooltip>
+              <name>АлгоритмПередВыгрузкойОбъектаРасширеннаяПодсказка</name>
+              <id>90</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>АлгоритмПередВыгрузкойОбъектаКонтекстноеМеню</name>
+              <id>89</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>TextDocumentField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:TextDocFieldExtInfo">
+              <width>50</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <height>10</height>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>true</horizontalStretch>
+              <verticalStretch>true</verticalStretch>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Перед выгрузкой</value>
+          </title>
+          <extendedTooltip>
+            <name>Страница_ПередВыгрузкойРасширеннаяПодсказка</name>
+            <id>84</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>Страница_ПриВыгрузке</name>
+          <id>91</id>
+          <items xsi:type="form:FormField">
+            <name>ИмяОбработчикаПриВыгрузке</name>
+            <id>93</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <toolTipRepresentation>Button</toolTipRepresentation>
+            <extendedTooltip>
+              <name>ИмяОбработчикаПриВыгрузкеРасширеннаяПодсказка</name>
+              <id>95</id>
+              <title>
+                <key>ru</key>
+                <value>&lt;b>&lt;font Arial>&lt;fontsize 12>&lt;color #333333>&lt;bgcolor #FFFFFF>При выгрузке&lt;/>&lt;/>&lt;/>&lt;/>&lt;/> 
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Условия возникновения события&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+Событие выполняется при выгрузке каждого объекта в файл обмена, не зависимо  от того как выгружается объект по правилу выгрузки данных либо потому что на  него есть ссылки. Событие вызывается, когда узел объекта приемника уже создан и  доступен для изменения. 
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Параметры:&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+Источник - Произвольный - выгружаемый объект источник (ссылка или  произвольные данные)
+ВходящиеДанные - Произвольный - произвольные вспомогательные данные,  переданные правилу конвертации из других правил (например из правила выгрузки  данных или правила конвертации свойств). Значение параметра, как правило, имеет  тип Структура, где ключи значений соответствуют структуре свойств объекта  приемника. Таким образом, при конвертации свойств (в правиле конвертации  свойств), конвертируемые данные (или часть данных) могут быть получены из этого  параметра.
+ИсходящиеДанные - Произвольный - произвольные вспомогательные данные. Данные  передаются по следующим правилам:
+&lt;fontsize 9>&lt;color #000000>&lt;bgcolor #F5F5F5> &lt;/>&lt;/>&lt;/>
+&lt;font Tahoma>&lt;fontsize 8>&lt;color #000000>&lt;bgcolor #FFFFFF>ПВД.ИсходящиеДанные ->>  ПКО.ВходящиеДанные&lt;/>&lt;/>&lt;/>&lt;/>
+&lt;font Tahoma>&lt;fontsize 8>&lt;color #000000>&lt;bgcolor #FFFFFF>ПКО.ВходящиеДанные ->>  ПКС.ВходящиеДанные&lt;/>&lt;/>&lt;/>&lt;/>
+&lt;font Tahoma>&lt;fontsize 8>&lt;color #000000>&lt;bgcolor #FFFFFF>ПКС.ИсходящиеДанные ->>  ПКО.ВходящиеДанные&lt;/>&lt;/>&lt;/>&lt;/>
+&lt;font Verdana>&lt;fontsize 8>&lt;color #000000>&lt;bgcolor #FFFFFF> &lt;/>&lt;/>&lt;/>&lt;/>
+ ИмяПКО - Имя данного правила конвертации объектов
+ПКО - ссылка на данное правило конвертации объектов
+ВыгруженныеОбъекты - Соответствие.  Содержит перечень выгруженных по данному  правилу объектов. Ключом соответствия является параметр КлючВыгружаемыхДанных,  значением - число-номер объекта в файле. Может использоваться для проверки -  выгружен ли объект по ссылкам из других объектов. В целях оптимизации, при  выгрузке больших массивов данных, значение параметра может быть очищено -  например в обработчике ПослеОбработкиПравилаВыгрузкиДанных.
+КлючВыгружаемыхДанных – значение ключа в соответствии «ВыгруженныеОбъекты».  Только для платформы 1С:Предприятие 8.
+Отказ – Булево. Если Истина, то объект выгружаться не будет.
+СтандартнаяОбработка - Булево - Если установить значение Ложь, то стандартное  заполнение Приемника не производится, то есть не выполняется обработка правил  конвертации свойств.
+Приемник - инициализированный xml-узел объекта приемника. Может быть дополнен  произвольным xml-содержимым, например используемым при загрузке. В случае  отключения СтандартнойОбработки, правила конвертации свойств (ПКС) не  обрабатываются, т.е. необходимо реализовать алгоритм заполняющий узел приемника  в соответствии с форматом файла обмена
+УзелСсылки - инициализированный xml-узел ссылки. Может использоваться,  например для инициализации свойств других объектов.</value>
+              </title>
+              <formatted>true</formatted>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ИмяОбработчикаПриВыгрузкеКонтекстноеМеню</name>
+              <id>94</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <readOnly>true</readOnly>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>АлгоритмПриВыгрузкеОбъекта</name>
+            <id>96</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <titleLocation>None</titleLocation>
+            <extendedTooltip>
+              <name>АлгоритмПриВыгрузкеОбъектаРасширеннаяПодсказка</name>
+              <id>98</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>АлгоритмПриВыгрузкеОбъектаКонтекстноеМеню</name>
+              <id>97</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>TextDocumentField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:TextDocFieldExtInfo">
+              <width>50</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <height>10</height>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>true</horizontalStretch>
+              <verticalStretch>true</verticalStretch>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>При выгрузке</value>
+          </title>
+          <extendedTooltip>
+            <name>Страница_ПриВыгрузкеРасширеннаяПодсказка</name>
+            <id>92</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>Страница_ПослеВыгрузки</name>
+          <id>99</id>
+          <items xsi:type="form:FormField">
+            <name>ИмяОбработчикаПослеВыгрузки</name>
+            <id>101</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <toolTipRepresentation>Button</toolTipRepresentation>
+            <extendedTooltip>
+              <name>ИмяОбработчикаПослеВыгрузкиРасширеннаяПодсказка</name>
+              <id>103</id>
+              <title>
+                <key>ru</key>
+                <value>&lt;b>&lt;font Arial>&lt;fontsize 12>&lt;color #333333>&lt;bgcolor #FFFFFF>После выгрузки&lt;/>&lt;/>&lt;/>&lt;/>&lt;/> 
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Условия возникновения события&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+Событие выполняется после выгрузки объекта в промежуточную структуру данных,  но до выгрузки его непосредственно в файл обмена. Возможен отказ от записи  объекта в файл. Может быть использован для выгрузки дополнительной информации по  выгруженному объекту в файл обмена.
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Параметры:&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+Источник - Произвольный - выгружаемый объект источник (ссылка или  произвольные данные)
+ВходящиеДанные - Произвольный - произвольные вспомогательные данные,  переданные правилу конвертации из других правил (например из правила выгрузки  данных или правила конвертации свойств). Значение параметра, как правило, имеет  тип Структура, где ключи значений соответствуют структуре свойств объекта  приемника. Таким образом, при конвертации свойств (в правиле конвертации  свойств), конвертируемые данные (или часть данных) могут быть получены из этого  параметра.
+ИсходящиеДанные - Произвольный - произвольные вспомогательные данные,  передаваемые правилам конвертации свойств (ПКС). 
+ИмяПКО - Имя данного правила конвертации объектов
+ПКО - ссылка на данное правило конвертации объектов
+ВыгруженныеОбъекты - Соответствие.  Содержит перечень выгруженных по данному  правилу объектов. Ключом соответствия является параметр КлючВыгружаемыхДанных,  значением - число-номер объекта в файле. Может использоваться для проверки -  выгружен ли объект по ссылкам из других объектов. В целях оптимизации, при  выгрузке больших массивов данных, значение параметра может быть очищено -  например в обработчике ПослеОбработкиПравилаВыгрузкиДанных.
+КлючВыгружаемыхДанных – значение ключа в соответствии «ВыгруженныеОбъекты».  Только для платформы 1С:Предприятие 8.
+Отказ - Булево - Если Истина, то выгруженный объект в файл не  записывается
+Приемник - xml-узел объекта приемника, заполненный в соответствии с  правилом
+УзелСсылки - инициализированный xml-узел ссылки. Может использоваться,  например для инициализации свойств других объектов
+</value>
+              </title>
+              <formatted>true</formatted>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ИмяОбработчикаПослеВыгрузкиКонтекстноеМеню</name>
+              <id>102</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <readOnly>true</readOnly>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>АлгоритмПослеВыгрузкиОбъекта</name>
+            <id>104</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <titleLocation>None</titleLocation>
+            <extendedTooltip>
+              <name>АлгоритмПослеВыгрузкиОбъектаРасширеннаяПодсказка</name>
+              <id>106</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>АлгоритмПослеВыгрузкиОбъектаКонтекстноеМеню</name>
+              <id>105</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>TextDocumentField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:TextDocFieldExtInfo">
+              <width>50</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <height>10</height>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>true</horizontalStretch>
+              <verticalStretch>true</verticalStretch>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>После выгрузки</value>
+          </title>
+          <extendedTooltip>
+            <name>Страница_ПослеВыгрузкиРасширеннаяПодсказка</name>
+            <id>100</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>Страница_ПослеВыгрузкиВФайл</name>
+          <id>107</id>
+          <items xsi:type="form:FormField">
+            <name>ИмяОбработчикаПослеВыгрузкиВФайл</name>
+            <id>109</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <toolTipRepresentation>Button</toolTipRepresentation>
+            <extendedTooltip>
+              <name>ИмяОбработчикаПослеВыгрузкиВФайлРасширеннаяПодсказка</name>
+              <id>111</id>
+              <title>
+                <key>ru</key>
+                <value>&lt;b>&lt;font Arial>&lt;fontsize 12>&lt;color #333333>&lt;bgcolor #FFFFFF>После выгрузки в файл&lt;/>&lt;/>&lt;/>&lt;/>&lt;/> 
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Условия возникновения события&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+Событие выполняется после выгрузки объекта в файл обмена. Может быть  использован для выгрузки дополнительной информации по выгруженному объекту в  файл обмена. При этом информация будет записана в файл обмена после выгруженного  объекта.
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Параметры:&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+Источник - Произвольный - выгружаемый объект источник (ссылка или  произвольные данные)
+ВходящиеДанные - Произвольный - произвольные вспомогательные данные,  переданные правилу конвертации из других правил (например из правила выгрузки  данных или правила конвертации свойств). Значение параметра, как правило, имеет  тип Структура, где ключи значений соответствуют структуре свойств объекта  приемника. Таким образом, при конвертации свойств (в правиле конвертации  свойств), конвертируемые данные (или часть данных) могут быть получены из этого  параметра.
+ИсходящиеДанные - Произвольный - произвольные вспомогательные данные,  передаваемые правилам конвертации свойств (ПКС). 
+ИмяПКО - Имя данного правила конвертации объектов
+ПКО - ссылка на данное правило конвертации объектов
+ВыгруженныеОбъекты - Соответствие.  Содержит перечень выгруженных по данному  правилу объектов. Ключом соответствия является параметр КлючВыгружаемыхДанных,  значением - число-номер объекта в файле. Может использоваться для проверки -  выгружен ли объект по ссылкам из других объектов. В целях оптимизации, при  выгрузке больших массивов данных, значение параметра может быть очищено -  например в обработчике ПослеОбработкиПравилаВыгрузкиДанных.
+Приемник - xml-узел объекта приемника, заполненный в соответствии с  правилом
+УзелСсылки - инициализированный xml-узел ссылки. Может использоваться,  например для инициализации свойств других объектов
+</value>
+              </title>
+              <formatted>true</formatted>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ИмяОбработчикаПослеВыгрузкиВФайлКонтекстноеМеню</name>
+              <id>110</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <readOnly>true</readOnly>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>АлгоритмПослеВыгрузкиОбъектаВФайлОбмена</name>
+            <id>112</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <titleLocation>None</titleLocation>
+            <extendedTooltip>
+              <name>АлгоритмПослеВыгрузкиОбъектаВФайлОбменаРасширеннаяПодсказка</name>
+              <id>114</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>АлгоритмПослеВыгрузкиОбъектаВФайлОбменаКонтекстноеМеню</name>
+              <id>113</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>TextDocumentField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:TextDocFieldExtInfo">
+              <width>50</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <height>10</height>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>true</horizontalStretch>
+              <verticalStretch>true</verticalStretch>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>После выгрузки в файл</value>
+          </title>
+          <extendedTooltip>
+            <name>Страница_ПослеВыгрузкиВФайлРасширеннаяПодсказка</name>
+            <id>108</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>Страница_ПередЗагрузкой</name>
+          <id>123</id>
+          <items xsi:type="form:FormField">
+            <name>ИмяОбработчикаПередЗагрузкой</name>
+            <id>125</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <toolTipRepresentation>Button</toolTipRepresentation>
+            <extendedTooltip>
+              <name>ИмяОбработчикаПередЗагрузкойРасширеннаяПодсказка</name>
+              <id>127</id>
+              <title>
+                <key>ru</key>
+                <value>&lt;b>&lt;font Arial>&lt;fontsize 12>&lt;color #333333>&lt;bgcolor #FFFFFF>Перед загрузкой&lt;/>&lt;/>&lt;/>&lt;/>&lt;/> 
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Условия возникновения события&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+Только для платформы V8.
+Событие выполняется перед загрузкой объекта.  Возможен отказ от загрузки, например, в случае невыполнения каких-либо условий.  Загружаемый в БД объект еще не инициализирован.
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Параметры:&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+Отказ - Булево - Если Истина, то объект загружен не будет.
+Нпп - Число. Уникальный порядковый номер объекта в файле.
+Источник - Строка. Представление объекта источника. Пустая строка, если  представление объекта источника не выгружалось.
+ИмяПравила - Строка. Имя правила конвертации. Пустая строка, если правила  конвертации не используются.
+Правило – строка таблицы значений. Ссылка на правило конвертации объекта.
+ГенерироватьНовыйНомерИлиКодЕслиНеУказан – Булево. Если Истина и номер или  код объекта не заданы, то перед записью будет сгенерирован новый номер или  код.
+ТипОбъектаСтрокой - Строка. Тип загружаемого объекта. Например:  СправочникСсылка.Номенклатура или РегистрСведенийЗапись.ЦеныТоваров
+ТипОбъекта - Значение типа Тип. Тип загружаемого объекта.
+НеЗамещатьОбъект - Если для данного параметра установить значение Истина, то  объект идентифицированный при загрузке (т.е. найденный в информационной базе  приемнике по значению синхронизирующих полей) не будет изменен/замещен.
+РежимЗаписи - Строка. Режим записи документа. Имеет смысл только если тип  объекта приемника &quot;Документ&quot;. Возможные значения &quot;Запись&quot;, &quot;Проведение&quot;,  &quot;ОтменаПроведения&quot;
+РежимПроведения - Строка. Режим проведения документа. Имеет смысл только если  тип объекта приемника &quot;Документ&quot;. Возможные значения &quot;Неоперативный&quot;,  &quot;Оперативный&quot;
+</value>
+              </title>
+              <formatted>true</formatted>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ИмяОбработчикаПередЗагрузкойКонтекстноеМеню</name>
+              <id>126</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <readOnly>true</readOnly>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>АлгоритмПередЗагрузкойОбъекта</name>
+            <id>128</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <titleLocation>None</titleLocation>
+            <extendedTooltip>
+              <name>АлгоритмПередЗагрузкойОбъектаРасширеннаяПодсказка</name>
+              <id>130</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>АлгоритмПередЗагрузкойОбъектаКонтекстноеМеню</name>
+              <id>129</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>TextDocumentField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:TextDocFieldExtInfo">
+              <width>50</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <height>10</height>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>true</horizontalStretch>
+              <verticalStretch>true</verticalStretch>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Перед загрузкой</value>
+          </title>
+          <extendedTooltip>
+            <name>Страница_ПередЗагрузкойРасширеннаяПодсказка</name>
+            <id>124</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>Страница_ПриЗагрузке</name>
+          <id>131</id>
+          <items xsi:type="form:FormField">
+            <name>ИмяОбработчикаПриЗагрузке</name>
+            <id>133</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <toolTipRepresentation>Button</toolTipRepresentation>
+            <extendedTooltip>
+              <name>ИмяОбработчикаПриЗагрузкеРасширеннаяПодсказка</name>
+              <id>135</id>
+              <title>
+                <key>ru</key>
+                <value>&lt;b>&lt;font Arial>&lt;fontsize 12>&lt;color #333333>&lt;bgcolor #FFFFFF>При загрузке&lt;/>&lt;/>&lt;/>&lt;/>&lt;/> 
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Условия возникновения события&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+Только для платформы V8.
+Событие выполняется после попытки идентификации.  В случае успешной синхронизации доступен найденный объект. В противном случае  его значение Неопределено. Можно произвести произвольную инициализацию,  заполняемого данными объекта.
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Параметры:&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+ОбъектНайден - Булево. Если значение параметра равно Ложь, то объект не  идентифицирован, то есть не найден в информационной базе
+Объект - Произвольный. Загружаемый, модифицируемый объект, созданный по  ссылке или найденный в информационной базе. Если способ идентификации объекта в  файле не указан (т.е. отсутствует узел &quot;Ссылка&quot;), то параметр содержит значение  Неопределено. В этом случае в обработчике возможна произвольная инициализация  загружаемого объекта, в противном случае, объект будет создан автоматически.
+НеЗамещатьОбъект - Булево - Если установить значение Истина, то существующий  объект информационной базы не будет изменен.
+ОбъектМодифицирован – Булево. Флажок указывает на то, что в обработчике  объект был модифицирован. По умолчанию содержит значение Истина. То есть  обработка загрузки считает, что если выполнялся какой-либо обработчик, то объект  мог быть модифицирован, и его необходимо записать в информационную базу.  Параметр относится только к текущему обработчику и только к найденным объектам.  Если объект не был найден, то при любом значении он будет создан и записан.  Только для платформы 1С:Предприятие 8.
+</value>
+              </title>
+              <formatted>true</formatted>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ИмяОбработчикаПриЗагрузкеКонтекстноеМеню</name>
+              <id>134</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <readOnly>true</readOnly>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>АлгоритмПриЗагрузкеОбъекта</name>
+            <id>136</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <titleLocation>None</titleLocation>
+            <extendedTooltip>
+              <name>АлгоритмПриЗагрузкеОбъектаРасширеннаяПодсказка</name>
+              <id>138</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>АлгоритмПриЗагрузкеОбъектаКонтекстноеМеню</name>
+              <id>137</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>TextDocumentField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:TextDocFieldExtInfo">
+              <width>50</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <height>10</height>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>true</horizontalStretch>
+              <verticalStretch>true</verticalStretch>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>При загрузке</value>
+          </title>
+          <extendedTooltip>
+            <name>Страница_ПриЗагрузкеРасширеннаяПодсказка</name>
+            <id>132</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>Страница_ПослеЗагрузки</name>
+          <id>139</id>
+          <items xsi:type="form:FormField">
+            <name>ИмяОбработчикаПослеЗагрузки</name>
+            <id>141</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <toolTipRepresentation>Button</toolTipRepresentation>
+            <extendedTooltip>
+              <name>ИмяОбработчикаПослеЗагрузкиРасширеннаяПодсказка</name>
+              <id>143</id>
+              <title>
+                <key>ru</key>
+                <value>&lt;b>&lt;font Arial>&lt;fontsize 12>&lt;color #333333>&lt;bgcolor #FFFFFF>После загрузки&lt;/>&lt;/>&lt;/>&lt;/>&lt;/> 
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Условия возникновения события&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+Только для платформы V8.
+Событие выполняется после прочтения и установки  атрибутов объекта из файла, но до его записи в информационную базу. Возможна  модификация загруженного объекта.
+&lt;b>&lt;font Arial>&lt;fontsize 9>&lt;color #333333>&lt;bgcolor #FFFFFF>Параметры:&lt;/>&lt;/>&lt;/>&lt;/>&lt;/>
+ 
+Отказ - Булево - Если Истина, то объект загружен не будет.
+Объект - Произвольный - загруженный объект.
+Ссылка – Произвольный – ссылка на найденный объект в информационной базе.
+ОбъектНайден - Булево. Если значение параметра равно Ложь, то объект не  идентифицирован, то есть не найден в информационной базе
+ПараметрыОбъекта - либо Неопределено либо Соответствие, в котором хранятся  дополнительные параметры переданные для данного объекта из источника в приемник.  Если параметров передано не было, то ПараметрыОбъекта = Неопределено.
+ОбъектМодифицирован – Булево. Флажок указывает на то, что в обработчике  объект был изменен. По умолчанию содержит значение Истина. То есть обработка  загрузки считает, что если выполнялся какой-либо обработчик, то объект мог быть  модифицирован, и его необходимо записать в информационную базу. Параметр  относится только к текущему обработчику. Если объект был изменен ранее, то при  любом значении переменной ОбъектМодифицирован он будет записан. Только для  платформы 1С:Предприятие 8.
+ИмяТипаОбъекта – Строка. Имя типа загруженного объекта, например,  «СправочникСсылка.Номенклатура».
+НаборЗаписей – РегистрСведенийНаборЗаписей. Загруженный набор записей. Только  при загрузке в обработке УниверсальныйОбменДаннымиXML.</value>
+              </title>
+              <formatted>true</formatted>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ИмяОбработчикаПослеЗагрузкиКонтекстноеМеню</name>
+              <id>142</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <readOnly>true</readOnly>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>АлгоритмПослеЗагрузкиОбъекта</name>
+            <id>144</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <titleLocation>None</titleLocation>
+            <extendedTooltip>
+              <name>АлгоритмПослеЗагрузкиОбъектаРасширеннаяПодсказка</name>
+              <id>146</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>АлгоритмПослеЗагрузкиОбъектаКонтекстноеМеню</name>
+              <id>145</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>TextDocumentField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:TextDocFieldExtInfo">
+              <width>50</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <height>10</height>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>true</horizontalStretch>
+              <verticalStretch>true</verticalStretch>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>После загрузки</value>
+          </title>
+          <extendedTooltip>
+            <name>Страница_ПослеЗагрузкиРасширеннаяПодсказка</name>
+            <id>140</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Обработчики XML</value>
+        </title>
+        <extendedTooltip>
+          <name>ОбработчикиXMLРасширеннаяПодсказка</name>
+          <id>82</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Pages</type>
+        <extInfo xsi:type="form:PagesGroupExtInfo">
+          <pagesRepresentation>TabsOnLeftHorizontal</pagesRepresentation>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Обработчики событий</value>
+      </title>
+      <extendedTooltip>
+        <name>ОбработчикиСобытийРасширеннаяПодсказка</name>
+        <id>80</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Страницы</value>
+    </title>
+    <extendedTooltip>
+      <name>СтраницыРасширеннаяПодсказка</name>
+      <id>76</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Pages</type>
+    <extInfo xsi:type="form:PagesGroupExtInfo">
+      <pagesRepresentation>TabsOnTop</pagesRepresentation>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>ФормаДобавитьЭлементВСоставКонвертации</name>
+      <id>60</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаДобавитьЭлементВСоставКонвертацииРасширеннаяПодсказка</name>
+        <id>61</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <handlers xsi:type="form:EventHandlerExtension">
+    <event>OnOpen</event>
+    <name>Расш1_ПриОткрытииПосле</name>
+    <callType>After</callType>
+  </handlers>
+  <handlers xsi:type="form:EventHandlerExtension">
+    <event>OnCreateAtServer</event>
+    <name>Расш1_ПриСозданииНаСервереПосле</name>
+    <callType>After</callType>
+  </handlers>
+  <handlers xsi:type="form:EventHandlerExtension">
+    <event>NotificationProcessing</event>
+    <name>Расш1_ОбработкаОповещенияПосле</name>
+    <callType>After</callType>
+  </handlers>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <parameters>
+    <name>Расш1_ФразаПоиска</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>Расш1_ИмяПоляПоиска</name>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+  </parameters>
+  <parameters>
+    <name>Расш1_НомерСтрокиПоиска</name>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:CatalogFormExtInfo">
+    <handlers xsi:type="form:EventHandlerExtension">
+      <event>BeforeWrite</event>
+      <name>Расш1_ПередЗаписьюПосле</name>
+      <callType>After</callType>
+    </handlers>
+  </extInfo>
+</form:Form>
