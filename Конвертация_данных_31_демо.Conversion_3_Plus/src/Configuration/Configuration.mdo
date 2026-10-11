@@ -65,6 +65,7 @@
   <commonModules>CommonModule.Расш1_КонсольКодаКлиент</commonModules>
   <commonModules>CommonModule.Расш1_КонсольКодаКлиентПовтИсп</commonModules>
   <commonModules>CommonModule.Расш1_ГлобальныйПоиск</commonModules>
+  <commonModules>CommonModule.Расш1_СтраницыОбработчиковКлиент</commonModules>
   <commonCommands>CommonCommand.ЗахватитьОбъект</commonCommands>
   <commonCommands>CommonCommand.СнятьЗахватОбъекта</commonCommands>
   <commonCommands>CommonCommand.ИсторияИзменений</commonCommands>
