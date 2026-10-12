@@ -89,6 +89,8 @@
   <catalogs>Catalog.Запросы</catalogs>
   <catalogs>Catalog.ПравилаКонвертацииСвойств</catalogs>
   <catalogs>Catalog.ПравилаОбработкиДанных</catalogs>
+  <catalogs>Catalog.СвойстваФормата</catalogs>
+  <catalogs>Catalog.ОбъектыФормата</catalogs>
   <enums>Enum.ВариантыИдентификацииОбъектов</enums>
   <enums>Enum.ВидыСвойств</enums>
   <enums>Enum.Расш1_ТемыКонсолиКода</enums>
@@ -97,4 +99,5 @@
   <dataProcessors>DataProcessor.НастройкаПравилОбмена</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаСтруктурыКонфигурацииИзФайловXML</dataProcessors>
   <informationRegisters>InformationRegister.Расш1_ТекстыМодулей</informationRegisters>
+  <informationRegisters>InformationRegister.ВзаимосвязиВерсийФорматовИРасширений</informationRegisters>
 </mdclass:Configuration>
