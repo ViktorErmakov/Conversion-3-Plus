@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="21a1a7ab-2a95-49ed-92bf-c08bba487e0c">
-  <name>Расш1_МодульПовтИсп</name>
+  <name>Расш1_КоллекцииМетаданныхПовтИсп</name>
   <synonym>
     <key>ru</key>
     <value>Модуль повторного использования</value>

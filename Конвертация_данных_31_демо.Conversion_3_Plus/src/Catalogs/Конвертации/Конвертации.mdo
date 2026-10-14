@@ -26,7 +26,6 @@
         <stringQualifiers/>
       </typeExtension>
     </extension>
-    <type/>
   </attributes>
   <attributes uuid="6a981946-0d26-441f-8ca9-6894a5106dac" extendedConfigurationObject="cec9f551-422e-49b6-9aaf-78d152e0f2b4">
     <name>АлгоритмПослеКонвертации</name>
@@ -41,7 +40,6 @@
         <stringQualifiers/>
       </typeExtension>
     </extension>
-    <type/>
   </attributes>
   <attributes uuid="b8d23f58-a31b-4ddb-ae89-a691c0dc033f" extendedConfigurationObject="7f373551-bb85-4df7-a32c-be8e291d677a">
     <name>АлгоритмПередОтложеннымЗаполнением</name>
@@ -56,7 +54,45 @@
         <stringQualifiers/>
       </typeExtension>
     </extension>
-    <type/>
+  </attributes>
+  <attributes uuid="994dc95a-fd82-4c8f-926b-471990e32494" extendedConfigurationObject="addb7fe7-f84d-4058-afa7-f181b8be5d1f">
+    <name>Конфигурация</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Релизы</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
+  <attributes uuid="2d62c5f0-46ef-4146-9a1b-2f9ce4492f27" extendedConfigurationObject="65a4caf0-0fc6-4769-9664-3e67c0ab15c6">
+    <name>ТипКонвертации</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.ТипыКонвертаций</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
+  <attributes uuid="b5b760ac-6ab4-457a-80aa-489f7e9e2cc8" extendedConfigurationObject="60e74b24-33b4-45b0-8b87-59165e372942">
+    <name>КонфигурацияКорреспондент</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Релизы</type>
+        </types>
+      </typeExtension>
+    </extension>
   </attributes>
   <tabularSections uuid="9cacbcfd-11c1-4826-8b6b-20cb93fa3944" extendedConfigurationObject="556f7b1b-7ec2-419c-929a-e59038bc17c2">
     <producedTypes>
@@ -83,7 +119,6 @@
           </stringQualifiers>
         </typeExtension>
       </extension>
-      <type/>
     </attributes>
   </tabularSections>
   <forms uuid="5d37fef3-d25a-47ba-b0b6-ae5afd183484" extendedConfigurationObject="5b222410-a6ca-4846-b894-f066fa4d1aae">

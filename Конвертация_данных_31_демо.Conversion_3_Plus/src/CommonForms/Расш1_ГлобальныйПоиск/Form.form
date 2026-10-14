@@ -620,7 +620,7 @@
       </dataPath>
       <extendedTooltip>
         <name>РезультатыИсточникРасширеннаяПодсказка</name>
-        <id>58</id>
+        <id>84</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -630,7 +630,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>РезультатыИсточникКонтекстноеМеню</name>
-        <id>57</id>
+        <id>85</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -1075,7 +1075,7 @@
     </items>
     <items xsi:type="form:Button">
       <name>ФормаЗакрыть</name>
-      <id>59</id>
+      <id>86</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -1083,7 +1083,7 @@
       </userVisible>
       <extendedTooltip>
         <name>ФормаЗакрытьРасширеннаяПодсказка</name>
-        <id>60</id>
+        <id>87</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>

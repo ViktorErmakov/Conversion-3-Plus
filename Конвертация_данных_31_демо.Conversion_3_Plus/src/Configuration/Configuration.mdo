@@ -60,7 +60,7 @@
   <commonModules>CommonModule.Расш1_КонсольКода</commonModules>
   <commonModules>CommonModule.Расш1_ЖурналРегистрации</commonModules>
   <commonModules>CommonModule.КонвертацияДанныхXDTOКлиент</commonModules>
-  <commonModules>CommonModule.Расш1_МодульПовтИсп</commonModules>
+  <commonModules>CommonModule.Расш1_КоллекцииМетаданныхПовтИсп</commonModules>
   <commonModules>CommonModule.Расш1_КонсольКодаКлиентСервер</commonModules>
   <commonModules>CommonModule.Расш1_КонсольКодаКлиент</commonModules>
   <commonModules>CommonModule.Расш1_КонсольКодаКлиентПовтИсп</commonModules>
@@ -96,6 +96,7 @@
   <enums>Enum.Расш1_ТемыКонсолиКода</enums>
   <enums>Enum.Расш1_НасыщенностьШрифтаКонсоли</enums>
   <enums>Enum.Расш1_ВидыМодулей</enums>
+  <enums>Enum.ТипыКонвертаций</enums>
   <dataProcessors>DataProcessor.НастройкаПравилОбмена</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаСтруктурыКонфигурацииИзФайловXML</dataProcessors>
   <informationRegisters>InformationRegister.Расш1_ТекстыМодулей</informationRegisters>
